@@ -1,0 +1,973 @@
+[
+
+ {
+  "kataarab": "مُقَاطَعَةُ",
+  "arti": "pemboikotan",
+  "penjelasan": "Masdar dari قاطع. Menunjukkan tindakan memutus hubungan sosial atau ekonomi. Dalam struktur ini menjadi mudhaf."
+ },
+ {
+  "kataarab": "قُرَيْشٍ",
+  "arti": "Quraisy",
+  "penjelasan": "Nama kabilah besar di Mekkah. Menjadi mudhaf ilaih yang menjelaskan pelaku boikot."
+ },
+ {
+  "kataarab": "لِبَنِيْ هَاشِمَ",
+  "arti": "terhadap Bani Hasyim",
+  "penjelasan": "Huruf jar لِ menunjukkan sasaran. Bani Hasyim adalah klan keturunan Hasyim, keluarga Nabi Muhammad."
+ },
+ {
+  "kataarab": "وَبَنِيْ المُطَلِّبِ",
+  "arti": "dan Bani al Muththalib",
+  "penjelasan": "Huruf ‘athaf وَ. Bani al Muththalib adalah klan kerabat Nabi yang juga ikut diboikot bersama Bani Hasyim."
+ },
+ {
+  "kataarab": "اِشْتَدَّ",
+  "arti": "menjadi semakin kuat",
+  "penjelasan": "Fi'il madhi dari اشتدّ. Menunjukkan sesuatu yang bertambah kuat atau semakin hebat."
+ },
+ {
+  "kataarab": "خَوْفُ",
+  "arti": "ketakutan",
+  "penjelasan": "Isim. Masdar dari خاف. Dalam i‘rab berfungsi sebagai mudhaf."
+ },
+ {
+  "kataarab": "قُرَيْشٍ",
+  "arti": "Quraisy",
+  "penjelasan": "Nama kabilah Arab di Mekkah. Menjadi mudhaf ilaih dari خوف."
+ },
+ {
+  "kataarab": "مِنِ",
+  "arti": "dari",
+  "penjelasan": "Huruf jar من. Kasrah muncul karena bertemu hamzah kata berikutnya."
+ },
+ {
+  "kataarab": "انْتِشَارِ",
+  "arti": "penyebaran",
+  "penjelasan": "Masdar dari انتشر. Menjadi majrur setelah huruf jar."
+ },
+ {
+  "kataarab": "الإِسْلَامِ",
+  "arti": "Islam",
+  "penjelasan": "Isim. Mudhaf ilaih dari انتشار."
+ },
+ {
+  "kataarab": "وَازْدِيَادِ",
+  "arti": "dan bertambahnya",
+  "penjelasan": "Huruf ‘athaf وَ + masdar ازدياد dari ازداد yang berarti meningkat."
+ },
+ {
+  "kataarab": "الدَّاخِلِينَ",
+  "arti": "orang-orang yang masuk",
+  "penjelasan": "Isim fa'il jamak dari دخل. Maksudnya orang yang masuk Islam."
+ },
+ {
+  "kataarab": "فِيهِ",
+  "arti": "di dalamnya",
+  "penjelasan": "Huruf jar في + dhamir ه kembali pada Islam."
+ },
+ {
+  "kataarab": "فَفَكَّرَ",
+  "arti": "maka mereka berpikir",
+  "penjelasan": "Huruf fa menunjukkan akibat. Fi'il madhi dari فكّر."
+ },
+ {
+  "kataarab": "زُعَمَاؤُهَا",
+  "arti": "para pemimpinnya",
+  "penjelasan": "Jamak dari زعيم. Dhamir ها kembali kepada Quraisy."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "dalam",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "سِلَاحٍ",
+  "arti": "senjata",
+  "penjelasan": "Isim majrur karena didahului huruf jar."
+ },
+ {
+  "kataarab": "يُقَاوِمُونَ",
+  "arti": "mereka melawan",
+  "penjelasan": "Fi'il mudhari dari قاوم. Subjeknya para pemimpin Quraisy."
+ },
+ {
+  "kataarab": "بِهِ",
+  "arti": "dengannya",
+  "penjelasan": "Huruf jar ب + dhamir kembali pada senjata."
+ },
+ {
+  "kataarab": "هَذَا",
+  "arti": "ini",
+  "penjelasan": "Isim isyarah untuk sesuatu yang dekat."
+ },
+ {
+  "kataarab": "الْخَطَرَ",
+  "arti": "bahaya",
+  "penjelasan": "Isim sebagai objek yang dilawan."
+ },
+ {
+  "kataarab": "الشَّدِيدَ",
+  "arti": "yang sangat berat",
+  "penjelasan": "Sifat dari الخطر."
+ },
+ {
+  "kataarab": "وَهُوَ",
+  "arti": "dan itu",
+  "penjelasan": "Huruf ‘athaf + dhamir هو untuk penjelasan berikutnya."
+ },
+ {
+  "kataarab": "سِلَاحُ",
+  "arti": "senjata",
+  "penjelasan": "Isim sebagai mubtada dalam penjelasan."
+ },
+ {
+  "kataarab": "قَطْعِ",
+  "arti": "pemutusan",
+  "penjelasan": "Masdar dari قطع."
+ },
+ {
+  "kataarab": "الْمَاءِ",
+  "arti": "air",
+  "penjelasan": "Mudhaf ilaih dari قطع."
+ },
+ {
+  "kataarab": "وَالطَّعَامِ",
+  "arti": "dan makanan",
+  "penjelasan": "Huruf ‘athaf + isim الطعام."
+ },
+ {
+  "kataarab": "عَنِ",
+  "arti": "dari",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "الْمُسْلِمِينَ",
+  "arti": "kaum muslim",
+  "penjelasan": "Jamak dari مسلم."
+ },
+ {
+  "kataarab": "وَعَدَمِ",
+  "arti": "dan tidak adanya",
+  "penjelasan": "Huruf ‘athaf + masdar عدم."
+ },
+ {
+  "kataarab": "الِاتِّصَالِ",
+  "arti": "hubungan",
+  "penjelasan": "Masdar dari اتصل."
+ },
+ {
+  "kataarab": "بِهِمْ",
+  "arti": "dengan mereka",
+  "penjelasan": "Huruf jar + dhamir kembali kepada kaum muslim."
+ },
+ {
+  "kataarab": "الْمُقَاطَعَةُ",
+  "arti": "pemboikotan",
+  "penjelasan": "Istilah yang menjelaskan tindakan tersebut."
+ },
+ {
+  "kataarab": "الِاقْتِصَادِيَّةُ",
+  "arti": "ekonomi",
+  "penjelasan": "Sifat bagi المقاطعة."
+ },
+ {
+  "kataarab": "وَاتَّفَقُوا",
+  "arti": "dan mereka sepakat",
+  "penjelasan": "Huruf ‘athaf + fi'il madhi اتفق."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "atas",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "مُقَاطَعَةِ",
+  "arti": "memboikot",
+  "penjelasan": "Masdar dari قاطع."
+ },
+ {
+  "kataarab": "بَنِي هَاشِمٍ",
+  "arti": "Bani Hasyim",
+  "penjelasan": "Nama klan keturunan Hasyim."
+ },
+ {
+  "kataarab": "وَبَنِي الْمُطَّلِبِ",
+  "arti": "dan Bani al-Muththalib",
+  "penjelasan": "Klan lain dari keturunan Abdul Muththalib."
+ },
+ {
+  "kataarab": "مُقَاطَعَةً",
+  "arti": "pemboikotan",
+  "penjelasan": "Masdar sebagai penegasan tindakan."
+ },
+ {
+  "kataarab": "تَامَّةً",
+  "arti": "total",
+  "penjelasan": "Sifat yang menunjukkan boikot penuh."
+ },
+ {
+  "kataarab": "فَلَا",
+  "arti": "maka tidak",
+  "penjelasan": "Fa akibat + لا penafian."
+ },
+ {
+  "kataarab": "يَتَزَوَّجُونَ",
+  "arti": "mereka menikah",
+  "penjelasan": "Fi'il mudhari dari تزوج."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "dari",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "نِسَائِهِمْ",
+  "arti": "perempuan mereka",
+  "penjelasan": "Jamak dari امرأة dengan dhamir mereka."
+ },
+ {
+  "kataarab": "وَلَا يَبِيعُونَ",
+  "arti": "dan tidak menjual",
+  "penjelasan": "Huruf ‘athaf + fi'il mudhari dari باع."
+ },
+ {
+  "kataarab": "لَهُمْ",
+  "arti": "kepada mereka",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "وَلَا يَشْتَرُونَ",
+  "arti": "dan tidak membeli",
+  "penjelasan": "Fi'il mudhari dari اشترى."
+ },
+ {
+  "kataarab": "مِنْهُمْ",
+  "arti": "dari mereka",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "وَلَا يُخَالِطُونَهُمْ",
+  "arti": "dan tidak bergaul dengan mereka",
+  "penjelasan": "Fi'il mudhari dari خالط + dhamir objek."
+ },
+ {
+  "kataarab": "وَلَا يَقْبَلُونَ",
+  "arti": "dan tidak menerima",
+  "penjelasan": "Fi'il mudhari dari قبل."
+ },
+ {
+  "kataarab": "مِنْهُمْ",
+  "arti": "dari mereka",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "صُلْحًا",
+  "arti": "perdamaian",
+  "penjelasan": "Isim sebagai objek penerimaan."
+ },
+ {
+  "kataarab": "وَلَا تَأْخُذُهُمْ",
+  "arti": "dan tidak mengambil mereka",
+  "penjelasan": "Fi'il mudhari dari أخذ."
+ },
+ {
+  "kataarab": "بِهِمْ",
+  "arti": "terhadap mereka",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "رَأْفَةٌ",
+  "arti": "belas kasihan",
+  "penjelasan": "Isim berarti rasa iba atau belas kasihan."
+ },
+ {
+  "kataarab": "حَتَّى",
+  "arti": "sampai",
+  "penjelasan": "Huruf ghayah yang menunjukkan batas."
+ },
+ {
+  "kataarab": "يُسَلِّمُوا",
+  "arti": "mereka menyerahkan",
+  "penjelasan": "Fi'il mudhari dari سلّم."
+ },
+ {
+  "kataarab": "رَسُولَ اللَّهِ",
+  "arti": "Rasul Allah",
+  "penjelasan": "Gelar Nabi Muhammad."
+ },
+ {
+  "kataarab": "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+  "arti": "semoga Allah memberi rahmat dan keselamatan kepadanya",
+  "penjelasan": "Kalimat doa penghormatan kepada Nabi."
+ },
+ {
+  "kataarab": "لِلْقَتْلِ",
+  "arti": "untuk dibunuh",
+  "penjelasan": "Huruf jar ل + kata قتل berarti pembunuhan."
+ },
+ {
+  "kataarab": "سَجَّلَ",
+  "arti": "mencatat",
+  "penjelasan": "Fi'il madhi dari سجّل yang berarti menulis atau merekam secara resmi."
+ },
+ {
+  "kataarab": "زُعَمَاءُ",
+  "arti": "para pemimpin",
+  "penjelasan": "Jamak dari زعيم."
+ },
+ {
+  "kataarab": "قُرَيْشٍ",
+  "arti": "Quraisy",
+  "penjelasan": "Kabilah besar di Mekkah."
+ },
+ {
+  "kataarab": "هَذِهِ",
+  "arti": "ini",
+  "penjelasan": "Isim isyarah untuk benda dekat feminin."
+ },
+ {
+  "kataarab": "الْقَرَارَاتِ",
+  "arti": "keputusan-keputusan",
+  "penjelasan": "Jamak dari قرار."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "dalam",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "صَحِيفَةٍ",
+  "arti": "lembaran",
+  "penjelasan": "Dokumen tertulis atau piagam."
+ },
+ {
+  "kataarab": "عُلِّقَتْ",
+  "arti": "digantung",
+  "penjelasan": "Fi'il madhi majhul dari علّق."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "جَوْفِ",
+  "arti": "bagian dalam",
+  "penjelasan": "Isim berarti bagian tengah atau dalam."
+ },
+ {
+  "kataarab": "الْكَعْبَةِ",
+  "arti": "Ka'bah",
+  "penjelasan": "Bangunan suci di Mekkah."
+ },
+ {
+  "kataarab": "تَأْكِيدًا",
+  "arti": "sebagai penegasan",
+  "penjelasan": "Masdar dari أكد menunjukkan penguatan."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "atas",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "احْتِرَامِهَا",
+  "arti": "penghormatannya",
+  "penjelasan": "Masdar dari احترم + dhamir kembali pada dokumen."
+ },
+ {
+  "kataarab": "وَلِيَكُونَ",
+  "arti": "dan agar menjadi",
+  "penjelasan": "Huruf ‘athaf + fi'il mudhari dari كان."
+ },
+ {
+  "kataarab": "الْخُرُوجُ",
+  "arti": "keluar atau melanggar",
+  "penjelasan": "Masdar dari خرج."
+ },
+ {
+  "kataarab": "عَلَيْهَا",
+  "arti": "terhadapnya",
+  "penjelasan": "Huruf jar + dhamir kembali pada piagam."
+ },
+ {
+  "kataarab": "أَوْ",
+  "arti": "atau",
+  "penjelasan": "Huruf pilihan."
+ },
+ {
+  "kataarab": "عَدَمُ",
+  "arti": "tidak adanya",
+  "penjelasan": "Masdar dari عدم."
+ },
+ {
+  "kataarab": "الْوَفَاءِ",
+  "arti": "menepati janji",
+  "penjelasan": "Masdar dari وفى."
+ },
+ {
+  "kataarab": "بِهَا",
+  "arti": "terhadapnya",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "بِمَثَابَةِ",
+  "arti": "sebagai",
+  "penjelasan": "Kata yang berarti setara dengan atau dianggap sebagai."
+ },
+ {
+  "kataarab": "الْخُرُوجِ",
+  "arti": "keluar atau pelanggaran",
+  "penjelasan": "Masdar dari خرج."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "terhadap",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "عَقِيدَتِهِمُ",
+  "arti": "keyakinan mereka",
+  "penjelasan": "Isim عقيدة + dhamir mereka."
+ },
+ {
+  "kataarab": "الْمَوْرُوثَةِ",
+  "arti": "yang diwarisi",
+  "penjelasan": "Isim maf'ul dari ورث."
+ },
+ {
+  "kataarab": "فَانْتَقَلَ",
+  "arti": "maka berpindah",
+  "penjelasan": "Fi'il madhi dari انتقل."
+ },
+ {
+  "kataarab": "بَنُو هَاشِمٍ",
+  "arti": "Bani Hasyim",
+  "penjelasan": "Klan keluarga Nabi."
+ },
+ {
+  "kataarab": "وَبَنُو الْمُطَّلِبِ",
+  "arti": "dan Bani al Muththalib",
+  "penjelasan": "Klan kerabat Nabi lainnya."
+ },
+ {
+  "kataarab": "وَمَعَهُمُ",
+  "arti": "dan bersama mereka",
+  "penjelasan": "Huruf ‘athaf + ظرف مع + dhamir."
+ },
+ {
+  "kataarab": "الرَّسُولُ",
+  "arti": "Rasul",
+  "penjelasan": "Nabi Muhammad."
+ },
+ {
+  "kataarab": "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+  "arti": "semoga Allah memberi rahmat dan keselamatan kepadanya",
+  "penjelasan": "Doa penghormatan."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "ke",
+  "penjelasan": "Huruf jar arah."
+ },
+ {
+  "kataarab": "شِعْبِ",
+  "arti": "lembah atau celah gunung",
+  "penjelasan": "Kata yang berarti lembah sempit."
+ },
+ {
+  "kataarab": "أَبِي طَالِبٍ",
+  "arti": "Abu Thalib",
+  "penjelasan": "Paman Nabi Muhammad."
+ },
+ {
+  "kataarab": "وَهُوَ",
+  "arti": "dan itu",
+  "penjelasan": "Dhamir untuk penjelasan."
+ },
+ {
+  "kataarab": "وَادٍ",
+  "arti": "lembah",
+  "penjelasan": "Isim yang berarti lembah."
+ },
+ {
+  "kataarab": "صَغِيرٌ",
+  "arti": "kecil",
+  "penjelasan": "Sifat bagi lembah."
+ },
+ {
+  "kataarab": "خَارِجَ",
+  "arti": "di luar",
+  "penjelasan": "Zharaf tempat."
+ },
+ {
+  "kataarab": "مَكَّةَ",
+  "arti": "Mekkah",
+  "penjelasan": "Kota suci di Hijaz."
+ },
+ {
+  "kataarab": "وَدَامَتِ",
+  "arti": "dan berlangsung",
+  "penjelasan": "Fi'il madhi dari دام."
+ },
+ {
+  "kataarab": "الْمُقَاطَعَةُ",
+  "arti": "pemboikotan",
+  "penjelasan": "Isim yang menjadi subjek."
+ },
+ {
+  "kataarab": "ثَلَاثَةَ",
+  "arti": "tiga",
+  "penjelasan": "Bilangan."
+ },
+ {
+  "kataarab": "أَعْوَامٍ",
+  "arti": "tahun-tahun",
+  "penjelasan": "Jamak dari عام."
+ },
+ {
+  "kataarab": "قَاسَى",
+  "arti": "merasakan penderitaan",
+  "penjelasan": "Fi'il madhi dari قاسى."
+ },
+ {
+  "kataarab": "بَنُو هَاشِمٍ",
+  "arti": "Bani Hasyim",
+  "penjelasan": "Klan Nabi."
+ },
+ {
+  "kataarab": "وَبَنُو الْمُطَّلِبِ",
+  "arti": "dan Bani al Muththalib",
+  "penjelasan": "Klan kerabat Nabi."
+ },
+ {
+  "kataarab": "فِيهَا",
+  "arti": "di dalamnya",
+  "penjelasan": "Huruf jar + dhamir kembali pada masa boikot."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "dari",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "الْجَهْدِ",
+  "arti": "kesulitan",
+  "penjelasan": "Isim berarti keletihan berat."
+ },
+ {
+  "kataarab": "وَالْعَنَتِ",
+  "arti": "dan penderitaan",
+  "penjelasan": "Isim yang berarti kesusahan besar."
+ },
+ {
+  "kataarab": "شَيْئًا",
+  "arti": "sesuatu",
+  "penjelasan": "Isim untuk menunjukkan kadar."
+ },
+ {
+  "kataarab": "كَثِيرًا",
+  "arti": "banyak",
+  "penjelasan": "Sifat yang menjelaskan jumlah."
+ },
+ {
+  "kataarab": "حَتَّى",
+  "arti": "sampai",
+  "penjelasan": "Huruf batas."
+ },
+ {
+  "kataarab": "أَكَلُوا",
+  "arti": "mereka makan",
+  "penjelasan": "Fi'il madhi dari أكل."
+ },
+ {
+  "kataarab": "أَوْرَاقَ",
+  "arti": "daun-daun",
+  "penjelasan": "Jamak dari ورقة."
+ },
+ {
+  "kataarab": "الشَّجَرِ",
+  "arti": "pohon",
+  "penjelasan": "Mudhaf ilaih dari أوراق."
+ },
+ {
+  "kataarab": "وَلَكِنَّهُمْ",
+  "arti": "tetapi mereka",
+  "penjelasan": "Huruf istidrak لكن + dhamir."
+ },
+ {
+  "kataarab": "صَبَرُوا",
+  "arti": "mereka bersabar",
+  "penjelasan": "Fi'il madhi dari صبر."
+ },
+ {
+  "kataarab": "وَاحْتَمَلُوا",
+  "arti": "dan mereka menanggung",
+  "penjelasan": "Fi'il madhi dari احتمل."
+ },
+ {
+  "kataarab": "وَلَمْ تَلِنْ",
+  "arti": "dan tidak melemah",
+  "penjelasan": "Lam jazm + fi'il mudhari dari لان."
+ },
+ {
+  "kataarab": "عَزَائِمُهُمْ",
+  "arti": "tekad mereka",
+  "penjelasan": "Jamak dari عزيمة."
+ },
+ {
+  "kataarab": "وَجَاءَهُمُ",
+  "arti": "dan datang kepada mereka",
+  "penjelasan": "Fi'il madhi جاء + dhamir objek."
+ },
+ {
+  "kataarab": "الْفَرَجُ",
+  "arti": "kelegaan",
+  "penjelasan": "Isim berarti pertolongan atau kelapangan setelah kesulitan."
+ },
+ {
+  "kataarab": "فَقَدْ",
+  "arti": "maka sungguh",
+  "penjelasan": "Huruf penegas peristiwa lampau."
+ },
+ {
+  "kataarab": "رَأَى",
+  "arti": "melihat",
+  "penjelasan": "Fi'il madhi dari رأى."
+ },
+ {
+  "kataarab": "بَعْضُ",
+  "arti": "sebagian",
+  "penjelasan": "Isim yang berarti sebagian dari kelompok."
+ },
+ {
+  "kataarab": "زُعَمَاءِ",
+  "arti": "para pemimpin",
+  "penjelasan": "Jamak dari زعيم."
+ },
+ {
+  "kataarab": "قُرَيْشٍ",
+  "arti": "Quraisy",
+  "penjelasan": "Kabilah di Mekkah."
+ },
+ {
+  "kataarab": "هَذِهِ",
+  "arti": "ini",
+  "penjelasan": "Isim isyarah."
+ },
+ {
+  "kataarab": "الْمُقَاطَعَةَ",
+  "arti": "pemboikotan",
+  "penjelasan": "Isim objek."
+ },
+ {
+  "kataarab": "ظُلْمًا",
+  "arti": "kezaliman",
+  "penjelasan": "Isim yang berarti ketidakadilan."
+ },
+ {
+  "kataarab": "لَا يَجُوزُ",
+  "arti": "tidak boleh",
+  "penjelasan": "Fi'il mudhari dari جاز berarti tidak dibenarkan."
+ },
+ {
+  "kataarab": "السُّكُوتُ",
+  "arti": "diam",
+  "penjelasan": "Masdar dari سكت."
+ },
+ {
+  "kataarab": "عَنْهُ",
+  "arti": "terhadapnya",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "وَشَقَّ",
+  "arti": "terasa berat",
+  "penjelasan": "Fi'il madhi dari شقّ."
+ },
+ {
+  "kataarab": "عَلَيْهِمْ",
+  "arti": "bagi mereka",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "مَا",
+  "arti": "apa yang",
+  "penjelasan": "Isim mausul."
+ },
+ {
+  "kataarab": "صَارَ",
+  "arti": "menjadi",
+  "penjelasan": "Fi'il madhi dari صار."
+ },
+ {
+  "kataarab": "إِلَيْهِ",
+  "arti": "kepadanya",
+  "penjelasan": "Huruf jar + dhamir."
+ },
+ {
+  "kataarab": "أَمْرُ",
+  "arti": "keadaan",
+  "penjelasan": "Isim yang berarti urusan atau kondisi."
+ },
+ {
+  "kataarab": "بَنِي هَاشِمٍ",
+  "arti": "Bani Hasyim",
+  "penjelasan": "Klan Nabi."
+ },
+ {
+  "kataarab": "وَبَنِي الْمُطَّلِبِ",
+  "arti": "dan Bani al Muththalib",
+  "penjelasan": "Kerabat Nabi."
+ },
+ {
+  "kataarab": "وَهَؤُلَاءِ",
+  "arti": "dan mereka ini",
+  "penjelasan": "Isim isyarah jamak."
+ },
+ {
+  "kataarab": "الْجَمَاعَةُ",
+  "arti": "kelompok",
+  "penjelasan": "Isim yang berarti sekelompok orang."
+ },
+ {
+  "kataarab": "هُمْ",
+  "arti": "mereka",
+  "penjelasan": "Dhamir jamak."
+ },
+ {
+  "kataarab": "هِشَامُ بْنُ عَمْرٍو",
+  "arti": "Hisham bin Amr",
+  "penjelasan": "Tokoh Quraisy yang menentang boikot."
+ },
+ {
+  "kataarab": "وَزُهَيْرُ بْنُ أُمَيَّةَ",
+  "arti": "Zuhair bin Umayyah",
+  "penjelasan": "Tokoh Quraisy yang membantu mengakhiri boikot."
+ },
+ {
+  "kataarab": "وَالْمُطْعِمُ بْنُ عَدِيٍّ",
+  "arti": "al Muth'im bin Adi",
+  "penjelasan": "Pemimpin Quraisy yang memulai penghancuran piagam."
+ },
+ {
+  "kataarab": "وَأَبُو الْبُحْتُرِيِّ بْنُ هِشَامٍ",
+  "arti": "Abu al Buhturi bin Hisham",
+  "penjelasan": "Tokoh Quraisy yang menentang pemboikotan."
+ },
+ {
+  "kataarab": "وَزَمْعَةُ بْنُ الْأَسْوَدِ",
+  "arti": "Zam'ah bin al Aswad",
+  "penjelasan": "Tokoh Quraisy yang ikut membatalkan boikot."
+ },
+ {
+  "kataarab": "فَدَعَا",
+  "arti": "maka mengajak",
+  "penjelasan": "Fi'il madhi dari دعا."
+ },
+ {
+  "kataarab": "هَؤُلَاءِ",
+  "arti": "mereka ini",
+  "penjelasan": "Isim isyarah jamak."
+ },
+ {
+  "kataarab": "الزُّعَمَاءُ",
+  "arti": "para pemimpin",
+  "penjelasan": "Jamak dari زعيم."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "kepada",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "نَقْضِ",
+  "arti": "membatalkan",
+  "penjelasan": "Masdar dari نقض."
+ },
+ {
+  "kataarab": "الصَّحِيفَةِ",
+  "arti": "piagam",
+  "penjelasan": "Dokumen tertulis keputusan boikot."
+ },
+ {
+  "kataarab": "الظَّالِمَةِ",
+  "arti": "yang zalim",
+  "penjelasan": "Sifat bagi piagam."
+ },
+ {
+  "kataarab": "وَقَامَ",
+  "arti": "dan berdiri",
+  "penjelasan": "Fi'il madhi dari قام."
+ },
+ {
+  "kataarab": "الْمُطْعِمُ بْنُ عَدِيٍّ",
+  "arti": "al Muth'im bin Adi",
+  "penjelasan": "Tokoh Quraisy yang merobek piagam."
+ },
+ {
+  "kataarab": "يَشُقُّهَا",
+  "arti": "merobeknya",
+  "penjelasan": "Fi'il mudhari dari شق + dhamir kembali pada piagam."
+ },
+ {
+  "kataarab": "وَبِذَلِكَ",
+  "arti": "dan dengan itu",
+  "penjelasan": "Huruf ‘athaf + jar."
+ },
+ {
+  "kataarab": "انْتَهَتِ",
+  "arti": "berakhir",
+  "penjelasan": "Fi'il madhi dari انتهى."
+ },
+ {
+  "kataarab": "الْمُقَاطَعَةُ",
+  "arti": "pemboikotan",
+  "penjelasan": "Subjek kalimat."
+ },
+ {
+  "kataarab": "وَعَادَ",
+  "arti": "dan kembali",
+  "penjelasan": "Fi'il madhi dari عاد."
+ },
+ {
+  "kataarab": "بَنُو هَاشِمٍ",
+  "arti": "Bani Hasyim",
+  "penjelasan": "Klan Nabi."
+ },
+ {
+  "kataarab": "وَبَنُو الْمُطَّلِبِ",
+  "arti": "dan Bani al Muththalib",
+  "penjelasan": "Kerabat Nabi."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "ke",
+  "penjelasan": "Huruf jar arah."
+ },
+ {
+  "kataarab": "أَحْيَائِهِمْ",
+  "arti": "pemukiman mereka",
+  "penjelasan": "Jamak dari حيّ berarti kawasan tempat tinggal."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "مَكَّةَ",
+  "arti": "Mekkah",
+  "penjelasan": "Kota suci di Hijaz."
+ },
+ {
+  "kataarab": "يَخْتَلِطُونَ",
+  "arti": "mereka bergaul",
+  "penjelasan": "Fi'il mudhari dari اختلط."
+ },
+ {
+  "kataarab": "بِالنَّاسِ",
+  "arti": "dengan manusia",
+  "penjelasan": "Huruf jar + isim الناس."
+ },
+ {
+  "kataarab": "وَاسْتَأْنَفَ",
+  "arti": "dan melanjutkan kembali",
+  "penjelasan": "Fi'il madhi dari استأنف."
+ },
+ {
+  "kataarab": "الرَّسُولُ",
+  "arti": "Rasul",
+  "penjelasan": "Nabi Muhammad."
+ },
+ {
+  "kataarab": "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+  "arti": "semoga Allah memberi rahmat dan keselamatan kepadanya",
+  "penjelasan": "Doa penghormatan kepada Nabi."
+ },
+ {
+  "kataarab": "دَعْوَتَهُ",
+  "arti": "dakwahnya",
+  "penjelasan": "Isim دعوة + dhamir kembali kepada Nabi."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "مَكَّةَ",
+  "arti": "Mekkah",
+  "penjelasan": "Kota tempat dakwah berlangsung."
+ },
+ {
+  "kataarab": "بَيْنَ",
+  "arti": "di antara",
+  "penjelasan": "Zharaf tempat."
+ },
+ {
+  "kataarab": "أَهْلِهَا",
+  "arti": "penduduknya",
+  "penjelasan": "Isim أهل + dhamir kembali pada Mekkah."
+ },
+ {
+  "kataarab": "وَمَنْ",
+  "arti": "dan siapa saja yang",
+  "penjelasan": "Isim mausul untuk orang."
+ },
+ {
+  "kataarab": "يَفِدُ",
+  "arti": "datang",
+  "penjelasan": "Fi'il mudhari dari وفد berarti datang berkunjung."
+ },
+ {
+  "kataarab": "إِلَيْهَا",
+  "arti": "kepadanya",
+  "penjelasan": "Huruf jar + dhamir kembali ke Mekkah."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "dari",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "الْقَبَائِلِ",
+  "arti": "kabilah-kabilah",
+  "penjelasan": "Jamak dari قبيلة."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "pada",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "مَوْسِمِ",
+  "arti": "musim",
+  "penjelasan": "Isim yang menunjukkan waktu tertentu."
+ },
+ {
+  "kataarab": "الْحَجِّ",
+  "arti": "haji",
+  "penjelasan": "Ibadah haji."
+ },
+ {
+  "kataarab": "وَفِي",
+  "arti": "dan pada",
+  "penjelasan": "Huruf ‘athaf + jar."
+ },
+ {
+  "kataarab": "غَيْرِهِ",
+  "arti": "selainnya",
+  "penjelasan": "Isim غير + dhamir kembali pada musim haji."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "dari",
+  "penjelasan": "Huruf jar."
+ },
+ {
+  "kataarab": "الْمُنَاسَبَاتِ",
+  "arti": "kesempatan atau pertemuan",
+  "penjelasan": "Jamak dari مناسبة yang berarti acara atau momen berkumpul."
+ }
+]

@@ -1,0 +1,799 @@
+[
+
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda tunggal yang berarti pemerintahan atau kekuasaan politik"
+ },
+ {
+  "kataarab": "الْعُثْمَانِيَّةُ",
+  "arti": "arti: Utsmaniyah",
+  "penjelasan": "penjelasan: kata sifat nisbah yang menunjukkan dinasti atau negara yang dinisbatkan kepada عثمان"
+ },
+ {
+  "kataarab": "يُوجَدُ",
+  "arti": "arti: terdapat",
+  "penjelasan": "penjelasan: kata kerja mudhari’ yang berarti ada atau ditemukan"
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar yang menunjukkan tempat atau konteks"
+ },
+ {
+  "kataarab": "تَارِيخِنَا",
+  "arti": "arti: sejarah kita",
+  "penjelasan": "penjelasan: kata benda + dhamir kepemilikan jamak pertama"
+ },
+ {
+  "kataarab": "الْإِسْلَامِيِّ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan kata تاريخ"
+ },
+ {
+  "kataarab": "دَوْلَةٌ",
+  "arti": "arti: sebuah negara",
+  "penjelasan": "penjelasan: kata benda yang menjadi mubtada muakhkhar dalam kalimat"
+ },
+ {
+  "kataarab": "قَامَتْ",
+  "arti": "arti: berdiri",
+  "penjelasan": "penjelasan: kata kerja lampau yang berarti muncul atau berdiri."
+ },
+ {
+  "kataarab": "بِدَوْرٍ",
+  "arti": "arti: dengan peran",
+  "penjelasan": "penjelasan: huruf jar + kata benda yang berarti fungsi atau peran."
+ },
+ {
+  "kataarab": "كَبِيرٍ",
+  "arti": "arti: besar",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan kata دور."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: dalam",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "خِدْمَةِ",
+  "arti": "arti: pelayanan",
+  "penjelasan": "penjelasan: kata benda masdar yang berarti melayani."
+ },
+ {
+  "kataarab": "الْإِسْلَامِ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata benda majrur sebagai mudhaf ilaih."
+ },
+ {
+  "kataarab": "وَالْمُسْلِمِينَ",
+  "arti": "arti: dan kaum muslim",
+  "penjelasan": "penjelasan: kata benda jamak dengan huruf sambung."
+ },
+ {
+  "kataarab": "هِيَ",
+  "arti": "arti: yaitu",
+  "penjelasan": "penjelasan: kata ganti yang berfungsi menjelaskan subjek"
+ },
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda sebagai khabar bagi هي"
+ },
+ {
+  "kataarab": "الْعُثْمَانِيَّةُ",
+  "arti": "arti: Utsmaniyah",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan الدولة."
+ },
+ {
+  "kataarab": "الَّتِي",
+  "arti": "arti: yang",
+  "penjelasan": "penjelasan: isim maushul yang menghubungkan dengan kalimat berikutnya"
+ },
+ {
+  "kataarab": "ظَلَّتْ",
+  "arti": "arti: tetap",
+  "penjelasan": "penjelasan: kata kerja ناقص yang menunjukkan keberlangsungan."
+ },
+ {
+  "kataarab": "قَائِمَةً",
+  "arti": "arti: berdiri",
+  "penjelasan": "penjelasan: kata sifat sebagai khabar bagi ظلت."
+ },
+ {
+  "kataarab": "مُدَّةَ",
+  "arti": "arti: selama",
+  "penjelasan": "penjelasan: kata benda yang menunjukkan durasi waktu."
+ },
+ {
+  "kataarab": "سِتَّةِ",
+  "arti": "arti: enam",
+  "penjelasan": "penjelasan: bilangan."
+ },
+ {
+  "kataarab": "قُرُونٍ",
+  "arti": "arti: abad",
+  "penjelasan": "penjelasan: kata benda jamak dari قرن."
+ },
+ {
+  "kataarab": "وَالْعُثْمَانِيُّونَ",
+  "arti": "arti: orang-orang Utsmaniyah",
+  "penjelasan": "penjelasan: kata benda jamak nisbah kepada عثمان."
+ },
+ {
+  "kataarab": "أَتْرَاكٌ",
+  "arti": "arti: bangsa Turki",
+  "penjelasan": "penjelasan: kata benda jamak dari تركي."
+ },
+ {
+  "kataarab": "مَوْطِنُهُمْ",
+  "arti": "arti: tanah asal mereka",
+  "penjelasan": "penjelasan: kata benda + dhamir kepemilikan."
+ },
+ {
+  "kataarab": "الْأَصْلِيُّ",
+  "arti": "arti: asli",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan موطن."
+ },
+ {
+  "kataarab": "بِلَادُ",
+  "arti": "arti: negeri-negeri",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "التُّرْكِسْتَانِ",
+  "arti": "arti: Turkistan",
+  "penjelasan": "penjelasan: nama wilayah di Asia Tengah"
+ },
+ {
+  "kataarab": "وَقَدْ",
+  "arti": "arti: dan sungguh",
+  "penjelasan": "penjelasan: huruf penegas pada kalimat lampau."
+ },
+ {
+  "kataarab": "أَجْبَرَتْهُمْ",
+  "arti": "arti: memaksa mereka",
+  "penjelasan": "penjelasan: kata kerja lampau + dhamir objek."
+ },
+ {
+  "kataarab": "غَارَاتُ",
+  "arti": "arti: serangan-serangan",
+  "penjelasan": "penjelasan: kata benda jamak dari غارة."
+ },
+ {
+  "kataarab": "الْمَغُولِ",
+  "arti": "arti: bangsa Mongol",
+  "penjelasan": "penjelasan: kata benda majrur sebagai pelaku serangan."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: untuk",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْهِجْرَةِ",
+  "arti": "arti: migrasi",
+  "penjelasan": "penjelasan: kata benda masdar dari هاجر."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "arti: ke",
+  "penjelasan": "penjelasan: huruf jar arah."
+ },
+ {
+  "kataarab": "الْغَرْبِ",
+  "arti": "arti: barat",
+  "penjelasan": "penjelasan: kata benda tempat."
+ },
+ {
+  "kataarab": "حَيْثُ",
+  "arti": "arti: tempat di mana",
+  "penjelasan": "penjelasan: kata keterangan tempat."
+ },
+ {
+  "kataarab": "اسْتَقَرُّوا",
+  "arti": "arti: mereka menetap",
+  "penjelasan": "penjelasan: kata kerja lampau jamak."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "آسِيَا",
+  "arti": "arti: Asia",
+  "penjelasan": "penjelasan: nama benua."
+ },
+ {
+  "kataarab": "الصُّغْرَى",
+  "arti": "arti: kecil",
+  "penjelasan": "penjelasan: kata sifat yang berarti Asia Kecil."
+ },
+ {
+  "kataarab": "تُرْكِيَا",
+  "arti": "arti: Turki",
+  "penjelasan": "penjelasan: nama negara modern."
+ },
+ {
+  "kataarab": "الآنَ",
+  "arti": "arti: sekarang",
+  "penjelasan": "penjelasan: kata keterangan waktu."
+ },
+ {
+  "kataarab": "وَهُنَاكَ",
+  "arti": "arti: dan di sana",
+  "penjelasan": "penjelasan: kata keterangan tempat."
+ },
+ {
+  "kataarab": "سَاعَدُوا",
+  "arti": "arti: mereka membantu",
+  "penjelasan": "penjelasan: kata kerja lampau jamak."
+ },
+ {
+  "kataarab": "عَلَاءَ",
+  "arti": "arti: Alauddin",
+  "penjelasan": "penjelasan: bagian nama tokoh."
+ },
+ {
+  "kataarab": "الدِّينِ",
+  "arti": "arti: agama",
+  "penjelasan": "penjelasan: bagian nama dalam gelar tokoh."
+ },
+ {
+  "kataarab": "الْأَوَّلَ",
+  "arti": "arti: pertama",
+  "penjelasan": "penjelasan: kata bilangan urutan."
+ },
+ {
+  "kataarab": "سُلْطَانَ",
+  "arti": "arti: sultan",
+  "penjelasan": "penjelasan: gelar penguasa."
+ },
+ {
+  "kataarab": "السَّلَاجِقَةِ",
+  "arti": "arti: Seljuk",
+  "penjelasan": "penjelasan: nama dinasti Turki Muslim."
+ },
+ {
+  "kataarab": "الَّذِي",
+  "arti": "arti: yang",
+  "penjelasan": "penjelasan: isim maushul."
+ },
+ {
+  "kataarab": "كَانَ",
+  "arti": "arti: adalah",
+  "penjelasan": "penjelasan: kata kerja ناقص."
+ },
+ {
+  "kataarab": "يَحْكُمُ",
+  "arti": "arti: memerintah",
+  "penjelasan": "penjelasan: kata kerja mudhari’."
+ },
+ {
+  "kataarab": "آسِيَا",
+  "arti": "arti: Asia",
+  "penjelasan": "penjelasan: nama wilayah."
+ },
+ {
+  "kataarab": "الصُّغْرَى",
+  "arti": "arti: kecil",
+  "penjelasan": "penjelasan: penjelas wilayah Asia Kecil."
+ },
+ {
+  "kataarab": "ضِدَّ",
+  "arti": "arti: melawan",
+  "penjelasan": "penjelasan: kata depan."
+ },
+ {
+  "kataarab": "الرُّومِ",
+  "arti": "arti: bangsa Romawi",
+  "penjelasan": "penjelasan: kata benda yang merujuk Bizantium."
+ },
+ {
+  "kataarab": "الْبِيزَنْطِيِّينَ",
+  "arti": "arti: Bizantium",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan bangsa Romawi Timur."
+ },
+ {
+  "kataarab": "فَعَيَّنَ",
+  "arti": "arti: maka ia menunjuk",
+  "penjelasan": "penjelasan: kata kerja lampau dengan huruf akibat ف."
+ },
+ {
+  "kataarab": "زَعِيمَ",
+  "arti": "arti: pemimpin",
+  "penjelasan": "penjelasan: kata benda objek."
+ },
+ {
+  "kataarab": "الْأَتْرَاكِ",
+  "arti": "arti: bangsa Turki",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "أَرْطُغْرُلَ",
+  "arti": "arti: Ertugrul",
+  "penjelasan": "penjelasan: nama pemimpin Turki."
+ },
+ {
+  "kataarab": "حَاكِمًا",
+  "arti": "arti: sebagai gubernur",
+  "penjelasan": "penjelasan: kata benda yang menunjukkan jabatan."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: atas",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "مُقَاطَعَةِ",
+  "arti": "arti: wilayah provinsi",
+  "penjelasan": "penjelasan: kata benda administratif."
+ },
+ {
+  "kataarab": "أَسْكِي",
+  "arti": "arti: Eski",
+  "penjelasan": "penjelasan: bagian nama tempat di Turki."
+ },
+ {
+  "kataarab": "شَهْر",
+  "arti": "arti: kota",
+  "penjelasan": "penjelasan: bagian nama kota Eskişehir."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْقِسْمِ",
+  "arti": "arti: bagian",
+  "penjelasan": "penjelasan: kata benda tempat."
+ },
+ {
+  "kataarab": "الْجَنُوبِيِّ",
+  "arti": "arti: selatan",
+  "penjelasan": "penjelasan: kata sifat arah."
+ },
+ {
+  "kataarab": "الشَّرْقِيِّ",
+  "arti": "arti: timur",
+  "penjelasan": "penjelasan: kata sifat arah tambahan."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْأَنَاضُولِ",
+  "arti": "arti: Anatolia",
+  "penjelasan": "penjelasan: wilayah Asia Kecil di Turki."
+ },
+ {
+  "kataarab": "بِتُرْكِيَا",
+  "arti": "arti: di Turki",
+  "penjelasan": "penjelasan: huruf jar + nama negara."
+ },
+ {
+  "kataarab": "وَهِيَ",
+  "arti": "arti: dan itu",
+  "penjelasan": "penjelasan: kata ganti penjelas."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "مَكَانِ",
+  "arti": "arti: tempat",
+  "penjelasan": "penjelasan: kata benda lokasi."
+ },
+ {
+  "kataarab": "مَدِينَةِ",
+  "arti": "arti: kota",
+  "penjelasan": "penjelasan: kata benda."
+ },
+ {
+  "kataarab": "دُورِلِيُونَ",
+  "arti": "arti: Dorylaeum",
+  "penjelasan": "penjelasan: nama kota Bizantium kuno."
+ },
+ {
+  "kataarab": "الْبِيزَنْطِيَّةِ",
+  "arti": "arti: Bizantium",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan kota."
+ },
+ {
+  "kataarab": "الَّتِي",
+  "arti": "arti: yang",
+  "penjelasan": "penjelasan: isim maushul."
+ },
+ {
+  "kataarab": "عَرَفَهَا",
+  "arti": "arti: mengenalnya",
+  "penjelasan": "penjelasan: kata kerja lampau + dhamir objek."
+ },
+ {
+  "kataarab": "الْمُسْلِمُونَ",
+  "arti": "arti: kaum muslim",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "بِاسْمِ",
+  "arti": "arti: dengan nama",
+  "penjelasan": "penjelasan: huruf jar + kata benda."
+ },
+ {
+  "kataarab": "دُرُولِيَّةَ",
+  "arti": "arti: Druliya",
+  "penjelasan": "penjelasan: nama Arab untuk kota tersebut."
+ },
+ {
+  "kataarab": "وَكَانَتْ",
+  "arti": "arti: dan menjadi",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "هَذِهِ",
+  "arti": "arti: ini",
+  "penjelasan": "penjelasan: kata tunjuk."
+ },
+ {
+  "kataarab": "الْوِلَايَةُ",
+  "arti": "arti: wilayah",
+  "penjelasan": "penjelasan: kata benda administratif."
+ },
+ {
+  "kataarab": "نَوَاةَ",
+  "arti": "arti: inti",
+  "penjelasan": "penjelasan: kata benda yang berarti dasar atau awal."
+ },
+ {
+  "kataarab": "تَأْسِيسِ",
+  "arti": "arti: pendirian",
+  "penjelasan": "penjelasan: masdar dari أسس."
+ },
+ {
+  "kataarab": "الدَّوْلَةِ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda."
+ },
+ {
+  "kataarab": "الْعُثْمَانِيَّةِ",
+  "arti": "arti: Utsmaniyah",
+  "penjelasan": "penjelasan: kata sifat."
+ },
+ {
+  "kataarab": "بَعْدَ",
+  "arti": "arti: setelah",
+  "penjelasan": "penjelasan: kata keterangan waktu."
+ },
+ {
+  "kataarab": "وَفَاةِ",
+  "arti": "arti: wafat",
+  "penjelasan": "penjelasan: kata benda masdar."
+ },
+ {
+  "kataarab": "أَرْطُغْرُلَ",
+  "arti": "arti: Ertugrul",
+  "penjelasan": "penjelasan: nama tokoh."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: pada",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "سَنَةِ",
+  "arti": "arti: tahun",
+  "penjelasan": "penjelasan: kata benda waktu."
+ },
+ {
+  "kataarab": "٦٩٩هـ",
+  "arti": "arti: tahun 699 hijriah",
+  "penjelasan": "penjelasan: angka tahun kalender hijriah."
+ },
+ {
+  "kataarab": "خَلَفَهُ",
+  "arti": "arti: menggantikannya",
+  "penjelasan": "penjelasan: kata kerja lampau + dhamir objek."
+ },
+ {
+  "kataarab": "ابْنُهُ",
+  "arti": "arti: anaknya",
+  "penjelasan": "penjelasan: kata benda + dhamir kepemilikan."
+ },
+ {
+  "kataarab": "عُثْمَانُ",
+  "arti": "arti: Utsman",
+  "penjelasan": "penjelasan: nama tokoh pendiri dinasti."
+ },
+ {
+  "kataarab": "الَّذِي",
+  "arti": "arti: yang",
+  "penjelasan": "penjelasan: isim maushul."
+ },
+ {
+  "kataarab": "تُنْسَبُ",
+  "arti": "arti: dinisbatkan",
+  "penjelasan": "penjelasan: kata kerja pasif mudhari’."
+ },
+ {
+  "kataarab": "إِلَيْهِ",
+  "arti": "arti: kepadanya",
+  "penjelasan": "penjelasan: huruf jar + dhamir."
+ },
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda subjek."
+ },
+ {
+  "kataarab": "الْعُثْمَانِيَّةُ",
+  "arti": "arti: Utsmaniyah",
+  "penjelasan": "penjelasan: kata sifat."
+ },
+ {
+  "kataarab": "السُّلْطَانُ",
+  "arti": "arti: sultan",
+  "penjelasan": "penjelasan: gelar penguasa."
+ },
+ {
+  "kataarab": "مُحَمَّدٌ",
+  "arti": "arti: Muhammad",
+  "penjelasan": "penjelasan: nama tokoh."
+ },
+ {
+  "kataarab": "الْفَاتِحُ",
+  "arti": "arti: sang penakluk",
+  "penjelasan": "penjelasan: gelar terkenal bagi Muhammad II."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "أَشْهَرِ",
+  "arti": "arti: paling terkenal",
+  "penjelasan": "penjelasan: bentuk tafdhil."
+ },
+ {
+  "kataarab": "سَلَاطِينِ",
+  "arti": "arti: para sultan",
+  "penjelasan": "penjelasan: jamak dari سلطان."
+ },
+ {
+  "kataarab": "الْعُثْمَانِيِّينَ",
+  "arti": "arti: bangsa Utsmani",
+  "penjelasan": "penjelasan: nisbah kepada dinasti عثمان."
+ },
+ {
+  "kataarab": "لِكَثْرَةِ",
+  "arti": "arti: karena banyaknya",
+  "penjelasan": "penjelasan: huruf jar + kata benda sebab."
+ },
+ {
+  "kataarab": "فُتُوحَاتِهِ",
+  "arti": "arti: penaklukannya",
+  "penjelasan": "penjelasan: kata benda jamak + dhamir."
+ },
+ {
+  "kataarab": "الْقُسْطَنْطِينِيَّةِ",
+  "arti": "arti: Konstantinopel",
+  "penjelasan": "penjelasan: nama kota Bizantium."
+ },
+ {
+  "kataarab": "تَوَغَّلَ",
+  "arti": "arti: masuk jauh",
+  "penjelasan": "penjelasan: kata kerja lampau yang berarti menembus jauh."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "أُورُبَّا",
+  "arti": "arti: Eropa",
+  "penjelasan": "penjelasan: nama benua."
+ },
+ {
+  "kataarab": "فَاتِحًا",
+  "arti": "arti: sebagai penakluk",
+  "penjelasan": "penjelasan: kata keadaan."
+ },
+ {
+  "kataarab": "وَنَاشِرًا",
+  "arti": "arti: dan penyebar",
+  "penjelasan": "penjelasan: kata keadaan dengan huruf sambung."
+ },
+ {
+  "kataarab": "الدِّينَ",
+  "arti": "arti: agama",
+  "penjelasan": "penjelasan: kata benda objek."
+ },
+ {
+  "kataarab": "الْإِسْلَامِيَّ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat bagi الدين."
+ },
+ {
+  "kataarab": "وَرَافِعًا",
+  "arti": "arti: dan pengangkat",
+  "penjelasan": "penjelasan: kata keadaan."
+ },
+ {
+  "kataarab": "لِلرَّايَةِ",
+  "arti": "arti: bagi bendera",
+  "penjelasan": "penjelasan: huruf jar + kata benda."
+ },
+ {
+  "kataarab": "الْإِسْلَامِيَّةِ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat."
+ },
+ {
+  "kataarab": "فَتَحَ",
+  "arti": "arti: membuka \/ menaklukkan",
+  "penjelasan": "penjelasan: kata kerja lampau yang berarti menaklukkan wilayah."
+ },
+ {
+  "kataarab": "بِلَادَ",
+  "arti": "arti: negeri-negeri",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الصِّرْبِ",
+  "arti": "arti: Serbia",
+  "penjelasan": "penjelasan: nama wilayah Balkan."
+ },
+ {
+  "kataarab": "وَالْبُوسْنَةَ",
+  "arti": "arti: Bosnia",
+  "penjelasan": "penjelasan: nama wilayah."
+ },
+ {
+  "kataarab": "وَالْهَرْسَكَ",
+  "arti": "arti: Herzegovina",
+  "penjelasan": "penjelasan: wilayah Balkan."
+ },
+ {
+  "kataarab": "كَمَا",
+  "arti": "arti: juga",
+  "penjelasan": "penjelasan: kata penghubung tambahan."
+ },
+ {
+  "kataarab": "فَتَحَ",
+  "arti": "arti: menaklukkan",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "أَلْبَانِيَا",
+  "arti": "arti: Albania",
+  "penjelasan": "penjelasan: nama negara Balkan."
+ },
+ {
+  "kataarab": "وَبُلْغَارِيَا",
+  "arti": "arti: Bulgaria",
+  "penjelasan": "penjelasan: nama negara Balkan."
+ },
+ {
+  "kataarab": "وَالْعَدِيدَ",
+  "arti": "arti: banyak",
+  "penjelasan": "penjelasan: kata benda penunjuk jumlah."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْمَوَانِئِ",
+  "arti": "arti: pelabuhan-pelabuhan",
+  "penjelasan": "penjelasan: kata benda jamak dari ميناء."
+ },
+ {
+  "kataarab": "الْوَاقِعَةِ",
+  "arti": "arti: yang terletak",
+  "penjelasan": "penjelasan: kata sifat."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الشَّاطِئِ",
+  "arti": "arti: pantai",
+  "penjelasan": "penjelasan: kata benda tempat."
+ },
+ {
+  "kataarab": "الْغَرْبِيِّ",
+  "arti": "arti: barat",
+  "penjelasan": "penjelasan: kata sifat arah."
+ },
+ {
+  "kataarab": "لِلْبَحْرِ",
+  "arti": "arti: bagi laut",
+  "penjelasan": "penjelasan: huruf jar + kata benda."
+ },
+ {
+  "kataarab": "الْأَسْوَدِ",
+  "arti": "arti: hitam",
+  "penjelasan": "penjelasan: kata sifat bagi البحر."
+ },
+ {
+  "kataarab": "إِضَافَةً",
+  "arti": "arti: tambahan",
+  "penjelasan": "penjelasan: kata keterangan penambahan."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "arti: kepada",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "عِدَّةِ",
+  "arti": "arti: beberapa",
+  "penjelasan": "penjelasan: kata penunjuk jumlah."
+ },
+ {
+  "kataarab": "جُزُرٍ",
+  "arti": "arti: pulau-pulau",
+  "penjelasan": "penjelasan: kata benda jamak dari جزيرة."
+ },
+ {
+  "kataarab": "يُونَانِيَّةٍ",
+  "arti": "arti: Yunani",
+  "penjelasan": "penjelasan: kata sifat yang menunjukkan asal wilayah."
+ },
+ {
+  "kataarab": "وَيُمَثِّلُ",
+  "arti": "arti: mewakili",
+  "penjelasan": "penjelasan: kata kerja mudhari’."
+ },
+ {
+  "kataarab": "عَهْدُ",
+  "arti": "arti: masa",
+  "penjelasan": "penjelasan: kata benda yang berarti periode pemerintahan."
+ },
+ {
+  "kataarab": "مُحَمَّدِ",
+  "arti": "arti: Muhammad",
+  "penjelasan": "penjelasan: nama tokoh."
+ },
+ {
+  "kataarab": "الْفَاتِحِ",
+  "arti": "arti: sang penakluk",
+  "penjelasan": "penjelasan: gelar bagi Muhammad II."
+ },
+ {
+  "kataarab": "ذُرْوَةَ",
+  "arti": "arti: puncak",
+  "penjelasan": "penjelasan: kata benda yang berarti tingkat tertinggi."
+ },
+ {
+  "kataarab": "الْفُتُوحِ",
+  "arti": "arti: penaklukan",
+  "penjelasan": "penjelasan: kata benda jamak dari فتح."
+ },
+ {
+  "kataarab": "الْعُثْمَانِيَّةِ",
+  "arti": "arti: Utsmaniyah",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan jenis penaklukan."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "أُورُبَّا",
+  "arti": "arti: Eropa",
+  "penjelasan": "penjelasan: nama benua."
+ }
+  
+]

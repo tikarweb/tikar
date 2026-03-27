@@ -1,0 +1,825 @@
+[
+
+ {
+  "kataarab": "الحُرُوبُ",
+  "arti": "arti: peperangan",
+  "penjelasan": "penjelasan: kata benda jamak dari حرب. Berfungsi sebagai mubtada dalam judul."
+ },
+ {
+  "kataarab": "الصَّلِيبِيَّةُ",
+  "arti": "arti: salib",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan jenis peperangan. Berasal dari kata صليب."
+ },
+ {
+  "kataarab": "كَثُرَ",
+  "arti": "arti: menjadi banyak",
+  "penjelasan": "penjelasan: kata kerja lampau yang menunjukkan peningkatan jumlah."
+ },
+ {
+  "kataarab": "الصِّرَاعُ",
+  "arti": "arti: konflik",
+  "penjelasan": "penjelasan: kata benda tunggal yang menjadi subjek kalimat."
+ },
+ {
+  "kataarab": "وَالْخِلَافُ",
+  "arti": "arti: dan perselisihan",
+  "penjelasan": "penjelasan: kata benda dengan huruf sambung وَ. Menunjukkan pertentangan pendapat."
+ },
+ {
+  "kataarab": "بَيْنَ",
+  "arti": "arti: antara",
+  "penjelasan": "penjelasan: kata depan yang menunjukkan hubungan dua pihak atau lebih."
+ },
+ {
+  "kataarab": "الْحُكَّامِ",
+  "arti": "arti: para penguasa",
+  "penjelasan": "penjelasan: kata benda jamak dari حاكم. Majrur karena didahului بَيْنَ."
+ },
+ {
+  "kataarab": "الْمُسْلِمِينَ",
+  "arti": "arti: kaum muslim",
+  "penjelasan": "penjelasan: kata benda jamak yang menjadi sifat atau penjelas bagi الحكام."
+ },
+ {
+  "kataarab": "فَضَعُفَتِ",
+  "arti": "arti: maka menjadi lemah",
+  "penjelasan": "penjelasan: huruf sambung ف + kata kerja lampau. Menunjukkan akibat dari konflik."
+ },
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda tunggal yang menjadi subjek kalimat."
+ },
+ {
+  "kataarab": "الإِسْلَامِيَّةُ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan الدولة."
+ },
+ {
+  "kataarab": "وَتَمَزَّقَتْ",
+  "arti": "arti: dan terpecah",
+  "penjelasan": "penjelasan: kata kerja lampau bentuk refleksif yang berarti terpecah atau terfragmentasi."
+ },
+ {
+  "kataarab": "وَأَصْبَحَ",
+  "arti": "arti: dan menjadi",
+  "penjelasan": "penjelasan: kata kerja ناقص yang berarti berubah keadaan."
+ },
+ {
+  "kataarab": "كُلُّ",
+  "arti": "arti: setiap",
+  "penjelasan": "penjelasan: kata penunjuk keseluruhan."
+ },
+ {
+  "kataarab": "قُطْرٍ",
+  "arti": "arti: wilayah",
+  "penjelasan": "penjelasan: kata benda yang berarti daerah atau negara."
+ },
+ {
+  "kataarab": "مِنْهَا",
+  "arti": "arti: darinya",
+  "penjelasan": "penjelasan: huruf jar + dhamir kembali kepada الدولة الإسلامية."
+ },
+ {
+  "kataarab": "كَالشَّامِ",
+  "arti": "arti: seperti Syam",
+  "penjelasan": "penjelasan: huruf كاف التشبيه + nama wilayah."
+ },
+ {
+  "kataarab": "وَالْعِرَاقِ",
+  "arti": "arti: dan Irak",
+  "penjelasan": "penjelasan: nama wilayah dengan huruf sambung."
+ },
+ {
+  "kataarab": "دُوَيْلَاتٍ",
+  "arti": "arti: negara kecil",
+  "penjelasan": "penjelasan: bentuk tasghir dari دولة. Menunjukkan kerajaan kecil."
+ },
+ {
+  "kataarab": "صَغِيرَةً",
+  "arti": "arti: kecil",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan دُوَيْلَات."
+ },
+ {
+  "kataarab": "مُتَنَاحِرَةً",
+  "arti": "arti: saling berperang",
+  "penjelasan": "penjelasan: kata sifat yang berarti saling bertikai."
+ },
+ {
+  "kataarab": "وَقَدِ",
+  "arti": "arti: dan sungguh",
+  "penjelasan": "penjelasan: huruf penegas untuk peristiwa lampau."
+ },
+ {
+  "kataarab": "اسْتَغَلَّ",
+  "arti": "arti: memanfaatkan",
+  "penjelasan": "penjelasan: kata kerja lampau yang berarti mengambil keuntungan dari situasi."
+ },
+ {
+  "kataarab": "الأُورُبِّيُّونَ",
+  "arti": "arti: orang-orang Eropa",
+  "penjelasan": "penjelasan: kata benda jamak nisbah yang menunjukkan bangsa Eropa."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "مُتَعَصِّبِي",
+  "arti": "arti: kaum fanatik",
+  "penjelasan": "penjelasan: kata benda jamak yang berarti orang yang fanatik."
+ },
+ {
+  "kataarab": "النَّصْرَانِيَّةِ",
+  "arti": "arti: agama Nasrani",
+  "penjelasan": "penjelasan: kata benda majrur sebagai mudhaf ilaih."
+ },
+ {
+  "kataarab": "هَذِهِ",
+  "arti": "arti: ini",
+  "penjelasan": "penjelasan: kata tunjuk perempuan untuk menjelaskan الظروف."
+ },
+ {
+  "kataarab": "الظُّرُوفَ",
+  "arti": "arti: keadaan",
+  "penjelasan": "penjelasan: kata benda jamak dari ظرف."
+ },
+ {
+  "kataarab": "الْمُوَاتِيَةَ",
+  "arti": "arti: yang menguntungkan",
+  "penjelasan": "penjelasan: kata sifat yang berarti kondisi yang mendukung."
+ },
+ {
+  "kataarab": "وَقَامُوا",
+  "arti": "arti: dan mereka melakukan",
+  "penjelasan": "penjelasan: kata kerja lampau bentuk jamak."
+ },
+ {
+  "kataarab": "تَحْتَ",
+  "arti": "arti: di bawah",
+  "penjelasan": "penjelasan: kata depan tempat."
+ },
+ {
+  "kataarab": "شِعَارِ",
+  "arti": "arti: slogan",
+  "penjelasan": "penjelasan: kata benda yang berarti simbol atau semboyan."
+ },
+ {
+  "kataarab": "الصَّلِيبِ",
+  "arti": "arti: salib",
+  "penjelasan": "penjelasan: simbol agama Nasrani."
+ },
+ {
+  "kataarab": "رَمْزِ",
+  "arti": "arti: simbol",
+  "penjelasan": "penjelasan: kata benda yang menjelaskan makna الصليب."
+ },
+ {
+  "kataarab": "الدِّيَانَةِ",
+  "arti": "arti: agama",
+  "penjelasan": "penjelasan: kata benda majrur sebagai mudhaf ilaih."
+ },
+ {
+  "kataarab": "النَّصْرَانِيَّةِ",
+  "arti": "arti: Nasrani",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan agama."
+ },
+ {
+  "kataarab": "بِغَزْوِ",
+  "arti": "arti: dengan menyerang",
+  "penjelasan": "penjelasan: huruf jar + masdar dari غزا."
+ },
+ {
+  "kataarab": "بِلَادِ",
+  "arti": "arti: negeri-negeri",
+  "penjelasan": "penjelasan: kata benda jamak dari بلد."
+ },
+ {
+  "kataarab": "الشَّامِ",
+  "arti": "arti: Syam",
+  "penjelasan": "penjelasan: nama wilayah di Timur Tengah."
+ },
+ {
+  "kataarab": "وَذَلِكَ",
+  "arti": "arti: dan itu",
+  "penjelasan": "penjelasan: kata tunjuk untuk merujuk pada peristiwa."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "أَوَاخِرِ",
+  "arti": "arti: akhir-akhir",
+  "penjelasan": "penjelasan: kata benda jamak yang menunjukkan bagian akhir waktu."
+ },
+ {
+  "kataarab": "الْقَرْنِ",
+  "arti": "arti: abad",
+  "penjelasan": "penjelasan: kata benda penunjuk periode waktu."
+ },
+ {
+  "kataarab": "الْخَامِسِ",
+  "arti": "arti: kelima",
+  "penjelasan": "penjelasan: kata bilangan urutan."
+ },
+ {
+  "kataarab": "الْهِجْرِيِّ",
+  "arti": "arti: hijriah",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan sistem tahun."
+ },
+ {
+  "kataarab": "قَامَ",
+  "arti": "arti: melakukan",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "الصَّلِيبِيُّونَ",
+  "arti": "arti: orang-orang salib",
+  "penjelasan": "penjelasan: kata benda jamak yang merujuk pasukan Perang Salib."
+ },
+ {
+  "kataarab": "بِغَزْوِ",
+  "arti": "arti: dengan menyerang",
+  "penjelasan": "penjelasan: masdar dari غزا menunjukkan tindakan invasi."
+ },
+ {
+  "kataarab": "بِلَادِ",
+  "arti": "arti: negeri-negeri",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الشَّامِ",
+  "arti": "arti: Syam",
+  "penjelasan": "penjelasan: wilayah Suriah dan sekitarnya."
+ },
+ {
+  "kataarab": "بِدَعْوَى",
+  "arti": "arti: dengan alasan",
+  "penjelasan": "penjelasan: kata benda yang berarti klaim atau dalih."
+ },
+ {
+  "kataarab": "تَخْلِيصِ",
+  "arti": "arti: membebaskan",
+  "penjelasan": "penjelasan: masdar dari خلص yang berarti melepaskan."
+ },
+ {
+  "kataarab": "الْبِلَادِ",
+  "arti": "arti: negeri-negeri",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الْمُقَدَّسَةِ",
+  "arti": "arti: suci",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan البلاد."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "فِلَسْطِينِ",
+  "arti": "arti: Palestina",
+  "penjelasan": "penjelasan: nama wilayah."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "سَيْطَرَةِ",
+  "arti": "arti: kekuasaan",
+  "penjelasan": "penjelasan: kata benda yang berarti kontrol atau dominasi."
+ },
+ {
+  "kataarab": "الْمُسْلِمِينَ",
+  "arti": "arti: kaum muslim",
+  "penjelasan": "penjelasan: kata benda jamak majrur."
+ },
+ {
+  "kataarab": "بَيْدَ",
+  "arti": "arti: tetapi",
+  "penjelasan": "penjelasan: kata penghubung yang menunjukkan pengecualian."
+ },
+ {
+  "kataarab": "أَنَّهُمْ",
+  "arti": "arti: bahwa mereka",
+  "penjelasan": "penjelasan: partikel penegas + dhamir jamak."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: dalam",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْحَقِيقَةِ",
+  "arti": "arti: kenyataan",
+  "penjelasan": "penjelasan: kata benda yang berarti realitas."
+ },
+ {
+  "kataarab": "كَانَتْ",
+  "arti": "arti: adalah",
+  "penjelasan": "penjelasan: kata kerja ناقص."
+ },
+ {
+  "kataarab": "لَهُمْ",
+  "arti": "arti: bagi mereka",
+  "penjelasan": "penjelasan: huruf jar + dhamir."
+ },
+ {
+  "kataarab": "أَهْدَافٌ",
+  "arti": "arti: tujuan-tujuan",
+  "penjelasan": "penjelasan: kata benda jamak dari هدف."
+ },
+ {
+  "kataarab": "أُخْرَى",
+  "arti": "arti: lain",
+  "penjelasan": "penjelasan: kata sifat yang berarti tambahan."
+ },
+ {
+  "kataarab": "سِيَاسِيَّةٌ",
+  "arti": "arti: politik",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan jenis tujuan."
+ },
+ {
+  "kataarab": "وَاقْتِصَادِيَّةٌ",
+  "arti": "arti: ekonomi",
+  "penjelasan": "penjelasan: kata sifat lain bagi tujuan."
+ },
+ {
+  "kataarab": "سِيَاسِيَّةٌ",
+  "arti": "arti: politik",
+  "penjelasan": "penjelasan: penegasan jenis tujuan pertama."
+ },
+ {
+  "kataarab": "كَإِقَامَةِ",
+  "arti": "arti: seperti mendirikan",
+  "penjelasan": "penjelasan: huruf كاف التشبيه + masdar إقامة."
+ },
+ {
+  "kataarab": "إِمَارَاتٍ",
+  "arti": "arti: keamiran",
+  "penjelasan": "penjelasan: kata benda jamak dari إمارة."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الشَّرْقِ",
+  "arti": "arti: timur",
+  "penjelasan": "penjelasan: kata benda tempat."
+ },
+ {
+  "kataarab": "الإِسْلَامِيِّ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat bagi الشرق."
+ },
+ {
+  "kataarab": "تَابِعَةٍ",
+  "arti": "arti: yang bergantung",
+  "penjelasan": "penjelasan: kata sifat yang berarti berada di bawah kekuasaan."
+ },
+ {
+  "kataarab": "لِأُورُبَّا",
+  "arti": "arti: bagi Eropa",
+  "penjelasan": "penjelasan: huruf jar + nama wilayah."
+ },
+ {
+  "kataarab": "وَالْبَحْثِ",
+  "arti": "arti: dan mencari",
+  "penjelasan": "penjelasan: kata benda masdar dari بحث."
+ },
+ {
+  "kataarab": "عَنِ",
+  "arti": "arti: tentang",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الثَّرَاءِ",
+  "arti": "arti: kekayaan",
+  "penjelasan": "penjelasan: kata benda."
+ },
+ {
+  "kataarab": "فِرَارًا",
+  "arti": "arti: untuk melarikan diri",
+  "penjelasan": "penjelasan: kata keterangan tujuan."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْفَقْرِ",
+  "arti": "arti: kemiskinan",
+  "penjelasan": "penjelasan: kata benda."
+ },
+ {
+  "kataarab": "الَّذِي",
+  "arti": "arti: yang",
+  "penjelasan": "penjelasan: kata penghubung relatif."
+ },
+ {
+  "kataarab": "انْتَشَرَ",
+  "arti": "arti: menyebar",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "دِيَارِهِمْ",
+  "arti": "arti: negeri mereka",
+  "penjelasan": "penjelasan: kata benda jamak + dhamir kepemilikan."
+ },
+ {
+  "kataarab": "الْحَمَلَاتُ",
+  "arti": "arti: kampanye militer",
+  "penjelasan": "penjelasan: kata benda jamak dari حملة."
+ },
+ {
+  "kataarab": "الصَّلِيبِيَّةُ",
+  "arti": "arti: salib",
+  "penjelasan": "penjelasan: kata sifat yang menjelaskan jenis kampanye."
+ },
+ {
+  "kataarab": "يُؤَرَّخُ",
+  "arti": "arti: ditentukan waktunya",
+  "penjelasan": "penjelasan: kata kerja pasif yang berarti diberi tanggal sejarah."
+ },
+ {
+  "kataarab": "لِبِدَايَةِ",
+  "arti": "arti: bagi permulaan",
+  "penjelasan": "penjelasan: huruf jar + kata benda."
+ },
+ {
+  "kataarab": "الْحُرُوبِ",
+  "arti": "arti: peperangan",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الصَّلِيبِيَّةِ",
+  "arti": "arti: salib",
+  "penjelasan": "penjelasan: kata sifat penjelas."
+ },
+ {
+  "kataarab": "بِسَنَةِ",
+  "arti": "arti: pada tahun",
+  "penjelasan": "penjelasan: huruf jar + kata benda waktu."
+ },
+ {
+  "kataarab": "٤٩٠هـ",
+  "arti": "arti: tahun 490 hijriah",
+  "penjelasan": "penjelasan: angka tahun dalam kalender hijriah."
+ },
+ {
+  "kataarab": "وَقَدِ",
+  "arti": "arti: dan sungguh",
+  "penjelasan": "penjelasan: huruf penegas peristiwa lampau."
+ },
+ {
+  "kataarab": "اتَّخَذَتْ",
+  "arti": "arti: mengambil bentuk",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "هَذِهِ",
+  "arti": "arti: ini",
+  "penjelasan": "penjelasan: kata tunjuk."
+ },
+ {
+  "kataarab": "الْحُرُوبُ",
+  "arti": "arti: peperangan",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "شَكْلَ",
+  "arti": "arti: bentuk",
+  "penjelasan": "penjelasan: kata benda objek."
+ },
+ {
+  "kataarab": "حَمَلَاتٍ",
+  "arti": "arti: kampanye militer",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "عَدِيدَةٍ",
+  "arti": "arti: banyak",
+  "penjelasan": "penjelasan: kata sifat."
+ },
+ {
+  "kataarab": "تَجَاوَزَتْ",
+  "arti": "arti: melebihi",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "سَبْعَ",
+  "arti": "arti: tujuh",
+  "penjelasan": "penjelasan: angka bilangan."
+ },
+ {
+  "kataarab": "حَمَلَاتٍ",
+  "arti": "arti: kampanye militer",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "اسْتَطَاعَ",
+  "arti": "arti: mampu",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "الصَّلِيبِيُّونَ",
+  "arti": "arti: pasukan salib",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: dalam",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْحَمْلَةِ",
+  "arti": "arti: kampanye",
+  "penjelasan": "penjelasan: kata benda tunggal."
+ },
+ {
+  "kataarab": "الْأُولَى",
+  "arti": "arti: pertama",
+  "penjelasan": "penjelasan: bilangan urutan."
+ },
+ {
+  "kataarab": "احْتِلَالَ",
+  "arti": "arti: menduduki",
+  "penjelasan": "penjelasan: masdar dari احتل."
+ },
+ {
+  "kataarab": "بِلَادِ",
+  "arti": "arti: negeri-negeri",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الشَّامِ",
+  "arti": "arti: Syam",
+  "penjelasan": "penjelasan: wilayah Suriah dan sekitarnya."
+ },
+ {
+  "kataarab": "وَتَشْرِيدَ",
+  "arti": "arti: mengusir",
+  "penjelasan": "penjelasan: masdar yang berarti memaksa pergi."
+ },
+ {
+  "kataarab": "أَهْلِهَا",
+  "arti": "arti: penduduknya",
+  "penjelasan": "penjelasan: kata benda + dhamir kepemilikan."
+ },
+ {
+  "kataarab": "وَاسْتَعْمَرُوا",
+  "arti": "arti: menjajah",
+  "penjelasan": "penjelasan: kata kerja lampau jamak."
+ },
+ {
+  "kataarab": "الْقُدْسَ",
+  "arti": "arti: Yerusalem",
+  "penjelasan": "penjelasan: nama kota suci."
+ },
+ {
+  "kataarab": "الشَّرِيفَ",
+  "arti": "arti: mulia",
+  "penjelasan": "penjelasan: kata sifat bagi القدس."
+ },
+ {
+  "kataarab": "وَذَبَحُوا",
+  "arti": "arti: membantai",
+  "penjelasan": "penjelasan: kata kerja lampau jamak."
+ },
+ {
+  "kataarab": "النَّاسَ",
+  "arti": "arti: manusia",
+  "penjelasan": "penjelasan: kata benda objek."
+ },
+ {
+  "kataarab": "ذَبْحًا",
+  "arti": "arti: pembantaian",
+  "penjelasan": "penjelasan: masdar penegas cara tindakan."
+ },
+ {
+  "kataarab": "حَتَّى",
+  "arti": "arti: hingga",
+  "penjelasan": "penjelasan: kata penghubung batas."
+ },
+ {
+  "kataarab": "خَاضُوا",
+  "arti": "arti: berjalan di dalam",
+  "penjelasan": "penjelasan: kata kerja lampau jamak."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "دِمَاءِ",
+  "arti": "arti: darah",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الْقَتْلَى",
+  "arti": "arti: orang-orang yang terbunuh",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "شَوَارِعِهِ",
+  "arti": "arti: jalan-jalannya",
+  "penjelasan": "penjelasan: kata benda jamak + dhamir."
+ },
+ {
+  "kataarab": "وَأَقَامُوا",
+  "arti": "arti: dan mendirikan",
+  "penjelasan": "penjelasan: kata kerja lampau jamak."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْقُدْسِ",
+  "arti": "arti: Yerusalem",
+  "penjelasan": "penjelasan: nama kota."
+ },
+ {
+  "kataarab": "وَطَرَابُلُسَ",
+  "arti": "arti: Tripoli",
+  "penjelasan": "penjelasan: nama kota."
+ },
+ {
+  "kataarab": "وَأَنْطَاكِيَةَ",
+  "arti": "arti: Antiokhia",
+  "penjelasan": "penjelasan: nama kota bersejarah di Suriah."
+ },
+ {
+  "kataarab": "وَالرُّهَا",
+  "arti": "arti: Edessa",
+  "penjelasan": "penjelasan: nama kota kuno di wilayah Mesopotamia."
+ },
+ {
+  "kataarab": "مَمَالِكَ",
+  "arti": "arti: kerajaan-kerajaan",
+  "penjelasan": "penjelasan: kata benda jamak dari مملكة."
+ },
+ {
+  "kataarab": "وَإِمَارَاتٍ",
+  "arti": "arti: keamiran-keamiran",
+  "penjelasan": "penjelasan: kata benda jamak dari إمارة."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: dalam",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "مُوَاجَهَةِ",
+  "arti": "arti: menghadapi",
+  "penjelasan": "penjelasan: masdar dari واجه."
+ },
+ {
+  "kataarab": "الصَّلِيبِيِّينَ",
+  "arti": "arti: pasukan salib",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "نَشِطَتْ",
+  "arti": "arti: menjadi aktif",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "حَرَكَةُ",
+  "arti": "arti: gerakan",
+  "penjelasan": "penjelasan: kata benda."
+ },
+ {
+  "kataarab": "الْجِهَادِ",
+  "arti": "arti: jihad",
+  "penjelasan": "penjelasan: kata benda mudhaf ilaih."
+ },
+ {
+  "kataarab": "الإِسْلَامِيِّ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat penjelas."
+ },
+ {
+  "kataarab": "الَّذِي",
+  "arti": "arti: yang",
+  "penjelasan": "penjelasan: kata sambung relatif."
+ },
+ {
+  "kataarab": "حَمَلَ",
+  "arti": "arti: membawa",
+  "penjelasan": "penjelasan: kata kerja lampau."
+ },
+ {
+  "kataarab": "لِوَاءَهُ",
+  "arti": "arti: panjinya",
+  "penjelasan": "penjelasan: kata benda + dhamir kepemilikan."
+ },
+ {
+  "kataarab": "عَدَدٌ",
+  "arti": "arti: sejumlah",
+  "penjelasan": "penjelasan: kata benda yang menunjukkan jumlah."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar."
+ },
+ {
+  "kataarab": "الْقَادَةِ",
+  "arti": "arti: para pemimpin",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "الْمُسْلِمِينَ",
+  "arti": "arti: kaum muslim",
+  "penjelasan": "penjelasan: kata sifat."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: selama",
+  "penjelasan": "penjelasan: huruf jar yang menunjukkan rentang waktu."
+ },
+ {
+  "kataarab": "مَدَى",
+  "arti": "arti: sepanjang",
+  "penjelasan": "penjelasan: kata benda yang menunjukkan rentang."
+ },
+ {
+  "kataarab": "الْقَرْنَيْنِ",
+  "arti": "arti: dua abad",
+  "penjelasan": "penjelasan: kata benda mutsanna dari قرن."
+ },
+ {
+  "kataarab": "اللَّذَيْنِ",
+  "arti": "arti: yang keduanya",
+  "penjelasan": "penjelasan: kata sambung relatif bentuk mutsanna."
+ },
+ {
+  "kataarab": "عَاشَتْهُمَا",
+  "arti": "arti: yang dialami keduanya",
+  "penjelasan": "penjelasan: kata kerja lampau + dhamir objek ganda."
+ },
+ {
+  "kataarab": "الْحَرَكَةُ",
+  "arti": "arti: gerakan",
+  "penjelasan": "penjelasan: kata benda."
+ },
+ {
+  "kataarab": "الصَّلِيبِيَّةُ",
+  "arti": "arti: salib",
+  "penjelasan": "penjelasan: kata sifat penjelas."
+ },
+ {
+  "kataarab": "وَمِنْ",
+  "arti": "arti: dan dari",
+  "penjelasan": "penjelasan: huruf jar dengan huruf sambung."
+ },
+ {
+  "kataarab": "أَبْرَزِ",
+  "arti": "arti: yang paling menonjol",
+  "penjelasan": "penjelasan: bentuk tafdhil yang berarti paling terkenal."
+ },
+ {
+  "kataarab": "هَؤُلَاءِ",
+  "arti": "arti: mereka ini",
+  "penjelasan": "penjelasan: kata tunjuk jamak."
+ },
+ {
+  "kataarab": "الْقَادَةِ",
+  "arti": "arti: para pemimpin",
+  "penjelasan": "penjelasan: kata benda jamak."
+ },
+ {
+  "kataarab": "صَلَاحُ الدِّينِ الأَيُّوبِيُّ",
+  "arti": "arti: Salahuddin Al-Ayyubi",
+  "penjelasan": "penjelasan: nama tokoh besar pemimpin muslim dalam perang salib."
+ },
+ {
+  "kataarab": "وَالظَّاهِرُ بَيْبَرْسُ",
+  "arti": "arti: Az-Zahir Baibars",
+  "penjelasan": "penjelasan: nama sultan Mamluk yang terkenal dalam perjuangan melawan pasukan salib."
+ }
+
+
+]

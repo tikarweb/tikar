@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Kitabah</title>
+  <link rel="icon" type="image/png" href="../img/tamov6.png">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../inicss/soal.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Lugrasimo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top navbar-custom">
+    <div class="container">
+
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/tamov6.png" height="40">
+        titik.arab
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#tentang">Tentang</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="../ibacaan.html">Bacaan</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#kontak">Kontak</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header-latihan">
+    <div class="maskot-box">
+      <img id="maskot" src="../img/maskot1.png">
+      <p id="feedbackText">Siap latihan?</p>
+    </div>
+
+    <h1 id="judulLatihan"></h1>
+    <h2 id="judulTeks"></h2>
+  </div>
+
+  <!-- MAIN -->
+  <div class="container main-layout">
+    <div class="row equal-row">
+
+      <!-- KIRI: SOAL -->
+      <div class="col-lg-8">
+        <div class="quiz-container latihan-soal">
+
+          <!-- AREA SCROLL -->
+          <div class="soal-scroll">
+            <div class="action-box"></div>
+
+            <div id="contentLevel1" class="level active">
+              <h2>Level 1</h2>
+              <div id="soalLevel1"></div>
+            </div>
+
+            <div id="contentLevel2" class="level">
+              <h2>Level 2</h2>
+              <div id="soalLevel2"></div>
+            </div>
+
+            <div id="contentLevel3" class="level">
+              <h2>Level 3</h2>
+              <div id="soalLevel3"></div>
+            </div>
+
+            <div id="contentLevel4" class="level">
+              <h2>Level 4</h2>
+              <div id="soalLevel4"></div>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- TUTUP KIRI DI SINI -->
+
+      <!-- KANAN: SIDEBAR -->
+      <div class="col-lg-4">
+        <div class="sidebar-box">
+
+          <!-- PROGRESS -->
+          <div class="progress-box">
+            <p id="progressText">Level 1 dari 4</p>
+            <div class="progress">
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- LEVEL -->
+          <div class="level-box">
+            <p class="label">Level</p>
+
+            <div class="level-vertical">
+
+              <div class="level-item unlocked" onclick="nextLevel(1)">
+                <div class="circle">1</div>
+                <div class="level-label">Level 1</div>
+              </div>
+
+              <div class="level-item locked" id="menuLevel2">
+                <div class="circle">
+                  2
+                  <span class="lock-icon">🔒</span>
+                </div>
+                <div class="level-label">Level 2</div>
+              </div>
+
+              <div class="level-item locked" id="menuLevel3">
+                <div class="circle">
+                  3
+                  <span class="lock-icon">🔒</span>
+                </div>
+                <div class="level-label">Level 3</div>
+              </div>
+
+              <div class="level-item locked" id="menuLevel4">
+                <div class="circle">
+                  4
+                  <span class="lock-icon">🔒</span>
+                </div>
+                <div class="level-label">Level 4</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

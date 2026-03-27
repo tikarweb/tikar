@@ -1,0 +1,509 @@
+{
+ "teks1": {
+  "judul": "المقاطعة",
+
+  "level1": {
+    "type": "pg",
+    "instruksi_ar": "اختر الإجابة الصحيحة بناء على الفهم العميق للنص",
+    "instruksi_id": "Pilih jawaban yang paling tepat berdasarkan pemahaman teks",
+    "soal": [
+      {
+        "pertanyaan": "مم اشتد خوف قريش؟",
+        "opsi": [
+          "من الحروب",
+          "من انتشار الإسلام وازدياد الداخلين فيه",
+          "من الفقر والجوع",
+          "من هجرة المسلمين"
+        ],
+        "jawaban": 1
+      },
+      {
+        "pertanyaan": "ما هو السلاح الذي فكر فيه زعماء قريش؟",
+        "opsi": [
+          "السلاح العسكري",
+          "المقاطعة الاقتصادية بقطع الماء والطعام",
+          "الحوار والصلح",
+          "طرد المسلمين من مكة"
+        ],
+        "jawaban": 1
+      },
+      {
+        "pertanyaan": "مع من قاطعت قريش مقاطعة تامة؟",
+        "opsi": [
+          "بني هاشم وبني المطلب",
+          "بني أمية وبني مخزوم",
+          "الأنصار والمهاجرين",
+          "يهود يثرب"
+        ],
+        "jawaban": 0
+      },
+      {
+        "pertanyaan": "أين سجل زعماء قريش قرارات المقاطعة؟",
+        "opsi": [
+          "في دار الندوة",
+          "في صحيفة علقت في جوف الكعبة",
+          "في كتاب أرسل إلى الطائف",
+          "في سوق عكاظ"
+        ],
+        "jawaban": 1
+      },
+      {
+        "pertanyaan": "لماذا علقت الصحيفة في جوف الكعبة؟",
+        "opsi": [
+          "خوفا من المطر",
+          "تأكيدا على احترامها",
+          "ليقرأها كل الناس",
+          "لأنها سرية"
+        ],
+        "jawaban": 1
+      },
+      {
+        "pertanyaan": "إلى أين انتقل بنو هاشم والرسول بعد المقاطعة؟",
+        "opsi": [
+          "إلى الحبشة",
+          "إلى يثرب",
+          "إلى شعب أبي طالب",
+          "إلى الطائف"
+        ],
+        "jawaban": 2
+      },
+      {
+        "pertanyaan": "كم عاما دامت هذه المقاطعة الظالمة؟",
+        "opsi": [
+          "عاما واحدا",
+          "عامين",
+          "ثلاثة أعوام",
+          "أربعة أعوام"
+        ],
+        "jawaban": 2
+      },
+      {
+        "pertanyaan": "ماذا أكل المسلمون في الشعب من شدة الجوع؟",
+        "opsi": [
+          "الفواكه",
+          "اللحوم",
+          "أوراق الشجر",
+          "الخبز اليابس"
+        ],
+        "jawaban": 2
+      },
+      {
+        "pertanyaan": "من الذي قام ليشق الصحيفة الظالمة؟",
+        "opsi": [
+          "المطعم بن عدي",
+          "أبو سفيان",
+          "أبو جهل",
+          "أبو طالب"
+        ],
+        "jawaban": 0
+      },
+      {
+        "pertanyaan": "ماذا فعل الرسول بعد انتهاء المقاطعة؟",
+        "opsi": [
+          "استأنف دعوته في مكة",
+          "حارب قريشا",
+          "غادر مكة فورا",
+          "بنى مسجدا"
+        ],
+        "jawaban": 0
+      }
+    ]
+},
+
+
+  "level2": {
+  "type": "rumpang",
+  "instruksi_ar": "املأ الفراغ بالكلمة المناسبة من صندوق المساعدة",
+  "instruksi_id": "Isi bagian rumpang dengan kata yang tepat dari kotak bantuan",
+  "bankKata": [
+    "انتشار",
+    "سلاح",
+    "المقاطعة",
+    "جوف",
+    "شعب",
+    "أعوام",
+    "أوراق",
+    "الفرج",
+    "السكوت",
+    "الصحيفة",
+    "السيوف",
+    "الغار",
+    "شهرين",
+    "الفواكه",
+    "البكاء"
+  ],
+  "soal": [
+    {
+      "kalimat": "اشتد خوف قريش من (_____) الإسلام في مكة",
+      "jawaban": "انتشار"
+    },
+    {
+      "kalimat": "فكر زعماؤها في (_____) يقاومون به هذا الخطر الشديد",
+      "jawaban": "سلاح"
+    },
+    {
+      "kalimat": "اتفق المشركون على مقاطعة بني هاشم وبني المطلب (_____) تامة",
+      "jawaban": "المقاطعة"
+    },
+    {
+      "kalimat": "علقت قريش قراراتها في (_____) الكعبة تأكيدا عليها",
+      "jawaban": "جوف"
+    },
+    {
+      "kalimat": "انتقل بنو هاشم وبنو المطلب إلى (_____) أبي طالب",
+      "jawaban": "شعب"
+    },
+    {
+      "kalimat": "دامت هذه العزلة والحصار مدة ثلاثة (_____)",
+      "jawaban": "أعوام"
+    },
+    {
+      "kalimat": "أكل المسلمون (_____) الشجر من شدة الجوع والتعب",
+      "jawaban": "أوراق"
+    },
+    {
+      "kalimat": "جاءهم (_____) بعد أن صبروا واحتملوا طويلا",
+      "jawaban": "الفرج"
+    },
+    {
+      "kalimat": "رأى بعض الزعماء أن هذا الظلم لا يجوز (_____) عنه",
+      "jawaban": "السكوت"
+    },
+    {
+      "kalimat": "قام المطعم بن عدي لكي يشق (_____) الظالمة",
+      "jawaban": "الصحيفة"
+    }
+  ]
+},
+
+
+    "level3": {
+  "type": "susun",
+  "instruksi_ar": "رتب الكلمات لتكون جملة مفيدة. احذر، هناك كلمة زائدة",
+  "instruksi_id": "Susun kata menjadi kalimat. Ada satu kata pengecoh",
+  "soal": [
+    {
+      "kata": ["قريش","الإسلام","من","انتشار","اشتد","خوف","الخوف"],
+      "pengecoh": "الخوف",
+      "jawaban": "اشتد خوف قريش من انتشار الإسلام"
+    },
+    {
+      "kata": ["سلاح","زعماؤها","في","فكر","يقاومون به","سيف"],
+      "pengecoh": "سيف",
+      "jawaban": "فكر زعماؤها في سلاح يقاومون به"
+    },
+    {
+      "kata": ["اتفقوا","بني","مقاطعة","هاشم","على","يثرب"],
+      "pengecoh": "يثرب",
+      "jawaban": "اتفقوا على مقاطعة بني هاشم"
+    },
+    {
+      "kata": ["في","القرارات","قريش","زعماء","صحيفة","سجل","كتاب"],
+      "pengecoh": "كتاب",
+      "jawaban": "سجل زعماء قريش القرارات في صحيفة"
+    },
+    {
+      "kata": ["الكعبة","جوف","الصحيفة","في","علقت","المسجد"],
+      "pengecoh": "المسجد",
+      "jawaban": "علقت الصحيفة في جوف الكعبة"
+    },
+    {
+      "kata": ["شعب","أبي","بنو","انتقل","إلى","طالب","هاشم","الغار"],
+      "pengecoh": "الغار",
+      "jawaban": "انتقل بنو هاشم إلى شعب أبي طالب"
+    },
+    {
+      "kata": ["ثلاثة","المقاطعة","أعوام","دامت","أيام"],
+      "pengecoh": "أيام",
+      "jawaban": "دامت المقاطعة ثلاثة أعوام"
+    },
+    {
+      "kata": ["أوراق","من","الشجر","أكلوا","الجوع","التفاح"],
+      "pengecoh": "التفاح",
+      "jawaban": "أكلوا أوراق الشجر من الجوع"
+    },
+    {
+      "kata": ["الصحيفة","بن","المطعم","يشق","عدي","قام","الخيمة"],
+      "pengecoh": "الخيمة",
+      "jawaban": "قام المطعم بن عدي يشق الصحيفة"
+    },
+    {
+      "kata": ["مكة","في","دعوته","الرسول","استأنف","المدينة"],
+      "pengecoh": "المدينة",
+      "jawaban": "استأنف الرسول دعوته في مكة"
+    }
+  ]
+},
+
+   "level4": {
+  "type": "essay",
+  "instruksi_ar": "اكتب خلاصة تحليلية عن مقاطعة قريش وكيف كان صبر المسلمين سبب النجاة",
+  "instruksi_id": "Tulis analisis tentang pemboikotan Quraisy dan peran kesabaran umat Islam",
+  "minBaris": 4,
+  "maxBaris": 6,
+  "kataBantu": [
+    "الخطر الشديد",
+    "قطع الماء والطعام",
+    "شعب أبي طالب",
+    "أوراق الشجر",
+    "صبروا واحتملوا",
+    "نقض الصحيفة"
+  ]
+}
+ },
+
+  "teks2": {
+  "judul": "المقاطعة efnjfjnj",
+
+  "level1": {
+    "type": "pg",
+    "instruksi_id": "Pilihlah jawaban yang paling tepat berdasarkan pemahaman mendalam terhadap teks!",
+    "instruksi_ar": "اختر الإجابة الصحيحة بناء على الفهم العميق للنص!",
+    "soal": [
+      {
+        "pertanyaan": "ما هو السبب الرئيسي الذي جعل الرسول يبدأ ببناء المسجد قبل بناء البيوت؟",
+        "opsi": ["ليجعله مكانا للراحة والنوم","لأن ناقته بركت في ذلك المكان","ليكون مركز انطلاق الدعوة وتدبير شؤون الدولة","لأنه أسهل في البناء"],
+        "jawaban": 2
+      }
+    ]
+  },
+
+  "level2": {
+    "type": "rumpang",
+    "instruksi_id": "Ketiklah kata yang tepat untuk melengkapi kalimat di bawah ini dengan memilih dari Kotak Bantuan! Awas, ada 5 kata pengecoh",
+    "instruksi_ar": "امْلأ الفراغ بالكلمة المناسبة من صندوق المساعدة! هناك خمس كلمات إضافية لا تحتاج إليها",
+    "bankKata": ["ناقته","انطلاق","تدبير","المؤاخاة","يعوض","متينا","النسب","بالتجارة","الثروة","دعامة","بالزراعة","انتهاء","صانه","يترك","الإسلام"],
+    "soal": [
+      {
+        "kalimat": "(____)بنى الرسول المسجد في المكان الذي بركت فيه",
+        "jawaban": "ناقته"
+      }
+    ]
+  },
+
+  "level3": {
+    "type": "susun",
+    "instruksi_ar": "الكلمات العشوائية لتكون جملة مفيدة! احذر، هناك كلمة واحدة خاطئة في كل قوس لا تكتبها",
+    "instruksi_id": "Ketik ulang kata-kata acak berikut agar menjadi kalimat yang padu. Awas! Terdapat SATU KATA PENGECOH di dalam kurung yang tidak boleh diketik",
+    "soal": [
+      {
+        "kata": ["عمل ","مكة","الرسول","أول","قام به","المسجد","بناء","هو"],
+        "pengecoh": "مكة",
+        "jawaban": "أول عمل قام به الرسول هو بناء المسجد"
+      }
+    ]
+  },
+
+  "level4": {
+    "type": "essay",
+    "instruksi_ar": "السؤال التحليلي: يقول المؤرخون أن قوة المسلمين في المدينة لم تكن بالسلاح بل بخطوتين قام بهما الرسول. اشرح هاتين الخطوتين في 4-6 أسطر مستعينا بصندوق المساعدة!",
+    "instruksi_id": "Pertanyaan Analitis: Sejarawan berkata kekuatan Islam di Madinah bukan karena senjata, melainkan karena dua langkah Rasul. Jelaskan kedua langkah tersebut dalam 4-6 baris dengan bantuan kotak kosakata!",
+    "kataBantu": ["دعامة الدولة","Bكسب الرزق","المحبة والتآلف","المؤاخاة","مركز انطلاق الدعوة","بناء المسجد"]
+  }
+},
+
+"teks3": {
+  "judul": "apa ini",
+
+  "level1": {
+    "type": "pg",
+    "instruksi_id": "Pilihlah jawaban yang paling tepat berdasarkan pemahaman mendalam terhadap teks!",
+    "instruksi_ar": "اختر الإجابة الصحيحة بناء على الفهم العميق للنص!",
+    "soal": [
+      {
+        "pertanyaan": "ما هو السبب الحقيقي لخروج الرسول والمسلمين لاعتراض قافلة أبي سفيان؟",
+        "opsi": ["حبا في الحروب وسفك الدماء","لاسترداد ما يعوض أموال المهاجرين التي سلبها مشركو مكة","للسيطرة على طريق التجارة إلى الشام","لإجبار قريش على الدخول في الإسلام"],
+        "jawaban": 1
+      }
+    ]
+  },
+
+  "level2": {
+    "type": "rumpang",
+    "instruksi_id": "Ketiklah kata yang tepat untuk melengkapi kalimat di bawah ini dengan memilih dari Kotak Bantuan! Awas, ada 5 kata pengecoh",
+    "instruksi_ar": "امْلأ الفراغ بالكلمة المناسبة من صندوق المساعدة! (هناك خمس كلمات إضافية لا تحتاج إليها",
+    "bankKata": ["رمضان","أموال","النجدة","القتال","إيمانا","بئر","صابرا","الغالبة","سبعون","هزيمة","شوال","المدينة","الهروب","خائفا","مائة"],
+    "soal": [
+      {
+        "kalimat": "(____)",
+        "jawaban": "ناقته"
+      }
+    ]
+  },
+
+  "level3": {
+    "type": "susun",
+    "instruksi_ar": "الكلمات العشوائية لتكون جملة مفيدة! احذر، هناك كلمة واحدة خاطئة في كل قوس لا تكتبها",
+    "instruksi_id": "Ketik ulang kata-kata acak berikut agar menjadi kalimat yang padu. Awas! Terdapat SATU KATA PENGECOH di dalam kurung yang tidak boleh diketik",
+    "soal": [
+      {
+        "kata": ["","","","","","","",""],
+        "pengecoh": "مكة",
+        "jawaban": ""
+      }
+    ]
+  },
+
+  "level4": {
+    "type": "essay",
+    "instruksi_ar": "السؤال التحليلي: يقول المؤرخون أن قوة المسلمين في المدينة لم تكن بالسلاح بل بخطوتين قام بهما الرسول. اشرح هاتين الخطوتين في 4-6 أسطر مستعينا بصندوق المساعدة!",
+    "instruksi_id": "Pertanyaan Analitis: Sejarawan berkata kekuatan Islam di Madinah bukan karena senjata, melainkan karena dua langkah Rasul. Jelaskan kedua langkah tersebut dalam 4-6 baris dengan bantuan kotak kosakata!",
+    "kataBantu": ["","","","","","",""]
+  } 
+},
+
+"teks4": {
+  "judul": "apa yaa judulnya",
+
+  "level1": {
+    "type": "pg",
+    "instruksi_id": "Pilihlah jawaban yang paling tepat berdasarkan pemahaman mendalam terhadap teks!",
+    "instruksi_ar": "اختر الإجابة الصحيحة بناء على الفهم العميق للنص!",
+    "soal": [
+      {
+        "pertanyaan": "",
+        "opsi": ["","","",""],
+        "jawaban": 2
+      }
+    ]
+  },
+
+  "level2": {
+    "type": "rumpang",
+    "instruksi_id": "Ketiklah kata yang tepat untuk melengkapi kalimat di bawah ini dengan memilih dari Kotak Bantuan! Awas, ada 5 kata pengecoh",
+    "instruksi_ar": "امْلأ الفراغ بالكلمة المناسبة من صندوق المساعدة! (هناك خمس كلمات إضافية لا تحتاج إليها",
+    "bankKata": ["","","","","","",""],
+    "soal": [
+      {
+        "kalimat": "(____)",
+        "jawaban": "ناقته"
+      }
+    ]
+  },
+
+  "level3": {
+    "type": "susun",
+    "instruksi_ar": "الكلمات العشوائية لتكون جملة مفيدة! احذر، هناك كلمة واحدة خاطئة في كل قوس لا تكتبها",
+    "instruksi_id": "Ketik ulang kata-kata acak berikut agar menjadi kalimat yang padu. Awas! Terdapat SATU KATA PENGECOH di dalam kurung yang tidak boleh diketik",
+    "soal": [
+      {
+        "kata": ["","","","","","","",""],
+        "pengecoh": "مكة",
+        "jawaban": ""
+      }
+    ]
+  },
+
+  "level4": {
+    "type": "essay",
+    "instruksi_ar": "السؤال التحليلي: يقول المؤرخون أن قوة المسلمين في المدينة لم تكن بالسلاح بل بخطوتين قام بهما الرسول. اشرح هاتين الخطوتين في 4-6 أسطر مستعينا بصندوق المساعدة!",
+    "instruksi_id": "Pertanyaan Analitis: Sejarawan berkata kekuatan Islam di Madinah bukan karena senjata, melainkan karena dua langkah Rasul. Jelaskan kedua langkah tersebut dalam 4-6 baris dengan bantuan kotak kosakata!",
+    "kataBantu": ["","","","","","",""]
+  } 
+},
+
+
+
+"teks5": {
+  "judul": "apa yaa judulnya",
+
+  "level1": {
+    "type": "pg",
+    "instruksi_id": "",
+    "instruksi_ar": "",
+    "soal": [
+      {
+        "pertanyaan": "",
+        "opsi": ["","","",""],
+        "jawaban": 2
+      }
+    ]
+  },
+
+  "level2": {
+    "type": "rumpang",
+    "instruksi_id": "Ketiklah kata yang tepat untuk melengkapi kalimat di bawah ini dengan memilih dari Kotak Bantuan! Awas, ada 5 kata pengecoh",
+    "instruksi_ar": "امْلأ الفراغ بالكلمة المناسبة من صندوق المساعدة! (هناك خمس كلمات إضافية لا تحتاج إليها",
+    "bankKata": ["","","","","","",""],
+    "soal": [
+      {
+        "kalimat": "(____)",
+        "jawaban": ""
+      }
+    ]
+  },
+
+  "level3": {
+    "type": "susun",
+    "instruksi_ar": "الكلمات العشوائية لتكون جملة مفيدة! احذر، هناك كلمة واحدة خاطئة في كل قوس لا تكتبها",
+    "instruksi_id": "Ketik ulang kata-kata acak berikut agar menjadi kalimat yang padu. Awas! Terdapat SATU KATA PENGECOH di dalam kurung yang tidak boleh diketik",
+    "soal": [
+      {
+        "kata": ["","","","","","","",""],
+        "pengecoh": "مكة",
+        "jawaban": ""
+      }
+    ]
+  },
+
+  "level4": {
+    "type": "essay",
+    "instruksi_ar": "السؤال التحليلي: يقول المؤرخون أن قوة المسلمين في المدينة لم تكن بالسلاح بل بخطوتين قام بهما الرسول. اشرح هاتين الخطوتين في 4-6 أسطر مستعينا بصندوق المساعدة!",
+    "instruksi_id": "Pertanyaan Analitis: Sejarawan berkata kekuatan Islam di Madinah bukan karena senjata, melainkan karena dua langkah Rasul. Jelaskan kedua langkah tersebut dalam 4-6 baris dengan bantuan kotak kosakata!",
+    "kataBantu": ["","","","","","",""]
+  } 
+},
+
+
+"teks6": {
+  "judul": "apa yaa judulnya",
+
+  "level1": {
+    "type": "pg",
+    "instruksi_id": "Pilihlah jawaban yang paling tepat berdasarkan pemahaman mendalam terhadap teks!",
+    "instruksi_ar": "اختر الإجابة الصحيحة بناء على الفهم العميق للنص!",
+    "soal": [
+      {
+        "pertanyaan": "",
+        "opsi": ["","","",""],
+        "jawaban": 2
+      }
+    ]
+  },
+
+  "level2": {
+    "type": "rumpang",
+    "instruksi_id": "Ketiklah kata yang tepat untuk melengkapi kalimat di bawah ini dengan memilih dari Kotak Bantuan! Awas, ada 5 kata pengecoh",
+    "instruksi_ar": "امْلأ الفراغ بالكلمة المناسبة من صندوق المساعدة! (هناك خمس كلمات إضافية لا تحتاج إليها",
+    "bankKata": ["","","","","","",""],
+    "soal": [
+      {
+        "kalimat": "(____)",
+        "jawaban": "ناقته"
+      }
+    ]
+  },
+
+  "level3": {
+    "type": "susun",
+    "instruksi_ar": "الكلمات العشوائية لتكون جملة مفيدة! احذر، هناك كلمة واحدة خاطئة في كل قوس لا تكتبها",
+    "instruksi_id": "Ketik ulang kata-kata acak berikut agar menjadi kalimat yang padu. Awas! Terdapat SATU KATA PENGECOH di dalam kurung yang tidak boleh diketik",
+    "soal": [
+      {
+        "kata": ["","","","","","","",""],
+        "pengecoh": "مكة",
+        "jawaban": ""
+      }
+    ]
+  },
+
+  "level4": {
+    "type": "essay",
+    "instruksi_ar": "السؤال التحليلي: يقول المؤرخون أن قوة المسلمين في المدينة لم تكن بالسلاح بل بخطوتين قام بهما الرسول. اشرح هاتين الخطوتين في 4-6 أسطر مستعينا بصندوق المساعدة!",
+    "instruksi_id": "Pertanyaan Analitis: Sejarawan berkata kekuatan Islam di Madinah bukan karena senjata, melainkan karena dua langkah Rasul. Jelaskan kedua langkah tersebut dalam 4-6 baris dengan bantuan kotak kosakata!",
+    "kataBantu": ["","","","","","",""]
+  } 
+}
+
+
+}

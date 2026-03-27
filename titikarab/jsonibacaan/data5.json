@@ -1,0 +1,940 @@
+[
+
+ {
+  "kataarab": "حُرُوبُ",
+  "arti": "peperangan",
+  "penjelasan": "kata benda jamak dari حرب. Berfungsi sebagai mudhaf dalam judul"
+ },
+ {
+  "kataarab": "الرِّدَّةِ",
+  "arti": "kemurtadan",
+  "penjelasan": "kata benda. Mudhaf ilaih dari حروب. Menunjukkan jenis perang"
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di, dalam",
+  "penjelasan": "huruf jar yang menunjukkan keterangan waktu atau tempat"
+ },
+ {
+  "kataarab": "الْوَقْتِ",
+  "arti": "waktu",
+  "penjelasan": "kata benda majrur karena didahului فِي"
+ },
+ {
+  "kataarab": "الَّذِي",
+  "arti": "yang",
+  "penjelasan": "isim maushul. Menghubungkan kata sebelumnya dengan kalimat penjelas"
+ },
+ {
+  "kataarab": "تَوَلَّى",
+  "arti": "memegang, mengambil alih",
+  "penjelasan": "kata kerja lampau. Makna mengambil kepemimpinan"
+ },
+ {
+  "kataarab": "فِيهِ",
+  "arti": "di dalamnya",
+  "penjelasan": "huruf jar + dhamir. Kembali kepada الوقت"
+ },
+ {
+  "kataarab": "أَبُو بَكْرٍ",
+  "arti": "Abu Bakar",
+  "penjelasan": "frasa nama sahabat Nabi. Pelaku dari kata kerja تَوَلَّى."
+ },
+ {
+  "kataarab": "الْخِلَافَةَ",
+  "arti": "kekhalifahan",
+  "penjelasan": "kata benda objek dari تَوَلَّى. Menunjukkan jabatan kepemimpinan."
+ },
+ {
+  "kataarab": "وَارْتَدَّتْ",
+  "arti": "dan telah murtad",
+  "penjelasan": "huruf sambung وَ + fi'il madhi. Menunjukkan peristiwa setelahnya."
+ },
+ {
+  "kataarab": "قَبَائِلُ",
+  "arti": "kabilah-kabilah",
+  "penjelasan": "kata benda jamak dari قبيلة. Subjek kalimat."
+ },
+ {
+  "kataarab": "عَرَبِيَّةٌ",
+  "arti": "Arab",
+  "penjelasan": "kata sifat yang menjelaskan قبائل."
+ },
+ {
+  "kataarab": "كَثِيرَةٌ",
+  "arti": "banyak",
+  "penjelasan": "kata sifat yang menunjukkan jumlah besar."
+ },
+ {
+  "kataarab": "عَنِ",
+  "arti": "dari",
+  "penjelasan": "huruf jar yang menunjukkan perpindahan atau meninggalkan sesuatu."
+ },
+ {
+  "kataarab": "الْإِسْلَامِ",
+  "arti": "Islam",
+  "penjelasan": "kata benda majrur karena didahului huruf jar."
+ },
+ {
+  "kataarab": "وَالْمُرْتَدُّونَ",
+  "arti": "dan orang-orang murtad",
+  "penjelasan": "وَ + kata benda jamak. Subjek kalimat baru"
+ },
+ {
+  "kataarab": "فَرِيقَانِ",
+  "arti": "dua kelompok",
+  "penjelasan": "kata benda mutsanna. Menunjukkan jumlah dua kelompok."
+ },
+ {
+  "kataarab": "فَرِيقٌ",
+  "arti": "satu kelompok",
+  "penjelasan": "kata benda yang menjelaskan kelompok pertama."
+ },
+ {
+  "kataarab": "امْتَنَعَ",
+  "arti": "menolak",
+  "penjelasan": "kata kerja lampau. Menunjukkan tindakan menolak sesuatu."
+ },
+ {
+  "kataarab": "عَنْ",
+  "arti": "dari",
+  "penjelasan": "huruf jar yang menunjukkan penolakan atau menjauh dari sesuatu."
+ },
+ {
+  "kataarab": "أَدَاءِ",
+  "arti": "menunaikan",
+  "penjelasan": "kata benda masdar dari أدى. Menjadi mudhaf."
+ },
+ {
+  "kataarab": "الزَّكَاةِ",
+  "arti": "zakat",
+  "penjelasan": "kata benda. Mudhaf ilaih dari أداء."
+ },
+ {
+  "kataarab": "وَأَدَّى",
+  "arti": "dan menunaikan",
+  "penjelasan": "وَ + fi'il madhi. Kata kerja lampau."
+ },
+ {
+  "kataarab": "بَاقِيَ",
+  "arti": "sisa",
+  "penjelasan": "kata benda yang berarti bagian yang tersisa."
+ },
+ {
+  "kataarab": "شَعَائِرِ",
+  "arti": "syiar-syiar",
+  "penjelasan": "kata benda jamak dari شعيرة. Menunjukkan praktik ibadah."
+ },
+ {
+  "kataarab": "الْإِسْلَامِ",
+  "arti": "Islam",
+  "penjelasan": "mudhaf ilaih yang menjelaskan jenis syiar."
+ },
+ {
+  "kataarab": "وَفَرِيقٌ",
+  "arti": "dan satu kelompok",
+  "penjelasan": "وَ huruf sambung. فَرِيقٌ kata benda berarti kelompok lain."
+ },
+ {
+  "kataarab": "رَفَضَ",
+  "arti": "menolak",
+  "penjelasan": "kata kerja lampau. Menunjukkan tindakan menolak."
+ },
+ {
+  "kataarab": "الدِّينَ",
+  "arti": "agama",
+  "penjelasan": "kata benda objek dari رَفَضَ."
+ },
+ {
+  "kataarab": "كُلَّهُ",
+  "arti": "seluruhnya",
+  "penjelasan": "kata penegas yang berarti seluruh. Dhamir kembali ke الدين."
+ },
+ {
+  "kataarab": "وَظَهَرَ",
+  "arti": "dan muncul",
+  "penjelasan": "kata kerja lampau yang menunjukkan kemunculan."
+ },
+ {
+  "kataarab": "فِيهِمْ",
+  "arti": "di antara mereka",
+  "penjelasan": "huruf jar + dhamir kembali kepada orang murtad."
+ },
+ {
+  "kataarab": "كَذَّابُونَ",
+  "arti": "para pendusta",
+  "penjelasan": "kata benda jamak. Subjek bagi klaim kenabian palsu."
+ },
+ {
+  "kataarab": "ادَّعَوُا",
+  "arti": "mereka mengaku",
+  "penjelasan": "kata kerja lampau bentuk jamak."
+ },
+ {
+  "kataarab": "النُّبُوَّةَ",
+  "arti": "kenabian",
+  "penjelasan": "kata benda objek dari ادَّعَوُا."
+ },
+ {
+  "kataarab": "وَمِنْهُمْ",
+  "arti": "dan di antara mereka",
+  "penjelasan": "huruf jar + dhamir. Menunjukkan sebagian dari kelompok."
+ },
+ {
+  "kataarab": "طُلَيْحَةُ",
+  "arti": "Tulaihah",
+  "penjelasan": "nama tokoh yang mengaku nabi."
+ },
+ {
+  "kataarab": "الْأَسَدِيُّ",
+  "arti": "dari kabilah Asad",
+  "penjelasan": "nisbah yang menjelaskan asal suku."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar menunjukkan lokasi atau kelompok."
+ },
+ {
+  "kataarab": "بَنِي أَسَدٍ",
+  "arti": "Bani Asad",
+  "penjelasan": "nama kabilah Arab."
+ },
+ {
+  "kataarab": "وَسَجَاحُ",
+  "arti": "dan Sajah",
+  "penjelasan": "nama perempuan yang mengaku nabi."
+ },
+ {
+  "kataarab": "بِنْتُ الْحَارِثِ",
+  "arti": "putri Al-Harits",
+  "penjelasan": "frasa nasab yang menjelaskan ayahnya."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "قِسْمٍ",
+  "arti": "sebagian",
+  "penjelasan": "kata benda yang berarti bagian."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "تَمِيمٍ",
+  "arti": "Tamim",
+  "penjelasan": "nama kabilah Arab."
+ },
+ {
+  "kataarab": "وَمُسَيْلِمَةُ",
+  "arti": "dan Musailamah",
+  "penjelasan": "nama tokoh yang mengaku nabi."
+ },
+ {
+  "kataarab": "الْكَذَّابُ",
+  "arti": "si pendusta",
+  "penjelasan": "julukan terkenal bagi Musailamah."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "بَنِي حَنِيفَةَ",
+  "arti": "Bani Hanifah",
+  "penjelasan": "nama kabilah di wilayah Yamamah."
+ },
+ {
+  "kataarab": "وَالْأَسْوَدُ",
+  "arti": "dan Al-Aswad",
+  "penjelasan": "nama tokoh pemberontak."
+ },
+ {
+  "kataarab": "الْعَنْسِيُّ",
+  "arti": "Al-Ansi",
+  "penjelasan": "nisbah kepada kabilah Ansi."
+ },
+ {
+  "kataarab": "الْقَحْطَانِيُّ",
+  "arti": "dari keturunan Qahtan",
+  "penjelasan": "penjelasan asal suku Arab selatan."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "الْيَمَنِ",
+  "arti": "Yaman",
+  "penjelasan": "nama wilayah di selatan Jazirah Arab."
+ },
+ {
+  "kataarab": "وَفَرِيقٌ",
+  "arti": "dan satu kelompok",
+  "penjelasan": "وَ huruf sambung. فَرِيقٌ kata benda berarti kelompok lain."
+ },
+ {
+  "kataarab": "رَفَضَ",
+  "arti": "menolak",
+  "penjelasan": "kata kerja lampau. Menunjukkan tindakan menolak."
+ },
+ {
+  "kataarab": "الدِّينَ",
+  "arti": "agama",
+  "penjelasan": "kata benda objek dari رَفَضَ."
+ },
+ {
+  "kataarab": "كُلَّهُ",
+  "arti": "seluruhnya",
+  "penjelasan": "kata penegas yang berarti seluruh. Dhamir kembali ke الدين."
+ },
+ {
+  "kataarab": "وَظَهَرَ",
+  "arti": "dan muncul",
+  "penjelasan": "kata kerja lampau yang menunjukkan kemunculan."
+ },
+ {
+  "kataarab": "فِيهِمْ",
+  "arti": "di antara mereka",
+  "penjelasan": "huruf jar + dhamir kembali kepada orang murtad."
+ },
+ {
+  "kataarab": "كَذَّابُونَ",
+  "arti": "para pendusta",
+  "penjelasan": "kata benda jamak. Subjek bagi klaim kenabian palsu."
+ },
+ {
+  "kataarab": "ادَّعَوُا",
+  "arti": "mereka mengaku",
+  "penjelasan": "kata kerja lampau bentuk jamak."
+ },
+ {
+  "kataarab": "النُّبُوَّةَ",
+  "arti": "kenabian",
+  "penjelasan": "kata benda objek dari ادَّعَوُا."
+ },
+ {
+  "kataarab": "وَمِنْهُمْ",
+  "arti": "dan di antara mereka",
+  "penjelasan": "huruf jar + dhamir. Menunjukkan sebagian dari kelompok."
+ },
+ {
+  "kataarab": "طُلَيْحَةُ",
+  "arti": "Tulaihah",
+  "penjelasan": "nama tokoh yang mengaku nabi."
+ },
+ {
+  "kataarab": "الْأَسَدِيُّ",
+  "arti": "dari kabilah Asad",
+  "penjelasan": "nisbah yang menjelaskan asal suku."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar menunjukkan lokasi atau kelompok."
+ },
+ {
+  "kataarab": "بَنِي أَسَدٍ",
+  "arti": "Bani Asad",
+  "penjelasan": "nama kabilah Arab."
+ },
+ {
+  "kataarab": "وَسَجَاحُ",
+  "arti": "dan Sajah",
+  "penjelasan": "nama perempuan yang mengaku nabi."
+ },
+ {
+  "kataarab": "بِنْتُ الْحَارِثِ",
+  "arti": "putri Al-Harits",
+  "penjelasan": "frasa nasab yang menjelaskan ayahnya."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "قِسْمٍ",
+  "arti": "sebagian",
+  "penjelasan": "kata benda yang berarti bagian."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "تَمِيمٍ",
+  "arti": "Tamim",
+  "penjelasan": "nama kabilah Arab."
+ },
+ {
+  "kataarab": "وَمُسَيْلِمَةُ",
+  "arti": "dan Musailamah",
+  "penjelasan": "nama tokoh yang mengaku nabi."
+ },
+ {
+  "kataarab": "الْكَذَّابُ",
+  "arti": "si pendusta",
+  "penjelasan": "julukan terkenal bagi Musailamah."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "بَنِي حَنِيفَةَ",
+  "arti": "Bani Hanifah",
+  "penjelasan": "nama kabilah di wilayah Yamamah."
+ },
+ {
+  "kataarab": "وَالْأَسْوَدُ",
+  "arti": "dan Al-Aswad",
+  "penjelasan": "nama tokoh pemberontak."
+ },
+ {
+  "kataarab": "الْعَنْسِيُّ",
+  "arti": "Al-Ansi",
+  "penjelasan": "nisbah kepada kabilah Ansi."
+ },
+ {
+  "kataarab": "الْقَحْطَانِيُّ",
+  "arti": "dari keturunan Qahtan",
+  "penjelasan": "penjelasan asal suku Arab selatan."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "di",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "الْيَمَنِ",
+  "arti": "Yaman",
+  "penjelasan": "nama wilayah di selatan Jazirah Arab."
+ },
+ {
+  "kataarab": "وَكَانَتِ",
+  "arti": "dan merupakan",
+  "penjelasan": "kata kerja lampau dari كان."
+ },
+ {
+  "kataarab": "الرِّدَّةُ",
+  "arti": "kemurtadan",
+  "penjelasan": "kata benda. Subjek kalimat."
+ },
+ {
+  "kataarab": "اخْتِبَارًا",
+  "arti": "ujian",
+  "penjelasan": "kata benda sebagai khabar كان."
+ },
+ {
+  "kataarab": "قَاسِيًا",
+  "arti": "berat",
+  "penjelasan": "kata sifat yang menjelaskan tingkat kesulitan."
+ },
+ {
+  "kataarab": "لِجَمَاعَةِ",
+  "arti": "bagi kelompok",
+  "penjelasan": "huruf jar + kata benda."
+ },
+ {
+  "kataarab": "الْمُسْلِمِينَ",
+  "arti": "kaum muslimin",
+  "penjelasan": "kata benda jamak majrur."
+ },
+ {
+  "kataarab": "بَعْدَ",
+  "arti": "setelah",
+  "penjelasan": "kata keterangan waktu."
+ },
+ {
+  "kataarab": "وَفَاةِ",
+  "arti": "wafat",
+  "penjelasan": "kata benda mudhaf."
+ },
+ {
+  "kataarab": "الرَّسُولِ",
+  "arti": "Rasul",
+  "penjelasan": "mudhaf ilaih."
+ },
+ {
+  "kataarab": "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+  "arti": "semoga Allah memberi salawat dan salam kepadanya",
+  "penjelasan": "ungkapan penghormatan kepada Nabi."
+ },
+ {
+  "kataarab": "وَقَدْ",
+  "arti": "dan sungguh",
+  "penjelasan": "huruf yang memberi penegasan pada peristiwa lampau."
+ },
+ {
+  "kataarab": "تَشَاوَرَ",
+  "arti": "bermusyawarah",
+  "penjelasan": "kata kerja lampau bentuk saling."
+ },
+ {
+  "kataarab": "أَبُو بَكْرٍ",
+  "arti": "Abu Bakar",
+  "penjelasan": "khalifah pertama. Subjek."
+ },
+ {
+  "kataarab": "وَكِبَارُ",
+  "arti": "dan para tokoh besar",
+  "penjelasan": "kata benda jamak berarti orang-orang terkemuka."
+ },
+ {
+  "kataarab": "الصَّحَابَةِ",
+  "arti": "para sahabat",
+  "penjelasan": "sahabat Nabi."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "dalam",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "الْأَمْرِ",
+  "arti": "urusan",
+  "penjelasan": "kata benda majrur."
+ },
+ {
+  "kataarab": "وَأَخِيرًا",
+  "arti": "akhirnya",
+  "penjelasan": "kata keterangan."
+ },
+ {
+  "kataarab": "اسْتَقَرَّ",
+  "arti": "menetap",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "الرَّأْيُ",
+  "arti": "pendapat",
+  "penjelasan": "subjek kalimat."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "pada",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "ضَرُورَةِ",
+  "arti": "keharusan",
+  "penjelasan": "kata benda mudhaf."
+ },
+ {
+  "kataarab": "مُوَاجَهَةِ",
+  "arti": "menghadapi",
+  "penjelasan": "masdar dari واجه."
+ },
+ {
+  "kataarab": "الْمُرْتَدِّينَ",
+  "arti": "orang-orang murtad",
+  "penjelasan": "objek yang dihadapi."
+ },
+ {
+  "kataarab": "سَوَاءٌ",
+  "arti": "sama saja",
+  "penjelasan": "kata keterangan yang menunjukkan kesetaraan."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "dalam",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "ذَلِكَ",
+  "arti": "hal itu",
+  "penjelasan": "kata tunjuk."
+ },
+ {
+  "kataarab": "مَنْ",
+  "arti": "siapa saja",
+  "penjelasan": "kata penghubung."
+ },
+ {
+  "kataarab": "عَادُوا",
+  "arti": "mereka kembali",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "kepada",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "الشِّرْكِ",
+  "arti": "kemusyrikan",
+  "penjelasan": "menyekutukan Tuhan."
+ },
+ {
+  "kataarab": "أَمِ",
+  "arti": "atau",
+  "penjelasan": "kata penghubung pilihan."
+ },
+ {
+  "kataarab": "الَّذِينَ",
+  "arti": "orang-orang yang",
+  "penjelasan": "isim maushul jamak."
+ },
+ {
+  "kataarab": "امْتَنَعُوا",
+  "arti": "mereka menolak",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "عَنْ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "أَدَاءِ",
+  "arti": "menunaikan",
+  "penjelasan": "masdar."
+ },
+ {
+  "kataarab": "الزَّكَاةِ",
+  "arti": "zakat",
+  "penjelasan": "ibadah harta."
+ },
+ {
+  "kataarab": "وَبِهَذِهِ",
+  "arti": "dan dengan ini",
+  "penjelasan": "huruf jar + kata tunjuk."
+ },
+ {
+  "kataarab": "الْعَزِيمَةِ",
+  "arti": "tekad",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "الصَّادِقَةِ",
+  "arti": "yang tulus",
+  "penjelasan": "kata sifat penjelas."
+ },
+ {
+  "kataarab": "وَالْإِيمَانِ",
+  "arti": "dan iman",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "الَّذِي",
+  "arti": "yang",
+  "penjelasan": "kata sambung penjelas."
+ },
+ {
+  "kataarab": "لَا",
+  "arti": "tidak",
+  "penjelasan": "huruf penafian."
+ },
+ {
+  "kataarab": "يَتَزَعْزَعُ",
+  "arti": "tergoyahkan",
+  "penjelasan": "kata kerja mudhari’."
+ },
+ {
+  "kataarab": "وَجَّهَ",
+  "arti": "mengarahkan",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "أَبُو بَكْرٍ",
+  "arti": "Abu Bakar",
+  "penjelasan": "subjek kalimat."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "pada",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "وَقْتٍ",
+  "arti": "waktu",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "وَاحِدٍ",
+  "arti": "satu",
+  "penjelasan": "kata sifat."
+ },
+ {
+  "kataarab": "أَحَدَ",
+  "arti": "sebelas",
+  "penjelasan": "bagian dari bilangan."
+ },
+ {
+  "kataarab": "عَشَرَ",
+  "arti": "sepuluh",
+  "penjelasan": "pelengkap bilangan sebelas."
+ },
+ {
+  "kataarab": "جَيْشًا",
+  "arti": "pasukan",
+  "penjelasan": "kata benda objek."
+ },
+ {
+  "kataarab": "لِمُقَاتَلَةِ",
+  "arti": "untuk memerangi",
+  "penjelasan": "masdar dengan lam tujuan."
+ },
+ {
+  "kataarab": "الْمُرْتَدِّينَ",
+  "arti": "orang-orang murtad",
+  "penjelasan": "objek peperangan."
+ },
+ {
+  "kataarab": "قَادَهَا",
+  "arti": "memimpin pasukan itu",
+  "penjelasan": "kata kerja + dhamir kembali ke pasukan."
+ },
+ {
+  "kataarab": "أَحَدَ",
+  "arti": "sebelas",
+  "penjelasan": "bilangan."
+ },
+ {
+  "kataarab": "عَشَرَ",
+  "arti": "sepuluh",
+  "penjelasan": "pelengkap bilangan."
+ },
+ {
+  "kataarab": "قَائِدًا",
+  "arti": "pemimpin",
+  "penjelasan": "kata benda objek."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "أَكْفَإِ",
+  "arti": "paling cakap",
+  "penjelasan": "kata sifat bentuk tafdhil."
+ },
+ {
+  "kataarab": "الْقَادَةِ",
+  "arti": "para pemimpin",
+  "penjelasan": "kata benda jamak."
+ },
+ {
+  "kataarab": "وَأَشَدِّهِمْ",
+  "arti": "dan paling kuat di antara mereka",
+  "penjelasan": "kata tafdhil + dhamir."
+ },
+ {
+  "kataarab": "إِخْلَاصًا",
+  "arti": "ketulusan",
+  "penjelasan": "kata benda yang menjelaskan sifat."
+ },
+ {
+  "kataarab": "لِلدَّعْوَةِ",
+  "arti": "bagi dakwah",
+  "penjelasan": "huruf jar + kata benda."
+ },
+ {
+  "kataarab": "الْإِسْلَامِيَّةِ",
+  "arti": "Islam",
+  "penjelasan": "kata sifat bagi dakwah."
+ },
+ {
+  "kataarab": "خَاضَتِ",
+  "arti": "telah menjalani",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "الْجُيُوشُ",
+  "arti": "pasukan-pasukan",
+  "penjelasan": "kata benda jamak."
+ },
+ {
+  "kataarab": "الْإِسْلَامِيَّةُ",
+  "arti": "Islam",
+  "penjelasan": "kata sifat."
+ },
+ {
+  "kataarab": "الْعَدِيدَ",
+  "arti": "banyak",
+  "penjelasan": "kata benda penunjuk jumlah."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "الْمَعَارِكِ",
+  "arti": "pertempuran",
+  "penjelasan": "kata benda jamak."
+ },
+ {
+  "kataarab": "ضِدَّ",
+  "arti": "melawan",
+  "penjelasan": "kata depan."
+ },
+ {
+  "kataarab": "الْمُرْتَدِّينَ",
+  "arti": "orang murtad",
+  "penjelasan": "objek lawan."
+ },
+ {
+  "kataarab": "وَقَدْ",
+  "arti": "sungguh",
+  "penjelasan": "penegasan."
+ },
+ {
+  "kataarab": "أَظْهَرَ",
+  "arti": "menunjukkan",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "الْمُقَاتِلُونَ",
+  "arti": "para pejuang",
+  "penjelasan": "kata benda jamak."
+ },
+ {
+  "kataarab": "الْمُسْلِمُونَ",
+  "arti": "kaum muslim",
+  "penjelasan": "kata sifat."
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "dalam",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "هَذِهِ",
+  "arti": "ini",
+  "penjelasan": "kata tunjuk."
+ },
+ {
+  "kataarab": "الْمَعَارِكِ",
+  "arti": "pertempuran",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "ضُرُوبًا",
+  "arti": "berbagai bentuk",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "رَائِعَةً",
+  "arti": "luar biasa",
+  "penjelasan": "kata sifat."
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "التَّفَانِي",
+  "arti": "pengorbanan",
+  "penjelasan": "kata benda masdar."
+ },
+ {
+  "kataarab": "وَالْإِخْلَاصِ",
+  "arti": "dan ketulusan",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "وَنَتِيجَةً",
+  "arti": "sebagai hasil",
+  "penjelasan": "kata keterangan akibat."
+ },
+ {
+  "kataarab": "لِعَزِيمَةِ",
+  "arti": "tekad",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "الْقِيَادَةِ",
+  "arti": "kepemimpinan",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "وَتَفَانِي",
+  "arti": "pengorbanan",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "الْمُقَاتِلِينَ",
+  "arti": "para pejuang",
+  "penjelasan": "kata benda jamak."
+ },
+ {
+  "kataarab": "قُضِيَ",
+  "arti": "dihancurkan",
+  "penjelasan": "kata kerja pasif lampau."
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "atas",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "حَرَكَةِ",
+  "arti": "gerakan",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "الرِّدَّةِ",
+  "arti": "kemurtadan",
+  "penjelasan": "kata benda penjelas."
+ },
+ {
+  "kataarab": "وَعَادَ",
+  "arti": "dan kembali",
+  "penjelasan": "kata kerja lampau."
+ },
+ {
+  "kataarab": "الْإِسْلَامُ",
+  "arti": "Islam",
+  "penjelasan": "subjek kalimat."
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "dari",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "جَدِيدٍ",
+  "arti": "kembali",
+  "penjelasan": "kata keterangan keadaan."
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "ke",
+  "penjelasan": "huruf jar."
+ },
+ {
+  "kataarab": "كُلِّ",
+  "arti": "seluruh",
+  "penjelasan": "kata penunjuk totalitas."
+ },
+ {
+  "kataarab": "بِلَادِ",
+  "arti": "negeri-negeri",
+  "penjelasan": "kata benda jamak."
+ },
+ {
+  "kataarab": "الْجَزِيرَةِ",
+  "arti": "jazirah",
+  "penjelasan": "kata benda."
+ },
+ {
+  "kataarab": "الْعَرَبِيَّةِ",
+  "arti": "Arab",
+  "penjelasan": "kata sifat yang menjelaskan jazirah."
+ }
+
+
+]

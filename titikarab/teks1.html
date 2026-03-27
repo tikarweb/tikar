@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titik Arab</title>
+    <link rel="icon" type="image/png" href="img/tamov6.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo+Play:wght@200..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <style>
+        .judul-arab {
+            direction: rtl;
+            font-family: Alyamama;
+            text-align: center;
+            font-size: 36px;
+            line-height: 2.4;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="layout">
+        <div class="text-area">
+            <h2 class="judul-arab arabicText"> مُقَاطَعَةُ قُرَيْشٍ لِبَنِي هَاشِمَ وَبَنِي الْمُطَلِّبِ </h2>
+            <p class="arabicText">
+
+                اِشْتَدَّ خَوْفُ قُرَيْشٍ مِنِ انْتِشَارِ الإِسْلَامِ وَازْدِيَادِ الدَّاخِلِينَ فِيهِ، فَفَكَّرَ
+                زُعَمَاؤُهَا فِي سِلَاحٍ يُقَاوِمُونَ بِهِ هَذَا الْخَطَرَ الشَّدِيدَ، وَهُوَ سِلَاحُ قَطْعِ الْمَاءِ
+                وَالطَّعَامِ عَنِ الْمُسْلِمِينَ وَعَدَمِ الِاتِّصَالِ بِهِمْ، وَاتَّفَقُوا عَلَى مُقَاطَعَةِ بَنِي
+                هَاشِمٍ وَبَنِي الْمُطَّلِبِ مُقَاطَعَةً تَامَّةً، فَلَا يَتَزَوَّجُونَ مِنْ نِسَائِهِمْ، وَلَا
+                يَبِيعُونَ لَهُمْ، وَلَا يَشْتَرُونَ مِنْهُمْ، وَلَا يُخَالِطُونَهُمْ، وَلَا يَقْبَلُونَ مِنْهُمْ
+                صُلْحًا، حَتَّى يُسَلِّمُوا رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ لِلْقَتْلِ.
+
+                سَجَّلَ زُعَمَاءُ قُرَيْشٍ هَذِهِ الْقَرَارَاتِ فِي صَحِيفَةٍ عُلِّقَتْ فِي جَوْفِ الْكَعْبَةِ
+                تَأْكِيدًا عَلَى احْتِرَامِهَا.
+
+            </p>
+            <p class="arabicText">
+
+                فَانْتَقَلَ بَنُو هَاشِمٍ وَبَنُو الْمُطَّلِبِ وَمَعَهُمُ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ
+                إِلَى شِعْبِ أَبِي طَالِبٍ، وَدَامَتِ الْمُقَاطَعَةُ ثَلَاثَةَ أَعْوَامٍ، قَاسَوْا فِيهَا الْجُوعَ
+                وَالشِّدَّةَ، حَتَّى أَكَلُوا أَوْرَاقَ الشَّجَرِ.
+
+                ثُمَّ قَامَ بَعْضُ زُعَمَاءِ قُرَيْشٍ بِنَقْضِ الصَّحِيفَةِ، وَكَانَ مِنْهُمْ هِشَامُ بْنُ عَمْرٍو
+                وَزُهَيْرُ بْنُ أُمَيَّةَ وَالْمُطْعِمُ بْنُ عَدِيٍّ، فَشَقُّوا الصَّحِيفَةَ وَانْتَهَتِ الْمُقَاطَعَةُ.
+
+            </p>
+        </div>
+        <div id="popup">
+            <h5 id="kataArab"></h5>
+            <p id="arti"></p>
+            <p id="penjelasan"></p>
+        </div>
+    </div>
+
+
+
+    <div class="back-area"> <a href="index.html" class="btn-back-floating">← Kembali</a> </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

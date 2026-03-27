@@ -1,0 +1,876 @@
+/* LATIHAN! HTML */
+.level { display: none; }
+.level.active { display: block; }
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+
+  /* TAMBAHAN */
+  position: relative;
+  z-index: 2;
+}
+
+
+.level{
+  animation:fade 0.3s ease;
+}
+
+@keyframes fade{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+
+
+textarea {
+  width: 100%;
+  height: 120px;
+}
+
+/* 1 END */
+
+/* CSS GEMBOK */
+.level-card {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #c97426;
+border: 2px solid #f2baba;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: relative;
+}
+
+/* angka level */
+.level-text {
+font-size: 14px;
+font-weight: 600;
+}
+/* gembok di tengah */
+.lock-icon {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 18px;
+}
+/* LOGIC TAMPIL */
+.level-card.locked .level-text {
+display: none;
+}
+
+.level-card.unlocked .lock-icon {
+display: none;
+}
+
+/* unlocked */
+.level-card.unlocked {
+border: 2px solid #293b29;
+}
+
+/* locked */
+.level-card.locked {
+border: 2px solid #ddd;
+}
+/* garis kanan (INI YANG BENAR) */
+.level-card::after {
+content: "";
+position: absolute;
+width: 35px;
+height: 2px;
+background: #187268;
+left: 100%;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.level-card:last-child::after {
+display: none;
+}
+/* jarak dan posisi */
+.levels-circle {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+
+
+
+
+.level-card.unlocked:hover {
+  transform: scale(1.1);
+}
+
+/* Level terkunci */
+.level-card.locked {
+  background-color: #ddd;
+color: #aaa;
+  cursor: not-allowed;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+}
+/* gembok END */
+
+/* KOTAK JAWABAN */
+.soal-card{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.soal-container input[type="text"],
+#jawaban2,
+#jawaban3,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.quiz-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 20px;
+
+  /* TAMBAHAN */
+  position: relative;
+  z-index: 2;
+}
+
+#essay{
+  width:100%;
+  min-height:150px;
+  border-radius:10px;
+  padding:12px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+
+#essay:focus{
+  border-color:#2c83a0;
+  outline:none;
+}
+
+/* LAT KITABAH START */
+#kitabah{
+width:100%;
+padding:14px;
+font-size:20px;
+font-family:'Amiri',serif;
+direction:rtl;
+text-align:right;
+
+border-radius:10px;
+border:1px solid #ccc;
+
+margin-top:20px;
+}
+
+#counter{
+margin-top:10px;
+font-size:16px;
+color:#555;
+}
+#submitBtn{
+margin-top:15px;
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:6px;
+background:#4CAF50;
+color:white;
+cursor:pointer;
+}
+
+#submitBtn:disabled{
+background:#ccc;
+cursor:not-allowed;
+}
+
+/* LAT KITABAH END */
+
+/* HUBUNGI/KONTAK */
+#kontak form {
+  text-align: left;
+}
+
+#kontak label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+#kontak .col-md-6 {
+  margin: auto;
+}
+/* KONTAK END */
+
+
+/* =================================
+RESET DASAR
+================================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+/* =================================
+BODY
+================================= */
+/* html, body {
+overflow-x: hidden;
+overscroll-behavior-x:none;
+} */
+body{
+font-family:'Karla',sans-serif;
+background-color:#a7a1b4;
+background-image:radial-gradient(#e6d3bf 1px,transparent 1px);
+background-size:25px 25px;
+line-height:1.6;
+overflow-x: hidden;
+}
+
+
+/* =================================
+CONTAINER GLOBAL
+================================= */
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+
+/* =================================
+HERO SECTION
+================================= */
+
+.hero-section{
+background:#cfe2ff;
+padding-top:140px;
+padding-bottom:120px;
+
+}
+
+.hero-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+padding:0 40px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:44px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+color:#444;
+margin-bottom:30px;
+line-height:1.7;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.btn-hero-primary{
+background:#2c83a0;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-hero-primary:hover{
+background:#25687a;
+}
+
+.btn-hero-secondary{
+border:2px solid #2c83a0;
+color:#2c83a0;
+padding:10px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-hero-secondary:hover{
+background:#2c83a0;
+color:white;
+}
+
+.hero-image img{
+width:90%;
+max-width:350px;
+border-radius:50%;
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+height: auto;
+}
+
+
+/* =================================
+SCROLL INDICATOR
+================================= */
+
+.scroll-indicator{
+text-align:center;
+font-size:28px;
+margin-top:40px;
+opacity:0.6;
+animation:scrollAnim 1.5s infinite;
+}
+
+@keyframes scrollAnim{
+0%{transform:translateY(0)}
+50%{transform:translateY(10px)}
+100%{transform:translateY(0)}
+}
+
+
+/* FIX KLIK KARTU LATIHAN */
+.kitabah-section {
+background: #d5d694;
+position: relative;
+z-index: 1;
+padding-bottom: 80px;
+padding-top: 60px;
+}
+
+.kitabah-right{
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.kitabah-scroll{
+  position: relative;
+  z-index: 2;
+}
+
+.kitabah-card{
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.kitabah-wrapper{
+display:flex;
+gap:40px;
+align-items:flex-start;
+max-width:1200px;
+margin:auto;
+padding-left:40px;
+padding-right:40px;
+}
+
+.kitabah-left {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+
+}
+
+.kitabah-left h2{
+font-size:32px;
+margin-bottom:10px;
+font-family: 'karla', sans-serif;
+}
+
+.kitabah-left p{
+color:#666;
+margin-bottom:20px;
+font-family: "Lugrasimo", cursive;
+max-width: 280px;
+line-height: 1.5;
+font-size: 16px;
+}
+
+.btn-kitabah{
+display:block;
+padding:8px 14px;
+border:2px solid #2c83a0;
+border-radius:30px;
+color:#2c83a0;
+text-decoration:none;
+font-weight:600;
+max-width: 180px;
+justify-content: center;
+margin-top: 15px;
+margin: 15px auto 0;
+}
+
+.kitabah-right{
+flex:1;
+overflow:hidden;
+}
+
+.kitabah-scroll{
+display:flex;
+gap:20px;
+overflow-x:auto;
+padding-bottom:10px;
+scroll-behavior:smooth;
+}
+
+.kitabah-scroll::-webkit-scrollbar{
+display:none;
+}
+
+.kitabah-card{
+min-width:220px;
+background:white;
+border-radius:18px;
+padding:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+flex-shrink:0;
+}
+
+.kitabah-card img{
+width: 90px;
+height: 100;
+object-fit: contain;
+transform: scale(1.4);
+}
+
+.kitabah-card h5{
+font-size:16px;
+margin-bottom:6px;
+}
+
+.kitabah-card span{
+font-size:13px;
+color:#777;
+}
+
+/* =================================
+LAYOUT HALAMAN TEKS
+================================= */
+
+.layout{
+max-width:1200px;
+margin:auto;
+padding:120px 30px 60px 30px;
+position:relative;
+}
+
+.text-area{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+max-width:780px;
+margin-left:340px;
+}
+
+#popup{
+position:fixed;
+top:140px;
+left: 60px;
+width:300px;
+max-height:70vh;
+
+background:#dabda6;
+color:#f5f3f2;
+
+border-radius:14px;
+padding:18px;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+
+display:flex;
+flex-direction:column;
+gap:6px;
+
+overflow-y:auto;
+z-index:999;
+
+/* INI YANG BIKIN FIX */
+pointer-events:none;
+}
+
+#popup *{
+pointer-events:auto;
+}
+
+/* =================================
+TEKS ARAB
+================================= */
+
+.arabicText{
+font-family:'Amiri',serif;
+direction:rtl;
+text-align:justify;
+font-size:24px;
+line-height:2;
+}
+.text-area p.arabicText{
+direction: rtl;
+text-align: justify;
+text-indent: 2em;
+line-height: 2.2;
+}
+
+.word{
+cursor:pointer;
+transition:0.2s;
+}
+
+.word:hover{
+background:#e6d3bf;
+border-radius:4px;
+}
+
+/* =================================
+POPUP KOSAKATA
+================================= */
+
+.popup-area{
+position: fixed;
+width:320px;
+flex-shrink:0;
+position:sticky;
+top:100px;
+}
+
+#kataArab{
+font-family:"Amiri";
+font-size:30px;
+direction:rtl;
+color:#080000;
+border-bottom:1px solid rgba(255,255,255,0.25);
+padding-bottom:6px;
+margin-bottom: 6px;
+}
+
+#arti{
+font-family:"Karla";
+font-size:20px;
+color:#c834a3;
+margin-top: 4px;
+margin-bottom:6px;
+}
+
+#penjelasan{
+font-family:"Karla", amiri, serif;
+font-size: 20px;
+color:#a94e20;
+line-height:1.6;
+overflow-y:auto;
+flex-grow:1;
+padding-right:6px;
+}
+
+/* =================================
+BUTTON
+================================= */
+
+.btn-semua-bacaan{
+display:block;
+width:280px;
+margin:60px auto;
+padding:12px 18px;
+text-align:center;
+background:#2f7f95;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-semua-bacaan:hover{
+background:#25687a;
+transform:translateY(-2px);
+}
+
+.btn-home{
+display:inline-block;
+margin-top:30px;
+padding:8px 16px;
+background:#2c83a0;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+.btn-home:hover{
+background:#25687a;
+}
+
+.back-area{
+position:sticky;
+top:30px;
+margin-bottom:20px;
+z-index:10;
+}
+
+.btn-back-floating{
+position:fixed;
+bottom:40px;
+left:60px;
+padding:10px 18px;
+background:#2c83a0;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:14px;
+box-shadow:0 6px 16px rgba(0,0,0,0.2);
+z-index:50;
+}
+
+.btn-back-floating:hover{
+background:#25687a;
+transform:translateY(-2px);
+}
+
+/* =================================
+CARD BACaan
+================================= */
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.25s;
+display:flex;
+flex-direction:column;
+height:100%;
+}
+
+.card-content{
+padding:18px;
+text-align:center;
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+/* =================================
+NAVBAR
+================================= */
+
+.logo img{
+height:50px;
+}
+
+.navbar .nav-link{
+color:white;
+transition:0.3s;
+}
+
+.navbar .nav-link:hover{
+color:#eb8178;
+}
+
+.navbar .nav-link.active{
+color:#6e3833;
+font-weight:600;
+}
+
+/* =================================
+TIPOGRAFI
+================================= */
+
+h1,h2,h3,.navbar-brand{
+font-family:'Cairo Play',sans-serif;
+}
+
+/* =================================
+SECTION
+================================= */
+
+section{
+padding-top:5rem;
+}
+
+input[type="radio"]{
+transform:scale(1.2);
+margin-right:8px;
+}
+label{
+display:block;
+margin-bottom:8px;
+}
+
+/* =================================
+BUTTON FORM
+================================= */
+
+.btn-kirim{
+background-color:#2c83a0;
+border-color:#07293d;
+color:white;
+}
+
+.btn-kirim:hover{
+background-color:#25687a;
+}
+
+/* =================================
+FOOTER
+================================= */
+
+footer{
+background-color:#2c83a0;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* =================================
+RESPONSIVE
+================================= */
+
+@media(max-width:900px){
+
+.layout{
+flex-direction:column;
+}
+
+#popup{
+width:100%;
+}
+
+.hero-container{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+/* ===== FIX PAKSA SCROLL KITABAH (MOBILE) ===== */
+@media (max-width: 768px){
+
+  body{
+    overflow-x: auto !important;
+  }
+
+  .kitabah-wrapper{
+    display: block !important;
+    padding: 0 16px;
+  }
+
+  .kitabah-left{
+    margin-bottom: 20px;
+  }
+
+  .kitabah-right{
+    width: 100%;
+    overflow-x: auto !important;
+  }
+
+  .kitabah-scroll{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 16px;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    width: max-content !important;
+  }
+
+  .kitabah-card{
+    min-width: 220px !important;
+    flex-shrink: 0 !important;
+  }
+
+}
+/* ini index grid */
+
+.grid-ibacaan{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.25s;
+display:flex;
+flex-direction:column;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 35px rgba(0,0,0,0.12);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.card-content{
+padding:18px;
+text-align:center;
+flex:1;
+}
+
+.card .judul-arab{
+font-family:'Amiri', serif;
+font-size:22px;
+margin-bottom:12px;
+}
+
+.deskripsi{
+font-size:14px;
+color:#666;
+margin-bottom:16px;
+}
+
+.btn-baca{
+display:inline-block;
+padding:8px 16px;
+background:#2f7f95;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}

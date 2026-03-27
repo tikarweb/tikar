@@ -1,0 +1,979 @@
+[
+
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda. subjek. berarti negara atau pemerintahan"
+ },
+ {
+  "kataarab": "العَبَّاسِيَّةُ",
+  "arti": "arti: Abbasiyah",
+  "penjelasan": "penjelasan: kata sifat nisbah. menunjukkan dinasti Abbasiyah"
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di \/ pada",
+  "penjelasan": "penjelasan: huruf jar. menunjukkan keterangan waktu atau tempat"
+ },
+ {
+  "kataarab": "سَنَةِ",
+  "arti": "arti: tahun",
+  "penjelasan": "penjelasan: kata benda. keterangan waktu"
+ },
+ {
+  "kataarab": 132,
+  "arti": "arti: 132",
+  "penjelasan": "penjelasan: bilangan. menunjukkan angka tahun"
+ },
+ {
+  "kataarab": "هـ",
+  "arti": "arti: Hijriyah",
+  "penjelasan": "penjelasan: singkatan tahun Hijriyah"
+ },
+ {
+  "kataarab": "قَامَتِ",
+  "arti": "arti: berdiri",
+  "penjelasan": "penjelasan: kata kerja lampau. fi‘il māḍī. menunjukkan berdirinya suatu negara"
+ },
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda. subjek kalimat"
+ },
+ {
+  "kataarab": "العَبَّاسِيَّةُ",
+  "arti": "arti: Abbasiyah",
+  "penjelasan": "penjelasan: kata sifat nisbah yang menjelaskan jenis negara"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf ‘athaf. kata penghubung"
+ },
+ {
+  "kataarab": "هِيَ",
+  "arti": "arti: ia",
+  "penjelasan": "penjelasan: kata ganti perempuan tunggal. merujuk pada الدولة"
+ },
+ {
+  "kataarab": "تُنْسَبُ",
+  "arti": "arti: dinisbatkan",
+  "penjelasan": "penjelasan: fi‘il mudhari‘ bentuk pasif"
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "arti: kepada",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "العَبَّاسِ",
+  "arti": "arti: Abbas",
+  "penjelasan": "penjelasan: nama tokoh. leluhur dinasti Abbasiyah"
+ },
+ {
+  "kataarab": "بْنِ",
+  "arti": "arti: anak dari",
+  "penjelasan": "penjelasan: kata penghubung nasab"
+ },
+ {
+  "kataarab": "عَبْدِ",
+  "arti": "arti: hamba",
+  "penjelasan": "penjelasan: bagian dari nama"
+ },
+ {
+  "kataarab": "المُطَّلِبِ",
+  "arti": "arti: Muththalib",
+  "penjelasan": "penjelasan: nama tokoh. kakek Nabi"
+ },
+ {
+  "kataarab": "عَمِّ",
+  "arti": "arti: paman",
+  "penjelasan": "penjelasan: kata benda. hubungan keluarga"
+ },
+ {
+  "kataarab": "الرَّسُولِ",
+  "arti": "arti: Rasul",
+  "penjelasan": "penjelasan: Nabi Muhammad"
+ },
+ {
+  "kataarab": "صَلَّى",
+  "arti": "arti: semoga Allah memberi rahmat",
+  "penjelasan": "penjelasan: kata kerja doa"
+ },
+ {
+  "kataarab": "اللَّهُ",
+  "arti": "arti: Allah",
+  "penjelasan": "penjelasan: nama Tuhan dalam Islam"
+ },
+ {
+  "kataarab": "عَلَيْهِ",
+  "arti": "arti: kepadanya",
+  "penjelasan": "penjelasan: huruf jar + kata ganti"
+ },
+ {
+  "kataarab": "وَسَلَّمَ",
+  "arti": "arti: dan memberi keselamatan",
+  "penjelasan": "penjelasan: doa penghormatan kepada Nabi"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "قَدْ",
+  "arti": "arti: sungguh",
+  "penjelasan": "penjelasan: partikel penegas"
+ },
+ {
+  "kataarab": "عُمِّرَتْ",
+  "arti": "arti: berlangsung",
+  "penjelasan": "penjelasan: kata kerja lampau pasif. berarti bertahan lama"
+ },
+ {
+  "kataarab": "هٰذِهِ",
+  "arti": "arti: ini",
+  "penjelasan": "penjelasan: isim isyarah perempuan"
+ },
+ {
+  "kataarab": "الدَّوْلَةُ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "أَكْثَرَ",
+  "arti": "arti: lebih dari",
+  "penjelasan": "penjelasan: kata keterangan jumlah"
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "خَمْسَةِ",
+  "arti": "arti: lima",
+  "penjelasan": "penjelasan: bilangan"
+ },
+ {
+  "kataarab": "قُرُونٍ",
+  "arti": "arti: abad",
+  "penjelasan": "penjelasan: jamak dari قرن"
+ },
+ {
+  "kataarab": "مِنْ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "عَامِ",
+  "arti": "arti: tahun",
+  "penjelasan": "penjelasan: kata benda waktu"
+ },
+ {
+  "kataarab": 132,
+  "arti": "arti: 132",
+  "penjelasan": "penjelasan: angka tahun"
+ },
+ {
+  "kataarab": "هـ",
+  "arti": "arti: Hijriyah",
+  "penjelasan": "penjelasan: penunjuk kalender Hijriyah"
+ },
+ {
+  "kataarab": "إِلَى",
+  "arti": "arti: sampai",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": 656,
+  "arti": "arti: 656",
+  "penjelasan": "penjelasan: angka tahun"
+ },
+ {
+  "kataarab": "هـ",
+  "arti": "arti: Hijriyah",
+  "penjelasan": "penjelasan: penunjuk kalender Hijriyah"
+ },
+ {
+  "kataarab": "تَعَاقَبَ",
+  "arti": "arti: silih berganti",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: atas",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "الخِلَافَةِ",
+  "arti": "arti: kekhalifahan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العَبَّاسِيَّةِ",
+  "arti": "arti: Abbasiyah",
+  "penjelasan": "penjelasan: kata sifat nisbah"
+ },
+ {
+  "kataarab": "سَبْعَةٌ",
+  "arti": "arti: tujuh",
+  "penjelasan": "penjelasan: bilangan"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "ثَلَاثُونَ",
+  "arti": "arti: tiga puluh",
+  "penjelasan": "penjelasan: bilangan"
+ },
+ {
+  "kataarab": "خَلِيفَةً",
+  "arti": "arti: khalifah",
+  "penjelasan": "penjelasan: kata benda. pemimpin umat Islam"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "مَرَّتْ",
+  "arti": "arti: telah melalui",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "بِأَرْبَعَةِ",
+  "arti": "arti: dengan empat",
+  "penjelasan": "penjelasan: huruf jar + bilangan"
+ },
+ {
+  "kataarab": "عُصُورٍ",
+  "arti": "arti: masa-masa",
+  "penjelasan": "penjelasan: jamak dari عصر"
+ },
+ {
+  "kataarab": "هِيَ",
+  "arti": "arti: yaitu",
+  "penjelasan": "penjelasan: kata penjelas"
+ },
+ {
+  "kataarab": "العَصْرُ",
+  "arti": "arti: masa",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "الأَوَّلُ",
+  "arti": "arti: pertama",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "العَصْرُ",
+  "arti": "arti: masa",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "التُّرْكِيُّ",
+  "arti": "arti: Turki",
+  "penjelasan": "penjelasan: kata sifat nisbah"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "العَصْرُ",
+  "arti": "arti: masa",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "البُوَيْهِِيُّ",
+  "arti": "arti: Buwaihi",
+  "penjelasan": "penjelasan: dinasti Buwaihiyah"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "أَخِيرًا",
+  "arti": "arti: terakhir",
+  "penjelasan": "penjelasan: kata keterangan"
+ },
+ {
+  "kataarab": "العَصْرُ",
+  "arti": "arti: masa",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "السَّلْجُوقِيُّ",
+  "arti": "arti: Seljuk",
+  "penjelasan": "penjelasan: dinasti Seljuk"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "أَهَمُّ",
+  "arti": "arti: paling penting",
+  "penjelasan": "penjelasan: bentuk superlatif"
+ },
+ {
+  "kataarab": "الخُلَفَاءِ",
+  "arti": "arti: para khalifah",
+  "penjelasan": "penjelasan: jamak dari خليفة"
+ },
+ {
+  "kataarab": "العَبَّاسِيِّينَ",
+  "arti": "arti: Abbasiyah",
+  "penjelasan": "penjelasan: nisbah kepada dinasti Abbasiyah"
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: secara",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "الإِطْلَاقِ",
+  "arti": "arti: mutlak",
+  "penjelasan": "penjelasan: berarti secara keseluruhan"
+ },
+ {
+  "kataarab": "اثْنَانِ",
+  "arti": "arti: dua",
+  "penjelasan": "penjelasan: bilangan"
+ },
+ {
+  "kataarab": "هُمَا",
+  "arti": "arti: mereka berdua",
+  "penjelasan": "penjelasan: dhamir mutsanna"
+ },
+ {
+  "kataarab": "أَبُو",
+  "arti": "arti: ayah dari",
+  "penjelasan": "penjelasan: bagian nama Arab"
+ },
+ {
+  "kataarab": "جَعْفَرٍ",
+  "arti": "arti: Ja‘far",
+  "penjelasan": "penjelasan: nama orang"
+ },
+ {
+  "kataarab": "المَنْصُورُ",
+  "arti": "arti: Al-Mansur",
+  "penjelasan": "penjelasan: khalifah Abbasiyah kedua"
+ },
+ {
+  "kataarab": "وَ",
+  "arti": "arti: dan",
+  "penjelasan": "penjelasan: huruf penghubung"
+ },
+ {
+  "kataarab": "هَارُونُ",
+  "arti": "arti: Harun",
+  "penjelasan": "penjelasan: nama khalifah"
+ },
+ {
+  "kataarab": "الرَّشِيدُ",
+  "arti": "arti: Ar-Rasyid",
+  "penjelasan": "penjelasan: khalifah Abbasiyah terkenal"
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: di",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "ظِلِّ",
+  "arti": "arti: di bawah",
+  "penjelasan": "penjelasan: kata benda bermakna perlindungan atau masa kekuasaan"
+ },
+ {
+  "kataarab": "الدَّوْلَةِ",
+  "arti": "arti: negara",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العَبَّاسِيَّةِ",
+  "arti": "arti: Abbasiyah",
+  "penjelasan": "penjelasan: kata sifat nisbah"
+ },
+ {
+  "kataarab": "ازْدَهَرَتِ",
+  "arti": "arti: berkembang pesat",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "الحَرَكَةُ",
+  "arti": "arti: gerakan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العِلْمِيَّةُ",
+  "arti": "arti: ilmiah",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "وَذٰلِكَ",
+  "arti": "arti: dan itu",
+  "penjelasan": "penjelasan: kata penunjuk"
+ },
+ {
+  "kataarab": "بِفَضْلِ",
+  "arti": "arti: berkat",
+  "penjelasan": "penjelasan: huruf jar + kata benda"
+ },
+ {
+  "kataarab": "تَشْجِيعِ",
+  "arti": "arti: dorongan",
+  "penjelasan": "penjelasan: kata benda masdar"
+ },
+ {
+  "kataarab": "الخُلَفَاءِ",
+  "arti": "arti: para khalifah",
+  "penjelasan": "penjelasan: kata benda jamak"
+ },
+ {
+  "kataarab": "لَهَا",
+  "arti": "arti: terhadapnya",
+  "penjelasan": "penjelasan: huruf jar + dhamir"
+ },
+ {
+  "kataarab": "مِثْلَ",
+  "arti": "arti: seperti",
+  "penjelasan": "penjelasan: kata perbandingan"
+ },
+ {
+  "kataarab": "هَارُونِ",
+  "arti": "arti: Harun",
+  "penjelasan": "penjelasan: nama khalifah"
+ },
+ {
+  "kataarab": "الرَّشِيدِ",
+  "arti": "arti: Ar-Rasyid",
+  "penjelasan": "penjelasan: gelar khalifah"
+ },
+ {
+  "kataarab": "وَابْنِهِ",
+  "arti": "arti: dan anaknya",
+  "penjelasan": "penjelasan: kata benda + dhamir"
+ },
+ {
+  "kataarab": "الخَلِيفَةِ",
+  "arti": "arti: khalifah",
+  "penjelasan": "penjelasan: pemimpin"
+ },
+ {
+  "kataarab": "المَأْمُونِ",
+  "arti": "arti: Al-Ma’mun",
+  "penjelasan": "penjelasan: khalifah Abbasiyah"
+ },
+ {
+  "kataarab": "عَهْدُ",
+  "arti": "arti: masa pemerintahan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "المَأْمُونِ",
+  "arti": "arti: Al-Ma’mun",
+  "penjelasan": "penjelasan: nama khalifah"
+ },
+ {
+  "kataarab": "ذِرْوَةَ",
+  "arti": "arti: puncak",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "النَّشَاطِ",
+  "arti": "arti: aktivitas",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العِلْمِيِّ",
+  "arti": "arti: ilmiah",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "فَقَدْ",
+  "arti": "arti: maka sungguh",
+  "penjelasan": "penjelasan: huruf penegas"
+ },
+ {
+  "kataarab": "كَانَ",
+  "arti": "arti: adalah",
+  "penjelasan": "penjelasan: kata kerja ناقص"
+ },
+ {
+  "kataarab": "المَأْمُونُ",
+  "arti": "arti: Al-Ma’mun",
+  "penjelasan": "penjelasan: subjek"
+ },
+ {
+  "kataarab": "عَالِمًا",
+  "arti": "arti: seorang ilmuwan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "مُحِبًّا",
+  "arti": "arti: pecinta",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "لِلْعِلْمِ",
+  "arti": "arti: ilmu",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "وَالعُلَمَاءِ",
+  "arti": "arti: dan para ulama",
+  "penjelasan": "penjelasan: jamak dari عالم"
+ },
+ {
+  "kataarab": "الثَّرَاءَ",
+  "arti": "arti: kekayaan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "شَجَّعَ",
+  "arti": "arti: mendorong",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "الكَثِيرِينَ",
+  "arti": "arti: banyak orang",
+  "penjelasan": "penjelasan: kata benda jamak"
+ },
+ {
+  "kataarab": "عَلَى",
+  "arti": "arti: untuk",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "الإِسْهَامِ",
+  "arti": "arti: berkontribusi",
+  "penjelasan": "penjelasan: masdar"
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: dalam",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "الحَرَكَةِ",
+  "arti": "arti: gerakan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العِلْمِيَّةِ",
+  "arti": "arti: ilmiah",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "بَغْدَادُ",
+  "arti": "arti: Baghdad",
+  "penjelasan": "penjelasan: nama kota pusat Abbasiyah"
+ },
+ {
+  "kataarab": "مَرَاكِزَ",
+  "arti": "arti: pusat-pusat",
+  "penjelasan": "penjelasan: jamak dari مركز"
+ },
+ {
+  "kataarab": "إِشْعَاعٍ",
+  "arti": "arti: penyebaran",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "لِلْعِلْمِ",
+  "arti": "arti: ilmu",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "وَالحَضَارَةِ",
+  "arti": "arti: peradaban",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "ظَهَرَ",
+  "arti": "arti: muncul",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "عِلْمُ",
+  "arti": "arti: ilmu",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "التَّفْسِيرِ",
+  "arti": "arti: tafsir",
+  "penjelasan": "penjelasan: ilmu penafsiran Al-Qur’an"
+ },
+ {
+  "kataarab": "المُفَسِّرِينَ",
+  "arti": "arti: para ahli tafsir",
+  "penjelasan": "penjelasan: jamak dari مفسر"
+ },
+ {
+  "kataarab": "الطَّبَرِيِّ",
+  "arti": "arti: At-Tabari",
+  "penjelasan": "penjelasan: ulama tafsir terkenal"
+ },
+ {
+  "kataarab": "الزَّمَخْشَرِيِّ",
+  "arti": "arti: Az-Zamakhsyari",
+  "penjelasan": "penjelasan: ulama tafsir"
+ },
+ {
+  "kataarab": "النَّسَفِيِّ",
+  "arti": "arti: An-Nasafi",
+  "penjelasan": "penjelasan: ulama tafsir"
+ },
+ {
+  "kataarab": "الحَدِيثِ",
+  "arti": "arti: hadis",
+  "penjelasan": "penjelasan: perkataan Nabi"
+ },
+ {
+  "kataarab": "أَفْذَاذٌ",
+  "arti": "arti: tokoh besar",
+  "penjelasan": "penjelasan: orang hebat"
+ },
+ {
+  "kataarab": "البُخَارِيِّ",
+  "arti": "arti: Al-Bukhari",
+  "penjelasan": "penjelasan: ulama hadis"
+ },
+ {
+  "kataarab": "مُسْلِمٍ",
+  "arti": "arti: Muslim",
+  "penjelasan": "penjelasan: ulama hadis"
+ },
+ {
+  "kataarab": "المَذَاهِبُ",
+  "arti": "arti: mazhab-mazhab",
+  "penjelasan": "penjelasan: jamak dari مذهب"
+ },
+ {
+  "kataarab": "الفِقْهِيَّةُ",
+  "arti": "arti: fikih",
+  "penjelasan": "penjelasan: berkaitan dengan hukum Islam"
+ },
+ {
+  "kataarab": "الأَرْبَعَةُ",
+  "arti": "arti: empat",
+  "penjelasan": "penjelasan: bilangan"
+ },
+ {
+  "kataarab": "النَّحْوِ",
+  "arti": "arti: nahwu",
+  "penjelasan": "penjelasan: ilmu tata bahasa Arab"
+ },
+ {
+  "kataarab": "مَدْرَسَتَا",
+  "arti": "arti: dua madrasah",
+  "penjelasan": "penjelasan: bentuk mutsanna"
+ },
+ {
+  "kataarab": "البَصْرَةِ",
+  "arti": "arti: Basrah",
+  "penjelasan": "penjelasan: kota di Irak"
+ },
+ {
+  "kataarab": "الكُوفَةِ",
+  "arti": "arti: Kufah",
+  "penjelasan": "penjelasan: kota di Irak"
+ },
+ {
+  "kataarab": "التَّنَافُسُ",
+  "arti": "arti: persaingan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "ازْدِهَارِ",
+  "arti": "arti: perkembangan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "قَوَاعِدِهِ",
+  "arti": "arti: kaidah-kaidahnya",
+  "penjelasan": "penjelasan: kata benda jamak + dhamir"
+ },
+ {
+  "kataarab": "الأَدَبُ",
+  "arti": "arti: sastra",
+  "penjelasan": "penjelasan: karya bahasa dan budaya"
+ },
+ {
+  "kataarab": "النَّهْضَةِ",
+  "arti": "arti: kebangkitan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "أُدَبَاءُ",
+  "arti": "arti: para sastrawan",
+  "penjelasan": "penjelasan: jamak dari أديب"
+ },
+ {
+  "kataarab": "الجَاحِظِ",
+  "arti": "arti: Al-Jahiz",
+  "penjelasan": "penjelasan: sastrawan Abbasiyah"
+ },
+ {
+  "kataarab": "ابْنِ المُقَفَّعِ",
+  "arti": "arti: Ibnu al-Muqaffa‘",
+  "penjelasan": "penjelasan: sastrawan"
+ },
+ {
+  "kataarab": "شُعَرَاءُ",
+  "arti": "arti: para penyair",
+  "penjelasan": "penjelasan: jamak dari شاعر"
+ },
+ {
+  "kataarab": "أَبُو العَتَاهِيَةِ",
+  "arti": "arti: Abu al-Atahiyah",
+  "penjelasan": "penjelasan: penyair Abbasiyah"
+ },
+ {
+  "kataarab": "أَبُو تَمَّامٍ",
+  "arti": "arti: Abu Tammam",
+  "penjelasan": "penjelasan: penyair terkenal"
+ },
+ {
+  "kataarab": "البُحْتُرِيُّ",
+  "arti": "arti: Al-Buhturi",
+  "penjelasan": "penjelasan: penyair Abbasiyah"
+ },
+ {
+  "kataarab": "النَّهْضَةُ",
+  "arti": "arti: kebangkitan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العِلْمِيَّةُ",
+  "arti": "arti: ilmiah",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "المَجَالَاتِ",
+  "arti": "arti: bidang-bidang",
+  "penjelasan": "penjelasan: jamak dari مجال"
+ },
+ {
+  "kataarab": "السَّابِقَةِ",
+  "arti": "arti: sebelumnya",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "امْتَدَّتْ",
+  "arti": "arti: meluas",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "فَشَمِلَتْ",
+  "arti": "arti: lalu mencakup",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "العُلُومَ",
+  "arti": "arti: ilmu-ilmu",
+  "penjelasan": "penjelasan: jamak dari علم"
+ },
+ {
+  "kataarab": "الِاتِّصَالِ",
+  "arti": "arti: hubungan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "بِثَقَافَاتِ",
+  "arti": "arti: dengan budaya-budaya",
+  "penjelasan": "penjelasan: huruf jar + kata benda jamak"
+ },
+ {
+  "kataarab": "الأُمَمِ",
+  "arti": "arti: bangsa-bangsa",
+  "penjelasan": "penjelasan: jamak dari أمة"
+ },
+ {
+  "kataarab": "الأُخْرَى",
+  "arti": "arti: lain",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "الفُرْسِ",
+  "arti": "arti: Persia",
+  "penjelasan": "penjelasan: bangsa Persia"
+ },
+ {
+  "kataarab": "اليُونَانِ",
+  "arti": "arti: Yunani",
+  "penjelasan": "penjelasan: bangsa Yunani"
+ },
+ {
+  "kataarab": "الهُنُودِ",
+  "arti": "arti: India",
+  "penjelasan": "penjelasan: bangsa India"
+ },
+ {
+  "kataarab": "تُرْجِمَ",
+  "arti": "arti: diterjemahkan",
+  "penjelasan": "penjelasan: kata kerja pasif"
+ },
+ {
+  "kataarab": "الكُتُبِ",
+  "arti": "arti: buku-buku",
+  "penjelasan": "penjelasan: jamak dari كتاب"
+ },
+ {
+  "kataarab": "القَدِيمَةِ",
+  "arti": "arti: kuno",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "الكِيمْيَاءِ",
+  "arti": "arti: kimia",
+  "penjelasan": "penjelasan: ilmu kimia"
+ },
+ {
+  "kataarab": "الطِّبِّ",
+  "arti": "arti: kedokteran",
+  "penjelasan": "penjelasan: ilmu kesehatan"
+ },
+ {
+  "kataarab": "الفَلَكِ",
+  "arti": "arti: astronomi",
+  "penjelasan": "penjelasan: ilmu bintang"
+ },
+ {
+  "kataarab": "الجَبْرِ",
+  "arti": "arti: aljabar",
+  "penjelasan": "penjelasan: cabang matematika"
+ },
+ {
+  "kataarab": "الهَنْدَسَةِ",
+  "arti": "arti: geometri",
+  "penjelasan": "penjelasan: ilmu ukur"
+ },
+ {
+  "kataarab": "الفَلْسَفَةِ",
+  "arti": "arti: filsafat",
+  "penjelasan": "penjelasan: ilmu pemikiran"
+ },
+ {
+  "kataarab": "العَرَبُ",
+  "arti": "arti: orang Arab",
+  "penjelasan": "penjelasan: bangsa Arab"
+ },
+ {
+  "kataarab": "المُسْلِمُونَ",
+  "arti": "arti: kaum Muslim",
+  "penjelasan": "penjelasan: pemeluk Islam"
+ },
+ {
+  "kataarab": "عُلُومَ",
+  "arti": "arti: ilmu-ilmu",
+  "penjelasan": "penjelasan: kata benda jamak"
+ },
+ {
+  "kataarab": "الأُمَمِ",
+  "arti": "arti: bangsa-bangsa",
+  "penjelasan": "penjelasan: jamak dari أمة"
+ },
+ {
+  "kataarab": "اقْتَبَسُوا",
+  "arti": "arti: mengambil",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "مِنْهَا",
+  "arti": "arti: darinya",
+  "penjelasan": "penjelasan: huruf jar + dhamir"
+ },
+ {
+  "kataarab": "مَا",
+  "arti": "arti: apa yang",
+  "penjelasan": "penjelasan: kata penghubung"
+ },
+ {
+  "kataarab": "يُنَاسِبُ",
+  "arti": "arti: sesuai",
+  "penjelasan": "penjelasan: kata kerja mudhari‘"
+ },
+ {
+  "kataarab": "شَخْصِيَّاتِهِمُ",
+  "arti": "arti: kepribadian mereka",
+  "penjelasan": "penjelasan: kata benda jamak + dhamir"
+ },
+ {
+  "kataarab": "الإِسْلَامِيَّةَ",
+  "arti": "arti: Islam",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "فَتَطَوَّرَتْ",
+  "arti": "arti: lalu berkembang",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "الحَرَكَةُ",
+  "arti": "arti: gerakan",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "العِلْمِيَّةُ",
+  "arti": "arti: ilmiah",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "وَظَهَرَ",
+  "arti": "arti: dan muncul",
+  "penjelasan": "penjelasan: kata kerja lampau"
+ },
+ {
+  "kataarab": "كَثِيرٌ",
+  "arti": "arti: banyak",
+  "penjelasan": "penjelasan: kata benda"
+ },
+ {
+  "kataarab": "مِنَ",
+  "arti": "arti: dari",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "العُلَمَاءِ",
+  "arti": "arti: para ulama",
+  "penjelasan": "penjelasan: jamak dari عالم"
+ },
+ {
+  "kataarab": "المُسْلِمِينَ",
+  "arti": "arti: kaum Muslim",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "فِي",
+  "arti": "arti: dalam",
+  "penjelasan": "penjelasan: huruf jar"
+ },
+ {
+  "kataarab": "مُخْتَلِفِ",
+  "arti": "arti: berbagai",
+  "penjelasan": "penjelasan: kata sifat"
+ },
+ {
+  "kataarab": "العُلُومِ",
+  "arti": "arti: ilmu-ilmu",
+  "penjelasan": "penjelasan: kata benda jamak"
+ }
+ 
+]

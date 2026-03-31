@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Kemampuanmu</title>
+    <link rel="icon" type="image/png" href="/img/tamov1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Lugrasimo&display=swap" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- end bootstrap icons -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/latihan.css">
+
+</head>
+
+<body>
+    <div class="bg-decor">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- HEADER -->
+    <div class="header-latihan">
+        <div class="maskot-box">
+            <img id="maskot" src="../img/maskot1.png">
+            <p id="feedbackText">Siap latihan?</p>
+        </div>
+
+        <div id="apersepsiOverlay" class="apersepsi-overlay" style="display:none;"></div>
+
+        <div id="apersepsiBox" class="apersepsi-box">
+            <img id="maskotImg" src="/img/maskotceria.png" class="maskot-img">
+            <div id="maskotText" class="maskot-text"></div>
+            <div id="apersepsiOpsi" class="apersepsi-opsi"></div>
+        </div>
+
+
+        <h1 id="judulLatihan"></h1>
+        <h2 id="judulTeks"></h2>
+    </div>
+
+    <!-- MAIN -->
+    <div class="container main-layout">
+        <div class="row">
+
+            <!-- KIRI -->
+            <div class="col-lg-8">
+                <div class="quiz-container latihan-soal">
+
+                    <div class="soal-scroll">
+                        <div class="action-box"></div>
+
+                        <div id="contentLevel1" class="level active">
+                            <h2>Level 1</h2>
+                            <div id="soalLevel1"></div>
+                        </div>
+
+                        <div id="contentLevel2" class="level">
+                            <h2>Level 2</h2>
+                            <div id="soalLevel2"></div>
+                        </div>
+
+                        <div id="contentLevel3" class="level">
+                            <h2>Level 3</h2>
+                            <div id="soalLevel3"></div>
+                        </div>
+
+                       <div id="contentLevel4" class="level">
+
+    <div id="soalLevel4"></div>
+
+    <!-- RESULT -->
+    <div id="resultBox" class="result-box" style="display:none;">
+        <div class="character">
+            <img src="/img/badge1.png" alt="Maskot">
+        </div>
+
+        <h2>Pelajaran Selesai</h2>
+
+        <div class="score-box">
+            <div>L1: <span id="scoreL1">0%</span></div>
+            <div>L2: <span id="scoreL2">0%</span></div>
+            <div>L3: <span id="scoreL3">0%</span></div>
+            <div>L4: <span id="scoreL4">0%</span></div>
+        </div>
+
+        <h3 id="finalScore">0%</h3>
+
+        <button onclick="window.location.reload()">Ulangi Latihan</button>
+    </div>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- KANAN -->
+            <div class="col-lg-4">
+                <div class="sidebar-box">
+
+                    <div class="progress-box">
+                        <p id="progressText">Level 1 dari 4</p>
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="level-box">
+                        <p class="label">Level</p>
+
+                        <div class="level-vertical">
+
+                            <div class="level-item unlocked" onclick="nextLevel(1)">
+                                <div class="circle">1</div>
+                                <div class="level-label">Level 1</div>
+                            </div>
+
+                            <div class="level-item locked" id="menuLevel2">
+                                <div class="circle">
+                                    2
+                                    <span class="lock-icon">🔒</span>
+                                </div>
+                                <div class="level-label">Level 2</div>
+                            </div>
+
+                            <div class="level-item locked" id="menuLevel3">
+                                <div class="circle">
+                                    3
+                                    <span class="lock-icon">🔒</span>
+                                </div>
+                                <div class="level-label">Level 3</div>
+                            </div>
+
+                            <div class="level-item locked" id="menuLevel4">
+                                <div class="circle">
+                                    4
+                                    <span class="lock-icon">🔒</span>
+                                </div>
+                                <div class="level-label">Level 4</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-black text-center p-2">
+        <p>Created with <i class="bi bi-heart-pulse-fill text-danger"></i> by <a
+                href="https://www.instagram.com/titikarab/" class="text-white fw-bold">Titik
+                Arab</a></p>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="../script/latihan.js"></script>
+</body>
+
+</html>

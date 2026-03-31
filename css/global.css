@@ -1,0 +1,105 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY */
+body{
+font-family:'Karla',sans-serif;
+background-color:#a7a1b4;
+background-image:radial-gradient(#e6d3bf 1px,transparent 1px);
+background-size:25px 25px;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+/* CONTAINER */
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+/* NAVBAR */
+.logo img{
+height:50px;
+}
+
+.navbar .nav-link{
+color:white;
+transition:0.3s;
+}
+
+.navbar .nav-link:hover{
+color:#eb8178;
+}
+
+.navbar .nav-link.active{
+color:#6e3833;
+font-weight:600;
+}
+
+/* TYPO */
+h1,h2,h3,.navbar-brand{
+font-family:'Cairo Play',sans-serif;
+}
+
+/* SECTION */
+section{
+padding-top:5rem;
+}
+
+/* FORM BASIC */
+input[type="radio"]{
+transform:scale(1.2);
+margin-right:8px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+}
+
+/* BUTTON GLOBAL */
+.btn-home{
+display:inline-block;
+margin-top:30px;
+padding:8px 16px;
+background:#2c83a0;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+.btn-home:hover{
+background:#25687a;
+}
+
+/* FOOTER */
+footer{
+background-color:#2c83a0;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* ARABIC */
+.arabicText{
+font-family:'Amiri',serif;
+direction:rtl;
+text-align:justify;
+font-size:24px;
+line-height:2;
+}
+
+.word{
+cursor:pointer;
+transition:0.2s;
+}
+
+.word:hover{
+background:#e6d3bf;
+border-radius:4px;
+}

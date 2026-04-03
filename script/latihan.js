@@ -744,7 +744,7 @@ function bukaLatihan(nomor){
 }
 
 function kirimKeSheet(data) {
-  fetch("https://script.google.com/macros/s/AKfycbzxbntk1hx8AKmlUR4pxvF8wNP6J2PLf4xqEBevUHx9r3V_0YjCeTK38GlIKQy5Wej8/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwnS1jTQQ0GgbwEEHTHipd21vwMzwx5brlmJ-06Kwy4zyIxs6Q5O6NF4REMflE7K22q/exec", {
     method: "POST",
     body: JSON.stringify(data)
   })

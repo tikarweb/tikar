@@ -171,41 +171,72 @@ function hideLoading(){
 // RESULT BOX
 // =======================
 function selesaiSemua(){
-  const total = (skor.l1 + skor.l2 + skor.l3 + skor.l4)/4;
-  const persen = Math.round(total*100);
+  // sembunyikan header
+  document.querySelector(".header-latihan").style.display = "none";
 
-  document.getElementById("soalLevel4").style.display="none";
-  document.getElementById("resultBox").style.display="flex";
+  let total = (skor.l1 + skor.l2 + skor.l3 + skor.l4) / 4;
+  let persen = Math.round(total * 100);
 
-  const scores=[
-    {id:"scoreL1", val:Math.round(skor.l1*100)},
-    {id:"scoreL2", val:Math.round(skor.l2*100)},
-    {id:"scoreL3", val:Math.round(skor.l3*100)},
-    {id:"scoreL4", val:Math.round(skor.l4*100)}
+  // =======================
+  // KIRIM KE GOOGLE SHEET
+  // =======================
+  let latihan = "teks" + teksAktif;
+
+  kirimKeSheet({
+    latihan: latihan,
+    level1: Math.round(skor.l1 * 100),
+    level2: Math.round(skor.l2 * 100),
+    level3: Math.round(skor.l3 * 100),
+    level4: Math.round(skor.l4 * 100),
+    final: persen
+  });
+
+  // =======================
+  // TAMPILAN RESULT
+  // =======================
+  document.getElementById("soalLevel4").style.display = "none";
+
+  const resultBox = document.querySelector(".result-box");
+  resultBox.style.display = "flex";
+  resultBox.classList.add("pop");
+
+  const scores = [
+    {id: "scoreL1", value: Math.round(skor.l1*100)},
+    {id: "scoreL2", value: Math.round(skor.l2*100)},
+    {id: "scoreL3", value: Math.round(skor.l3*100)},
+    {id: "scoreL4", value: Math.round(skor.l4*100)}
   ];
 
   let i=0;
-  function anim(){
+  function tampilScore(){
     if(i>=scores.length){
-      document.getElementById("finalScore").innerText=persen+"%";
-      confetti();
+      document.getElementById("finalScore").innerText = persen + "%";
+      triggerConfetti();
       return;
     }
-    let el=document.getElementById(scores[i].id);
-    let v=0;
-    let int=setInterval(()=>{
-      if(v>=scores[i].val){
-        clearInterval(int);
+
+    const el = document.getElementById(scores[i].id);
+    let val = 0;
+
+    const interval = setInterval(()=>{
+      if(val>=scores[i].value){
+        clearInterval(interval);
         i++;
-        setTimeout(anim,300);
+        setTimeout(tampilScore, 300);
       } else {
-        v++;
-        el.innerText=v+"%";
+        val++;
+        el.innerText = val + "%";
       }
-    },20);
+    }, 20);
   }
-  anim();
+
+  tampilScore();
+
+  const maskot = resultBox.querySelector(".character img");
+  maskot.style.animation = "lompat 1.2s ease-in-out infinite";
 }
+
+
 
 function confetti(){
   const audio = new Audio('../audio/success.mp3');
@@ -642,61 +673,6 @@ if(skor.l4 < 0.6){
 
 
 
-
-function selesaiSemua(){
-  // sembunyikan header
-  document.querySelector(".header-latihan").style.display = "none";
-  let total = (skor.l1 + skor.l2 + skor.l3 + skor.l4) / 4;
-  let persen = Math.round(total * 100);
-
-  // sembunyikan level terakhir
-  document.getElementById("soalLevel4").style.display = "none";
-
-  // tampilkan result box
-  const resultBox = document.querySelector(".result-box");
-  resultBox.style.display = "flex";
-
-
-  // animasi pop
-  resultBox.classList.add("pop");
-
-  // tampilkan score tiap level satu per satu
-  const scores = [
-    {id: "scoreL1", value: Math.round(skor.l1*100)},
-    {id: "scoreL2", value: Math.round(skor.l2*100)},
-    {id: "scoreL3", value: Math.round(skor.l3*100)},
-    {id: "scoreL4", value: Math.round(skor.l4*100)}
-  ];
-
-  let i=0;
-  function tampilScore(){
-    if(i>=scores.length){
-      // update total final
-      document.getElementById("finalScore").innerText = persen + "%";
-      // trigger konfeti
-      triggerConfetti();
-      return;
-    }
-    const el = document.getElementById(scores[i].id);
-    let val = 0;
-    const interval = setInterval(()=>{
-      if(val>=scores[i].value){
-        clearInterval(interval);
-        i++;
-        setTimeout(tampilScore, 300); // jeda antar level
-      } else {
-        val++;
-        el.innerText = val + "%";
-      }
-    }, 20);
-  }
-  tampilScore();
-
-  // maskot lompat kecil
-  const maskot = resultBox.querySelector(".character img");
-  maskot.style.animation = "lompat 1.2s ease-in-out infinite";
-}
-
 // konfeti
 function triggerConfetti(){
   for(let i=0;i<50;i++){
@@ -765,4 +741,14 @@ function tandaiPilihan(el){
 
 function bukaLatihan(nomor){
   window.location.href = "pages/latihan.html?teks=" + nomor;
+}
+
+function kirimKeSheet(data) {
+  fetch("https://script.google.com/macros/s/AKfycbzxbntk1hx8AKmlUR4pxvF8wNP6J2PLf4xqEBevUHx9r3V_0YjCeTK38GlIKQy5Wej8/exec", {
+    method: "POST",
+    body: JSON.stringify(data)
+  })
+  .then(res => res.text())
+  .then(res => console.log("Terkirim:", res))
+  .catch(err => console.error("Error:", err));
 }

@@ -766,38 +766,3 @@ function tandaiPilihan(el){
 function bukaLatihan(nomor){
   window.location.href = "pages/latihan.html?teks=" + nomor;
 }
-
-// =======================
-// KIRIM DATA KE GOOGLE SHEETS
-// =======================
-document.addEventListener("DOMContentLoaded", function(){
-
-  const form = document.getElementById("formLatihan");
-  const status = document.getElementById("status");
-
-  if(form){
-    form.addEventListener("submit", function(e){
-      e.preventDefault();
-
-      const data = new FormData(form);
-
-      // ambil skor otomatis dari hasil latihan
-      const skor = document.getElementById("finalScore").innerText;
-      data.append("skor", skor);
-
-      fetch("https://script.google.com/macros/s/AKfycbyc1vdYSnbgB9_lxLMcLmyQcwf2Kf1mf_ceSCCQockXjtJcsQ7BHYqdSl3ocAr_ritw/exec", {
-        method: "POST",
-        body: data
-      })
-      .then(res => res.text())
-      .then(res => {
-        status.innerText = "Berhasil dikirim!";
-        form.reset();
-      })
-      .catch(err => {
-        status.innerText = "Gagal kirim!";
-      });
-    });
-  }
-
-});

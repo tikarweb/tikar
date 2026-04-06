@@ -4,79 +4,76 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
-  <loc>https://titikarab.netlify.app/</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/</loc>
+  <lastmod>2026-04-06T07:30:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=1</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=1</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=2</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=2</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=3</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=3</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=4</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=4</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/akses</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/akses.html</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=5</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=5</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=6</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=6</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=7</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=7</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=8</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=8</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=9</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=9</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=10</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=10</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=11</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=11</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://titikarab.netlify.app/pages/teks?id=12</loc>
-  <lastmod>2026-04-01T00:41:41+00:00</lastmod>
+  <loc>https://tikar.vercel.app/pages/teks.html?id=12</loc>
+  <lastmod>2026-04-06T07:30:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
 
 </urlset>

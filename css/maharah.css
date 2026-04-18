@@ -1,0 +1,358 @@
+/* ================= BODY ================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 20px;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #eef5f9, #dbeafe);
+  min-height: 100vh;
+  position: relative;
+}
+
+
+/* ================= LAYOUT ================= */
+.quiz-wrapper {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quiz-sidebar {
+  width: 30%;
+}
+
+.quiz-main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= PROGRESS ================= */
+.progress-box {
+  background: #6690b7e6;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  position: sticky;
+  top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  direction: ltr;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: 0.4s;
+}
+
+/* ================= LEVEL LIST ================= */
+.level-list {
+  margin-top: 15px;
+}
+
+.level {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: #f1f1f1;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.level.active {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.level:hover {
+  background: #e0f2f1;
+}
+
+/* ================= QUIZ CONTAINER ================= */
+#quiz-container {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 5px; /* biar gak nabrak scrollbar */
+}
+
+/* ================= SOAL ================= */
+.soal {
+  direction: rtl;
+  text-align: right;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* ================= INPUT ================= */
+textarea,
+input[type="text"] {
+  width: 100%;
+  min-height: 60px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+
+  direction: rtl;
+  text-align: right;
+
+  resize: none;
+  overflow: hidden;
+}
+
+/* ================= BUTTON ================= */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #4CAF50;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.action {
+  margin-top: 20px;
+   display: flex;
+  gap: 10px;
+}
+
+.action button {
+  width: auto;
+  flex: 1;
+}
+
+/* ================= HASIL ================= */
+#hasil {
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 0 10px;
+
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* ================= FEEDBACK ================= */
+.feedback-box {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.feedback-indo {
+  direction: ltr;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.feedback-arab {
+  direction: ltr;
+  text-align: left;
+  background: #f4f6fb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.nilai {
+  font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .quiz-wrapper {
+    flex-direction: column;
+  }
+
+  .quiz-sidebar,
+  .quiz-main {
+    width: 100%;
+  }
+
+  #quiz-container {
+    max-height: none;
+  }
+}
+
+
+
+#maskot {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.maskot-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  line-height: 0;
+  gap: 15px;
+}
+
+.maskot-box img{
+  width: 220px;
+  display: block;
+}
+.maskot-img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+#feedbackText {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin: 0;
+  max-width: 200px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.header-maharah {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.header-maharah h1 {
+  font-size: 36px;
+  margin-top: -40px;
+}
+
+.header-maharah h2 {
+  font-family: 'katibeh', serif;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+
+.bg-decor {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-decor span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+}
+
+
+
+/* OVERLAY GELAP */
+.apersepsi-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  display: none;
+}
+
+/* BOX UTAMA */
+.apersepsi-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  padding: 20px;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  font-family: sans-serif;
+}
+
+/* MASKOT DI DALAM POPUP */
+.maskot-img {
+  width: 120px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  animation: floatMaskot 2s ease-in-out infinite;
+  transition: transform 0.3s;
+}
+
+/* ANIMASI NGAMBANG */
+@keyframes floatMaskot {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ANIMASI NGETIK */
+.maskot-img.typing {
+  animation: typingHead 0.6s ease-in-out infinite;
+}
+
+@keyframes typingHead {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-2px) rotate(5deg); }
+}
+
+/* TEKS */
+.maskot-text {
+  font-size: 15px;
+  min-height: 60px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* OPSI JAWABAN */
+.apersepsi-opsi button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.apersepsi-opsi button:hover {
+  transform: scale(1.05);
+}
+
+.apersepsi-opsi button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

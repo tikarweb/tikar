@@ -103,3 +103,121 @@ transition:0.2s;
 background:#e6d3bf;
 border-radius:4px;
 }
+
+ 
+
+
+/* =========================
+   POPOVER BASE (WARM STYLE)
+   ========================= */
+.driver-popover {
+  background: #fffdfb;
+  border-radius: 16px;
+  padding: 20px 18px 16px;
+  border: 1px solid #eaded7;
+  box-shadow: 0 10px 25px rgba(110, 56, 51, 0.08);
+  max-width: 270px;
+  position: relative;
+}
+
+/* ACCENT LINE */
+.driver-popover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #6e3833;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* TITLE */
+.driver-popover-title {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #6e3833;
+  margin-bottom: 6px;
+}
+
+/* DESCRIPTION */
+.driver-popover-description {
+  font-size: 13.5px;
+  color: #7a6f6b;
+  line-height: 1.5;
+}
+
+/* CLOSE BUTTON */
+.driver-popover-close-btn {
+  font-size: 17px;
+  color: #b7a9a3;
+  top: 10px;
+  right: 12px;
+}
+
+.driver-popover-close-btn:hover {
+  color: #6e3833;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.driver-popover-footer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#25687a;
+}
+
+/* STEP TEXT */
+.driver-popover-progress-text {
+  font-size: 12px;
+  color: #b7a9a3;
+}
+
+/* BUTTON WRAPPER */
+.driver-popover-navigation-btns {
+  display: flex;
+  gap: 8px;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+/* PREV */
+.driver-prev-btn {
+  background: #f3ebe7;
+  border: none;
+  color: #6e3833;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+}
+
+.driver-prev-btn:hover {
+  background: #eaded7;
+}
+
+/* NEXT */
+.driver-next-btn {
+  background: #eb8178;
+  border: none;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12.5px;
+}
+
+.driver-next-btn:hover {
+  background: #d96f66;
+}
+
+/* =========================
+   ARROW
+   ========================= */
+.driver-popover-arrow {
+  border-width: 7px;
+}

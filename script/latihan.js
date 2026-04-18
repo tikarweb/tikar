@@ -34,25 +34,25 @@ document.addEventListener("DOMContentLoaded", ()=> initApersepsi());
 
 const apersepsiDialog = [
   {
-    text: "Marhaban! Aku si Maskot Arabo 😎 Berapa banyak bahasa Arab yang kamu tahu dari teks sebelumnya?",
+    text: "Marhaban! Aku si Maskot Arabo Berapa banyak bahasa Arab yang kamu tahu dari teks sebelumnya?",
     options: [
       { label:"Aku tahu sedikit", response:"Hmm… sedikit aja? Tenang, latihan kita bakal seru tapi santai kok!" },
       { label:"Aku tahu banyak", response:"Wow! Hebat! Kita bisa langsung latihan yang menantang!" },
-      { label:"Aku belum baca teksnya", response:"Ah, iya ya… sebaiknya baca dulu teksnya biar latihan lebih seru 😁" }
+      { label:"Aku belum baca teksnya", response:"Ah, iya ya… sebaiknya baca dulu teksnya biar latihan lebih seru" }
     ]
   },
   {
-    text: "Oke, pertanyaan lucu 😏 Kalau bisa belajar sambil makan kue, pilih yang mana?",
+    text: "Oke, pertanyaan lucu. Kalau bisa belajar sambil makan kue, pilih yang mana?",
     options: [
-      { label:"Belajar dulu", response:"Pintar! Prioritas belajar dulu 😎" },
-      { label:"Kue dulu", response:"Wkwk jujur banget 😭 tapi lanjut belajar ya!" }
+      { label:"Belajar dulu", response:"Pintar! Prioritas belajar dulu" },
+      { label:"Kue dulu", response:"Wkwk jujur banget tapi lanjut belajar ya!" }
     ]
   },
   {
     text: "Terakhir nih… kamu siap latihan serius atau santai tapi konsisten?",
     options: [
-      { label:"Serius", response:"Mantap! Kita gas 🔥" },
-      { label:"Santai", response:"Santai tapi konsisten itu kuat 💪" }
+      { label:"Serius", response:"Mantap! Kita gas" },
+      { label:"Santai", response:"Santai tapi konsisten itu kuat" }
     ]
   }
 ];
@@ -60,6 +60,16 @@ const apersepsiDialog = [
 let apersepsiStep = 0;
 let typingDone = false;
 let typeTimer;
+
+//NAMA USER
+document.addEventListener("DOMContentLoaded", () => {
+  let nama = localStorage.removeItem("namaUser");
+  if(nama){
+    const box = document.getElementById("inputNamaBox");
+    if(box) box.style.display = "none";
+  }
+});
+
 
 // INIT
 function initApersepsi(){
@@ -180,16 +190,30 @@ function selesaiSemua(){
   // =======================
   // KIRIM KE GOOGLE SHEET
   // =======================
-  let latihan = "teks" + teksAktif;
+ let latihan = "teks" + teksAktif;
+let nama = localStorage.getItem("namaUser") || "Tanpa Nama";
 
-  kirimKeSheet({
-    latihan: latihan,
-    level1: Math.round(skor.l1 * 100),
-    level2: Math.round(skor.l2 * 100),
-    level3: Math.round(skor.l3 * 100),
-    level4: Math.round(skor.l4 * 100),
-    final: persen
-  });
+console.log("CEK DATA:", {
+  nama: nama,
+  latihan: latihan,
+  l1: skor.l1,
+  l2: skor.l2,
+  l3: skor.l3,
+  l4: skor.l4,
+  final: persen
+});
+
+kirimKeSheet({
+  nama: nama,
+  latihan: latihan,
+  level1: Math.round(skor.l1 * 100),
+  level2: Math.round(skor.l2 * 100),
+  level3: Math.round(skor.l3 * 100),
+  level4: Math.round(skor.l4 * 100),
+  final: persen
+});
+
+
 
   // =======================
   // TAMPILAN RESULT
@@ -279,6 +303,29 @@ function confetti(){
 //     mainLayout.scrollIntoView({ behavior: "smooth" });
 //   }
 // }
+
+// =======================
+// SIMPAN NAMA USER
+// =======================
+function simpanNama(){
+  let nama = document.getElementById("namaUser").value;
+
+  if(!nama){
+    alert("Isi nama dulu");
+    return;
+  }
+
+  localStorage.setItem("namaUser", nama);
+
+  document.getElementById("inputNamaBox").style.display = "none";
+}
+
+// RESET USER
+function resetNama(){
+  localStorage.removeItem("namaUser");
+  location.reload();
+}
+
 
 // =======================
 // STORAGE JAWABAN
@@ -744,11 +791,19 @@ function bukaLatihan(nomor){
 }
 
 function kirimKeSheet(data) {
-  fetch("https://script.google.com/macros/s/AKfycbwnS1jTQQ0GgbwEEHTHipd21vwMzwx5brlmJ-06Kwy4zyIxs6Q5O6NF4REMflE7K22q/exec", {
+  console.log("KIRIM FINAL:", data);
+
+  fetch("https://script.google.com/macros/s/AKfycbzcRSdWOk6Eek2mwYwlx4FDJDwSIrwmn6sJ0UH_6yyYYTfZ-nUebcBR2s0Uelchcc5r/exec", {
     method: "POST",
-    body: JSON.stringify(data)
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: new URLSearchParams(data)
   })
-  .then(res => res.text())
-  .then(res => console.log("Terkirim:", res))
+  .then(() => console.log("Terkirim (no-cors)"))
   .catch(err => console.error("Error:", err));
 }
+
+
+

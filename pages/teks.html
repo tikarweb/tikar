@@ -13,16 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alyamama&family=Amiri&family=Cairo+Play&family=Karla&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alyamama&family=Amiri&family=Cairo+Play&family=Karla&display=swap" rel="stylesheet">
+
+    <!-- DRIVER.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/teks.css">
-
 </head>
 
 <body>
@@ -36,12 +34,12 @@
 
             <!-- TEKS -->
             <div class="col-lg-8 col-12">
-                <main class="text-area" id="containerTeks"></main>
+                <main class="text-area teks-arab" id="containerTeks"></main>
             </div>
 
             <!-- POPUP -->
             <div class="col-lg-4 col-12">
-                <aside id="popup" class="popup-box">
+                <aside id="popup" class="popup-box card-kosakata">
                     <h5 id="kataArab">اضغط على الكلمة</h5>
                     <p id="arti">Arti kata akan muncul di sini.</p>
                     <p id="penjelasan">Penjelasan kosakata akan tampil setelah kata dipilih.</p>
@@ -59,14 +57,17 @@
     <!-- FOOTER -->
     <footer class="text-black text-center p-2">
         <p>
-            Created with <i class="bi bi-heart-pulse-fill text-danger"></i> by
+            Created with ❤️ by
             <a href="https://www.instagram.com/titikarab/" class="fw-bold text-dark">
                 Titik Arab
             </a>
         </p>
     </footer>
 
-    <!-- JS -->
+    <!-- DRIVER.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.js.iife.js"></script>
+
+    <!-- SCRIPT UTAMA -->
     <script src="../script/teks.js"></script>
 
     <!-- LOAD NAVBAR -->
@@ -79,5 +80,4 @@
     </script>
 
 </body>
-
 </html>

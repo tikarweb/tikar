@@ -299,7 +299,7 @@ display:none;
 .kitabah-card{
   min-width:180px;
   max-width:200px;
-  background:#a7a1b4;
+  background:#a7a1b4; 
   border-radius:18px;
   padding:20px;
   box-shadow:0 10px 20px #00000014;
@@ -365,7 +365,6 @@ font-size:16px;
 color:#5a5656;
 text-align:center;
 }
-
 
 /* =========================
 RESPONSIVE KITABAH

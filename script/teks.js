@@ -1,20 +1,20 @@
-// =====================
-// AMBIL ID DARI URL
-// =====================
+/* =====================
+   AMBIL ID DARI URL
+===================== */
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 const groupAktif = "teks" + id;
 
 
-// =====================
-// FUNCTION BERSIHKAN KATA
-// =====================
+/* =====================
+   FUNCTION BERSIHKAN KATA
+===================== */
 function bersihkanKata(teks) {
   if (typeof teks !== "string") return "";
 
   return teks
-    .normalize("NFKD") // 🔥 INI KUNCI UTAMA
+    .normalize("NFKD")
     .replace(/[.,،؛:!?()"'“”]/g, "")
     .replace(/ـ/g, "")
     .replace(/\u200B/g, "")
@@ -23,26 +23,22 @@ function bersihkanKata(teks) {
 }
 
 
-// =====================
-// VAR GLOBAL
-// =====================
+/* =====================
+   VAR GLOBAL
+===================== */
 let dataKosa = [];
-let kamus = {}; // 🔥 tambahan untuk percepatan
+let kamus = {};
 
 
-// =====================
-// FETCH KOSAKATA + FILTER GROUP + BUAT KAMUS
-// =====================
+/* =====================
+   FETCH KOSAKATA
+===================== */
 fetch("../json/judul1.json")
   .then(res => res.json())
   .then(data => {
 
     dataKosa = data.filter(item => item.group === groupAktif);
 
-    console.log("Group aktif:", groupAktif);
-    console.log("Jumlah kosa:", dataKosa.length);
-
-    // 🔥 bikin kamus (biar ga filter tiap klik)
     dataKosa.forEach(item => {
       const key = bersihkanKata(item.kataarab);
 
@@ -57,9 +53,9 @@ fetch("../json/judul1.json")
   .catch(err => console.log("ERROR KOSAKATA:", err));
 
 
-// =====================
-// FETCH TEKS
-// =====================
+/* =====================
+   FETCH TEKS
+===================== */
 fetch("../json/teks.json")
   .then(res => res.json())
   .then(data => {
@@ -93,12 +89,146 @@ fetch("../json/teks.json")
 
     container.innerHTML = html;
 
+    /* =====================
+       ONBOARDING TRIGGER
+    ===================== */
+    setTimeout(() => {
+      console.log("trigger onboarding");
+
+      if (!localStorage.getItem("onboarding_teks_done")) {
+        startOnboardingTeks();
+        localStorage.setItem("onboarding_teks_done", "true");
+      }
+
+    }, 800);
+
   });
 
 
-// =====================
-// EVENT KLIK KATA
-// =====================
+/* =====================
+   ONBOARDING FUNCTION
+===================== */
+function startOnboardingTeks() {
+  console.log("onboarding jalan");
+
+  if (!window.driver) {
+    console.log("❌ driver tidak ter-load");
+    return;
+  }
+
+  const steps = [
+    {
+      element: ".text-area",
+      popover: {
+        title: "Ini teks bacaan",
+        description: "Baca teks Arab di bagian ini.",
+        side: "bottom"
+      }
+    },
+    {
+      element: ".text-area span",
+      popover: {
+        title: "Klik kata Arab",
+        description: "Klik salah satu kata untuk melihat arti.",
+        side: "bottom"
+      }
+    },
+    {
+      element: "#popup",
+      popover: {
+        title: "Arti muncul di sini",
+        description: "Hasil klik akan tampil di sini.",
+        side: "left"
+      }
+    }
+  ];
+
+  /* =====================
+     VALIDASI STEP
+  ===================== */
+  const validSteps = steps.filter(step => document.querySelector(step.element));
+
+  console.log("validSteps:", validSteps);
+
+  if (validSteps.length === 0) {
+    console.log("❌ step tidak ditemukan");
+    return;
+  }
+
+  /* =====================
+     INIT DRIVER
+  ===================== */
+  const driverObj = window.driver.driver({
+    showProgress: true,
+    showButtons: true,
+    allowClose: true,
+
+    nextBtnText: "Lanjut",
+    prevBtnText: "Kembali",
+    doneBtnText: "Selesai",
+
+    steps: validSteps
+  });
+
+  /* =====================
+     CUSTOM BUTTON LEWATI
+  ===================== */
+  driverObj.onPopoverRender = (popover) => {
+    const skipBtn = document.createElement("button");
+
+    skipBtn.innerText = "Lewati";
+    skipBtn.className = "driver-popover-skip-btn";
+
+    skipBtn.onclick = () => driverObj.destroy();
+
+    const footer = popover.footer;
+    if (!footer) return;
+
+    const nav = footer.querySelector(".driver-popover-navigation-btns");
+
+    if (nav) {
+      nav.prepend(skipBtn);
+    } else {
+      footer.appendChild(skipBtn);
+    }
+  };
+
+  driverObj.onDestroyed = () => {
+    console.log("onboarding selesai / skip");
+  };
+
+  driverObj.drive();
+}
+
+
+/* =====================
+   TRIGGER ONBOARDING
+===================== */
+setTimeout(() => {
+  console.log("trigger onboarding");
+
+  // 🔥 MODE TESTING (SELALU MUNCUL)
+  startOnboardingTeks();
+
+  /*
+  // 🔥 MODE NORMAL (AKTIFKAN NANTI)
+  if (!localStorage.getItem("onboarding_teks_done")) {
+    startOnboardingTeks();
+    localStorage.setItem("onboarding_teks_done", "true");
+  }
+  */
+
+}, 1200);
+
+
+
+
+
+
+
+/* =====================
+   EVENT KLIK KATA
+===================== */
 document.addEventListener("click", function(e) {
 
   if (e.target.classList.contains("word")) {
@@ -106,15 +236,8 @@ document.addEventListener("click", function(e) {
     let kata = e.target.dataset.kata;
     let kataBersih = bersihkanKata(kata);
 
-    // DEBUG
-    console.log("kata klik:", kataBersih);
-
-    // 🔥 ambil dari kamus (cepat)
     let semuaHasil = kamus[kataBersih] || [];
 
-    console.log("data cocok:", semuaHasil);
-
-    // fallback kalau tidak ada
     if (semuaHasil.length === 0) {
       document.getElementById("kataArab").innerText = kata;
       document.getElementById("arti").innerText = "Tidak ditemukan";
@@ -123,7 +246,6 @@ document.addEventListener("click", function(e) {
       return;
     }
 
-    // ambil yang paling panjang (biar frasa menang)
     let hasil = semuaHasil.sort((a, b) =>
       b.kataarab.length - a.kataarab.length
     )[0];
@@ -138,9 +260,9 @@ document.addEventListener("click", function(e) {
 });
 
 
-// =====================
-// TUTUP POPUP
-// =====================
+/* =====================
+   TUTUP POPUP
+===================== */
 document.addEventListener("click", function(e) {
 
   const popup = document.getElementById("popup");

@@ -25,6 +25,7 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/driver.js/dist/driver.css" />
 </head>
 
 <body id="home">
@@ -38,14 +39,14 @@
         <section class="hero-section">
             <div class="hero-container">
                 <div class="hero-text">
-                    <h1>Membaca Arab Tidak Harus Sulit</h1>
+                    <h1>Membaca Teks Arab Itu Mudah</h1>
                     <p>
                         Belajar memahami teks Arab melalui kisah sejarah Islam,
                         dilengkapi terjemahan dan penjelasan kosakata penting.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#bacaan" class="btn-hero-primary">
-                            Mulai Membaca
+                        <a href="#bacaan" class="btn-hero-primary" id="btn-mulai">
+                            Mulai Membaca di sini
                         </a>
                         <a href="#tentang" class="btn-hero-secondary">
                             Tentang Website
@@ -68,19 +69,24 @@
             <div class="container">
                 <div class="row text-center mb-3">
                     <div class="col">
-                        <h2>Tentang Kami</h2>
+                        <h2>Tentang Website</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center fs-6 between">
                     <div class="col-4">
                         <p>Titik.arab adalah media pembelajaran bahasa Arab yang membantu pembaca memahami teks melalui
-                            pendekatan kata dan konteks. Kami percaya bahwa memahami satu kata dengan baik dapat membuka
-                            makna sebuah kalimat.</p>
+                            pendekatan kata dan konteks.</p>
                     </div>
                     <div class="col-4">
-                        <p>Melalui teks-teks sejarah Islam, pembaca dapat melatih kemampuan membaca bahasa Arab
-                            sekaligus memperkaya kosakata. Setiap bacaan dilengkapi terjemahan dan penjelasan sehingga
-                            proses belajar menjadi lebih mudah dan menyenangkan.</p>
+                        <h6>Cara Penggunaan:</h6>
+                        <ul class="cara-pakai">
+                            <li>Pilih menu “Bacaan”</li>
+                            <li>Pilih teks yang ingin dipelajari</li>
+                            <li>Baca teks secara bertahap</li>
+                            <li>Klik kosakata yang belum dipahami</li>
+                            <li>Lihat arti dan penjelasan</li>
+                            <li>Baca ulang teks untuk memperkuat pemahaman</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -103,7 +109,7 @@
                     <p>Latihan membaca bahasa Arab dengan penjelasan</p>
                 </div>
                 <div class="grid-ibacaan">
-                    <div class="card"> <img src="img/gambar 3.png">
+                    <div class="card" id="card-bacaan"> <img src="img/gambar 3.png">
                         <div class="card-content">
                             <div class="judul-arab">مُقَاطَعَةُ قُرَيْشٍ لِبَنِي هَاشِمَ وَبَنِي الْمُطَلِّبِ</div>
                             <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
@@ -139,11 +145,8 @@
                 </div>
         </section>
 
-
-
-
         <!-- LATIHAN KITABAH -->
-        <section class="kitabah-section">
+         <section class="kitabah-section">
             <div class="kitabah-wrapper">
                 <div class="kitabah-left">
                     <h2>Latihan Kitabah</h2>
@@ -156,7 +159,7 @@
                 <div class="kitabah-right">
                     <div class="kitabah-scroll">
 
-                        <!-- diubah ubah ini kotaknya ya -->
+                     
                         <div class="kitabah-card" onclick="bukaLatihan(1)">
                             <div class="img-wrap">
                                 <img src="img/maskot1.png">
@@ -243,6 +246,144 @@
         </section>
 
 
+
+
+        <!-- DUPLIKAT MAHARAH ACTFL -->
+        <section class="kitabah-section">
+            <div class="kitabah-wrapper">
+                <div class="kitabah-left">
+                    <h2>Latihan Kitabah</h2>
+                    <p>Latihan menulis bahasa Arab berbasis teks secara bertahap</p>
+                </div>
+
+                <div class="kitabah-right">
+                    <div class="kitabah-scroll">
+
+                        <div class="kitabah-card" onclick="bukaMaharah(1)">
+                            <div class="img-wrap">
+                                <img src="img/maskot1.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>مقاطعة قريش لبني هاشم وبني المطلب</h5>
+                                <span>Latihan 1</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(2)">
+                            <div class="img-wrap">
+                                <img src="img/maskot2.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>بناء المسجد والمؤاخاة بين المهاجرين والأنصار</h5>
+                                <span>Latihan 2</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(3)">
+                            <div class="img-wrap">
+                                <img src="img/maskot3.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>غزوة بدر الكبرى</h5>
+                                <span>Latihan 3</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(4)">
+                            <div class="img-wrap">
+                                <img src="img/maskot4.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>بيعتا العقبة</h5>
+                                <span>Latihan 4</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(5)">
+                            <div class="img-wrap">
+                                <img src="img/maskot5.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>حروب الردة</h5>
+                                <span>Latihan 5</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(6)">
+                            <div class="img-wrap">
+                                <img src="img/maskot6.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة الأموية</h5>
+                                <span>Latihan 6</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(7)">
+                            <div class="img-wrap">
+                                <img src="img/maskot7.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة العباسية</h5>
+                                <span>Latihan 7</span>
+                            </div>
+                        </div>
+
+                        <div class="kitabah-card" onclick="bukaMaharah(8)">
+                            <div class="img-wrap">
+                                <img src="img/maskot8.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة العباسية</h5>
+                                <span>Latihan 8</span>
+                            </div>
+                        </div>
+                        <div class="kitabah-card" onclick="bukaMaharah(9)">
+                            <div class="img-wrap">
+                                <img src="img/maskot8.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة العباسية</h5>
+                                <span>Latihan 8</span>
+                            </div>
+                        </div>
+                        <div class="kitabah-card" onclick="bukaMaharah(10)">
+                            <div class="img-wrap">
+                                <img src="img/maskot8.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة العباسية</h5>
+                                <span>Latihan 8</span>
+                            </div>
+                        </div>
+                        <div class="kitabah-card" onclick="bukaMaharah(11)">
+                            <div class="img-wrap">
+                                <img src="img/maskot8.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة العباسية</h5>
+                                <span>Latihan 8</span>
+                            </div>
+                        </div>
+                        <div class="kitabah-card" onclick="bukaMaharah(12)">
+                            <div class="img-wrap">
+                                <img src="img/maskot8.png">
+                            </div>
+                            <div class="text-wrap">
+                                <h5>الدولة العباسية</h5>
+                                <span>Latihan 8</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
         <!-- PRODUK SAYA END -->
     </div>
 
@@ -297,37 +438,16 @@
     </footer>
     <!-- FOOTER END -->
 
-    <!-- javascript bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
 
-        </script>
 
-    <script>
-        const sections = document.querySelectorAll("section[id]");
-        const navLinks = document.querySelectorAll(".navbar .nav-link");
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-        window.addEventListener("scroll", () => {
-            let scrollY = window.pageYOffset;
+    <script src="https://unpkg.com/driver.js/dist/driver.js.iife.js"></script>
 
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 80;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute("id");
-
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    navLinks.forEach(link => {
-                        link.classList.remove("active");
-                    });
-
-                    document
-                        .querySelector('.navbar .nav-link[href="#' + sectionId + '"]')
-                        .classList.add("active");
-                }
-            });
-        });
-    </script>
     <script src="script/index.js"></script>
+    <script src="script/onboarding.js"></script>
+
+
 </body>
 
 </html>

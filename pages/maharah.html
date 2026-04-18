@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Kemampuanmu</title>
+
+    <!-- WAJIB kalau pakai navbar lama -->
+    <link rel="icon" type="image/png" href="/img/tamov1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Lugrasimo&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/maharah.css">
+</head>
+
+<body>
+
+    <!-- background dekor -->
+    <div class="bg-decor">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- HEADER -->
+    <div class="header-maharah"> <!-- ganti nama class biar rapi -->
+        
+        <div class="maskot-box">
+            <img id="maskot" src="../img/maskot1.png">
+            <p id="feedbackText">Siap latihan?</p>
+        </div>
+
+        <div id="apersepsiOverlay" class="apersepsi-overlay" style="display:none;"></div>
+
+        <div id="apersepsiBox" class="apersepsi-box">
+            <img id="maskotImg" src="/img/maskotceria.png" class="maskot-img">
+            <div id="maskotText" class="maskot-text"></div>
+            <div id="apersepsiOpsi" class="apersepsi-opsi"></div>
+        </div>
+
+        <h1 id="judulLatihan"></h1>
+        <h2 id="judulTeks"></h2>
+    </div>
+
+    <!-- MAIN -->
+    <div class="quiz-wrapper">
+
+        <!-- KIRI -->
+        <div class="quiz-sidebar">
+            <div class="progress-box">
+
+                <p id="progress-text">Level 1 dari 4</p>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+
+                <div class="level-list" id="level-list"></div>
+
+            </div>
+        </div>
+
+        <!-- KANAN -->
+        <div class="quiz-main">
+
+            <h2 id="judul"></h2>
+            <p id="level-info" style="text-align:center;"></p>
+
+            <div id="quiz-container"></div>
+
+            <div class="action">
+                <button id="btn-selesai">Selesai</button>
+                <button id="btn-next" style="display:none;">Ke Level Berikutnya</button>
+            </div>
+
+            <div id="hasil"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JS bootstrap (kalau navbar butuh) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS utama -->
+    <script src="../script/maharah.js"></script>
+
+</body>
+</html>

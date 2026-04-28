@@ -1,139 +1,224 @@
 <!DOCTYPE html>
 <html lang="id">
-<!-- bootstrap icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<!-- end bootstrap icons -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semua Bacaan Sejarah</title>
+    <title>Semua Bacaan — Titik Arab</title>
     <link rel="icon" type="image/png" href="../img/tamov1.png">
 
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Karla:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    <!-- my CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/akses.css">
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <div id="navbar"></div>
 
-
-    <div class="container-ibacaan">
-
-        <h1 class="judul-ibacaan">Semua Bacaan</h1>
-        <p class="subjudul">Latihan membaca bahasa Arab dengan penjelasan</p>
-
-
-        <div class="grid-ibacaan">
-
-            <div class="card">
-                <img src="../img/gambar 5.png">
-                <div class="card-content">
-                    <div class="judul-arab">حُرُوبُ الرِّدَّةِ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=5" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="/img/gambar 7.png">
-                <div class="card-content">
-                    <div class="judul-arab">الدَّوْلَةُ الأُمَوِيَّةُ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=6" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="/img/gambar 8.png">
-                <div class="card-content">
-                    <div class="judul-arab">الدَّوْلَةُ العَبَّاسِيَّةُ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=7" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../img/gambar 3.png">
-                <div class="card-content">
-                    <div class="judul-arab">الحُرُوبُ الصَّلِيبِيَّةُ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=8" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/gambar 3.png">
-                <div class="card-content">
-                    <div class="judul-arab">الدَّوْلَةُ الْعُثْمَانِيَّةُ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=9" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/gambar 3.png">
-                <div class="card-content">
-                    <div class="judul-arab">غَزْوَةُ أُحُدٍ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=10" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/gambar 3.png">
-                <div class="card-content">
-                    <div class="judul-arab">الْوَلِيدُ بْنُ عَبْدِ الْمَلِكِ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=11" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/gambar 3.png">
-                <div class="card-content">
-                    <div class="judul-arab">الْعَهْدُ الْبُوَيْهِـيُّ وَالسَّلْجُوقِيُّ</div>
-                    <div class="judul-latin"></div>
-                    <div class="deskripsi">Tersedia teks, terjemahan, dan penjelasan kosakata.</div>
-                    <a href="/pages/teks.html?id=12" class="btn-baca">Baca teks</a>
-                </div>
-            </div>
-
+    <!-- HERO SECTION -->
+    <section class="akses-hero">
+        <div class="hero-ornament" aria-hidden="true">
+            <span class="orn orn-1">﷽</span>
+            <span class="orn orn-2">✦</span>
+            <span class="orn orn-3">✦</span>
         </div>
-
-
-        <div class="area-home">
-            <a href="/index.html" class="btn-home">← Kembali ke Home</a>
+        <div class="hero-inner">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                Koleksi Bacaan
+                <span class="eyebrow-dot"></span>
+            </div>
+            <h1 class="hero-title">Semua Bacaan</h1>
+            <p class="hero-sub">Latihan membaca bahasa Arab dengan penjelasan kosakata</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" id="statCount">8</span>
+                    <span class="stat-label">Teks Tersedia</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Kosakata</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">📖</span>
+                    <span class="stat-label">Gratis Selamanya</span>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- GRID BACAAN -->
+    <section class="akses-grid-section">
+        <div class="container-akses">
+            <div class="grid-akses" id="gridBacaan">
+
+                <article class="baca-card" style="--delay: 0.05s">
+                    <div class="card-img-wrap">
+                        <img src="../img/gambar 5.png" alt="Hurubu ar-Riddah" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=5" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">01</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">حُرُوبُ الرِّدَّةِ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=5" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.1s">
+                    <div class="card-img-wrap">
+                        <img src="/img/gambar 7.png" alt="Ad-Daulah al-Umawiyyah" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=6" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">02</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">الدَّوْلَةُ الأُمَوِيَّةُ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=6" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.15s">
+                    <div class="card-img-wrap">
+                        <img src="/img/gambar 8.png" alt="Ad-Daulah al-Abbasiyyah" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=7" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">03</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">الدَّوْلَةُ العَبَّاسِيَّةُ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=7" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.2s">
+                    <div class="card-img-wrap">
+                        <img src="../img/gambar 3.png" alt="Al-Hurub as-Salibiyyah" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=8" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">04</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">الحُرُوبُ الصَّلِيبِيَّةُ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=8" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.25s">
+                    <div class="card-img-wrap">
+                        <img src="../img/gambar 3.png" alt="Ad-Daulah al-Uthmaniyyah" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=9" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">05</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">الدَّوْلَةُ الْعُثْمَانِيَّةُ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=9" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.3s">
+                    <div class="card-img-wrap">
+                        <img src="../img/gambar 3.png" alt="Ghazwah Uhud" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=10" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">06</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">غَزْوَةُ أُحُدٍ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=10" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.35s">
+                    <div class="card-img-wrap">
+                        <img src="../img/gambar 3.png" alt="Al-Walid bin Abdul Malik" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=11" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">07</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">الْوَلِيدُ بْنُ عَبْدِ الْمَلِكِ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=11" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+                <article class="baca-card" style="--delay: 0.4s">
+                    <div class="card-img-wrap">
+                        <img src="../img/gambar 3.png" alt="Al-Ahd al-Buwaihi was Saljuqi" loading="lazy">
+                        <div class="card-overlay">
+                            <a href="/pages/teks.html?id=12" class="overlay-btn">Buka Teks →</a>
+                        </div>
+                        <div class="card-number">08</div>
+                    </div>
+                    <div class="card-body-akses">
+                        <div class="card-arab">الْعَهْدُ الْبُوَيْهِـيُّ وَالسَّلْجُوقِيُّ</div>
+                        <p class="card-desc">Tersedia teks, terjemahan, dan penjelasan kosakata.</p>
+                        <a href="/pages/teks.html?id=12" class="card-btn">
+                            <i class="bi bi-book-half"></i> Baca Teks
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK -->
+    <div class="akses-back">
+        <a href="/index.html" class="btn-akses-home">
+            <i class="bi bi-house-heart"></i> Kembali ke Home
+        </a>
     </div>
 
     <!-- FOOTER -->
-    <footer class="text-black text-center p-2">
-        <p>Created with <i class="bi bi-heart-pulse-fill text-danger"></i> by <a
-                href="https://www.instagram.com/titikarab/" class="text-white fw-bold">Titik
-                Arab</a></p>
+    <footer class="akses-footer">
+        <p>Dibuat dengan <i class="bi bi-heart-pulse-fill" style="color:#e07050;"></i> oleh
+            <a href="https://www.instagram.com/titikarab/" class="footer-link-akses">Titik Arab</a>
+        </p>
     </footer>
-    <!-- FOOTER END -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="../script/akses.js"></script>
 
 </body>
-
 </html>

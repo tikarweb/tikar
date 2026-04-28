@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil Evaluasi — Titik Arab</title>
+  <link rel="icon" type="image/png" href="/img/tamov1.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Katibeh&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo+Play:wght@400;600;700;800&family=Karla:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/hasil.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-label">
+      <i class="bi bi-mortarboard-fill"></i>
+      Titik Arab · Uji Kemampuan
+    </div>
+    <h1>Hasil Evaluasi</h1>
+    <p>Ringkasan skor dan umpan balik dari setiap level</p>
+  </header>
+
+  <main>
+
+    <!-- ===== SKOR AKHIR =====
+         id="skor-akhir" seluruhnya diganti oleh renderSkorAkhir() di hasil.js.
+         Jangan taruh elemen ber-id lain di dalamnya — akan tertimpa. -->
+    <section id="ringkasan">
+      <div class="section-heading">
+        <h2><i class="bi bi-graph-up me-2"></i>Skor Akhir</h2>
+      </div>
+
+      <div id="skor-akhir">
+        <!-- Placeholder — akan diganti JS -->
+        <div class="empty" style="padding:2rem">
+          <i class="bi bi-hourglass-split"></i>
+          <p>Memuat skor...</p>
+        </div>
+      </div>
+
+      <!-- Tombol aksi
+           WAJIB: id="btn-ulangi" dipakai setupTombolAksi() untuk inject ?teks=X
+                  id="btn-cetak"  dipakai setupTombolAksi() untuk onclick print -->
+      <div class="hasil-actions">
+        <a id="btn-ulangi" href="maharah.html" class="btn-hasil primary">
+          <i class="bi bi-arrow-repeat"></i> Ulangi Latihan
+        </a>
+        <button id="btn-cetak" class="btn-hasil outline">
+          <i class="bi bi-printer"></i> Cetak Hasil
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== DETAIL PER LEVEL ===== -->
+    <section id="detail-hasil">
+      <div class="section-heading">
+        <h2><i class="bi bi-list-check me-2"></i>Detail Per Level</h2>
+      </div>
+
+      <!-- Loading / error state — dikelola loadHasil() -->
+      <div id="hasil"></div>
+
+      <!-- Grid kartu level.
+           WAJIB id="cards-grid": dipakai renderHasilGrouped() di hasil.js.
+           Bug sebelumnya: elemen ini tidak ada → kartu tidak pernah muncul. -->
+      <div id="cards-grid" class="cards-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Created with <i class="bi bi-heart-pulse-fill"></i>
+      by
+      <a href="https://www.instagram.com/titikarab/" target="_blank" rel="noopener">
+        Titik Arab
+      </a>
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script/hasil.js"></script>
+
+</body>
+
+</html>

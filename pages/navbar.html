@@ -1,21 +1,409 @@
-<nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color:#2c83a0;">
-    <div class="container">
-        <a class="navbar-brand" href="/index.html">
-            <img src="/img/tamov1.png" height="40">
-            titik.arab
-        </a>
+<!-- =============================================
+     TITIK ARAB — NAVBAR
+     Embedded style + markup, loaded via #navbar div
+============================================= -->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<style>
+/* ===== NAVBAR BASE ===== */
+.ta-navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  transition: background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+  background: linear-gradient(135deg, #2d1e5f 0%, #3f2a85 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 2px 16px #00000030;
+}
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/index.html#tentang">Tentang</a></li>
-                <li class="nav-item"><a class="nav-link" href="/index.html#bacaan">Bacaan</a></li>
-                <li class="nav-item"><a class="nav-link" href="/index.html#kontak">Kontak</a></li>
-            </ul>
-        </div>
+/* Scrolled state */
+.ta-navbar.scrolled {
+  background: linear-gradient(135deg, #23184a 0%, #2d1e5f 100%);
+  box-shadow: 0 4px 24px #00000050;
+}
+
+/* Accent line coral */
+.ta-navbar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, transparent 0%, #ff6f61 30%, #ff8a75 50%, #ff6f61 70%, transparent 100%);
+  border-radius: 0 0 2px 2px;
+}
+
+/* ===== BRAND ===== */
+.ta-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.ta-brand img {
+  height: 36px;
+  width: auto;
+  filter: drop-shadow(0 2px 6px #00000040);
+  transition: transform 0.3s ease;
+}
+
+.ta-brand:hover img { transform: rotate(-6deg) scale(1.08); }
+
+.ta-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.ta-brand-name {
+  font-family: "Cairo Play", "Karla", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #f6f1e9;
+  letter-spacing: -0.02em;
+}
+
+.ta-brand-name span {
+  color: #ff6f61;
+}
+
+.ta-brand-tagline {
+  font-family: "Karla", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f6f1e9aa;
+  margin-top: 1px;
+}
+
+/* ===== SPACER ===== */
+.ta-spacer { flex: 1; }
+
+/* ===== NAV LINKS ===== */
+.ta-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+.ta-nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-family: "Karla", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f6f1e9cc;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.ta-nav-links li a i {
+  font-size: 0.78rem;
+  opacity: 0.85;
+  color: #ff8a75;
+}
+
+.ta-nav-links li a:hover {
+  color: #fff;
+  background: #ffffff12;
+}
+
+/* Active link */
+.ta-nav-links li a.active {
+  color: #fff;
+  background: #ffffff18;
+}
+
+.ta-nav-links li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 50%;
+  transform: translateX(-50%);
+  width: 16px; height: 2px;
+  background: #ff6f61;
+  border-radius: 999px;
+}
+
+/* CTA button */
+.ta-nav-links li a.nav-cta {
+  background: linear-gradient(135deg, #ff6f61 0%, #ff8a75 100%);
+  color: #2d1e5f;
+  font-weight: 700;
+  padding: 8px 16px;
+  box-shadow: 0 3px 14px #ff6f6140;
+  gap: 5px;
+}
+
+.ta-nav-links li a.nav-cta:hover {
+  background: linear-gradient(135deg, #ff8a75 0%, #ff6f61 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px #ff6f6160;
+  color: #2d1e5f;
+}
+
+/* ===== TOUR BUTTON ===== */
+.ta-tour-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  background: #ffffff10;
+  border: 1px solid #ffffff20;
+  color: #f6f1e9cc;
+  font-family: "Karla", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.ta-tour-btn i { font-size: 0.8rem; color: #ff8a75; }
+
+.ta-tour-btn:hover {
+  background: #ffffff18;
+  border-color: #ffffff35;
+  color: #fff;
+}
+
+/* ===== HAMBURGER ===== */
+.ta-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  background: #ffffff12;
+  border: 1px solid #ffffff20;
+  transition: background 0.2s;
+}
+
+.ta-hamburger:hover { background: #ffffff22; }
+
+.ta-hamburger span {
+  display: block;
+  width: 20px; height: 2px;
+  background: #f6f1e9;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+/* ===== MOBILE DRAWER ===== */
+.ta-mobile-drawer {
+  display: none;
+  position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: linear-gradient(160deg, #23184af5 0%, #3f2a85f5 100%);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 20px 24px 28px;
+  box-shadow: 0 12px 32px #00000050;
+  border-bottom: 1px solid #ffffff15;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+  pointer-events: none;
+}
+
+.ta-mobile-drawer.open {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.ta-mobile-links {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ta-mobile-links li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-family: "Karla", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f6f1e9cc;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+
+.ta-mobile-links li a i {
+  width: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ff8a75;
+}
+
+.ta-mobile-links li a:hover,
+.ta-mobile-links li a.active {
+  background: #ffffff12;
+  color: #fff;
+}
+
+.ta-mobile-divider {
+  height: 1px;
+  background: #ffffff12;
+  margin: 10px 0;
+}
+
+.ta-mobile-cta {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.ta-mobile-cta a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px;
+  border-radius: 12px;
+  font-family: "Karla", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.ta-mobile-cta .cta-primary {
+  background: linear-gradient(135deg, #ff6f61, #ff8a75);
+  color: #2d1e5f;
+}
+
+.ta-mobile-cta .cta-tour {
+  background: #ffffff12;
+  border: 1px solid #ffffff25;
+  color: #f6f1e9cc;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .ta-nav-links,
+  .ta-tour-btn { display: none; }
+  .ta-hamburger { display: flex; }
+}
+
+@media (max-width: 400px) {
+  .ta-navbar { padding: 0 16px; }
+  .ta-brand-tagline { display: none; }
+}
+</style>
+
+<!-- NAVBAR MARKUP -->
+<nav class="ta-navbar" id="ta-navbar">
+
+  <!-- Brand -->
+  <a class="ta-brand" href="/index.html">
+    <img src="/img/tamov1.png" alt="Titik Arab logo">
+    <div class="ta-brand-text">
+      <span class="ta-brand-name">titik<span>.</span>arab</span>
+      <span class="ta-brand-tagline">Belajar Arab Mudah</span>
     </div>
+  </a>
+
+  <div class="ta-spacer"></div>
+
+  <!-- Desktop nav links -->
+  <ul class="ta-nav-links">
+    <li><a href="/index.html" id="nav-home"><i class="bi bi-house-fill"></i> Home</a></li>
+    <li><a href="/index.html#tentang"><i class="bi bi-info-circle-fill"></i> Tentang</a></li>
+    <li><a href="/index.html#bacaan"><i class="bi bi-book-fill"></i> Bacaan</a></li>
+    <li><a href="/index.html#kontak"><i class="bi bi-envelope-fill"></i> Kontak</a></li>
+    <li><a href="/index.html#bacaan" class="nav-cta"><i class="bi bi-lightning-fill"></i> Mulai Belajar</a></li>
+  </ul>
+
+  <!-- Tour button -->
+  <button class="ta-tour-btn" onclick="startOnboarding()" title="Tur panduan website">
+    <i class="bi bi-map-fill"></i> Panduan
+  </button>
+
+  <!-- Hamburger (mobile) -->
+  <div class="ta-hamburger" id="ta-hamburger" onclick="toggleMobileNav()" role="button" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
+
+<!-- Mobile drawer -->
+<div class="ta-mobile-drawer" id="ta-mobile-drawer">
+  <ul class="ta-mobile-links">
+    <li><a href="/index.html"><i class="bi bi-house-fill"></i> Home</a></li>
+    <li><a href="/index.html#tentang"><i class="bi bi-info-circle-fill"></i> Tentang</a></li>
+    <li><a href="/index.html#bacaan"><i class="bi bi-book-fill"></i> Bacaan</a></li>
+    <li><a href="/index.html#kontak"><i class="bi bi-envelope-fill"></i> Kontak</a></li>
+  </ul>
+  <div class="ta-mobile-divider"></div>
+  <div class="ta-mobile-cta">
+    <a href="/index.html#bacaan" class="cta-primary">
+      <i class="bi bi-lightning-fill"></i> Mulai Belajar
+    </a>
+    <a href="#" class="cta-tour" onclick="startOnboarding(); toggleMobileNav(); return false;">
+      <i class="bi bi-map-fill"></i> Panduan
+    </a>
+  </div>
+</div>
+
+<script>
+  // ── Scroll: tambah class .scrolled ──────────────────────────
+  (function() {
+    const nav = document.getElementById('ta-navbar');
+    if (!nav) return;
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+    }, { passive: true });
+  })();
+
+  // ── Mobile nav toggle ────────────────────────────────────────
+  function toggleMobileNav() {
+    const hamburger = document.getElementById('ta-hamburger');
+    const drawer    = document.getElementById('ta-mobile-drawer');
+    if (!hamburger || !drawer) return;
+    const isOpen = drawer.classList.contains('open');
+    hamburger.classList.toggle('open', !isOpen);
+    drawer.classList.toggle('open', !isOpen);
+  }
+
+  // Close drawer on link click
+  document.querySelectorAll('.ta-mobile-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('ta-hamburger')?.classList.remove('open');
+      document.getElementById('ta-mobile-drawer')?.classList.remove('open');
+    });
+  });
+
+  // ── Active link highlight ────────────────────────────────────
+  (function() {
+    const currentPath = window.location.pathname + window.location.hash;
+    document.querySelectorAll('.ta-nav-links a, .ta-mobile-links a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href && (href === currentPath || (href === '/index.html' && window.location.pathname === '/'))) {
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>

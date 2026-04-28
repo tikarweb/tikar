@@ -15,7 +15,7 @@ function bersihkanKata(teks) {
 
   return teks
     .normalize("NFKD")
-    .replace(/[.,،؛:!?()"'“”]/g, "")
+    .replace(/[.,،؛:!?()"'""]/g, "")
     .replace(/ـ/g, "")
     .replace(/\u200B/g, "")
     .replace(/\s+/g, " ")
@@ -28,6 +28,7 @@ function bersihkanKata(teks) {
 ===================== */
 let dataKosa = [];
 let kamus = {};
+let activeWord = null;
 
 
 /* =====================
@@ -65,13 +66,12 @@ fetch("../json/teks.json")
     const teksDipilih = data.teks.find(item => item.id == id);
 
     if (!teksDipilih) {
-      container.innerHTML = "<p>Teks tidak ditemukan</p>";
+      container.innerHTML = "<p style='text-align:center; color: #9c7e5e; padding: 40px;'>Teks tidak ditemukan.</p>";
       return;
     }
 
     let html = `
-      <section class="bacaan-item mb-5">
-        <h2 class="judul-arab arabicText">${teksDipilih.judul}</h2>
+      <h2 class="judul-arab arabicText">${teksDipilih.judul}</h2>
     `;
 
     teksDipilih.paragraf.forEach(p => {
@@ -85,145 +85,54 @@ fetch("../json/teks.json")
       html += `<p class="arabicText">${wrapped}</p>`;
     });
 
-    html += `</section>`;
-
     container.innerHTML = html;
 
     /* =====================
        ONBOARDING TRIGGER
     ===================== */
     setTimeout(() => {
-      console.log("trigger onboarding");
-
       if (!localStorage.getItem("onboarding_teks_done")) {
         startOnboardingTeks();
         localStorage.setItem("onboarding_teks_done", "true");
       }
+    }, 900);
 
-    }, 800);
-
+  })
+  .catch(err => {
+    document.getElementById("containerTeks").innerHTML =
+      "<p style='text-align:center; color: #c05e2e; padding: 40px;'>Gagal memuat teks.</p>";
+    console.log("ERROR TEKS:", err);
   });
 
 
 /* =====================
-   ONBOARDING FUNCTION
+   TAMPILKAN POPUP
 ===================== */
-function startOnboardingTeks() {
-  console.log("onboarding jalan");
+function tampilkanPopup(kata, kataBersih) {
+  const popup      = document.getElementById("popup");
+  const elKata     = document.getElementById("kataArab");
+  const elArti     = document.getElementById("arti");
+  const elPenjelas = document.getElementById("penjelasan");
 
-  if (!window.driver) {
-    console.log("❌ driver tidak ter-load");
-    return;
+  let semuaHasil = kamus[kataBersih] || [];
+
+  elKata.innerText = kata;
+
+  if (semuaHasil.length === 0) {
+    elArti.innerText     = "Tidak ditemukan";
+    elPenjelas.innerText = "—";
+  } else {
+    const hasil = semuaHasil.sort((a, b) =>
+      b.kataarab.length - a.kataarab.length
+    )[0];
+
+    elKata.innerText     = hasil.kataarab;
+    elArti.innerText     = hasil.arti     || "—";
+    elPenjelas.innerText = hasil.penjelasan || "—";
   }
 
-  const steps = [
-    {
-      element: ".text-area",
-      popover: {
-        title: "Ini teks bacaan",
-        description: "Baca teks Arab di bagian ini.",
-        side: "bottom"
-      }
-    },
-    {
-      element: ".text-area span",
-      popover: {
-        title: "Klik kata Arab",
-        description: "Klik salah satu kata untuk melihat arti.",
-        side: "bottom"
-      }
-    },
-    {
-      element: "#popup",
-      popover: {
-        title: "Arti muncul di sini",
-        description: "Hasil klik akan tampil di sini.",
-        side: "left"
-      }
-    }
-  ];
-
-  /* =====================
-     VALIDASI STEP
-  ===================== */
-  const validSteps = steps.filter(step => document.querySelector(step.element));
-
-  console.log("validSteps:", validSteps);
-
-  if (validSteps.length === 0) {
-    console.log("❌ step tidak ditemukan");
-    return;
-  }
-
-  /* =====================
-     INIT DRIVER
-  ===================== */
-  const driverObj = window.driver.driver({
-    showProgress: true,
-    showButtons: true,
-    allowClose: true,
-
-    nextBtnText: "Lanjut",
-    prevBtnText: "Kembali",
-    doneBtnText: "Selesai",
-
-    steps: validSteps
-  });
-
-  /* =====================
-     CUSTOM BUTTON LEWATI
-  ===================== */
-  driverObj.onPopoverRender = (popover) => {
-    const skipBtn = document.createElement("button");
-
-    skipBtn.innerText = "Lewati";
-    skipBtn.className = "driver-popover-skip-btn";
-
-    skipBtn.onclick = () => driverObj.destroy();
-
-    const footer = popover.footer;
-    if (!footer) return;
-
-    const nav = footer.querySelector(".driver-popover-navigation-btns");
-
-    if (nav) {
-      nav.prepend(skipBtn);
-    } else {
-      footer.appendChild(skipBtn);
-    }
-  };
-
-  driverObj.onDestroyed = () => {
-    console.log("onboarding selesai / skip");
-  };
-
-  driverObj.drive();
+  popup.classList.add("active");
 }
-
-
-/* =====================
-   TRIGGER ONBOARDING
-===================== */
-setTimeout(() => {
-  console.log("trigger onboarding");
-
-  // 🔥 MODE TESTING (SELALU MUNCUL)
-  startOnboardingTeks();
-
-  /*
-  // 🔥 MODE NORMAL (AKTIFKAN NANTI)
-  if (!localStorage.getItem("onboarding_teks_done")) {
-    startOnboardingTeks();
-    localStorage.setItem("onboarding_teks_done", "true");
-  }
-  */
-
-}, 1200);
-
-
-
-
-
 
 
 /* =====================
@@ -233,45 +142,104 @@ document.addEventListener("click", function(e) {
 
   if (e.target.classList.contains("word")) {
 
-    let kata = e.target.dataset.kata;
-    let kataBersih = bersihkanKata(kata);
+    /* highlight kata aktif */
+    if (activeWord) activeWord.classList.remove("active-word");
+    activeWord = e.target;
+    activeWord.classList.add("active-word");
 
-    let semuaHasil = kamus[kataBersih] || [];
+    const kata      = e.target.dataset.kata;
+    const kataBersih = bersihkanKata(kata);
 
-    if (semuaHasil.length === 0) {
-      document.getElementById("kataArab").innerText = kata;
-      document.getElementById("arti").innerText = "Tidak ditemukan";
-      document.getElementById("penjelasan").innerText = "-";
-      document.getElementById("popup").classList.add("active");
-      return;
+    tampilkanPopup(kata, kataBersih);
+
+    e.stopPropagation();
+    return;
+  }
+
+  /* tutup popup jika klik di luar */
+  const popup = document.getElementById("popup");
+  if (!popup.contains(e.target)) {
+    popup.classList.remove("active");
+    if (activeWord) {
+      activeWord.classList.remove("active-word");
+      activeWord = null;
     }
-
-    let hasil = semuaHasil.sort((a, b) =>
-      b.kataarab.length - a.kataarab.length
-    )[0];
-
-    document.getElementById("kataArab").innerText = hasil.kataarab;
-    document.getElementById("arti").innerText = hasil.arti || "-";
-    document.getElementById("penjelasan").innerText = hasil.penjelasan || "-";
-
-    document.getElementById("popup").classList.add("active");
   }
 
 });
 
 
 /* =====================
-   TUTUP POPUP
+   ONBOARDING FUNCTION
 ===================== */
-document.addEventListener("click", function(e) {
-
-  const popup = document.getElementById("popup");
-
-  if (
-    !e.target.classList.contains("word") &&
-    !popup.contains(e.target)
-  ) {
-    popup.classList.remove("active");
+function startOnboardingTeks() {
+  if (!window.driver) {
+    console.log("driver.js tidak ter-load");
+    return;
   }
 
-});
+  const steps = [
+    {
+      element: ".text-area",
+      popover: {
+        title: "📖 Ini teks bacaan",
+        description: "Baca teks Arab di sini. Setiap kata bisa diklik!",
+        side: "bottom"
+      }
+    },
+    {
+      element: ".text-area .word",
+      popover: {
+        title: "👆 Klik kata Arab",
+        description: "Klik salah satu kata untuk melihat arti dan penjelasannya.",
+        side: "bottom"
+      }
+    },
+    {
+      element: "#popup",
+      popover: {
+        title: "✨ Arti muncul di sini",
+        description: "Arti dan penjelasan kata akan tampil di panel ini.",
+        side: "left"
+      }
+    }
+  ];
+
+  const validSteps = steps.filter(step => document.querySelector(step.element));
+
+  if (validSteps.length === 0) return;
+
+  const driverObj = window.driver.driver({
+    showProgress: true,
+    showButtons: true,
+    allowClose: true,
+    nextBtnText: "Lanjut →",
+    prevBtnText: "← Kembali",
+    doneBtnText: "Oke, Mengerti!",
+    steps: validSteps
+  });
+
+  /* Tombol Lewati */
+  driverObj.onPopoverRender = (popover) => {
+    const skipBtn = document.createElement("button");
+    skipBtn.innerText = "Lewati";
+    skipBtn.className = "driver-popover-skip-btn";
+    skipBtn.onclick = () => driverObj.destroy();
+
+    const footer = popover.footer;
+    if (!footer) return;
+
+    const nav = footer.querySelector(".driver-popover-navigation-btns");
+    if (nav) {
+      nav.prepend(skipBtn);
+    } else {
+      footer.appendChild(skipBtn);
+    }
+  };
+
+  driverObj.onDestroyed = () => {
+    console.log("onboarding selesai");
+  };
+
+  driverObj.drive();
+}

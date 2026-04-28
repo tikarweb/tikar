@@ -1,102 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uji Kemampuanmu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uji Kemampuanmu</title>
 
-    <!-- WAJIB kalau pakai navbar lama -->
-    <link rel="icon" type="image/png" href="/img/tamov1.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/img/tamov1.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Lugrasimo&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Katibeh&family=Lugrasimo&family=Alyamama&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo+Play:wght@400;600;700&family=Karla:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/maharah.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/maharah.css">
 </head>
 
 <body>
 
-    <!-- background dekor -->
-    <div class="bg-decor">
-        <span></span>
-        <span></span>
-        <span></span>
+  <!-- Background decoration -->
+  <div class="bg-decor">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- HEADER -->
+  <div class="header-maharah">
+    <div class="maskot-box">
+      <img id="maskot" src="../img/maskot1.png" alt="Maskot">
+      <p id="feedbackText">Siap latihan?</p>
     </div>
 
-    <!-- NAVBAR -->
-    <div id="navbar"></div>
-
-    <!-- HEADER -->
-    <div class="header-maharah"> <!-- ganti nama class biar rapi -->
-        
-        <div class="maskot-box">
-            <img id="maskot" src="../img/maskot1.png">
-            <p id="feedbackText">Siap latihan?</p>
-        </div>
-
-        <div id="apersepsiOverlay" class="apersepsi-overlay" style="display:none;"></div>
-
-        <div id="apersepsiBox" class="apersepsi-box">
-            <img id="maskotImg" src="/img/maskotceria.png" class="maskot-img">
-            <div id="maskotText" class="maskot-text"></div>
-            <div id="apersepsiOpsi" class="apersepsi-opsi"></div>
-        </div>
-
-        <h1 id="judulLatihan"></h1>
-        <h2 id="judulTeks"></h2>
+    <!-- Apersepsi overlay & popup -->
+    <div id="apersepsiOverlay" class="apersepsi-overlay" style="display:none;"></div>
+    <div id="apersepsiBox" class="apersepsi-box">
+      <img id="maskotImg" src="/img/maskotceria.png" class="maskot-img" alt="Maskot">
+      <div id="maskotText" class="maskot-text"></div>
+      <div id="apersepsiOpsi" class="apersepsi-opsi"></div>
     </div>
 
-    <!-- MAIN -->
-    <div class="quiz-wrapper">
+    <!-- ✅ TAMBAHIN INFO TEKS -->
+    <div class="teks-info" style="margin-bottom: 1rem; opacity: 0.8;">
+      <i class="bi bi-file-text me-2"></i>
+      <span id="infoTeks">Latihan Teks 1</span>
+    </div>
 
-        <!-- KIRI -->
-        <div class="quiz-sidebar">
-            <div class="progress-box">
+    <h1 id="judulLatihan"></h1>
+    <h2 id="judulTeks"></h2>
+  </div>
 
-                <p id="progress-text">Level 1 dari 4</p>
+  <!-- MAIN WRAPPER -->
+  <div class="quiz-wrapper">
 
-                <div class="progress-bar">
-                    <div id="progress-fill"></div>
-                </div>
+    <!-- SIDEBAR -->
+    <div class="quiz-sidebar">
+      <div class="progress-box">
 
-                <div class="level-list" id="level-list"></div>
-
-            </div>
+        <!-- Level counter -->
+        <p id="progress-text">Level 1 dari 4</p>
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
         </div>
 
-        <!-- KANAN -->
-        <div class="quiz-main">
+        <!-- Ornament -->
+        <div class="ornament-divider"><span>❖</span></div>
 
+        <!-- Level list -->
+        <div class="level-list" id="level-list"></div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="quiz-main">
+      <div class="quiz-inner">
+
+        <!-- INPUT NAMA -->
+        <div id="inputNamaBox" class="input-box">
+          <input type="text" id="namaUser" placeholder="Masukkan nama kamu">
+          <button onclick="simpanNama()">
+            <i class="bi bi-arrow-right-circle me-1"></i> Mulai
+          </button>
+        </div>
+
+        <!-- QUIZ AREA -->
+        <div id="quiz-area" style="display:none;">
+
+          <!-- Arabic title -->
+          <div class="arabic">
             <h2 id="judul"></h2>
-            <p id="level-info" style="text-align:center;"></p>
+          </div>
 
-            <div id="quiz-container"></div>
+          <!-- QUIZ BOX -->
+          <div class="quiz-box">
 
-            <div class="action">
-                <button id="btn-selesai">Selesai</button>
-                <button id="btn-next" style="display:none;">Ke Level Berikutnya</button>
+            <!-- Mini progress header -->
+            <div class="quiz-header">
+              <span id="soalCounter">
+                <i class="bi bi-list-check me-1"></i>Soal 1 dari 10
+              </span>
+              <div class="progress-mini">
+                <div id="progress-mini-fill"></div>
+              </div>
             </div>
 
-            <div id="hasil"></div>
+            <!-- Scrollable quiz content -->
+            <div class="soal-scroll">
+              <div id="quiz-container"></div>
+            </div>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div class="action">
+            <button id="btn-aksi">
+              Lanjut <i class="bi bi-chevron-left ms-1"></i>
+            </button>
+          </div>
+
+          <!-- HASIL -->
+          <h3 id="judulHasil" style="display:none;">
+            <i class="bi bi-patch-check me-2"></i>Hasil Penilaian
+          </h3>
+          <div id="hasil"></div>
 
         </div>
-
+      </div>
     </div>
 
-    <!-- JS bootstrap (kalau navbar butuh) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div><!-- end .quiz-wrapper -->
 
-    <!-- JS utama -->
-    <script src="../script/maharah.js"></script>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script/maharah.js"></script>
 
 </body>
+
 </html>

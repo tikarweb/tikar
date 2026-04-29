@@ -1,0 +1,212 @@
+/* ============================================================
+   ONBOARDING.CSS — Driver.js override
+   Letakkan SETELAH driver.css di HTML!
+   Palette: sienna #CB7740 · espresso #2E1F26 · cream #FBF3EA
+============================================================ */
+
+/* ── Overlay ── */
+.driver-overlay,
+#driver-overlay {
+  background-color: #1A1014 !important;
+  opacity: 0.82 !important;
+}
+
+/* ── Popover container ── */
+.driver-popover,
+#driver-popover-content,
+.driver-popover.driverjs-theme {
+  background-color: #2E1F26 !important;
+  border: 1.5px solid rgba(203, 119, 64, 0.35) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 60px rgba(26, 16, 20, 0.7), 0 0 0 1px rgba(203, 119, 64, 0.15) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  font-family: "Plus Jakarta Sans", "Nunito", sans-serif !important;
+  min-width: 280px !important;
+  max-width: 360px !important;
+  color: #FBF3EA !important;
+}
+
+/* ── Sienna top bar via border-top ── */
+.driver-popover,
+#driver-popover-content {
+  border-top: 4px solid #CB7740 !important;
+}
+
+/* ── Title ── */
+.driver-popover-title,
+#driver-popover-title {
+  font-family: "Nunito", "Plus Jakarta Sans", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: #FBF3EA !important;
+  background: transparent !important;
+  padding: 16px 20px 4px !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* ── Description ── */
+.driver-popover-description,
+#driver-popover-description {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: 0.88rem !important;
+  color: #C9B0BA !important;
+  line-height: 1.65 !important;
+  padding: 4px 20px 16px !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+/* ── Footer ── */
+.driver-popover-footer,
+#driver-popover-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 12px 20px !important;
+  background-color: #1A1014 !important;
+  border-top: 1px solid rgba(203, 119, 64, 0.2) !important;
+  gap: 8px !important;
+  border-radius: 0 0 18px 18px !important;
+}
+
+/* ── Progress "1 of 7" ── */
+.driver-popover-progress-text,
+#driver-popover-progress-text {
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  color: #9B7888 !important;
+  letter-spacing: 0.05em !important;
+  flex-shrink: 0 !important;
+  background: transparent !important;
+}
+
+/* ── Navigation buttons wrapper ── */
+.driver-popover-navigation-btns,
+#driver-popover-navigation-btns {
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+}
+
+/* ── Tombol Kembali (prev) ── */
+.driver-popover-prev-btn,
+#driver-popover-prev-btn {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1.5px solid rgba(203, 119, 64, 0.45) !important;
+  color: #F5C99A !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  line-height: 1 !important;
+}
+
+.driver-popover-prev-btn:hover,
+#driver-popover-prev-btn:hover {
+  background-color: rgba(203, 119, 64, 0.15) !important;
+  border-color: #CB7740 !important;
+  color: #FBF3EA !important;
+}
+
+/* ── Tombol Lanjut / Selesai ── */
+.driver-popover-next-btn,
+#driver-popover-next-btn,
+.driver-popover-done-btn,
+#driver-popover-done-btn {
+  background: linear-gradient(135deg, #CB7740 0%, #A85C28 100%) !important;
+  background-color: #CB7740 !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  padding: 7px 16px !important;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  transition: all 0.22s ease !important;
+  text-shadow: none !important;
+  box-shadow: 0 4px 12px rgba(203, 119, 64, 0.42) !important;
+  line-height: 1 !important;
+}
+
+.driver-popover-next-btn:hover,
+#driver-popover-next-btn:hover,
+.driver-popover-done-btn:hover,
+#driver-popover-done-btn:hover {
+  background: linear-gradient(135deg, #E09060 0%, #CB7740 100%) !important;
+  background-color: #E09060 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 18px rgba(203, 119, 64, 0.55) !important;
+  color: #fff !important;
+}
+
+/* ── Tombol Lewati (custom skip) ── */
+.driver-popover-skip-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #9B7888 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  padding: 7px 10px !important;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  transition: color 0.18s ease !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  box-shadow: none !important;
+}
+
+.driver-popover-skip-btn:hover {
+  color: #FBF3EA !important;
+  background: transparent !important;
+}
+
+/* ── Tombol close (×) ── */
+.driver-popover-close-btn,
+#driver-popover-close-btn {
+  color: #9B7888 !important;
+  font-size: 1.2rem !important;
+  line-height: 1 !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 12px !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+  padding: 4px !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.driver-popover-close-btn:hover,
+#driver-popover-close-btn:hover {
+  color: #FBF3EA !important;
+  background-color: rgba(203, 119, 64, 0.2) !important;
+}
+
+/* ── Arrow ── */
+.driver-popover-arrow-side-top .driver-popover-arrow    { border-bottom-color: #2E1F26 !important; }
+.driver-popover-arrow-side-bottom .driver-popover-arrow { border-top-color: #2E1F26 !important; }
+.driver-popover-arrow-side-left .driver-popover-arrow   { border-right-color: #2E1F26 !important; }
+.driver-popover-arrow-side-right .driver-popover-arrow  { border-left-color: #2E1F26 !important; }
+
+/* ── Highlight ring sienna ── */
+.driver-active-element {
+  outline: 3px solid #CB7740 !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 6px rgba(203, 119, 64, 0.2) !important;
+  border-radius: 12px !important;
+}

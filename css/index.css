@@ -770,23 +770,35 @@ body {
   margin: 0;
 }
 
-.kitabah-right { flex: 1; overflow: hidden; }
+.kitabah-right {
+  flex: 1;
+  min-width: 0; /* penting agar flex child bisa menyusut */
+}
 
 .kitabah-scroll {
   display: flex;
   gap: 16px;
   overflow-x: auto;
-  padding-bottom: 8px;
+  overflow-y: visible;
+  padding-bottom: 12px;
+  padding-top: 4px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
 }
 
-.kitabah-scroll::-webkit-scrollbar { height: 4px; }
+.kitabah-scroll:active { cursor: grabbing; }
+
+.kitabah-scroll::-webkit-scrollbar { height: 5px; }
 .kitabah-scroll::-webkit-scrollbar-track { background: transparent; }
 .kitabah-scroll::-webkit-scrollbar-thumb {
-  background: #2E1F2640;
+  background: #CB774045;
   border-radius: var(--r-xl);
 }
+
+/* Snap tiap card saat scroll */
+.kitabah-card { scroll-snap-align: start; }
 
 .kitabah-card {
   min-width: 165px;
@@ -1030,11 +1042,52 @@ footer .bi-heart-pulse-fill { color: var(--sienna-mid); }
   .feature-grid      { grid-template-columns: 1fr; }
   .cara-pakai        { grid-template-columns: 1fr; }
   .cara-section      { padding: 36px 24px; }
-  .kitabah-wrapper   { flex-direction: column; gap: 28px; padding: 0 20px; }
-  .kitabah-left      { width: 100%; text-align: center; }
-  .kitabah-left .section-tag { justify-content: center; }
   .bacaan-header     { flex-direction: column; align-items: flex-start; }
   .hero-stats        { gap: 18px; flex-wrap: wrap; justify-content: center; }
+
+  /* ── Kitabah mobile: full bleed horizontal scroll ── */
+  .kitabah-section   { padding: 60px 0; }
+
+  .kitabah-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;        /* NO horizontal padding — biarkan scroll tembus tepi */
+  }
+
+  .kitabah-left {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;   /* padding hanya di teks */
+  }
+
+  .kitabah-left .section-tag { justify-content: center; }
+
+  .kitabah-right {
+    width: 100%;
+    min-width: 0;
+    overflow: visible; /* JANGAN hidden — biarkan shadow & scroll kelihatan */
+  }
+
+  .kitabah-scroll {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Ruang setelah kartu terakhir agar tidak terpotong */
+    padding-right: 20px;
+    gap: 14px;
+  }
+
+  .kitabah-card {
+    min-width: 145px !important;
+    max-width: 145px !important;
+    height: 220px !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: start;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1042,4 +1095,10 @@ footer .bi-heart-pulse-fill { color: var(--sienna-mid); }
   .btn-hero-primary,
   .btn-hero-secondary       { width: 100%; justify-content: center; }
   .hero-buttons             { flex-direction: column; }
+
+  .kitabah-card {
+    min-width: 135px !important;
+    max-width: 135px !important;
+    height: 210px !important;
+  }
 }

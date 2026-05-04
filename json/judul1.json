@@ -33,7 +33,7 @@
   "group": "teks1",
   "kataarab": "خَوْفُ",
   "arti": "ketakutan",
-  "penjelasan": "Isim. Masdar dari خاف. Dalam i‘rab berfungsi sebagai mudhaf."
+  "penjelasan": "Dalam i‘rab berfungsi sebagai fa'il."
  },
  {
   "group": "teks1",
@@ -237,13 +237,13 @@
   "group": "teks1",
   "kataarab": "مُقَاطَعَةً",
   "arti": "pemboikotan",
-  "penjelasan": "Masdar sebagai penegasan tindakan."
+  "penjelasan": "Maf'ul Mutlaq/penegas tindakan."
  },
  {
   "group": "teks1",
   "kataarab": "تَامَّةً",
   "arti": "total",
-  "penjelasan": "Sifat yang menunjukkan boikot penuh."
+  "penjelasan": "Sifat yang menunjukkan boikot penuh. Boikot yang sempurna, penuh, menyeluruh, total."
  },
  {
   "group": "teks1",
@@ -255,7 +255,7 @@
   "group": "teks1",
   "kataarab": "يَتَزَوَّجُونَ",
   "arti": "mereka menikah",
-  "penjelasan": "Fi'il mudhari dari تزوج."
+  "penjelasan": "Fi'il mudhari dari تزوج. Dhamir jamak kembali ke Quraisy"
  },
  {
   "group": "teks1",
@@ -267,13 +267,19 @@
   "group": "teks1",
   "kataarab": "نِسَائِهِمْ",
   "arti": "perempuan mereka",
-  "penjelasan": "Jamak dari امرأة dengan dhamir mereka."
+  "penjelasan": "Jamak dari امرأة dengan dhamir mereka kembali ke Bani Hasyim dan Bani Muthalib."
  },
  {
   "group": "teks1",
-  "kataarab": "وَلَا يَبِيعُونَ",
-  "arti": "dan tidak menjual",
-  "penjelasan": "Huruf ‘athaf + fi'il mudhari dari باع."
+  "kataarab": "وَلَا",
+  "arti": "dan tidak adanya",
+  "penjelasan": "Huruf nafi dan wawu ibtida'i"
+ },
+ {
+  "group": "teks1",
+  "kataarab": "يَبِيعُونَ",
+  "arti": "menjual",
+  "penjelasan": "fi'il mudhari dari باع."
  },
  {
   "group": "teks1",
@@ -283,7 +289,7 @@
  },
  {
   "group": "teks1",
-  "kataarab": "وَلَا يَشْتَرُونَ",
+  "kataarab": "يَشْتَرُونَ",
   "arti": "dan tidak membeli",
   "penjelasan": "Fi'il mudhari dari اشترى."
  },
@@ -295,13 +301,13 @@
  },
  {
   "group": "teks1",
-  "kataarab": "وَلَا يُخَالِطُونَهُمْ",
+  "kataarab": "يُخَالِطُونَهُمْ",
   "arti": "dan tidak bergaul dengan mereka",
-  "penjelasan": "Fi'il mudhari dari خالط + dhamir objek."
+  "penjelasan": "Fi'il mudhari dari خالط + dhamir objek. Mereka tidak bergaul, tidak berinteraksi sosial, tidak bercampur dengan mereka."
  },
  {
   "group": "teks1",
-  "kataarab": "وَلَا يَقْبَلُونَ",
+  "kataarab": "يَقْبَلُونَ",
   "arti": "dan tidak menerima",
   "penjelasan": "Fi'il mudhari dari قبل."
  },
@@ -314,12 +320,12 @@
  {
   "group": "teks1",
   "kataarab": "صُلْحًا",
-  "arti": "perdamaian",
+  "arti": "perjanjian damai",
   "penjelasan": "Isim sebagai objek penerimaan."
  },
  {
   "group": "teks1",
-  "kataarab": "وَلَا تَأْخُذُهُمْ",
+  "kataarab": "تَأْخُذُهُمْ",
   "arti": "dan tidak mengambil mereka",
   "penjelasan": "Fi'il mudhari dari أخذ."
  },
@@ -349,13 +355,13 @@
  },
  {
   "group": "teks1",
-  "kataarab": "رَسُولَ اللَّهِ",
+  "kataarab": "رَسُولَ",
   "arti": "Rasul Allah",
   "penjelasan": "Gelar Nabi Muhammad."
  },
  {
   "group": "teks1",
-  "kataarab": "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+  "kataarab": "صَلَّى",
   "arti": "semoga Allah memberi rahmat dan keselamatan kepadanya",
   "penjelasan": "Kalimat doa penghormatan kepada Nabi."
  },
@@ -529,15 +535,15 @@
  },
  {
   "group": "teks1",
-  "kataarab": "بَنُو هَاشِمٍ",
+  "kataarab": "بَنُو",
   "arti": "Bani Hasyim",
-  "penjelasan": "Klan keluarga Nabi."
+  "penjelasan": "Fa'il marfu."
  },
  {
   "group": "teks1",
-  "kataarab": "وَبَنُو الْمُطَّلِبِ",
+  "kataarab": "وَبَنُو",
   "arti": "dan Bani al Muththalib",
-  "penjelasan": "Klan kerabat Nabi lainnya."
+  "penjelasan": "Fa'il marfu'"
  },
  {
   "group": "teks1",
@@ -722,14 +728,20 @@
  {
   "group": "teks1",
   "kataarab": "وَاحْتَمَلُوا",
-  "arti": "dan mereka menanggung",
+  "arti": "dan kuat atau mampu",
   "penjelasan": "Fi'il madhi dari احتمل."
  },
  {
   "group": "teks1",
-  "kataarab": "وَلَمْ تَلِنْ",
-  "arti": "dan tidak melemah",
-  "penjelasan": "Lam jazm + fi'il mudhari dari لان."
+  "kataarab": "وَلَمْ",
+  "arti": "dan tidak",
+  "penjelasan": "Lam jazm, men-jazm fi'il mudhari."
+ },
+ {
+  "group": "teks1",
+  "kataarab": "تَلِنْ",
+  "arti": "Melemah, goyah, kendur.",
+  "penjelasan": "Fi'il mudhari dari لان."
  },
  {
   "group": "teks1",
@@ -799,8 +811,14 @@
  },
  {
   "group": "teks1",
-  "kataarab": "لَا يَجُوزُ",
-  "arti": "tidak boleh",
+  "kataarab": "لَا",
+  "arti": "tidak",
+  "penjelasan": "belum fix."
+ },
+ {
+  "group": "teks1",
+  "kataarab": "يَجُوزُ",
+  "arti": "dibolehkan, dibenarkan. Sehingga لَا يَجُوزُ arti lengkapnya 'tidak boleh'",
   "penjelasan": "Fi'il mudhari dari جاز berarti tidak dibenarkan."
  },
  {
@@ -818,8 +836,8 @@
  {
   "group": "teks1",
   "kataarab": "وَشَقَّ",
-  "arti": "terasa berat",
-  "penjelasan": "Fi'il madhi dari شقّ."
+  "arti": "dan merobek",
+  "penjelasan": "Fi'il madhi"
  },
  {
   "group": "teks1",
@@ -853,15 +871,15 @@
  },
  {
   "group": "teks1",
-  "kataarab": "بَنِي هَاشِمٍ",
+  "kataarab": "بَنِي",
   "arti": "Bani Hasyim",
-  "penjelasan": "Klan Nabi."
+  "penjelasan": "Keturunan Hasyim bin Abdu Manaf. Ini keluarga utama Nabi Muhammad, karena Nabi berasal dari garis ini."
  },
  {
   "group": "teks1",
-  "kataarab": "وَبَنِي الْمُطَّلِبِ",
+  "kataarab": "وَبَنِي",
   "arti": "dan Bani al Muththalib",
-  "penjelasan": "Kerabat Nabi."
+  "penjelasan": "Keturunan al Muththalib bin Abdu Manaf, saudara Hasyim. Jadi mereka sepupu dekat Bani Hasyim dalam struktur nasab Quraisy."
  },
  {
   "group": "teks1",
@@ -961,7 +979,7 @@
  },
  {
   "group": "teks1",
-  "kataarab": "الْمُطْعِمُ بْنُ عَدِيٍّ",
+  "kataarab": "الْمُطْعِمُ",
   "arti": "al Muth'im bin Adi",
   "penjelasan": "Tokoh Quraisy yang merobek piagam."
  },

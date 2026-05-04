@@ -8,6 +8,7 @@ function getUserIdFromURL() {
 }
 
 function getTeksFromURL() {
+  // Prioritas: URL param → sessionStorage → default "1"
   return new URLSearchParams(window.location.search).get("teks")
     || sessionStorage.getItem("teksAktif")
     || "1";
@@ -47,10 +48,16 @@ const LEVEL_LABEL = {
   4: "Kitābah",
 };
 
+const LEVEL_ICON = {
+  1: "alphabet",
+  2: "diagram-3",
+  3: "book",
+  4: "pencil",
+};
+
 function getTheme(lvl) {
   return LEVEL_THEME[lvl] || LEVEL_THEME[1];
 }
-
 
 // =======================
 // NAVBAR
@@ -65,7 +72,6 @@ function loadNavbar() {
     .catch(() => {});
 }
 
-
 // =======================
 // GROUPING
 // =======================
@@ -79,7 +85,6 @@ function kelompokkanPerLevel(data) {
   });
   return grouped;
 }
-
 
 // =======================
 // HITUNG SKOR AKHIR
@@ -97,10 +102,8 @@ function hitungSkorAkhir(grouped) {
   return count === 0 ? 0 : Math.round(total / count);
 }
 
-
 // =======================
 // RENDER SKOR AKHIR CARD
-// FIX: tambah strokeDasharray + strokeDashoffset awal untuk animasi ring
 // =======================
 function renderSkorAkhir(grouped, nama) {
   const el = document.getElementById("skor-akhir");
@@ -112,11 +115,7 @@ function renderSkorAkhir(grouped, nama) {
   const judul       = getJudulTeks();
   const totalSoal   = Object.values(grouped).reduce((a, b) => a + b.length, 0);
   const totalLevel  = Object.keys(grouped).length;
-
-  // Circumference untuk r=55: 2 * π * 55 ≈ 345.58
-  const CIRCUM = 2 * Math.PI * 55;
-  const offset = CIRCUM - (CIRCUM * final / 100);
-
+  const offset      = 346 - (346 * final / 100);
   const displayNama = nama || sessionStorage.getItem("namaSiswa") || "Siswa";
 
   el.innerHTML = `
@@ -133,8 +132,7 @@ function renderSkorAkhir(grouped, nama) {
       <div class="skor-ring">
         <svg width="130" height="130" viewBox="0 0 130 130">
           <circle class="ring-track" cx="65" cy="65" r="55"/>
-          <circle class="ring-fill"  id="ringFill"  cx="65" cy="65" r="55"
-            style="stroke-dasharray:${CIRCUM};stroke-dashoffset:${CIRCUM};transition:stroke-dashoffset 1.2s ease;"/>
+          <circle class="ring-fill" id="ringFill" cx="65" cy="65" r="55"/>
         </svg>
         <div class="ring-label">
           <span class="ring-score" id="ringScore">0</span>
@@ -165,15 +163,12 @@ function renderSkorAkhir(grouped, nama) {
     </div>
   `;
 
-  // Animasi ring: mulai dari penuh (CIRCUM) → target offset, delay 100ms biar DOM ready
+  // Animasi ring + count-up angka
   requestAnimationFrame(() => {
-    setTimeout(() => {
-      const ringEl = document.getElementById("ringFill");
-      if (ringEl) ringEl.style.strokeDashoffset = offset;
-    }, 100);
-
-    // Count-up angka
+    const ringEl  = document.getElementById("ringFill");
     const scoreEl = document.getElementById("ringScore");
+    if (ringEl) ringEl.style.strokeDashoffset = offset;
+
     if (scoreEl && final > 0) {
       let current = 0;
       const step  = Math.max(1, Math.ceil(final / 60));
@@ -186,12 +181,10 @@ function renderSkorAkhir(grouped, nama) {
   });
 }
 
-
 // =======================
-// RENDER DETAIL LEVEL
+// RENDER DETAIL PER LEVEL
 // =======================
 function renderHasilGrouped(grouped) {
-  // FIX: target #cards-grid, bukan #hasil
   const container = document.getElementById("cards-grid");
   if (!container) return;
 
@@ -202,7 +195,8 @@ function renderHasilGrouped(grouped) {
     .forEach(lvl => {
       const items  = grouped[lvl];
       const theme  = getTheme(Number(lvl));
-      const label  = LEVEL_LABEL[Number(lvl)] || `Level ${lvl}`;
+      const label  = LEVEL_LABEL[Number(lvl)]  || `Level ${lvl}`;
+      const icon   = LEVEL_ICON[Number(lvl)]   || "star";
 
       const scored = items.filter(it => typeof it.skor === "number" && it.skor !== null);
       const avg    = scored.length
@@ -213,13 +207,11 @@ function renderHasilGrouped(grouped) {
       const scoreCls = avg !== null ? scoreClass(avg) : "vlow";
       const barWidth = avg !== null ? avg : 0;
 
-      const iconMap = { 1: "alphabet", 2: "diagram-3", 3: "book", 4: "pencil" };
-      const icon    = iconMap[Number(lvl)] || "star";
-
       html += `
         <div class="level-card">
           <div class="card-stripe ${theme.stripe}"></div>
           <div class="card-body">
+
             <div class="card-header-row">
               <div class="level-title">
                 <div class="level-icon ${theme.icon}">
@@ -256,8 +248,8 @@ function renderHasilGrouped(grouped) {
             <div class="feedback-content">
               <span class="feedback-note">${item.feedback || "Sedang diproses..."}</span>
             </div>
-            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0">
-              <span class="score-number ${sCls}" style="font-size:1rem">${sDisp}</span>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0;">
+              <span class="score-number ${sCls}" style="font-size:1rem;">${sDisp}</span>
               <div class="feedback-status ${isOk ? "correct" : "wrong"}">
                 <i class="bi bi-${isOk ? "check" : "x"}"></i>
               </div>
@@ -275,7 +267,7 @@ function renderHasilGrouped(grouped) {
 
   container.innerHTML = html;
 
-  // Animasi progress bar
+  // Animasi progress bar setelah render
   requestAnimationFrame(() => {
     document.querySelectorAll(".card-progress-fill").forEach(el => {
       el.style.width = (el.dataset.width || 0) + "%";
@@ -283,10 +275,10 @@ function renderHasilGrouped(grouped) {
   });
 }
 
-
 // =======================
 // SETUP TOMBOL AKSI
-// FIX: id="btn-ulangi" dan id="btn-cetak" sekarang ada di HTML
+// Tombol ulangi: arahkan ke teks yang sama
+// Tombol cetak: window.print()
 // =======================
 function setupTombolAksi() {
   const teks      = getTeksFromURL();
@@ -294,6 +286,7 @@ function setupTombolAksi() {
 
   const btnUlangi = document.getElementById("btn-ulangi");
   if (btnUlangi) {
+    // Support <a> maupun <button>
     if (btnUlangi.tagName === "A") {
       btnUlangi.href = targetURL;
     } else {
@@ -308,7 +301,6 @@ function setupTombolAksi() {
     btnCetak.addEventListener("click", () => window.print());
   }
 }
-
 
 // =======================
 // LOAD HASIL
@@ -326,7 +318,6 @@ async function loadHasil() {
     return;
   }
 
-  // Tampilkan loading
   if (hasilEl) hasilEl.innerHTML = `
     <div class="empty">
       <i class="bi bi-hourglass-split"></i>
@@ -334,6 +325,7 @@ async function loadHasil() {
     </div>`;
 
   try {
+    // Content-Type: text/plain — mencegah CORS preflight
     const res = await fetch(URL_API, {
       method:  "POST",
       headers: { "Content-Type": "text/plain" },
@@ -361,8 +353,7 @@ async function loadHasil() {
       return;
     }
 
-    // Ambil nama: dari data (setelah GAS fix mengembalikan field nama),
-    // fallback ke sessionStorage kalau halaman di-refresh
+    // Ambil nama dari data, fallback ke sessionStorage
     const nama = data.find(d => d.nama)?.nama || sessionStorage.getItem("namaSiswa") || "";
     if (nama) sessionStorage.setItem("namaSiswa", nama);
 
@@ -374,15 +365,14 @@ async function loadHasil() {
 
     const grouped = kelompokkanPerLevel(data);
 
-    // Render skor akhir (mengisi #skor-akhir) dan kartu level (mengisi #cards-grid)
     renderSkorAkhir(grouped, nama);
     renderHasilGrouped(grouped);
 
-    // Kosongkan loading state di #hasil (kartu sudah masuk ke #cards-grid)
+    // Kosongkan loading state setelah render selesai
     if (hasilEl) hasilEl.innerHTML = "";
 
   } catch (err) {
-    console.error("loadHasil error:", err);
+    console.error("❌ loadHasil error:", err);
     if (hasilEl) hasilEl.innerHTML = `
       <div class="empty">
         <i class="bi bi-wifi-off"></i>
@@ -393,7 +383,6 @@ async function loadHasil() {
       </div>`;
   }
 }
-
 
 // =======================
 // INIT

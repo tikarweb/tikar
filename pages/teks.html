@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="ar">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titik Arab</title>
-
     <link rel="icon" type="image/png" href="../img/tamov1.png">
-
-    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Alyamama&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo+Play:wght@400;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- DRIVER.JS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/teks.css">
 </head>
-
 <body>
 
     <!-- NAVBAR -->
@@ -37,60 +26,14 @@
         <span class="deco-char deco-5">ق</span>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT — hanya kolom teks, tanpa kolom sidebar -->
     <div class="container main-container">
-        <div class="row g-4 align-items-start">
-
-            <!-- TEKS -->
-            <div class="col-lg-7 col-12">
-                <div class="teks-wrapper">
-                    <div class="teks-header">
-                        <span class="teks-badge">📖 Baca & Pahami</span>
-                        <p class="teks-hint">Klik kata untuk melihat artinya</p>
-                    </div>
-                    <main class="text-area teks-arab" id="containerTeks"></main>
-                </div>
+        <div class="teks-wrapper">
+            <div class="teks-header">
+                <span class="teks-badge">📖 Baca & Pahami</span>
+                <p class="teks-hint">Klik kata untuk melihat artinya</p>
             </div>
-
-            <!-- SIDEBAR KANAN -->
-            <div class="col-lg-5 col-12">
-                <div class="sidebar-sticky">
-
-                    <!-- POPUP ARTI -->
-                    <aside id="popup" class="popup-box">
-                        <div class="popup-idle" id="popupIdle">
-                            <div class="idle-icon">اضغط</div>
-                            <p class="idle-text">Ketuk sebuah kata<br>untuk melihat artinya</p>
-                        </div>
-                        <div class="popup-content" id="popupContent">
-                            <div class="popup-top">
-                                <h5 id="kataArab">اضغط على الكلمة</h5>
-                                <button class="popup-close" id="popupClose" aria-label="Tutup">✕</button>
-                            </div>
-                            <div class="popup-divider"></div>
-                            <div class="popup-arti-row">
-                                <span class="popup-label">Arti</span>
-                                <p id="arti">—</p>
-                            </div>
-                            <div class="popup-penjelasan-row">
-                                <span class="popup-label">Penjelasan</span>
-                                <p id="penjelasan">—</p>
-                            </div>
-                        </div>
-                    </aside>
-
-                    <!-- TIPS CARD -->
-                    <div class="tips-card">
-                        <div class="tips-icon">💡</div>
-                        <div>
-                            <p class="tips-title">Tips Belajar</p>
-                            <p class="tips-body">Baca keras-keras dan perhatikan harakat tiap kata!</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+            <main class="text-area teks-arab" id="containerTeks"></main>
         </div>
     </div>
 
@@ -101,29 +44,48 @@
         </a>
     </div>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
         <p>Dibuat dengan ❤️ oleh <a href="https://www.instagram.com/titikarab/" class="footer-link">Titik Arab</a></p>
     </footer>
 
-    <!-- DRIVER.JS -->
+    <!-- =====================================================
+         POPUP — diletakkan langsung di body, BUKAN di dalam
+         Bootstrap column. Dengan begitu position:fixed
+         bekerja 100% tanpa gangguan dari parent manapun.
+    ====================================================== -->
+
+    <!-- Backdrop mobile -->
+    <div id="popupBackdrop" class="popup-backdrop"></div>
+
+    <!-- Popup box -->
+    <aside id="popup" class="popup-box">
+        <div class="popup-idle" id="popupIdle">
+            <div class="idle-icon">اضغط</div>
+            <p class="idle-text">Ketuk sebuah kata<br>untuk melihat artinya</p>
+        </div>
+        <div class="popup-content" id="popupContent">
+            <div class="popup-top">
+                <h5 id="kataArab">اضغط على الكلمة</h5>
+                <button class="popup-close" id="popupClose" aria-label="Tutup">✕</button>
+            </div>
+            <div class="popup-divider"></div>
+            <div class="popup-arti-row">
+                <span class="popup-label">Arti</span>
+                <p id="arti">—</p>
+            </div>
+            <div class="popup-penjelasan-row">
+                <span class="popup-label">Penjelasan</span>
+                <p id="penjelasan">—</p>
+            </div>
+        </div>
+    </aside>
+
     <script src="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.js.iife.js"></script>
-
-    <!-- SCRIPT UTAMA -->
     <script src="../script/teks.js"></script>
-
-    <!-- LOAD NAVBAR -->
     <script>
         fetch("navbar.html")
             .then(res => res.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-
-        /* Popup close button */
-        document.getElementById("popupClose").addEventListener("click", () => {
-            document.getElementById("popup").classList.remove("active");
-        });
+            .then(data => { document.getElementById("navbar").innerHTML = data; });
     </script>
 
 </body>

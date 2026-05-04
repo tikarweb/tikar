@@ -40,7 +40,7 @@
     --text-muted: #9c8b91;
     --border: #e7ded9;
 
-    /* ===== SHADOW (ikut warna utama) ===== */
+    /* ===== SHADOW ===== */
     --shadow-sm: 0 2px 12px #2E1F2615;
     --shadow-md: 0 8px 28px #2E1F2620;
     --shadow-lg: 0 18px 50px #2E1F2628;
@@ -52,7 +52,11 @@
     --r-xl: 42px;
   }
 
-  /* ===== NAVBAR BASE ===== */
+  /* ===== NAVBAR BASE =====
+     PENTING: backdrop-filter DIHAPUS dari sini.
+     backdrop-filter menciptakan stacking context baru yang
+     membunuh position:sticky pada semua elemen di halaman.
+     Ganti dengan background solid/semi-transparan.         */
   .ta-navbar {
     position: fixed;
     top: 0;
@@ -63,18 +67,18 @@
     display: flex;
     align-items: center;
     padding: 0 28px;
-    transition: background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+    transition: background 0.35s ease, box-shadow 0.35s ease;
 
-    /* TERANG DEFAULT */
+    /* Background solid — tidak perlu backdrop-filter */
     background: linear-gradient(135deg, var(--gold) 0%, var(--peach) 100%);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    /* backdrop-filter: blur(14px);  ← DIHAPUS */
+    /* -webkit-backdrop-filter: blur(14px); ← DIHAPUS */
     box-shadow: 0 2px 16px var(--gold-glow);
   }
 
   /* ===== SCROLLED STATE (GELAP) ===== */
   .ta-navbar.scrolled {
-    background: red !important;
+    background: var(--teal-dark) !important;
     box-shadow: 0 4px 24px #00000050;
   }
 
@@ -307,16 +311,20 @@
     background: #ffffff;
   }
 
-  /* ===== MOBILE DRAWER ===== */
+  /* ===== MOBILE DRAWER =====
+     backdrop-filter DIHAPUS dari sini juga —
+     sama-sama membunuh position:sticky di halaman.
+     Background diganti solid agar tetap gelap dan terbaca. */
   .ta-mobile-drawer {
     display: none;
     position: fixed;
     top: 64px;
     left: 0;
     right: 0;
-    background: linear-gradient(160deg, var(--text) 0%, #1f151a 100%);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    /* Background solid, tidak transparan — tidak butuh backdrop-filter */
+    background: #1f1419;
+    /* backdrop-filter: blur(18px);        ← DIHAPUS */
+    /* -webkit-backdrop-filter: blur(18px); ← DIHAPUS */
     padding: 20px 24px 28px;
     box-shadow: 0 12px 32px #00000050;
     border-bottom: 1px solid #ffffff15;
@@ -324,6 +332,7 @@
     opacity: 0;
     transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
     pointer-events: none;
+    z-index: 999;
   }
 
   .ta-mobile-drawer.open {
@@ -409,7 +418,6 @@
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
-
     .ta-nav-links,
     .ta-tour-btn {
       display: none;
@@ -490,33 +498,27 @@
   document.addEventListener('DOMContentLoaded', function () {
 
     const nav = document.getElementById('ta-navbar');
-    const hamburger = document.getElementById('ta-hamburger');
-    const drawer = document.getElementById('ta-mobile-drawer');
-
     if (!nav) return;
 
     // ===== SCROLL EFFECT =====
     window.addEventListener('scroll', function () {
-      console.log('SCROLL KEDETEK');
-
       const nav = document.getElementById('ta-navbar');
-      console.log('NAV:', nav);
-
       if (!nav) return;
 
-      nav.style.background = 'red';
+      if (window.scrollY > 40) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
     });
-
 
     // ===== MOBILE TOGGLE =====
     window.toggleMobileNav = function () {
       const hamburger = document.getElementById('ta-hamburger');
       const drawer = document.getElementById('ta-mobile-drawer');
-
       if (!hamburger || !drawer) return;
 
       const isOpen = drawer.classList.contains('open');
-
       hamburger.classList.toggle('open', !isOpen);
       drawer.classList.toggle('open', !isOpen);
     };
@@ -524,6 +526,8 @@
     // ===== CLOSE DRAWER SAAT KLIK LINK =====
     document.querySelectorAll('.ta-mobile-links a').forEach(function (a) {
       a.addEventListener('click', function () {
+        const hamburger = document.getElementById('ta-hamburger');
+        const drawer = document.getElementById('ta-mobile-drawer');
         hamburger?.classList.remove('open');
         drawer?.classList.remove('open');
       });
@@ -531,10 +535,8 @@
 
     // ===== ACTIVE LINK =====
     const currentPath = window.location.pathname + window.location.hash;
-
     document.querySelectorAll('.ta-nav-links a, .ta-mobile-links a').forEach(function (a) {
       const href = a.getAttribute('href');
-
       if (
         href &&
         (href === currentPath ||

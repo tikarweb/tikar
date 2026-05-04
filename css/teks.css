@@ -19,12 +19,8 @@
   --shadow-card:    0 8px 32px rgba(46,31,38,0.12);
   --font-arab:      'Amiri', serif;
   --font-ui:        'Plus Jakarta Sans', 'Karla', sans-serif;
-
-  /* Lebar kolom teks di desktop — popup akan nempel di kanannya */
-  --teks-max-width: 780px;
-  --popup-width:    340px;
-  --navbar-height:  64px;
-  --gap:            24px;
+  --navbar-h:       64px;
+  --sidebar-top:    calc(var(--navbar-h) + 28px);
 }
 
 body {
@@ -38,225 +34,200 @@ body {
 }
 
 /* ── DECO ── */
-.page-deco {
-  position: fixed; inset: 0;
-  pointer-events: none; overflow: hidden; z-index: 0;
-}
-.deco-char {
-  position: absolute; font-family: var(--font-arab);
-  color: var(--clr-terracotta); opacity: 0.04;
-  user-select: none; animation: decoFloat 12s ease-in-out infinite;
-}
+.page-deco { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.deco-char { position: absolute; font-family: var(--font-arab); color: var(--clr-terracotta); opacity: 0.04; user-select: none; animation: decoFloat 12s ease-in-out infinite; }
 .deco-1 { top: 5%;    left: -2%;  font-size: 180px; animation-delay: 0s; }
 .deco-2 { top: 50%;   right: -2%; font-size: 200px; animation-delay: 3s; }
 .deco-3 { bottom: 10%; left: 10%; font-size: 140px; animation-delay: 6s;   opacity: 0.03; }
 .deco-4 { top: 25%;   right: 15%; font-size: 120px; animation-delay: 1.5s; opacity: 0.03; }
 .deco-5 { bottom: 30%; left: 40%; font-size: 110px; animation-delay: 4.5s; opacity: 0.025; }
 @keyframes decoFloat {
-  0%, 100% { transform: translateY(0px)   rotate(0deg); }
-  33%       { transform: translateY(-20px) rotate(3deg); }
-  66%       { transform: translateY(10px)  rotate(-2deg); }
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  33%      { transform: translateY(-20px) rotate(3deg); }
+  66%      { transform: translateY(10px) rotate(-2deg); }
 }
 
 /* ── MAIN CONTAINER ── */
 .main-container {
   position: relative; z-index: 1;
-  padding-top: calc(var(--navbar-height) + 36px);
+  padding-top: calc(var(--navbar-h) + 36px);
   padding-bottom: 60px;
-  /* Batasi lebar kolom teks, sisakan ruang kanan untuk popup */
-  max-width: calc(var(--teks-max-width) + var(--popup-width) + var(--gap) + 80px);
 }
+.main-container > .row { align-items: flex-start !important; }
+.main-container,
+.main-container > .row,
+.main-container > .row > [class*="col-"] { overflow: visible !important; }
 
 /* ── TEKS WRAPPER ── */
 .teks-wrapper {
-  /* Lebar teks tidak penuh container — sisakan ruang untuk popup di kanan */
-  max-width: var(--teks-max-width);
-  background: white;
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-  overflow: hidden;
-  border: 1px solid var(--clr-sand);
-  animation: slideUp 0.6s ease both;
+  background: white; border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card); overflow: hidden;
+  border: 1px solid var(--clr-sand); animation: slideUp 0.6s ease both;
 }
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 .teks-header {
   background: linear-gradient(135deg, var(--clr-terracotta), var(--clr-terra-deep));
-  padding: 16px 28px;
-  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 28px; display: flex; align-items: center; justify-content: space-between;
 }
 .teks-badge {
   background: rgba(255,255,255,0.2); color: white;
   font-size: 13px; font-weight: 600;
   padding: 5px 14px; border-radius: var(--radius-pill);
 }
-.teks-hint {
-  color: rgba(255,255,255,0.75); font-size: 12.5px;
-  margin: 0; font-style: italic;
-}
-
+.teks-hint { color: rgba(255,255,255,0.75); font-size: 12.5px; margin: 0; font-style: italic; }
 .text-area { padding: 36px 40px 40px; line-height: 2; }
-
-.arabicText {
-  font-family: var(--font-arab); direction: rtl;
-  text-align: justify; font-size: 26px;
-  line-height: 2.2; color: var(--clr-ink);
-}
-.text-area p.arabicText {
-  text-indent: 2em; line-height: 2.4; margin-bottom: 1.2rem;
-}
-.judul-arab {
-  font-size: 32px; text-align: center;
-  color: var(--clr-terracotta); margin-bottom: 20px;
-  padding-bottom: 16px; border-bottom: 2px dashed var(--clr-sand);
-  font-weight: 700;
-}
-
-.word {
-  cursor: pointer; border-radius: 4px;
-  transition: background 0.15s, color 0.15s;
-  display: inline; padding: 0 2px;
-}
+.arabicText { font-family: var(--font-arab); direction: rtl; text-align: justify; font-size: 26px; line-height: 2.2; color: var(--clr-ink); }
+.text-area p.arabicText { text-indent: 2em; line-height: 2.4; margin-bottom: 1.2rem; }
+.judul-arab { font-size: 32px; text-align: center; color: var(--clr-terracotta); margin-bottom: 20px; padding-bottom: 16px; border-bottom: 2px dashed var(--clr-sand); font-weight: 700; }
+.word { cursor: pointer; border-radius: 4px; transition: background 0.15s, color 0.15s; display: inline; padding: 0 2px; }
 .word:hover       { background: rgba(203,119,64,0.12); color: var(--clr-terracotta); }
 .word.active-word { background: var(--clr-terracotta); color: white; }
 
 /* ============================================================
-   POPUP — DESKTOP
-   Diletakkan langsung di <body> (bukan di dalam column).
-   position: fixed → tidak terpengaruh APAPUN dari parent:
-   tidak peduli overflow, tidak peduli backdrop-filter,
-   tidak peduli sticky vs non-sticky.
-   Posisi: tepat di kanan kolom teks, mulai dari bawah navbar.
+   SIDEBAR FIXED — DESKTOP
+   JS pasang position:fixed di koordinat kolom kanan.
+   Sidebar TIDAK punya overflow/scroll — konten di dalamnya
+   langsung terlihat semua tanpa terpotong.
 ============================================================ */
-#popup {
-  /* Fixed di kanan kolom teks */
-  position: fixed;
-  top: calc(var(--navbar-height) + 36px);
-  /* Hitung left: tengah halaman + setengah lebar teks + gap */
-  left: calc(50% - (var(--teks-max-width) + var(--popup-width) + var(--gap) + 80px)/2
-             + var(--teks-max-width) + var(--gap) + 40px);
-  width: var(--popup-width);
-  max-height: calc(100vh - var(--navbar-height) - 52px);
-  overflow-y: auto;
-  z-index: 500;
+.sidebar-fixed {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  /* JS yang set: position, top, left, width */
+}
 
-  /* Tampilan */
+/* ── POPUP BOX ── */
+.popup-box {
   background: var(--clr-pop-bg);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   border: 1.5px solid var(--clr-sand);
-  overflow-x: hidden;
+  overflow: hidden;
+  /* Transisi untuk efek timbul tenggelam */
   transition: border-color 0.3s, box-shadow 0.3s;
-  scrollbar-width: none;
-
-  /* Animasi masuk — fade + scale kecil */
-  opacity: 0;
-  transform: translateY(8px) scale(0.98);
-  transition:
-    border-color 0.3s ease,
-    box-shadow   0.3s ease,
-    opacity      0.3s ease,
-    transform    0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  pointer-events: none;
 }
-#popup::-webkit-scrollbar { display: none; }
-
-#popup.active {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+.popup-box.active {
   border-color: var(--clr-terra-soft);
   box-shadow: 0 12px 40px rgba(203,119,64,0.18);
-  pointer-events: auto;
 }
 
-/* idle */
+/* idle state */
 .popup-idle {
-  padding: 40px 24px; text-align: center;
-  display: flex; flex-direction: column;
-  align-items: center; gap: 12px;
+  padding: 28px 24px 24px; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
 }
-#popup.active .popup-idle { display: none; }
+.popup-box.active .popup-idle { display: none; }
 
+.idle-illustration {
+  display: flex; align-items: center; gap: 10px;
+  justify-content: center;
+}
 .idle-icon {
-  width: 64px; height: 64px; border-radius: 50%;
-  background: var(--clr-warm); border: 2px dashed var(--clr-sand);
+  width: 52px; height: 52px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--clr-warm), #fde8d0);
+  border: 2px dashed var(--clr-sand);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-arab); font-size: 22px;
-  color: var(--clr-ink-light);
+  font-family: var(--font-arab); font-size: 18px; color: var(--clr-terracotta);
   animation: idlePulse 2.5s ease-in-out infinite;
+  font-weight: 700;
 }
-@keyframes idlePulse {
-  0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.06); }
+.idle-arrow {
+  color: var(--clr-terracotta); font-size: 18px; opacity: 0.5;
+  animation: arrowBounce 1.8s ease-in-out infinite;
 }
-.idle-text { color: var(--clr-ink-light); font-size: 14px; line-height: 1.6; margin: 0; }
+@keyframes idlePulse  { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+@keyframes arrowBounce { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-5px)} }
+.idle-text { color: var(--clr-ink-light); font-size: 13px; line-height: 1.65; margin: 0; }
 
-/* content */
+/* content state */
 .popup-content {
-  padding: 20px 22px 24px; display: none;
-  animation: fadeInPop 0.28s cubic-bezier(0.34,1.56,0.64,1);
+  padding: 18px 20px 22px; display: none;
+  animation: fadeInPop 0.3s cubic-bezier(0.34,1.56,0.64,1);
 }
-#popup.active .popup-content { display: block; }
+.popup-box.active .popup-content { display: block; }
 @keyframes fadeInPop {
-  from { opacity: 0; transform: translateY(8px) scale(0.97); }
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-.popup-top {
-  display: flex; align-items: flex-start;
-  justify-content: space-between; gap: 10px; margin-bottom: 4px;
-}
-#kataArab {
-  font-family: var(--font-arab); font-size: 32px;
-  direction: rtl; color: var(--clr-terracotta);
-  margin: 0; line-height: 1.4; flex: 1;
+.popup-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+#kataArab  {
+  font-family: var(--font-arab); font-size: 34px; direction: rtl;
+  color: var(--clr-terracotta); margin: 0; line-height: 1.4; flex: 1;
 }
 .popup-close {
   background: var(--clr-warm); border: none; border-radius: 50%;
   width: 28px; height: 28px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 13px; color: var(--clr-ink-light);
+  font-size: 15px; color: var(--clr-ink-light);
   cursor: pointer; flex-shrink: 0; margin-top: 6px;
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, color 0.15s, transform 0.15s;
 }
-.popup-close:hover { background: var(--clr-terracotta); color: white; }
+.popup-close:hover { background: var(--clr-terracotta); color: white; transform: rotate(90deg); }
 
-.popup-divider { height: 1px; background: var(--clr-sand); margin: 12px 0; }
+.popup-divider { height: 1px; background: var(--clr-sand); margin: 10px 0; }
 .popup-label {
-  display: block; font-size: 11px; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.8px;
-  color: var(--clr-ink-light); margin-bottom: 4px;
+  display: flex; align-items: center; gap: 5px;
+  font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.8px; color: var(--clr-ink-light); margin-bottom: 4px;
 }
+.popup-label i { font-size: 11px; }
 .popup-arti-row { margin-bottom: 14px; }
-#arti { font-size: 22px; font-weight: 700; color: var(--clr-terracotta); margin: 0; line-height: 1.4; }
-#penjelasan { font-size: 15px; color: var(--clr-ink-mid); line-height: 1.7; margin: 0; }
+#arti       { font-size: 22px; font-weight: 700; color: var(--clr-terracotta); margin: 0; line-height: 1.4; }
+#penjelasan { font-size: 14px; color: var(--clr-ink-mid); line-height: 1.7; margin: 0; }
+
+/* ── SIDE CARDS ── */
+.side-card {
+  background: white; border-radius: var(--radius-card);
+  border: 1px solid var(--clr-sand); padding: 16px 18px;
+  box-shadow: var(--shadow-soft); animation: slideUp 0.6s ease both;
+}
+.side-card-title {
+  font-weight: 700; font-size: 12.5px; color: var(--clr-ink);
+  margin: 0 0 12px; text-transform: uppercase; letter-spacing: 0.5px;
+  display: flex; align-items: center; gap: 6px;
+}
+.side-card-title i { color: var(--clr-terracotta); font-size: 14px; }
+
+/* Howto grid */
+.howto-card { background: linear-gradient(135deg, #fffbf8, #fff5ee); border-color: #f0ddd0; }
+.howto-grid { display: flex; flex-direction: column; gap: 8px; }
+.howto-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 13px; color: var(--clr-ink-mid); line-height: 1.5;
+}
+.howto-num {
+  min-width: 22px; height: 22px; border-radius: 7px;
+  background: var(--clr-terracotta); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 1px;
+}
 
 /* ── BACKDROP ── */
 .popup-backdrop { display: none; }
 
-/* ── BACK & FOOTER ── */
+/* ── BACK ── */
 .back-area { padding: 10px 0 40px; position: relative; z-index: 1; }
 .btn-back {
   display: inline-flex; align-items: center; gap: 8px;
   background: white; color: var(--clr-ink-mid);
   border: 1.5px solid var(--clr-sand); border-radius: var(--radius-pill);
   padding: 10px 24px; font-size: 14px; font-weight: 600;
-  text-decoration: none; box-shadow: var(--shadow-soft);
-  transition: all 0.2s ease;
+  text-decoration: none; box-shadow: var(--shadow-soft); transition: all 0.2s;
 }
-.btn-back:hover {
-  background: var(--clr-terracotta); color: white;
-  border-color: var(--clr-terracotta); transform: translateX(-4px);
-}
+.btn-back:hover { background: var(--clr-terracotta); color: white; border-color: var(--clr-terracotta); transform: translateX(-4px); }
+
+/* ── FOOTER ── */
 .site-footer {
-  text-align: center; padding: 20px;
-  font-size: 13.5px; color: var(--clr-ink-light);
+  text-align: center; padding: 24px;
+  background: linear-gradient(135deg, #2a8a7e, #1f6860);
+  color: #ffffffcc; font-size: 13.5px;
   position: relative; z-index: 1;
 }
-.footer-link { color: var(--clr-terracotta); font-weight: 700; text-decoration: none; }
+.footer-link { color: #f0c060; font-weight: 700; text-decoration: none; }
 .footer-link:hover { text-decoration: underline; }
 
 /* ── DRIVER.JS ── */
@@ -266,102 +237,67 @@ body {
 .driver-popover-footer { background: #1A1014 !important; border-top: 1px solid #CB774025 !important; padding: 10px 18px !important; }
 .driver-popover-next-btn, .driver-popover-done-btn { background: linear-gradient(135deg,#CB7740,#A85C28) !important; color: #fff !important; border: none !important; border-radius: 999px !important; padding: 6px 14px !important; }
 .driver-popover-prev-btn { background: transparent !important; border: 1.5px solid #CB774050 !important; color: #F5C99A !important; border-radius: 999px !important; padding: 6px 12px !important; }
-.driver-popover-skip-btn { background: transparent; border: none; color: #9B7888; font-size: 13px; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; padding: 5px 8px; }
-.driver-popover-arrow-side-top    .driver-popover-arrow { border-bottom-color: #2E1F26 !important; }
-.driver-popover-arrow-side-bottom .driver-popover-arrow { border-top-color:    #2E1F26 !important; }
-.driver-popover-arrow-side-left   .driver-popover-arrow { border-right-color:  #2E1F26 !important; }
-.driver-popover-arrow-side-right  .driver-popover-arrow { border-left-color:   #2E1F26 !important; }
+.driver-popover-skip-btn { background: transparent; border: none; color: #9B7888; font-size: 13px; cursor: pointer; text-decoration: underline; padding: 5px 8px; }
 
 /* ============================================================
-   RESPONSIVE — layar menengah: popup di bawah teks
+   RESPONSIVE ≤992px
 ============================================================ */
-@media (max-width: 1100px) {
-  :root { --popup-width: 300px; --gap: 16px; }
-}
-
-@media (max-width: 900px) {
-  /* Popup kembali ke flow — tampil di bawah teks */
-  #popup {
+@media (max-width: 992px) {
+  .main-container { padding-top: 88px; }
+  .sidebar-fixed {
     position: static !important;
-    width: 100% !important;
-    max-width: var(--teks-max-width);
-    max-height: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-    pointer-events: auto !important;
-    margin-top: 20px;
-    border-radius: var(--radius-card) !important;
-    border: 1.5px solid var(--clr-sand) !important;
-    box-shadow: var(--shadow-card) !important;
-    overflow: hidden !important;
-    /* Sembunyikan saat tidak active */
-    display: none;
+    top: auto !important; left: auto !important; width: auto !important;
   }
-  #popup.active {
-    display: block !important;
-  }
-
-  .main-container { max-width: 100%; }
-  .teks-wrapper   { max-width: 100%; }
 }
 
 /* ============================================================
-   RESPONSIVE — MOBILE ≤768px: bottom sheet
+   RESPONSIVE ≤768px — mobile bottom sheet
 ============================================================ */
 @media (max-width: 768px) {
   .main-container { padding-top: 80px; padding-bottom: 150px; }
-  .text-area       { padding: 24px 20px 28px; }
-  .arabicText             { font-size: 22px; }
+  .text-area { padding: 24px 20px 28px; }
+  .arabicText { font-size: 22px; }
   .text-area p.arabicText { font-size: 21px; text-indent: 1em; }
-  .judul-arab             { font-size: 25px; }
+  .judul-arab { font-size: 25px; }
+
+  .howto-card { display: none; }
+  .col-lg-5   { display: none; }
 
   /* Backdrop */
   .popup-backdrop {
     display: block; position: fixed; inset: 0;
-    background: rgba(26,16,20,0.5);
-    z-index: 99998; opacity: 0; pointer-events: none;
-    transition: opacity 0.3s ease;
+    background: rgba(26,16,20,0.5); z-index: 99998;
+    opacity: 0; pointer-events: none; transition: opacity 0.3s;
   }
   .popup-backdrop.active { opacity: 1; pointer-events: auto; }
 
   /* Bottom sheet */
   #popup {
-    display: block !important;
     position: fixed !important;
     bottom: 0 !important; left: 0 !important; right: 0 !important;
     top: auto !important; width: 100% !important;
-    max-width: 100% !important;
-    max-height: 55vh !important;
+    max-height: 55vh !important; height: auto !important;
+    background: var(--clr-pop-bg) !important;
     border-radius: 24px 24px 0 0 !important;
-    border: none !important;
-    border-top: 2px solid var(--clr-sand) !important;
+    border: none !important; border-top: 2px solid var(--clr-sand) !important;
     box-shadow: 0 -8px 40px rgba(46,31,38,0.2) !important;
-    z-index: 99999 !important;
-    overflow-y: auto !important;
-    margin-top: 0 !important;
-
-    /* Default: tersembunyi di bawah */
+    z-index: 99999 !important; overflow-y: auto !important;
+    visibility: visible !important;
     transform: translateY(110%) !important;
-    opacity: 1 !important;
-    pointer-events: none !important;
+    opacity: 1 !important; pointer-events: none !important;
     transition: transform 0.4s cubic-bezier(0.32,1.6,0.54,1) !important;
   }
-  #popup.active {
-    transform: translateY(0) !important;
-    pointer-events: auto !important;
-  }
+  #popup.active { transform: translateY(0) !important; pointer-events: auto !important; }
   #popup::before {
-    content: ''; display: block;
-    width: 38px; height: 4px;
-    background: var(--clr-sand); border-radius: 999px;
-    margin: 12px auto 0;
+    content: ''; display: block; width: 38px; height: 4px;
+    background: var(--clr-sand); border-radius: 999px; margin: 12px auto 0;
   }
 
   .popup-idle    { padding: 14px 24px 18px; }
-  .idle-icon     { width: 46px; height: 46px; font-size: 18px; }
+  .idle-icon     { width: 44px; height: 44px; font-size: 17px; }
   .idle-text     { font-size: 13px; }
   .popup-content { padding: 14px 20px 20px; }
-  #kataArab      { font-size: 26px; }
+  #kataArab      { font-size: 28px; }
   #arti          { font-size: 19px; }
   #penjelasan    { font-size: 14px; }
 

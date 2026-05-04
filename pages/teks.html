@@ -14,10 +14,8 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <div id="navbar"></div>
 
-    <!-- FLOATING DECO -->
     <div class="page-deco" aria-hidden="true">
         <span class="deco-char deco-1">ب</span>
         <span class="deco-char deco-2">ع</span>
@@ -26,18 +24,77 @@
         <span class="deco-char deco-5">ق</span>
     </div>
 
-    <!-- MAIN CONTENT — hanya kolom teks, tanpa kolom sidebar -->
     <div class="container main-container">
-        <div class="teks-wrapper">
-            <div class="teks-header">
-                <span class="teks-badge">📖 Baca & Pahami</span>
-                <p class="teks-hint">Klik kata untuk melihat artinya</p>
+        <div class="row g-4 align-items-start">
+
+            <!-- KOLOM KIRI: TEKS -->
+            <div class="col-lg-7 col-12">
+                <div class="teks-wrapper">
+                    <div class="teks-header">
+                        <span class="teks-badge">📖 Baca & Pahami</span>
+                        <p class="teks-hint">Klik kata untuk melihat artinya</p>
+                    </div>
+                    <main class="text-area teks-arab" id="containerTeks"></main>
+                </div>
             </div>
-            <main class="text-area teks-arab" id="containerTeks"></main>
+
+            <!-- KOLOM KANAN: SIDEBAR -->
+            <div class="col-lg-5 col-12">
+                <div class="sidebar-fixed" id="sidebarFixed">
+
+                    <!-- POPUP ARTI -->
+                    <aside id="popup" class="popup-box">
+                        <div class="popup-idle" id="popupIdle">
+                            <div class="idle-illustration">
+                                <div class="idle-icon">اضغط</div>
+                                <div class="idle-arrow"><i class="bi bi-arrow-left"></i></div>
+                            </div>
+                            <p class="idle-text">Pilih kata di teks untuk<br>melihat arti & penjelasannya</p>
+                        </div>
+                        <div class="popup-content" id="popupContent">
+                            <div class="popup-top">
+                                <h5 id="kataArab">—</h5>
+                                <button class="popup-close" id="popupClose" aria-label="Tutup">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                            </div>
+                            <div class="popup-divider"></div>
+                            <div class="popup-arti-row">
+                                <span class="popup-label"><i class="bi bi-translate"></i> Arti</span>
+                                <p id="arti">—</p>
+                            </div>
+                            <div class="popup-penjelasan-row">
+                                <span class="popup-label"><i class="bi bi-info-circle"></i> Penjelasan</span>
+                                <p id="penjelasan">—</p>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- CARA PAKAI — ringkas, inline -->
+                    <div class="side-card howto-card">
+                        <p class="side-card-title"><i class="bi bi-lightbulb-fill"></i> Panduan Cepat</p>
+                        <div class="howto-grid">
+                            <div class="howto-item">
+                                <span class="howto-num">1</span>
+                                <span>Klik kata Arab untuk lihat artinya</span>
+                            </div>
+                            <div class="howto-item">
+                                <span class="howto-num">2</span>
+                                <span>Klik kata yang sama lagi untuk tutup</span>
+                            </div>
+                            <div class="howto-item">
+                                <span class="howto-num">3</span>
+                                <span>Klik area kosong atau ✕ untuk menutup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <!-- BACK BUTTON -->
     <div class="back-area text-center">
         <a href="/pages/akses.html" class="btn-back">
             <i class="bi bi-arrow-left-circle"></i> Kembali ke Daftar
@@ -48,37 +105,7 @@
         <p>Dibuat dengan ❤️ oleh <a href="https://www.instagram.com/titikarab/" class="footer-link">Titik Arab</a></p>
     </footer>
 
-    <!-- =====================================================
-         POPUP — diletakkan langsung di body, BUKAN di dalam
-         Bootstrap column. Dengan begitu position:fixed
-         bekerja 100% tanpa gangguan dari parent manapun.
-    ====================================================== -->
-
-    <!-- Backdrop mobile -->
     <div id="popupBackdrop" class="popup-backdrop"></div>
-
-    <!-- Popup box -->
-    <aside id="popup" class="popup-box">
-        <div class="popup-idle" id="popupIdle">
-            <div class="idle-icon">اضغط</div>
-            <p class="idle-text">Ketuk sebuah kata<br>untuk melihat artinya</p>
-        </div>
-        <div class="popup-content" id="popupContent">
-            <div class="popup-top">
-                <h5 id="kataArab">اضغط على الكلمة</h5>
-                <button class="popup-close" id="popupClose" aria-label="Tutup">✕</button>
-            </div>
-            <div class="popup-divider"></div>
-            <div class="popup-arti-row">
-                <span class="popup-label">Arti</span>
-                <p id="arti">—</p>
-            </div>
-            <div class="popup-penjelasan-row">
-                <span class="popup-label">Penjelasan</span>
-                <p id="penjelasan">—</p>
-            </div>
-        </div>
-    </aside>
 
     <script src="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.js.iife.js"></script>
     <script src="../script/teks.js"></script>
@@ -87,6 +114,5 @@
             .then(res => res.text())
             .then(data => { document.getElementById("navbar").innerHTML = data; });
     </script>
-
 </body>
 </html>

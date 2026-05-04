@@ -10,7 +10,6 @@ const groupAktif = "teks" + id;
 ===================== */
 function isMobile() { return window.innerWidth <= 768; }
 
-/* Global functions dipanggil dari navbar.html via onclick */
 window.toggleMobileNav = function () {
   const hamburger = document.getElementById('ta-hamburger');
   const drawer    = document.getElementById('ta-mobile-drawer');
@@ -97,6 +96,40 @@ fetch("../json/teks.json")
   });
 
 /* =====================
+   SIDEBAR FIXED (DESKTOP)
+
+   Strategi:
+   - Kolom kanan (.col-lg-5) ada di DOM sebagai placeholder
+   - .sidebar-fixed di dalamnya diangkat jadi position:fixed
+     persis di atas placeholder itu
+   - TIDAK ada overflow/scroll di sidebar — konten tampil penuh
+   - Update koordinat saat resize
+===================== */
+function pasangSidebarFixed() {
+  if (isMobile()) return;
+
+  const placeholder = document.querySelector('.col-lg-5');
+  const sidebar     = document.getElementById('sidebarFixed');
+  if (!placeholder || !sidebar) return;
+
+  const rect = placeholder.getBoundingClientRect();
+
+  sidebar.style.position   = 'fixed';
+  sidebar.style.top        = '100px';
+  sidebar.style.left       = Math.round(rect.left) + 'px';
+  sidebar.style.width      = Math.round(rect.width) + 'px';
+  sidebar.style.zIndex     = '200';
+  /* TIDAK ada maxHeight dan overflow — biarkan konten tampil penuh */
+  sidebar.style.maxHeight  = '';
+  sidebar.style.overflowY  = 'visible';
+}
+
+/* Jalankan saat DOM siap, setelah load, dan resize */
+document.addEventListener('DOMContentLoaded', pasangSidebarFixed);
+window.addEventListener('load',   pasangSidebarFixed);
+window.addEventListener('resize', pasangSidebarFixed);
+
+/* =====================
    TUTUP POPUP
 ===================== */
 function tutupPopup() {
@@ -133,7 +166,7 @@ function tampilkanPopup(kata, kataBersih) {
     elPenjelas.innerText = hasil.penjelasan || "—";
   }
 
-  /* Reset animasi konten kalau popup sudah aktif (ganti kata) */
+  /* Reset animasi konten kalau sudah aktif */
   const content = document.getElementById("popupContent");
   if (content && popup.classList.contains("active")) {
     content.style.animation = "none";
@@ -142,7 +175,6 @@ function tampilkanPopup(kata, kataBersih) {
   }
 
   popup.classList.add("active");
-
   if (backdrop && isMobile()) backdrop.classList.add("active");
 }
 
@@ -164,12 +196,10 @@ document.addEventListener("click", function (e) {
 
   /* Tombol close */
   if (e.target.id === "popupClose" || e.target.closest?.("#popupClose")) {
-    e.stopPropagation();
-    tutupPopup();
-    return;
+    e.stopPropagation(); tutupPopup(); return;
   }
 
-  /* Klik backdrop (mobile) */
+  /* Klik backdrop */
   if (e.target.id === "popupBackdrop") { tutupPopup(); return; }
 
   /* Klik di luar popup — desktop */
@@ -199,9 +229,9 @@ document.addEventListener("click", function (e) {
 function startOnboardingTeks() {
   if (!window.driver) return;
   const steps = [
-    { element: ".text-area",      popover: { title: "📖 Ini teks bacaan",  description: "Baca teks Arab di sini. Setiap kata bisa diklik!", side: "bottom" } },
-    { element: ".text-area .word", popover: { title: "👆 Klik kata Arab",   description: "Klik salah satu kata untuk melihat arti dan penjelasannya.", side: "bottom" } },
-    { element: "#popup",           popover: { title: "✨ Arti muncul di sini", description: "Arti dan penjelasan kata akan tampil di panel ini.", side: "left" } }
+    { element: ".text-area",       popover: { title: "📖 Teks Bacaan",       description: "Semua kata di sini bisa diklik untuk melihat artinya.", side: "bottom" } },
+    { element: ".text-area .word", popover: { title: "👆 Klik Kata",         description: "Coba klik salah satu kata Arab!", side: "bottom" } },
+    { element: "#popup",           popover: { title: "✨ Panel Kosakata",     description: "Arti dan penjelasan kata tampil di sini.", side: "left" } }
   ];
   const validSteps = steps.filter(s => document.querySelector(s.element));
   if (!validSteps.length) return;

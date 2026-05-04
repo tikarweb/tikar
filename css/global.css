@@ -5,12 +5,8 @@
   box-sizing: border-box;
 }
 
-/* BODY
-   PENTING: overflow-x TIDAK boleh di body/html karena
-   akan membunuh position:sticky dan position:fixed di mobile.
-   Overflow-x dikontrol per-section saja. */
 html {
-  overflow-x: hidden; /* cukup di html saja, bukan body */
+  overflow-x: hidden;
 }
 
 body {
@@ -19,73 +15,41 @@ body {
   background-image: radial-gradient(#e6d3bf 1px, transparent 1px);
   background-size: 25px 25px;
   line-height: 1.6;
-  /* overflow-x:hidden DIHAPUS dari sini — ini biang kerok sticky & fixed */
 }
 
-/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: auto;
 }
 
 /* NAVBAR */
-.logo img {
-  height: 50px;
-}
-
-.navbar .nav-link {
-  color: white;
-  transition: 0.3s;
-}
-
-.navbar .nav-link:hover {
-  color: #eb8178;
-}
-
-.navbar .nav-link.active {
-  color: #6e3833;
-  font-weight: 600;
-}
+.logo img { height: 50px; }
+.navbar .nav-link { color: white; transition: 0.3s; }
+.navbar .nav-link:hover { color: #eb8178; }
+.navbar .nav-link.active { color: #6e3833; font-weight: 600; }
 
 /* TYPO */
-h1, h2, h3, .navbar-brand {
-  font-family: 'Cairo Play', sans-serif;
-}
+h1, h2, h3, .navbar-brand { font-family: 'Cairo Play', sans-serif; }
 
 /* SECTION */
-section {
-  padding-top: 5rem;
-}
+section { padding-top: 5rem; }
 
-/* FORM BASIC */
-input[type="radio"] {
-  transform: scale(1.2);
-  margin-right: 8px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
+/* FORM */
+input[type="radio"] { transform: scale(1.2); margin-right: 8px; }
+label { display: block; margin-bottom: 8px; }
 
 /* BUTTON GLOBAL */
 .btn-home {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 8px 16px;
-  background: #2c83a0;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 14px;
+  display: inline-block; margin-top: 30px;
+  padding: 8px 16px; background: #2c83a0;
+  color: white; text-decoration: none;
+  border-radius: 6px; font-size: 14px;
 }
+.btn-home:hover { background: #25687a; }
 
-.btn-home:hover {
-  background: #25687a;
-}
-
-/* FOOTER */
-footer {
+/* FOOTER GLOBAL — hanya untuk halaman yang tidak punya .site-footer
+   Halaman teks/maharah pakai .site-footer sendiri di teks.css */
+footer:not(.site-footer) {
   background-color: #2c83a0;
   color: white;
   text-align: center;
@@ -100,119 +64,30 @@ footer {
   font-size: 24px;
   line-height: 2;
 }
+.word { cursor: pointer; transition: 0.2s; }
+.word:hover { background: #e6d3bf; border-radius: 4px; }
 
-.word {
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.word:hover {
-  background: #e6d3bf;
-  border-radius: 4px;
-}
-
-/* =========================
-   POPOVER BASE (WARM STYLE)
-   ========================= */
+/* DRIVER.JS */
 .driver-popover {
-  background: #fffdfb;
-  border-radius: 16px;
-  padding: 20px 18px 16px;
-  border: 1px solid #eaded7;
-  box-shadow: 0 10px 25px rgba(110, 56, 51, 0.08);
-  max-width: 270px;
-  position: relative;
+  background: #fffdfb; border-radius: 16px;
+  padding: 20px 18px 16px; border: 1px solid #eaded7;
+  box-shadow: 0 10px 25px rgba(110,56,51,0.08);
+  max-width: 270px; position: relative;
 }
-
 .driver-popover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: #6e3833;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  content: ""; position: absolute; top: 0; left: 0;
+  height: 4px; width: 100%; background: #6e3833;
+  border-top-left-radius: 16px; border-top-right-radius: 16px;
 }
-
-.driver-popover-title {
-  font-size: 15.5px;
-  font-weight: 600;
-  color: #6e3833;
-  margin-bottom: 6px;
-}
-
-.driver-popover-description {
-  font-size: 13.5px;
-  color: #7a6f6b;
-  line-height: 1.5;
-}
-
-.driver-popover-close-btn {
-  font-size: 17px;
-  color: #b7a9a3;
-  top: 10px;
-  right: 12px;
-}
-
-.driver-popover-close-btn:hover {
-  color: #6e3833;
-}
-
-/* =========================
-   FOOTER
-   ========================= */
-.driver-popover-footer {
-  margin-top: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #25687a;
-}
-
-.driver-popover-progress-text {
-  font-size: 12px;
-  color: #b7a9a3;
-}
-
-.driver-popover-navigation-btns {
-  display: flex;
-  gap: 8px;
-}
-
-/* =========================
-   BUTTON
-   ========================= */
-.driver-prev-btn {
-  background: #f3ebe7;
-  border: none;
-  color: #6e3833;
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 12.5px;
-}
-
-.driver-prev-btn:hover {
-  background: #eaded7;
-}
-
-.driver-next-btn {
-  background: #eb8178;
-  border: none;
-  color: #ffffff;
-  border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 12.5px;
-}
-
-.driver-next-btn:hover {
-  background: #d96f66;
-}
-
-/* =========================
-   ARROW
-   ========================= */
-.driver-popover-arrow {
-  border-width: 7px;
-}
+.driver-popover-title { font-size: 15.5px; font-weight: 600; color: #6e3833; margin-bottom: 6px; }
+.driver-popover-description { font-size: 13.5px; color: #7a6f6b; line-height: 1.5; }
+.driver-popover-close-btn { font-size: 17px; color: #b7a9a3; top: 10px; right: 12px; }
+.driver-popover-close-btn:hover { color: #6e3833; }
+.driver-popover-footer { margin-top: 14px; display: flex; justify-content: space-between; align-items: center; background: #25687a; }
+.driver-popover-progress-text { font-size: 12px; color: #b7a9a3; }
+.driver-popover-navigation-btns { display: flex; gap: 8px; }
+.driver-prev-btn { background: #f3ebe7; border: none; color: #6e3833; border-radius: 999px; padding: 6px 12px; font-size: 12.5px; }
+.driver-prev-btn:hover { background: #eaded7; }
+.driver-next-btn { background: #eb8178; border: none; color: #ffffff; border-radius: 999px; padding: 6px 14px; font-size: 12.5px; }
+.driver-next-btn:hover { background: #d96f66; }
+.driver-popover-arrow { border-width: 7px; }

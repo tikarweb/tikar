@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR TIKARAB</title>
+  <link rel="stylesheet" href="../css/vr/vr.css">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script type="module" src="../script/vr/vr.js"></script>
+</head>
+<body>
+
+  <!-- ========================= LOADING SCREEN ========================= -->
+  <div id="loader">
+    <div class="loader-card">
+      <h1>VR TIKARAB</h1>
+      <p>Memuat lingkungan virtual...</p>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================= TOP UI ========================= -->
+  <div class="top-ui">
+    <button id="prevScene" class="vr-btn">◀ Prev</button>
+    <div id="sceneTitle">Scene 1</div>
+    <button id="nextScene" class="vr-btn">Next ▶</button>
+  </div>
+
+  <!-- ========================= MOVEMENT HINT ========================= -->
+  <div id="movementHint">
+    <span>WASD = Jalan</span>
+    <span>Mouse = Lihat</span>
+    <span>Klik Hotspot = Info</span>
+  </div>
+
+  <!-- ========================= BOTTOM INFO ========================= -->
+  <div class="info-ui" id="infoBox">
+    Klik hotspot untuk melihat informasi.
+  </div>
+
+  <!-- ========================= INFO PANEL (hidden by default) ========================= -->
+  <div id="infoPanel" class="hidden">
+    <div class="info-header">
+      <h2 id="infoTitle">Informasi</h2>
+      <button id="closeInfo">✕</button>
+    </div>
+    <p id="infoDescription">Klik hotspot untuk membaca informasi.</p>
+  </div>
+
+  <!-- ========================= FADE TRANSITION ========================= -->
+  <div id="transitionFade"></div>
+
+  <!-- ========================= A-FRAME SCENE ========================= -->
+  <a-scene
+    shadow="type: pcfsoft; autoUpdate: true"
+    renderer="
+      antialias: true;
+      colorManagement: true;
+      physicallyCorrectLights: true;
+      toneMapping: ACESFilmic;
+      toneMappingExposure: 0.9;
+    "
+    fog="type: linear; color: #c9b08a; near: 30; far: 90"
+    vr-mode-ui="enabled: false"
+  >
+
+    <a-assets timeout="30000"></a-assets>
+
+    <!-- SKY -->
+    <a-sky color="#87CEEB"></a-sky>
+
+    <!-- GROUND — pakai a-plane lebih flat dan tidak ada pinggiran -->
+    <a-plane
+      rotation="-90 0 0"
+      width="150" height="150"
+      color="#d4b483"
+      shadow="receive: true"
+      material="roughness: 0.95; metalness: 0"
+    ></a-plane>
+
+    <!-- GROUND DETAIL: lingkaran mataf (area sekitar Ka'bah) -->
+    <a-circle rotation="-90 0 0" position="0 0.01 -8" radius="14"
+      color="#c8a870" shadow="receive: true"></a-circle>
+    <a-circle rotation="-90 0 0" position="0 0.02 -8" radius="10"
+      color="#bfa060"></a-circle>
+
+    <!-- SCENE CONTAINER — model dinamis di-inject di sini -->
+    <a-entity id="scene-container"></a-entity>
+
+    <!-- CAMERA RIG -->
+    <a-entity id="rig" position="0 0 5">
+      <a-camera
+        wasd-controls="enabled: true; acceleration: 25; fly: false"
+        look-controls="pointerLockEnabled: true; reverseMouseDrag: false"
+        near="0.05"
+        far="300"
+        fov="75"
+      >
+        <!-- Cursor hanya bereaksi ke .hotspot-point -->
+        <a-cursor
+          color="#FFD700"
+          fuse="false"
+          raycaster="objects: .hotspot-point"
+        ></a-cursor>
+      </a-camera>
+    </a-entity>
+
+    <!-- LIGHTING SYSTEM -->
+
+    <!-- Hemisphere: cahaya langit + tantulan tanah — lebih natural -->
+    <a-entity light="
+      type: hemisphere;
+      color: #ddeeff;
+      groundColor: #c9a96e;
+      intensity: 0.5;
+    "></a-entity>
+
+    <!-- Directional: matahari utama -->
+    <a-entity
+      light="
+        type: directional;
+        intensity: 1.8;
+        castShadow: true;
+        shadowMapWidth: 2048;
+        shadowMapHeight: 2048;
+        shadowCameraTop: 30;
+        shadowCameraBottom: -30;
+        shadowCameraLeft: -30;
+        shadowCameraRight: 30;
+        shadowBias: -0.001;
+      "
+      position="8 15 5"
+    ></a-entity>
+
+    <!-- Fill light: softener dari arah berlawanan -->
+    <a-entity
+      light="type: directional; intensity: 0.25; color: #aabbff"
+      position="-5 8 -5"
+    ></a-entity>
+
+  </a-scene>
+
+</body>
+</html>

@@ -30,9 +30,8 @@ function bersihkanKata(teks) {
   if (typeof teks !== "string") return "";
   return teks
     .normalize("NFKD")
-    .replace(/[.,،؛:!?()"'""]/g, "")
+    .replace(/[.,،؛:!?()"'""\u200B]/g, "")
     .replace(/ـ/g, "")
-    .replace(/\u200B/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -43,6 +42,39 @@ function bersihkanKata(teks) {
 let dataKosa   = [];
 let kamus      = {};
 let activeWord = null;
+
+/* =====================
+   ATUR POSISI POPUP
+   - Mobile  : pindah ke body (agar tidak terjebak di .col-lg-5 yg display:none)
+   - Desktop : kembalikan ke dalam .sidebar-fixed
+   Dipanggil saat DOMContentLoaded DAN saat resize
+===================== */
+const popupOriginalParent = null; // diisi saat DOM ready
+
+function aturPosisiPopup() {
+  const popup    = document.getElementById('popup');
+  const backdrop = document.getElementById('popupBackdrop');
+  const sidebar  = document.getElementById('sidebarFixed');
+  if (!popup || !sidebar) return;
+
+  if (isMobile()) {
+    /* Pindah ke body jika belum */
+    if (popup.parentElement !== document.body) {
+      document.body.appendChild(popup);
+    }
+    if (backdrop && backdrop.parentElement !== document.body) {
+      document.body.appendChild(backdrop);
+    }
+  } else {
+    /* Kembalikan ke sidebar jika belum */
+    if (popup.parentElement !== sidebar) {
+      /* Sisipkan sebagai child pertama sidebar (di atas howto-card) */
+      sidebar.insertBefore(popup, sidebar.firstChild);
+    }
+    /* backdrop tidak dipakai di desktop, pastikan tidak aktif */
+    if (backdrop) backdrop.classList.remove('active');
+  }
+}
 
 /* =====================
    FETCH KOSAKATA
@@ -96,14 +128,7 @@ fetch("../json/teks.json")
   });
 
 /* =====================
-   SIDEBAR FIXED (DESKTOP)
-
-   Strategi:
-   - Kolom kanan (.col-lg-5) ada di DOM sebagai placeholder
-   - .sidebar-fixed di dalamnya diangkat jadi position:fixed
-     persis di atas placeholder itu
-   - TIDAK ada overflow/scroll di sidebar — konten tampil penuh
-   - Update koordinat saat resize
+   SIDEBAR FIXED (DESKTOP ONLY)
 ===================== */
 function pasangSidebarFixed() {
   if (isMobile()) return;
@@ -114,20 +139,27 @@ function pasangSidebarFixed() {
 
   const rect = placeholder.getBoundingClientRect();
 
-  sidebar.style.position   = 'fixed';
-  sidebar.style.top        = '100px';
-  sidebar.style.left       = Math.round(rect.left) + 'px';
-  sidebar.style.width      = Math.round(rect.width) + 'px';
-  sidebar.style.zIndex     = '200';
-  /* TIDAK ada maxHeight dan overflow — biarkan konten tampil penuh */
-  sidebar.style.maxHeight  = '';
-  sidebar.style.overflowY  = 'visible';
+  sidebar.style.position  = 'fixed';
+  sidebar.style.top       = '100px';
+  sidebar.style.left      = Math.round(rect.left) + 'px';
+  sidebar.style.width     = Math.round(rect.width) + 'px';
+  sidebar.style.zIndex    = '200';
+  sidebar.style.maxHeight = '';
+  sidebar.style.overflowY = 'visible';
 }
 
-/* Jalankan saat DOM siap, setelah load, dan resize */
-document.addEventListener('DOMContentLoaded', pasangSidebarFixed);
-window.addEventListener('load',   pasangSidebarFixed);
-window.addEventListener('resize', pasangSidebarFixed);
+/* Jalankan saat DOM ready, load, dan resize */
+document.addEventListener('DOMContentLoaded', () => {
+  aturPosisiPopup();
+  pasangSidebarFixed();
+});
+
+window.addEventListener('load', pasangSidebarFixed);
+
+window.addEventListener('resize', () => {
+  aturPosisiPopup();
+  pasangSidebarFixed();
+});
 
 /* =====================
    TUTUP POPUP
@@ -166,7 +198,7 @@ function tampilkanPopup(kata, kataBersih) {
     elPenjelas.innerText = hasil.penjelasan || "—";
   }
 
-  /* Reset animasi konten kalau sudah aktif */
+  /* Reset animasi konten kalau popup sudah aktif sebelumnya */
   const content = document.getElementById("popupContent");
   if (content && popup.classList.contains("active")) {
     content.style.animation = "none";
@@ -229,9 +261,9 @@ document.addEventListener("click", function (e) {
 function startOnboardingTeks() {
   if (!window.driver) return;
   const steps = [
-    { element: ".text-area",       popover: { title: "📖 Teks Bacaan",       description: "Semua kata di sini bisa diklik untuk melihat artinya.", side: "bottom" } },
-    { element: ".text-area .word", popover: { title: "👆 Klik Kata",         description: "Coba klik salah satu kata Arab!", side: "bottom" } },
-    { element: "#popup",           popover: { title: "✨ Panel Kosakata",     description: "Arti dan penjelasan kata tampil di sini.", side: "left" } }
+    { element: ".text-area",       popover: { title: "📖 Teks Bacaan",   description: "Semua kata di sini bisa diklik untuk melihat artinya.", side: "bottom" } },
+    { element: ".text-area .word", popover: { title: "👆 Klik Kata",     description: "Coba klik salah satu kata Arab!", side: "bottom" } },
+    { element: "#popup",           popover: { title: "✨ Panel Kosakata", description: "Arti dan penjelasan kata tampil di sini.", side: "left" } }
   ];
   const validSteps = steps.filter(s => document.querySelector(s.element));
   if (!validSteps.length) return;

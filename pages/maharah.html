@@ -22,6 +22,26 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/maharah.css">
+
+  <!-- ✅ FIX NAVBAR: Definisikan toggleMobileNav SEBELUM navbar di-inject -->
+  <!-- Ini memastikan fungsi sudah tersedia saat onclick="toggleMobileNav()" dipanggil -->
+  <script>
+    // Fungsi ini HARUS di head, sebelum navbar.html di-inject,
+    // karena hamburger button punya onclick="toggleMobileNav()" inline.
+    // Jika fungsi belum ada di window saat klik, browser lempar ReferenceError.
+    window.toggleMobileNav = function () {
+      const hamburger = document.getElementById('ta-hamburger');
+      const drawer = document.getElementById('ta-mobile-drawer');
+      if (!hamburger || !drawer) return;
+      const isOpen = drawer.classList.contains('open');
+      hamburger.classList.toggle('open', !isOpen);
+      drawer.classList.toggle('open', !isOpen);
+    };
+
+    window.startOnboarding = function () {
+      // placeholder — bisa diisi tour logic nanti
+    };
+  </script>
 </head>
 
 <body>
@@ -51,7 +71,6 @@
       <div id="apersepsiOpsi" class="apersepsi-opsi"></div>
     </div>
 
-    <!-- ✅ TAMBAHIN INFO TEKS -->
     <div class="teks-info" style="margin-bottom: 1rem; opacity: 0.8;">
       <i class="bi bi-file-text me-2"></i>
       <span id="infoTeks">Latihan Teks 1</span>
@@ -143,6 +162,57 @@
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script/maharah.js"></script>
+
+  <!-- ✅ FIX: Load navbar SETELAH maharah.js, dengan callback yang benar -->
+  <script>
+    // Muat navbar.html via fetch, lalu pastikan scroll handler aktif
+    fetch("../pages/navbar.html")
+      .then(res => res.text())
+      .then(html => {
+        const el = document.getElementById("navbar");
+        if (!el) return;
+        el.innerHTML = html;
+
+        // Jalankan script yang ada di dalam navbar.html
+        // (navbar.html punya <script> tag di dalamnya — perlu di-eval ulang)
+        el.querySelectorAll("script").forEach(oldScript => {
+          const newScript = document.createElement("script");
+          newScript.textContent = oldScript.textContent;
+          document.head.appendChild(newScript);
+        });
+
+        // Pastikan toggleMobileNav selalu mengacu elemen yang sudah ada di DOM
+        window.toggleMobileNav = function () {
+          const hamburger = document.getElementById('ta-hamburger');
+          const drawer = document.getElementById('ta-mobile-drawer');
+          if (!hamburger || !drawer) return;
+          const isOpen = drawer.classList.contains('open');
+          hamburger.classList.toggle('open', !isOpen);
+          drawer.classList.toggle('open', !isOpen);
+        };
+
+        // Scroll effect untuk navbar
+        const nav = document.getElementById('ta-navbar');
+        if (nav) {
+          window.addEventListener('scroll', function () {
+            if (window.scrollY > 40) {
+              nav.classList.add('scrolled');
+            } else {
+              nav.classList.remove('scrolled');
+            }
+          }, { passive: true });
+        }
+
+        // Tutup drawer saat klik link mobile
+        document.querySelectorAll('.ta-mobile-links a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            document.getElementById('ta-hamburger')?.classList.remove('open');
+            document.getElementById('ta-mobile-drawer')?.classList.remove('open');
+          });
+        });
+      })
+      .catch(err => console.error("Gagal load navbar:", err));
+  </script>
 
 </body>
 

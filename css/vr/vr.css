@@ -1,0 +1,201 @@
+/* vr.css — Panel hidden default + movement hint + refinements */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #111;
+}
+
+/* ========================= TOP UI ========================= */
+.top-ui {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 22px;
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 22px;
+  z-index: 999;
+}
+
+/* ========================= BUTTON ========================= */
+.vr-btn {
+  border: none;
+  background: white;
+  color: #111;
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+.vr-btn:hover {
+  transform: translateY(-2px);
+  background: #f2f2f2;
+}
+
+/* ========================= SCENE TITLE ========================= */
+#sceneTitle {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  min-width: 180px;
+  text-align: center;
+}
+
+/* ========================= MOVEMENT HINT ========================= */
+#movementHint {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 999;
+  transition: opacity .8s ease;
+}
+#movementHint span {
+  background: rgba(0,0,0,.45);
+  color: rgba(255,255,255,.9);
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+/* ========================= BOTTOM INFO ========================= */
+.info-ui {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(12px);
+  color: rgba(255,255,255,.9);
+  padding: 12px 24px;
+  border-radius: 20px;
+  z-index: 999;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,.1);
+  max-width: 80vw;
+  text-align: center;
+}
+
+/* ========================= INFO PANEL ========================= */
+#infoPanel {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 340px;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(14px);
+  border-radius: 24px;
+  padding: 24px;
+  z-index: 999;
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+  transition: opacity .25s, transform .25s;
+}
+
+/* HIDDEN: panel tidak tampil by default */
+#infoPanel.hidden {
+  display: none;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+#infoTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+#closeInfo {
+  border: none;
+  background: #f0f0f0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .15s;
+}
+#closeInfo:hover {
+  background: #e0e0e0;
+}
+
+#infoDescription {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ========================= LOADER ========================= */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom, #111, #222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+.loader-card {
+  width: 320px;
+  text-align: center;
+  color: white;
+}
+.loader-card h1 {
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+.loader-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,.1);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.loader-fill {
+  width: 70%;
+  height: 100%;
+  background: #FFD700;
+  animation: loadingAnim 2s infinite;
+}
+@keyframes loadingAnim {
+  0%   { width: 0%; }
+  50%  { width: 70%; }
+  100% { width: 100%; }
+}
+
+/* ========================= TRANSITION FADE ========================= */
+#transitionFade {
+  position: fixed;
+  inset: 0;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s ease;
+  z-index: 9999;
+}
+#transitionFade.show {
+  opacity: 1;
+}

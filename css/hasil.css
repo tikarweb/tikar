@@ -744,3 +744,235 @@ html body > footer .bi-heart-pulse-fill {
   .skor-ring-wrap       { align-self: center; }
   header                { padding: 36px 16px 44px; }
 }
+
+
+/* =============================================
+   PRINT STYLES — tambahkan di bagian PALING BAWAH hasil.css
+   ============================================= */
+@media print {
+  /* Reset body untuk print */
+  html, body {
+    background: white !important;
+    color: #1A1014 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: block !important;
+    min-height: unset !important;
+    overflow: visible !important;
+  }
+
+  body::before,
+  body::after { display: none !important; }
+
+  /* Sembunyikan elemen yang tidak perlu */
+  #navbar,
+  .hasil-actions,
+  header .header-label,
+  footer { display: none !important; }
+
+  /* Header print-friendly */
+  header {
+    background: #f5ede0 !important;
+    color: #1A1014 !important;
+    padding: 20px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  header::before,
+  header::after { display: none !important; }
+
+  header h1 {
+    font-size: 1.6rem !important;
+    background: none !important;
+    -webkit-text-fill-color: #1A1014 !important;
+    color: #1A1014 !important;
+  }
+
+  header p { color: #5a4a50 !important; }
+
+  main {
+    max-width: 100% !important;
+    padding: 0 12px !important;
+  }
+
+  /* Section headings */
+  .section-heading h2 {
+    color: #1A1014 !important;
+  }
+
+  .section-heading::after {
+    background: #d4c4a8 !important;
+  }
+
+  /* Skor akhir card */
+  #skor-akhir {
+    background: #f5ede0 !important;
+    border: 1.5px solid #d4c4a8 !important;
+    box-shadow: none !important;
+    color: #1A1014 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #skor-akhir::before,
+  #skor-akhir::after { display: none !important; }
+
+  .ring-score { color: #1A1014 !important; }
+  .ring-max   { color: #7A5C68 !important; }
+  .skor-nama  { color: #1A1014 !important; }
+  .skor-sub   { color: #7A5C68 !important; }
+  .skor-ring-label { color: #7A5C68 !important; }
+
+  .ring-track { stroke: #d4c4a8 !important; }
+
+  .grade-pill {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .stat-chip {
+    background: #f5ede0 !important;
+    border-color: #d4c4a8 !important;
+    color: #3D2830 !important;
+  }
+
+  /* ── Jawaban Kamu section ── */
+  .jawaban-level-card {
+    background: #f9f5f0 !important;
+    border: 1px solid #d4c4a8 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 10px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Paksa semua jawaban level terbuka saat print */
+  .jawaban-level-body {
+    display: block !important;
+  }
+
+  .jawaban-level-header {
+    background: #efe5d8 !important;
+    color: #1A1014 !important;
+    cursor: default !important;
+  }
+
+  .jawaban-level-title { color: #1A1014 !important; }
+
+  .jwb-toggle-icon { display: none !important; }
+
+  .jwb-num {
+    background: #e8d9c0 !important;
+    border-color: #d4c4a8 !important;
+    color: #3D2830 !important;
+  }
+
+  .jwb-pertanyaan { color: #1A1014 !important; }
+
+  .jwb-jawaban-box {
+    background: #fff9f4 !important;
+    border-color: #CB7740 !important;
+  }
+
+  .jwb-jawaban-label { color: #CB7740 !important; }
+  .jwb-jawaban-text  { color: #1A1014 !important; }
+
+  /* ── Level cards ── */
+  .cards-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  .level-card {
+    background: #f9f5f0 !important;
+    border: 1px solid #d4c4a8 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card-stripe {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .level-title { color: #1A1014 !important; }
+
+  .level-icon {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card-progress {
+    background: #e8d9c0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card-progress-fill {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .feedback-item {
+    border-color: #e8d9c0 !important;
+    color: #1A1014 !important;
+  }
+
+  .feedback-num {
+    background: #e8d9c0 !important;
+    border-color: #d4c4a8 !important;
+    color: #3D2830 !important;
+  }
+
+  .feedback-note { color: #3D2830 !important; }
+
+  .score-number.high { color: #2a7a38 !important; }
+  .score-number.med  { color: #A85C28 !important; }
+  .score-number.low  { color: #b87a10 !important; }
+  .score-number.vlow { color: #a04040 !important; }
+
+  .score-label { color: #7A5C68 !important; }
+
+  .feedback-status.correct {
+    background: #e8f5eb !important;
+    color: #2a7a38 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .feedback-status.wrong {
+    background: #fde8e8 !important;
+    color: #a04040 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .badge-level {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Page break hints */
+  #ringkasan        { page-break-after: avoid; break-after: avoid; }
+  #jawaban-section  { page-break-before: avoid; break-before: avoid; }
+  #detail-hasil     { page-break-before: auto; break-before: auto; }
+
+  /* Paksa konten tidak terpotong di tengah */
+  .jawaban-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .feedback-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

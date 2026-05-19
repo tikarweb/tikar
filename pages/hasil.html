@@ -184,6 +184,177 @@
       font-family: "Karla", sans-serif;
     }
     .jwb-empty i { display: block; font-size: 1.8rem; margin-bottom: 8px; color: #4A2D38; }
+
+    /* ===== PRINT STYLES ===== */
+    @media print {
+      html, body {
+        background: white !important;
+        color: #1A1014 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        display: block !important;
+        min-height: unset !important;
+        overflow: visible !important;
+      }
+
+      body::before,
+      body::after { display: none !important; }
+
+      /* Sembunyikan elemen yang tidak perlu */
+      #navbar,
+      .hasil-actions,
+      header .header-label,
+      footer { display: none !important; }
+
+      /* Header print-friendly */
+      header {
+        background: #f5ede0 !important;
+        color: #1A1014 !important;
+        padding: 20px !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      header::before,
+      header::after { display: none !important; }
+
+      header h1 {
+        font-size: 1.6rem !important;
+        background: none !important;
+        -webkit-text-fill-color: #1A1014 !important;
+        color: #1A1014 !important;
+      }
+
+      header p { color: #5a4a50 !important; }
+
+      main {
+        max-width: 100% !important;
+        padding: 0 12px !important;
+      }
+
+      .section-heading h2 { color: #1A1014 !important; }
+      .section-heading::after { background: #d4c4a8 !important; }
+
+      /* Skor akhir */
+      #skor-akhir {
+        background: #f5ede0 !important;
+        border: 1.5px solid #d4c4a8 !important;
+        box-shadow: none !important;
+        color: #1A1014 !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      #skor-akhir::before,
+      #skor-akhir::after { display: none !important; }
+      .ring-score    { color: #1A1014 !important; }
+      .ring-max      { color: #7A5C68 !important; }
+      .skor-nama     { color: #1A1014 !important; }
+      .skor-sub      { color: #7A5C68 !important; }
+      .skor-ring-label { color: #7A5C68 !important; }
+      .ring-track    { stroke: #d4c4a8 !important; }
+      .stat-chip {
+        background: #f5ede0 !important;
+        border-color: #d4c4a8 !important;
+        color: #3D2830 !important;
+      }
+      .grade-pill {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      /* ── Paksa SEMUA jawaban level terbuka saat print ── */
+      .jawaban-level-body {
+        display: block !important;
+      }
+
+      .jawaban-level-card {
+        background: #f9f5f0 !important;
+        border: 1px solid #d4c4a8 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 10px !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .jawaban-level-header {
+        background: #efe5d8 !important;
+        color: #1A1014 !important;
+        cursor: default !important;
+      }
+
+      .jawaban-level-title { color: #1A1014 !important; }
+      .jwb-toggle-icon { display: none !important; }
+
+      .jwb-num {
+        background: #e8d9c0 !important;
+        border-color: #d4c4a8 !important;
+        color: #3D2830 !important;
+      }
+
+      .jwb-pertanyaan { color: #1A1014 !important; }
+
+      .jwb-jawaban-box {
+        background: #fff9f4 !important;
+        border-color: #CB7740 !important;
+      }
+
+      .jwb-jawaban-label { color: #CB7740 !important; }
+      .jwb-jawaban-text  { color: #1A1014 !important; }
+
+      .jawaban-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      /* ── Level cards ── */
+      .cards-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+      }
+
+      .level-card {
+        background: #f9f5f0 !important;
+        border: 1px solid #d4c4a8 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .card-stripe,
+      .level-icon,
+      .card-progress,
+      .card-progress-fill,
+      .badge-level,
+      .feedback-status {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .level-title  { color: #1A1014 !important; }
+      .feedback-item { border-color: #e8d9c0 !important; color: #1A1014 !important; }
+      .feedback-num { background: #e8d9c0 !important; border-color: #d4c4a8 !important; color: #3D2830 !important; }
+      .feedback-note { color: #3D2830 !important; }
+      .score-label   { color: #7A5C68 !important; }
+
+      .score-number.high { color: #2a7a38 !important; }
+      .score-number.med  { color: #A85C28 !important; }
+      .score-number.low  { color: #b87a10 !important; }
+      .score-number.vlow { color: #a04040 !important; }
+
+      .feedback-status.correct { background: #e8f5eb !important; color: #2a7a38 !important; }
+      .feedback-status.wrong   { background: #fde8e8 !important; color: #a04040 !important; }
+      .feedback-item { page-break-inside: avoid; break-inside: avoid; }
+
+      #ringkasan       { page-break-after: avoid; break-after: avoid; }
+      #jawaban-section { page-break-before: avoid; break-before: avoid; }
+      #detail-hasil    { page-break-before: auto; break-before: auto; }
+    }
   </style>
 </head>
 
@@ -298,7 +469,7 @@
         3: "Level 3 — Intermediate Mid",
         4: "Level 4 — Intermediate High"
       };
-      const levelIcon = { 1: "bi-1-circle", 2: "bi-2-circle", 3: "bi-3-circle", 4: "bi-4-circle" };
+      const levelIcon  = { 1: "bi-1-circle", 2: "bi-2-circle", 3: "bi-3-circle", 4: "bi-4-circle" };
       const colorClass = { 1: "jwb-l1", 2: "jwb-l2", 3: "jwb-l3", 4: "jwb-l4" };
 
       let html = "";
@@ -307,7 +478,6 @@
         const lvInt = parseInt(lv);
         const cls   = colorClass[lvInt] || "jwb-l1";
 
-        // Soal items
         let soalHTML = "";
         items.forEach((item, i) => {
           const jawaban = (item.jawaban || "").trim();
@@ -330,8 +500,8 @@
             </div>`;
         });
 
-        // Card level — default open untuk level 1, tertutup sisanya
-        const isOpen = idx === 0 ? "open" : "";
+        // Semua level default terbuka (agar tidak ada yang terlewat saat print)
+        const isOpen = "open";
 
         html += `
           <div class="jawaban-level-card ${cls}">
@@ -359,6 +529,58 @@
       header.classList.toggle("open");
       body.classList.toggle("open");
     }
+  </script>
+
+  <!-- ===== SCRIPT: CETAK HASIL ===== -->
+  <script>
+    // Override tombol cetak — buka semua accordion sebelum print,
+    // tutup kembali setelah print selesai
+    document.addEventListener("DOMContentLoaded", function () {
+      const btnCetak = document.getElementById("btn-cetak");
+      if (!btnCetak) return;
+
+      btnCetak.addEventListener("click", function () {
+        // Buka semua jawaban level
+        document.querySelectorAll(".jawaban-level-body").forEach(function (body) {
+          body.classList.add("open");
+        });
+        document.querySelectorAll(".jawaban-level-header").forEach(function (hdr) {
+          hdr.classList.add("open");
+        });
+
+        // Tunggu render selesai lalu print
+        setTimeout(function () {
+          window.print();
+        }, 150);
+      });
+    });
+  </script>
+
+  <!-- Load navbar -->
+  <script>
+    fetch("../pages/navbar.html")
+      .then(r => r.text())
+      .then(html => {
+        const el = document.getElementById("navbar");
+        if (el) el.innerHTML = html;
+
+        window.toggleMobileNav = function () {
+          const hamburger = document.getElementById('ta-hamburger');
+          const drawer    = document.getElementById('ta-mobile-drawer');
+          if (!hamburger || !drawer) return;
+          const isOpen = drawer.classList.contains('open');
+          hamburger.classList.toggle('open', !isOpen);
+          drawer.classList.toggle('open', !isOpen);
+        };
+
+        const nav = document.getElementById('ta-navbar');
+        if (nav) {
+          window.addEventListener('scroll', function () {
+            nav.classList.toggle('scrolled', window.scrollY > 40);
+          }, { passive: true });
+        }
+      })
+      .catch(() => {});
   </script>
 
 </body>

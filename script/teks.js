@@ -82,12 +82,26 @@ function aturPosisiPopup() {
 fetch("../json/judul1.json")
   .then(res => res.json())
   .then(data => {
+
     dataKosa = data.filter(item => item.group === groupAktif);
+
     dataKosa.forEach(item => {
+
       const key = bersihkanKata(item.kataarab);
-      if (!kamus[key]) kamus[key] = [];
+
+      if (!kamus[key]) {
+        kamus[key] = [];
+      }
+
       kamus[key].push(item);
+
     });
+
+    /* simpan semua frasa */
+    window.semuaFrasa = Object.keys(kamus).sort(
+      (a, b) => b.split(" ").length - a.split(" ").length
+    );
+
   })
   .catch(err => console.log("ERROR KOSAKATA:", err));
 
@@ -97,35 +111,107 @@ fetch("../json/judul1.json")
 fetch("../json/teks.json")
   .then(res => res.json())
   .then(data => {
+
     const container   = document.getElementById("containerTeks");
     const teksDipilih = data.teks.find(item => item.id == id);
 
     if (!teksDipilih) {
-      container.innerHTML = "<p style='text-align:center;color:#9c7e5e;padding:40px;'>Teks tidak ditemukan.</p>";
+
+      container.innerHTML =
+        "<p style='text-align:center;color:#9c7e5e;padding:40px;'>Teks tidak ditemukan.</p>";
+
       return;
     }
 
     let html = `<h2 class="judul-arab arabicText">${teksDipilih.judul}</h2>`;
+
     teksDipilih.paragraf.forEach(p => {
-      const wrapped = p.split(" ").map(w =>
-        `<span class="word" data-kata="${w}">${w}</span>`
-      ).join(" ");
+
+      /* split lebih aman */
+      const tokens = p.trim().split(/\s+/);
+
+      let wrappedWords = [];
+      let i = 0;
+
+      /* cari panjang frasa terpanjang otomatis */
+      const maxLen = Math.max(
+        ...window.semuaFrasa.map(f => f.split(" ").length)
+      );
+
+      while (i < tokens.length) {
+
+        let found = false;
+
+        /* cek dari frasa terpanjang */
+        for (let len = maxLen; len >= 1; len--) {
+
+          const phrase      = tokens.slice(i, i + len).join(" ");
+          const cleanPhrase = bersihkanKata(phrase);
+
+          if (kamus[cleanPhrase]) {
+
+            wrappedWords.push(
+              `<span class="word"
+                data-kata="${cleanPhrase}">
+                ${phrase}
+              </span>`
+            );
+
+            i += len;
+            found = true;
+            break;
+          }
+        }
+
+        /* kalau tidak ditemukan */
+        if (!found) {
+
+          wrappedWords.push(
+            `<span class="word"
+              data-kata="${bersihkanKata(tokens[i])}">
+              ${tokens[i]}
+            </span>`
+          );
+
+          i++;
+        }
+      }
+
+      const wrapped = wrappedWords.join(" ");
+
       html += `<p class="arabicText">${wrapped}</p>`;
+
     });
+
     container.innerHTML = html;
 
     setTimeout(() => {
+
       if (!localStorage.getItem("onboarding_teks_done")) {
+
         startOnboardingTeks();
-        localStorage.setItem("onboarding_teks_done", "true");
+
+        localStorage.setItem(
+          "onboarding_teks_done",
+          "true"
+        );
       }
+
     }, 900);
+
   })
   .catch(err => {
+
     document.getElementById("containerTeks").innerHTML =
       "<p style='text-align:center;color:#c05e2e;padding:40px;'>Gagal memuat teks.</p>";
+
     console.log("ERROR TEKS:", err);
+
   });
+
+
+
+
 
 /* =====================
    SIDEBAR FIXED (DESKTOP ONLY)

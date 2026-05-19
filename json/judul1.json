@@ -2318,18 +2318,18 @@
   "arti": "menguasai",
   "penjelasan": "fi'il madhi dari استولى"
  },
- {
-  "group": "teks3",
-  "kataarab": "عَلَيْهِ",
-  "arti": "atasnya",
-  "penjelasan": "dhamir kembali pada harta"
- },
- {
-  "group": "teks3",
-  "kataarab": "مُشْرِكُو",
-  "arti": "orang-orang musyrik",
-  "penjelasan": "bentuk jamak"
- },
+  {
+    "group": "teks3",
+    "kataarab": "عَلَيْهِ",
+    "arti": "atasnya",
+    "penjelasan": "على adalah huruf jar, sedangkan الهاء adalah dhamir muttashil sebagai isim majrur."
+  },
+  {
+    "group": "teks3",
+    "kataarab": "مُشْرِكُو",
+    "arti": "orang-orang musyrik",
+    "penjelasan": "fa'il marfu' dengan tanda wau karena termasuk jamak mudzakkar salim, dan menjadi mudhaf."
+  },
  {
   "group": "teks3",
   "kataarab": "مَكَّةَ",
@@ -2807,21 +2807,15 @@
  {
   "group": "teks3",
   "kataarab": "يَصِلَ",
-  "arti": "mencapai",
-  "penjelasan": "fi'il mudhari dari وصل"
- },
- {
-  "group": "teks3",
-  "kataarab": "إِلَى",
-  "arti": "ke",
-  "penjelasan": "huruf jar"
- },
- {
-  "group": "teks3",
-  "kataarab": "بَدْرٍ",
-  "arti": "Badar",
-  "penjelasan": "nama tempat pertempuran"
- },
+  "arti": "ia sampai",
+  "penjelasan": "fi'il mudhari' manshub dengan fathah zhahirah karena didahului حتى."
+},
+  {
+    "group": "teks3",
+    "kataarab": "إِلَى بَدْرٍ",
+    "arti": "ke Badar",
+    "penjelasan": "إلى adalah huruf jar dan بدرٍ adalah isim majrur dengan kasrah."
+  },
  {
   "group": "teks3",
   "kataarab": "وَصَاحَ",
@@ -6527,8 +6521,7 @@
   "penjelasan": "isim"
  },
 
- {
-  "group": "teks5",
+ {"group": "teks5",
   "kataarab": "حُرُوبُ",
   "arti": "peperangan",
   "penjelasan": "kata benda jamak dari حرب. Berfungsi sebagai mudhaf dalam judul"
@@ -7253,6 +7246,67 @@
   "arti": "zakat",
   "penjelasan": "ibadah harta."
  },
+  {
+    "group": "teks5",
+    "kataarab": "قَالَ",
+    "arti": "berkata",
+    "penjelasan": "fi‘il madhi mabni ‘ala al-fath."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "الصِّدِّيقُ",
+    "arti": "Ash-Shiddiq",
+    "penjelasan": "fa‘il marfu‘ dengan tanda dhammah."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "قَوْلَتَهُ الْمَشْهُورَةَ",
+    "arti": "ucapannya yang terkenal",
+    "penjelasan": "maf‘ul bih manshub. Kata قولة menjadi mudhaf, dhamir ه menjadi mudhaf ilaih, dan المشهورة adalah sifat yang manshub."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "وَاللَّهِ",
+    "arti": "demi Allah",
+    "penjelasan": "wau digunakan untuk sumpah, sedangkan lafzhul jalalah majrur karena didahului huruf qasam."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "لَوْ مَنَعُونِي",
+    "arti": "jika mereka menahanku",
+    "penjelasan": "لو adalah huruf syarat. منعوا adalah fi‘il madhi dengan wau sebagai fa‘il. Nun adalah nun wiqayah dan ya menjadi maf‘ul bih."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "عِقَالَ بَعِيرٍ",
+    "arti": "tali unta",
+    "penjelasan": "عقال menjadi maf‘ul bih manshub, sedangkan بعير menjadi mudhaf ilaih majrur."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "كَانُوا يُؤَدُّونَهُ",
+    "arti": "mereka dahulu menunaikannya",
+    "penjelasan": "كانوا adalah fi‘il naqis dengan wau sebagai isim kana. يؤدونه adalah fi‘il mudhari‘ marfu‘ dan dhamir ه menjadi maf‘ul bih."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "إِلَى رَسُولِ اللَّهِ",
+    "arti": "kepada Rasulullah",
+    "penjelasan": "إلى adalah huruf jar. رسول menjadi isim majrur dan berkedudukan sebagai mudhaf, sedangkan lafzhul jalalah menjadi mudhaf ilaih."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+    "arti": "semoga Allah memberi shalawat dan salam kepadanya",
+    "penjelasan": "jumlah doa. Kata الله berkedudukan sebagai fa‘il marfu‘."
+  },
+  {
+    "group": "teks5",
+    "kataarab": "لَقَاتَلْتُهُمْ عَلَيْهِ",
+    "arti": "pasti aku akan memerangi mereka karenanya",
+    "penjelasan": "lam menjadi jawaban qasam. قاتلت terdiri dari fi‘il dan fa‘il, dhamir هم menjadi maf‘ul bih, sedangkan عليه adalah jar majrur."
+  },
+
  {
   "group": "teks5",
   "kataarab": "وَبِهَذِهِ",
@@ -16852,656 +16906,814 @@
   "group": "teks12",
   "kataarab": "وَقَدِ",
   "arti": "arti: dan sungguh",
-  "penjelasan": "penjelasan: partikel penegasan"
+  "penjelasan": "partikel penegasan"
  },
  {
   "group": "teks12",
   "kataarab": "اسْتَمَرَّ",
-  "arti": "arti: berlangsung",
-  "penjelasan": "penjelasan: fi‘l māḍī"
+  "arti": "berlangsung",
+  "penjelasan": "fi'il madhi"
  },
  {
   "group": "teks12",
   "kataarab": "هَذَا",
-  "arti": "arti: ini",
-  "penjelasan": "penjelasan: isim isyarah"
+  "arti": "ini",
+  "penjelasan": "isim isyarah"
  },
  {
   "group": "teks12",
   "kataarab": "الْعَهْدُ",
-  "arti": "arti: masa pemerintahan",
-  "penjelasan": "penjelasan: periode kekuasaan sejarah"
+  "arti": "masa pemerintahan",
+  "penjelasan": "periode kekuasaan sejarah"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "الْعِرَاقِ",
-  "arti": "arti: Irak",
-  "penjelasan": "penjelasan: wilayah kekuasaan"
+  "arti": "Irak",
+  "penjelasan": "wilayah kekuasaan"
  },
  {
   "group": "teks12",
   "kataarab": "حَوَالَيْ",
-  "arti": "arti: sekitar",
-  "penjelasan": "penjelasan: kata keterangan perkiraan"
+  "arti": "sekitar",
+  "penjelasan": "kata keterangan perkiraan"
  },
  {
   "group": "teks12",
   "kataarab": "قَرْنٍ",
-  "arti": "arti: abad",
-  "penjelasan": "penjelasan: satuan waktu seratus tahun"
+  "arti": "abad",
+  "penjelasan": "satuan waktu seratus tahun"
  },
  {
   "group": "teks12",
   "kataarab": "وَنِصْفِ",
-  "arti": "arti: dan setengah",
-  "penjelasan": "penjelasan: bagian dari bilangan"
+  "arti": "dan setengah",
+  "penjelasan": "bagian dari bilangan"
  },
  {
   "group": "teks12",
   "kataarab": "قَرْنٍ",
-  "arti": "arti: abad",
-  "penjelasan": "penjelasan: melengkapi ungkapan satu setengah abad"
+  "arti": "abad",
+  "penjelasan": "melengkapi ungkapan satu setengah abad"
  },
  {
   "group": "teks12",
   "kataarab": "مِنَ",
-  "arti": "arti: dari",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "dari",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
-  "kataarab": "الزَّمَانِ",
-  "arti": "arti: waktu",
-  "penjelasan": "penjelasan: kata benda umum untuk masa"
+  "kataarab": "الزَّمَانِ",
+  "arti": "waktu",
+  "penjelasan": "kata benda umum untuk masa"
  },
  {
   "group": "teks12",
   "kataarab": "وَمِنْ",
-  "arti": "arti: dan di antara",
-  "penjelasan": "penjelasan: huruf jar dengan fungsi menunjukkan sebagian"
+  "arti": "dan di antara",
+  "penjelasan": "huruf jar dengan fungsi menunjukkan sebagian"
  },
  {
   "group": "teks12",
   "kataarab": "أَشْهَرِ",
-  "arti": "arti: paling terkenal",
-  "penjelasan": "penjelasan: bentuk tafḍīl menunjukkan keutamaan"
+  "arti": "paling terkenal",
+  "penjelasan": "bentuk tafdil menunjukkan keutamaan"
  },
  {
   "group": "teks12",
   "kataarab": "سَلَاطِينِ",
-  "arti": "arti: para sultan",
-  "penjelasan": "penjelasan: jamak dari سلطان"
+  "arti": "para sultan",
+  "penjelasan": "jamak dari سلطان"
  },
  {
   "group": "teks12",
   "kataarab": "السَّلَاجِقَةِ",
-  "arti": "arti: Seljuk",
-  "penjelasan": "penjelasan: bentuk jamak yang menunjuk bangsa atau dinasti Seljuk"
+  "arti": "Seljuk",
+  "penjelasan": "bentuk jamak yang menunjuk bangsa atau dinasti Seljuk"
  },
  {
   "group": "teks12",
   "kataarab": "السُّلْطَانُ",
-  "arti": "arti: sultan",
-  "penjelasan": "penjelasan: gelar penguasa"
+  "arti": "sultan",
+  "penjelasan": "gelar penguasa"
  },
  {
   "group": "teks12",
   "kataarab": "أَلْبُ أَرْسَلَانَ",
-  "arti": "arti: Alp Arslan",
-  "penjelasan": "penjelasan: sultan besar Seljuk yang memperluas wilayah"
+  "arti": "Alp Arslan",
+  "penjelasan": "sultan besar Seljuk yang memperluas wilayah"
  },
  {
   "group": "teks12",
   "kataarab": "الَّذِي",
-  "arti": "arti: yang",
-  "penjelasan": "penjelasan: isim maushul"
+  "arti": "yang",
+  "penjelasan": "isim maushul"
  },
  {
   "group": "teks12",
   "kataarab": "هَزَمَ",
-  "arti": "arti: mengalahkan",
-  "penjelasan": "penjelasan: fi‘l māḍī"
+  "arti": "mengalahkan",
+  "penjelasan": "fi'il madhi"
  },
  {
   "group": "teks12",
   "kataarab": "الرُّومَ",
-  "arti": "arti: Romawi Bizantium",
-  "penjelasan": "penjelasan: sebutan bagi kekaisaran Bizantium"
+  "arti": "Romawi Bizantium",
+  "penjelasan": "sebutan bagi kekaisaran Bizantium"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "مَعْرَكَةِ",
-  "arti": "arti: pertempuran",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "pertempuran",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "مَلَازْكِرْدَ",
-  "arti": "arti: Manzikert",
-  "penjelasan": "penjelasan: lokasi pertempuran penting tahun 1071"
+  "arti": "Manzikert",
+  "penjelasan": "lokasi pertempuran penting tahun 1071"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: pada",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "pada",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "أَوَاخِرِ",
-  "arti": "arti: akhir-akhir",
-  "penjelasan": "penjelasan: jamak dari آخر menunjukkan bagian akhir waktu"
+  "arti": "akhir-akhir",
+  "penjelasan": "jamak dari آخر menunjukkan bagian akhir waktu"
  },
  {
   "group": "teks12",
   "kataarab": "سَنَةِ",
-  "arti": "arti: tahun",
-  "penjelasan": "penjelasan: kata benda waktu"
+  "arti": "tahun",
+  "penjelasan": "kata benda waktu"
  },
  {
   "group": "teks12",
   "kataarab": 463,
-  "arti": "arti: 463",
-  "penjelasan": "penjelasan: tahun Hijriah"
+  "arti": "463",
+  "penjelasan": "tahun Hijriah"
  },
  {
   "group": "teks12",
   "kataarab": "هـ",
-  "arti": "arti: hijriah",
-  "penjelasan": "penjelasan: singkatan tahun Hijriah"
+  "arti": "hijriah",
+  "penjelasan": "singkatan tahun Hijriah"
  },
  {
   "group": "teks12",
   "kataarab": "وَقَدْ",
-  "arti": "arti: dan sungguh",
-  "penjelasan": "penjelasan: partikel penegasan"
+  "arti": "sungguh",
+  "penjelasan": "partikel penegasan"
  },
  {
   "group": "teks12",
   "kataarab": "مُنِيَ",
-  "arti": "arti: ditimpa",
-  "penjelasan": "penjelasan: fi‘l māḍī pasif"
+  "arti": "ditimpa",
+  "penjelasan": "fi'il madhi"
  },
  {
   "group": "teks12",
-  "kataarab": "الرُّومُ",
-  "arti": "arti: Romawi Bizantium",
-  "penjelasan": "penjelasan: pihak yang dikalahkan"
+  "kataarab": "الرُّومُ",
+  "arti": "Romawi Bizantium",
+  "penjelasan": "pihak yang dikalahkan"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "هَذِهِ",
-  "arti": "arti: ini",
-  "penjelasan": "penjelasan: isim isyarah muannats"
+  "arti": "ini",
+  "penjelasan": "isim isyarah muannats"
  },
  {
   "group": "teks12",
   "kataarab": "الْمَعْرَكَةِ",
-  "arti": "arti: pertempuran",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "pertempuran",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "بِهَزِيمَةٍ",
-  "arti": "arti: dengan kekalahan",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "dengan kekalahan",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "قَاسِيَةٍ",
-  "arti": "arti: berat",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "berat",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "وَمِنْ",
-  "arti": "arti: dan di antara",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "dan di antara",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "حَسَنَاتِ",
-  "arti": "arti: kebaikan-kebaikan",
-  "penjelasan": "penjelasan: jamak dari حسنة"
+  "arti": "kebaikan-kebaikan",
+  "penjelasan": "jamak dari حسنة"
  },
  {
   "group": "teks12",
   "kataarab": "مَلِكْشَاهَ",
-  "arti": "arti: Maliksyah",
-  "penjelasan": "penjelasan: sultan Seljuk putra Alp Arslan"
+  "arti": "Maliksyah",
+  "penjelasan": "sultan Seljuk putra Alp Arslan"
  },
  {
   "group": "teks12",
   "kataarab": "أَنَّهُ",
-  "arti": "arti: bahwa dia",
-  "penjelasan": "penjelasan: partikel penegasan dengan dhamir"
+  "arti": "bahwa dia",
+  "penjelasan": "partikel penegasan dengan dhamir"
  },
  {
   "group": "teks12",
   "kataarab": "وَلَّى",
-  "arti": "arti: mengangkat",
-  "penjelasan": "penjelasan: fi‘l māḍī bermakna menunjuk jabatan"
+  "arti": "mengangkat",
+  "penjelasan": "fi'il madhi bermakna menunjuk jabatan"
  },
  {
   "group": "teks12",
   "kataarab": "الْوِزَارَةَ",
-  "arti": "arti: jabatan wazir",
-  "penjelasan": "penjelasan: posisi perdana menteri dalam pemerintahan"
+  "arti": "jabatan wazir",
+  "penjelasan": "posisi perdana menteri dalam pemerintahan"
  },
  {
   "group": "teks12",
   "kataarab": "رَجُلًا",
-  "arti": "arti: seorang laki-laki",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "seorang laki-laki",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "عَالِمًا",
-  "arti": "arti: ulama atau ilmuwan",
-  "penjelasan": "penjelasan: kata sifat menunjukkan orang berilmu"
+  "arti": "ulama atau ilmuwan",
+  "penjelasan": "kata sifat menunjukkan orang berilmu"
  },
  {
   "group": "teks12",
   "kataarab": "مُحِبًّا لِلْعُلَمَاءِ",
-  "arti": "arti: mencintai para ulama",
-  "penjelasan": "penjelasan: frasa sifat"
+  "arti": "mencintai para ulama",
+  "penjelasan": "frasa sifat"
  },
  {
   "group": "teks12",
   "kataarab": "سِيَاسِيًّا",
-  "arti": "arti: ahli politik",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "ahli politik",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "مُحَنَّكًا",
-  "arti": "arti: berpengalaman",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "berpengalaman",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "وَإِدَارِيًّا",
-  "arti": "arti: administratif",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "administratif",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "قَدِيرًا",
-  "arti": "arti: mampu",
-  "penjelasan": "penjelasan: kata sifat kemampuan"
+  "arti": "mampu",
+  "penjelasan": "kata sifat kemampuan"
  },
  {
   "group": "teks12",
   "kataarab": "وَهُوَ",
-  "arti": "arti: dan dia",
-  "penjelasan": "penjelasan: dhamir"
+  "arti": "dan dia",
+  "penjelasan": "dhamir"
  },
  {
   "group": "teks12",
   "kataarab": "الْوَزِيرُ",
-  "arti": "arti: wazir",
-  "penjelasan": "penjelasan: jabatan tinggi pemerintahan"
+  "arti": "wazir",
+  "penjelasan": "jabatan tinggi pemerintahan"
  },
  {
   "group": "teks12",
   "kataarab": "الشَّهِيرُ",
-  "arti": "arti: terkenal",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "terkenal",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "نِظَامُ الْمُلْكِ",
-  "arti": "arti: Nizam al-Mulk",
-  "penjelasan": "penjelasan: wazir terkenal Dinasti Seljuk"
+  "arti": "Nizam al-Mulk",
+  "penjelasan": "wazir terkenal Dinasti Seljuk"
  },
  {
   "group": "teks12",
   "kataarab": "وَإِلَيْهِ",
-  "arti": "arti: kepadanya",
-  "penjelasan": "penjelasan: jar majrur dengan dhamir"
+  "arti": "kepadanya",
+  "penjelasan": "jar majrur dengan dhamir"
  },
  {
   "group": "teks12",
   "kataarab": "تُنْسَبُ",
-  "arti": "arti: dinisbatkan",
-  "penjelasan": "penjelasan: fi‘l muḍāri‘ pasif"
+  "arti": "dinisbatkan",
+  "penjelasan": "fi'il mudhari pasif"
  },
  {
   "group": "teks12",
   "kataarab": "الْمَدَارِسُ",
-  "arti": "arti: sekolah-sekolah",
-  "penjelasan": "penjelasan: jamak dari مدرسة"
+  "arti": "sekolah-sekolah",
+  "penjelasan": "jamak dari مدرسة"
  },
  {
   "group": "teks12",
   "kataarab": "النِّظَامِيَّةُ",
-  "arti": "arti: Nizamiyah",
-  "penjelasan": "penjelasan: jaringan madrasah yang didirikan Nizam al-Mulk"
+  "arti": "Nizamiyah",
+  "penjelasan": "jaringan madrasah yang didirikan Nizam al-Mulk"
  },
  {
   "group": "teks12",
   "kataarab": "الشَّهِيرَةُ",
-  "arti": "arti: terkenal",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "terkenal",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "وَقَدْ",
-  "arti": "arti: dan sungguh",
-  "penjelasan": "penjelasan: partikel penegasan"
+  "arti": "dan sungguh",
+  "penjelasan": "partikel penegasan"
  },
  {
   "group": "teks12",
   "kataarab": "أُنْشِئَتْ",
-  "arti": "arti: didirikan",
-  "penjelasan": "penjelasan: fi‘l māḍī pasif"
+  "arti": "didirikan",
+  "penjelasan": "fi'il madhi majhul"
  },
  {
   "group": "teks12",
   "kataarab": "أُولَى",
-  "arti": "arti: yang pertama",
-  "penjelasan": "penjelasan: kata sifat urutan"
+  "arti": "yang pertama",
+  "penjelasan": "kata sifat urutan"
  },
  {
   "group": "teks12",
   "kataarab": "هَذِهِ",
-  "arti": "arti: ini",
-  "penjelasan": "penjelasan: isim isyarah"
+  "arti": "ini",
+  "penjelasan": "isim isyarah"
  },
  {
   "group": "teks12",
   "kataarab": "الْمَدَارِسِ",
-  "arti": "arti: sekolah-sekolah",
-  "penjelasan": "penjelasan: jamak dari مدرسة"
+  "arti": "sekolah-sekolah",
+  "penjelasan": "jamak dari مدرسة"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "بَغْدَادَ",
-  "arti": "arti: Baghdad",
-  "penjelasan": "penjelasan: kota pusat ilmu pada masa Abbasiyah"
+  "arti": "Baghdad",
+  "penjelasan": "kota pusat ilmu pada masa Abbasiyah"
  },
  {
   "group": "teks12",
   "kataarab": "سَنَةَ",
-  "arti": "arti: tahun",
-  "penjelasan": "penjelasan: kata benda waktu"
+  "arti": "tahun",
+  "penjelasan": "kata benda waktu"
  },
  {
   "group": "teks12",
   "kataarab": 458,
-  "arti": "arti: 458",
-  "penjelasan": "penjelasan: tahun Hijriah"
+  "arti": "458",
+  "penjelasan": "tahun Hijriah"
  },
  {
   "group": "teks12",
   "kataarab": "هـ",
-  "arti": "arti: hijriah",
-  "penjelasan": "penjelasan: singkatan tahun Hijriah"
+  "arti": "hijriah",
+  "penjelasan": "singkatan tahun Hijriah"
  },
  {
   "group": "teks12",
   "kataarab": "ثُمَّ",
-  "arti": "arti: kemudian",
-  "penjelasan": "penjelasan: kata penghubung urutan waktu"
+  "arti": "kemudian",
+  "penjelasan": "kata penghubung urutan waktu"
  },
  {
   "group": "teks12",
   "kataarab": "انْتَشَرَتْ",
-  "arti": "arti: menyebar",
-  "penjelasan": "penjelasan: fi‘l māḍī"
+  "arti": "menyebar",
+  "penjelasan": "fi'il madhi"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "كَثِيرٍ",
-  "arti": "arti: banyak",
-  "penjelasan": "penjelasan: kata benda jumlah"
+  "arti": "banyak",
+  "penjelasan": "kata benda jumlah"
  },
  {
   "group": "teks12",
   "kataarab": "مِنْ",
-  "arti": "arti: dari",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "dari",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "مَرَاكِزِ",
-  "arti": "arti: pusat-pusat",
-  "penjelasan": "penjelasan: jamak dari مركز"
+  "arti": "pusat-pusat",
+  "penjelasan": "jamak dari مركز"
  },
  {
   "group": "teks12",
   "kataarab": "الْحَضَارَةِ",
-  "arti": "arti: peradaban",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "peradaban",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "الإِسْلَامِيَّةِ",
-  "arti": "arti: Islam",
-  "penjelasan": "penjelasan: kata sifat nisbah"
+  "arti": "Islam",
+  "penjelasan": "kata sifat nisbah"
  },
  {
   "group": "teks12",
   "kataarab": "وَتَطَوَّرَتْ",
-  "arti": "arti: berkembang",
-  "penjelasan": "penjelasan: fi‘l māḍī"
+  "arti": "berkembang",
+  "penjelasan": "fi'il madhi"
  },
  {
   "group": "teks12",
   "kataarab": "هَذِهِ",
-  "arti": "arti: ini",
-  "penjelasan": "penjelasan: isim isyarah"
+  "arti": "ini",
+  "penjelasan": "isim isyarah"
  },
  {
   "group": "teks12",
   "kataarab": "الْمَدَارِسُ",
-  "arti": "arti: sekolah-sekolah",
-  "penjelasan": "penjelasan: jamak dari مدرسة"
+  "arti": "sekolah-sekolah",
+  "penjelasan": "jamak dari مدرسة"
  },
  {
   "group": "teks12",
   "kataarab": "حَتَّى",
-  "arti": "arti: hingga",
-  "penjelasan": "penjelasan: kata penghubung"
+  "arti": "hingga",
+  "penjelasan": "kata penghubung"
  },
  {
   "group": "teks12",
   "kataarab": "عُدَّتْ",
-  "arti": "arti: dianggap",
-  "penjelasan": "penjelasan: fi‘l māḍī pasif"
+  "arti": "dianggap",
+  "penjelasan": "fi'il madhi majhul"
  },
  {
   "group": "teks12",
   "kataarab": "بِمَثَابَةِ",
-  "arti": "arti: sebagai",
-  "penjelasan": "penjelasan: kata benda bermakna kedudukan"
+  "arti": "sebagai",
+  "penjelasan": "kata benda bermakna kedudukan"
  },
  {
   "group": "teks12",
   "kataarab": "جَامِعَاتٍ",
-  "arti": "arti: universitas",
-  "penjelasan": "penjelasan: jamak dari جامعة"
+  "arti": "universitas",
+  "penjelasan": "jamak dari جامعة"
  },
  {
   "group": "teks12",
   "kataarab": "وَمَرَاكِزَ",
-  "arti": "arti: pusat-pusat",
-  "penjelasan": "penjelasan: jamak dari مركز"
+  "arti": "pusat-pusat",
+  "penjelasan": "jamak dari مركز"
  },
  {
   "group": "teks12",
   "kataarab": "لِلْبَحْثِ",
-  "arti": "arti: penelitian",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "penelitian",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "وَالإِبْدَاعِ",
   "arti": "arti: kreativitas",
-  "penjelasan": "penjelasan: kata benda"
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "وَمِنَ",
-  "arti": "arti: dan di antara",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "dan di antara",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "الْعُلَمَاءِ",
   "arti": "arti: para ulama",
-  "penjelasan": "penjelasan: jamak dari عالم"
+  "penjelasan": "jamak dari عالم"
  },
  {
   "group": "teks12",
   "kataarab": "الْبَارِزِينَ",
-  "arti": "arti: terkemuka",
-  "penjelasan": "penjelasan: kata sifat"
+  "arti": "Terkemuka",
+  "penjelasan": "kata sifat"
  },
  {
   "group": "teks12",
   "kataarab": "الَّذِينَ",
-  "arti": "arti: yang",
-  "penjelasan": "penjelasan: isim maushul"
+  "arti": "yang",
+  "penjelasan": "isim maushul"
  },
  {
   "group": "teks12",
   "kataarab": "دَرَّسُوا",
-  "arti": "arti: mengajar",
-  "penjelasan": "penjelasan: fi‘l māḍī jamak"
+  "arti": "Mengajar",
+  "penjelasan": "fi'il māḍī jamak"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "الْمَدْرَسَةِ",
-  "arti": "arti: sekolah",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "Sekolah",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "النِّظَامِيَّةِ",
-  "arti": "arti: Nizamiyah",
-  "penjelasan": "penjelasan: madrasah terkenal"
+  "arti": "Nizamiyah",
+  "penjelasan": "madrasah terkenal"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "بَغْدَادَ",
-  "arti": "arti: Baghdad",
-  "penjelasan": "penjelasan: kota pusat ilmu"
+  "arti": "Baghdad",
+  "penjelasan": "kota pusat ilmu"
  },
  {
   "group": "teks12",
   "kataarab": "الإِمَامُ",
-  "arti": "arti: imam",
-  "penjelasan": "penjelasan: gelar ulama besar"
+  "arti": "Imam",
+  "penjelasan": "gelar ulama besar"
  },
  {
   "group": "teks12",
   "kataarab": "الْغَزَالِيُّ",
-  "arti": "arti: Al-Ghazali",
-  "penjelasan": "penjelasan: ulama besar Islam dan filsuf terkenal"
+  "arti": "Al-Ghazali",
+  "penjelasan": "ulama besar Islam dan filsuf terkenal"
  },
  {
   "group": "teks12",
   "kataarab": "وَقَدِ",
-  "arti": "arti: dan sungguh",
-  "penjelasan": "penjelasan: partikel penegasan"
+  "arti": "dan sungguh",
+  "penjelasan": "partikel penegasan"
  },
  {
   "group": "teks12",
   "kataarab": "اسْتَمَرَّ",
-  "arti": "arti: berlangsung",
-  "penjelasan": "penjelasan: fi‘l māḍī"
+  "arti": "Berlangsung",
+  "penjelasan": "penjelasan: fi'il madhi"
  },
  {
   "group": "teks12",
   "kataarab": "حُكْمُ",
-  "arti": "arti: pemerintahan",
-  "penjelasan": "penjelasan: kata benda"
+  "arti": "Pemerintahan",
+  "penjelasan": "kata benda"
  },
  {
   "group": "teks12",
   "kataarab": "السَّلَاجِقَةِ",
-  "arti": "arti: Seljuk",
-  "penjelasan": "penjelasan: nama dinasti"
+  "arti": "Seljuk",
+  "penjelasan": "nama dinasti"
  },
  {
   "group": "teks12",
   "kataarab": "فِي",
-  "arti": "arti: di",
-  "penjelasan": "penjelasan: huruf jar"
+  "arti": "di",
+  "penjelasan": "huruf jar"
  },
  {
   "group": "teks12",
   "kataarab": "بَغْدَادَ",
-  "arti": "arti: Baghdad",
-  "penjelasan": "penjelasan: kota pusat pemerintahan"
+  "arti": "Baghdad",
+  "penjelasan": "kota pusat pemerintahan"
  },
  {
   "group": "teks12",
   "kataarab": "حَتَّى",
-  "arti": "arti: hingga",
-  "penjelasan": "penjelasan: kata penghubung waktu"
+  "arti": "Hingga",
+  "penjelasan": "kata penghubung waktu"
  },
  {
   "group": "teks12",
   "kataarab": "سَنَةِ",
-  "arti": "arti: tahun",
-  "penjelasan": "penjelasan: kata benda waktu"
+  "arti": "Tahun",
+  "penjelasan": "kata benda waktu"
  },
  {
   "group": "teks12",
   "kataarab": 590,
-  "arti": "arti: 590",
-  "penjelasan": "penjelasan: tahun Hijriah"
+  "arti": "590",
+  "penjelasan": "tahun Hijriah"
  },
  {
   "group": "teks12",
   "kataarab": "هـ",
-  "arti": "arti: hijriah",
-  "penjelasan": "penjelasan: singkatan tahun Hijriah"
- }
+  "arti": "Hijriah",
+  "penjelasan": "singkatan tahun Hijriah"
+ },
+
+
+{
+  "group": "teks12",
+  "kataarab": "وَمَدَّتِ",
+  "arti": "dan memperluas",
+  "penjelasan": "fi'il māḍī yang menunjukkan perluasan kekuasaan"
+},
+{
+  "group": "teks12",
+  "kataarab": "الدَّوْلَةُ السَّلْجُوقِيَّةُ",
+  "arti": "Negara Seljuk",
+  "penjelasan": "nama pemerintahan Dinasti Seljuk"
+},
+{
+  "group": "teks12",
+  "kataarab": "نُفُوذَهَا",
+  "arti": "Pengaruh atau kekuasaannya",
+  "penjelasan": "kata benda dengan dhamir muannats menunjukkan kekuasaan negara"
+},
+{
+  "group": "teks12",
+  "kataarab": "مَنْطِقَةٍ",
+  "arti": "Wilayah",
+  "penjelasan": "kata benda yang menunjukkan daerah atau kawasan"
+},
+{
+  "group": "teks12",
+  "kataarab": "وَاسِعَةٍ",
+  "arti": "Luas",
+  "penjelasan": "kata sifat bagi wilayah kekuasaan"
+},
+{
+  "group": "teks12",
+  "kataarab": "أَرَاضِي",
+  "arti": "Wilayah-wilayah atau tanah-tanah",
+  "penjelasan": "jamak dari أرض"
+},
+{
+  "group": "teks12",
+  "kataarab": "وَتُوُفِّيَ",
+  "arti": "dan wafat",
+  "penjelasan": "fi'il māḍī pasif yang berarti meninggal dunia"
+},
+{
+  "group": "teks12",
+  "kataarab": "أَلْبُ أَرْسَلَانَ",
+  "arti": "Alp Arslan",
+  "penjelasan": "sultan besar Dinasti Seljuk"
+},
+{
+  "group": "teks12",
+  "kataarab": "فِي سَنَةِ",
+  "arti": "Pada tahun",
+  "penjelasan": "frasa keterangan waktu"
+},
+{
+  "group": "teks12",
+  "kataarab": 465,
+  "arti": "465",
+  "penjelasan": "tahun Hijriah"
+},
+{
+  "group": "teks12",
+  "kataarab": "فَتَوَلَّى",
+  "arti": "Maka memegang atau mengambil alih",
+  "penjelasan": "fi'il madhi yang menunjukkan pergantian kekuasaan"
+},
+{
+  "group": "teks12",
+  "kataarab": "ابْنُهُ",
+  "arti": "Putranya",
+  "penjelasan": "kata benda dengan dhamir kepemilikan"
+},
+{
+  "group": "teks12",
+  "kataarab": "السُّلْطَنَةَ",
+  "arti": "Kekuasaan kesultanan",
+  "penjelasan": "jabatan atau kekuasaan sebagai sultan"
+},
+{
+  "group": "teks12",
+  "kataarab": "وَاسْتَمَرَّ",
+  "arti": "dan berlangsung",
+  "penjelasan": "fi'il māḍī menunjukkan keberlanjutan"
+},
+{
+  "group": "teks12",
+  "kataarab": "حُكْمُهُ",
+  "arti": "Pemerintahannya",
+  "penjelasan": "kata benda dengan dhamir kepemilikan"
+},
+{
+  "group": "teks12",
+  "kataarab": "عِشْرِينَ",
+  "arti": "Dua puluh",
+  "penjelasan": "bilangan puluhan"
+},
+{
+  "group": "teks12",
+  "kataarab": "وَيُعَدُّ",
+  "arti": "dan dianggap",
+  "penjelasan": "fi'il mudari' pasif"
+},
+{
+  "group": "teks12",
+  "kataarab": "عَهْدُهُ",
+  "arti": "Masa pemerintahannya",
+  "penjelasan": "kata benda dengan dhamir kepemilikan"
+},
+{
+  "group": "teks12",
+  "kataarab": "ذُرْوَةَ",
+  "arti": "Puncak",
+  "penjelasan": "kata benda yang menunjukkan tingkat tertinggi"
+},
+{
+  "group": "teks12",
+  "kataarab": "الْعَصْرِ السَّلْجُوقِيِّ",
+  "arti": "Era Seljuk",
+  "penjelasan": "masa kejayaan Dinasti Seljuk"
+},
+{
+  "group": "teks12",
+  "kataarab": "لِمَا",
+  "arti": "Karena apa yang",
+  "penjelasan": "huruf lam sebabiyyah dengan ما"
+},
+{
+  "group": "teks12",
+  "kataarab": "شَهِدَهُ",
+  "arti": "Disaksikannya atau dialaminya",
+  "penjelasan": "fi‘il māḍī dengan dhamir objek"
+},
+{
+  "group": "teks12",
+  "kataarab": "فُتُوحَاتٍ",
+  "arti": "Penaklukan-penaklukan",
+  "penjelasan": "jamak dari فتح menunjukkan ekspansi wilayah"
+},
+{
+  "group": "teks12",
+  "kataarab": "وَازْدِهَارٍ",
+  "arti": "Kemajuan atau kejayaan",
+  "penjelasan": "kata benda yang menunjukkan perkembangan besar"
+},
+{
+  "group": "teks12",
+  "kataarab": "سِيَاسِيٍّ",
+  "arti": "Politik",
+  "penjelasan": "kata sifat terkait bidang pemerintahan"
+},
+{
+  "group": "teks12",
+  "kataarab": "وَحَضَارِيٍّ",
+  "arti": "Peradaban",
+  "penjelasan": "kata sifat terkait kemajuan budaya dan ilmu"
+}
 
 
 ]

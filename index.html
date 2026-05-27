@@ -8,22 +8,24 @@
   <title>titik.arab — Membaca Teks Arab Itu Mudah</title>
   <link rel="icon" type="image/png" href="/img/tamov1.png">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo+Play:wght@200..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
     rel="stylesheet">
 
+  <!-- Bootstrap + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
-  <!-- SESUDAH (benar) -->
-  <!-- ✅ URUTAN YANG BENAR — driver.css dulu, onboarding.css belakangan -->
+
+  <!-- Driver.js (onboarding tour) -->
   <link rel="stylesheet" href="https://unpkg.com/driver.js/dist/driver.css" />
   <link rel="stylesheet" href="onboarding.css">
-
 </head>
 
 <body id="home">
@@ -37,27 +39,58 @@
   <section class="hero-section">
     <div class="hero-dots"></div>
 
+    <!-- Botanical SVG — pojok kanan atas -->
+    <svg class="hero-botanical-tr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" aria-hidden="true">
+      <path d="M160 300 C160 240 160 180 160 60" stroke="#2A6B6B" stroke-width="2" fill="none" opacity="0.55"/>
+      <path d="M160 130 C128 108 88 104 72 82 C93 78 128 90 160 130Z" fill="#2A6B6B" opacity="0.32"/>
+      <path d="M160 130 C192 108 232 104 248 82 C227 78 192 90 160 130Z" fill="#4C8C6C" opacity="0.28"/>
+      <path d="M160 175 C138 160 112 157 100 143 C116 141 140 155 160 175Z" fill="#2A6B6B" opacity="0.26"/>
+      <path d="M160 175 C182 160 208 157 220 143 C204 141 180 155 160 175Z" fill="#4C8C6C" opacity="0.23"/>
+      <path d="M160 215 C145 204 130 202 123 193 C134 191 148 202 160 215Z" fill="#2A6B6B" opacity="0.20"/>
+      <path d="M160 215 C175 204 190 202 197 193 C186 191 172 202 160 215Z" fill="#4C8C6C" opacity="0.18"/>
+      <circle cx="160" cy="62" r="7"  fill="#E07B62" opacity="0.40"/>
+      <circle cx="154" cy="54" r="4"  fill="#EDA594" opacity="0.30"/>
+      <circle cx="166" cy="54" r="4"  fill="#EDA594" opacity="0.28"/>
+      <circle cx="72"  cy="81" r="3"  fill="#E07B62" opacity="0.28"/>
+      <circle cx="248" cy="81" r="3"  fill="#E07B62" opacity="0.28"/>
+      <circle cx="100" cy="142" r="2.5" fill="#4C8C6C" opacity="0.28"/>
+      <circle cx="220" cy="142" r="2.5" fill="#4C8C6C" opacity="0.28"/>
+    </svg>
+
+    <!-- Botanical SVG — pojok kiri bawah -->
+    <svg class="hero-botanical-bl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" aria-hidden="true">
+      <path d="M30 220 C60 178 92 148 132 108" stroke="#4C8C6C" stroke-width="2" fill="none" opacity="0.42"/>
+      <path d="M132 108 C162 68 182 48 202 28" stroke="#2A6B6B" stroke-width="1.5" fill="none" opacity="0.32"/>
+      <ellipse cx="85"  cy="155" rx="22" ry="12" fill="#4C8C6C" opacity="0.26" transform="rotate(-45 85 155)"/>
+      <ellipse cx="116" cy="124" rx="20" ry="10" fill="#2A6B6B" opacity="0.23" transform="rotate(-50 116 124)"/>
+      <ellipse cx="148" cy="91"  rx="18" ry="9"  fill="#4C8C6C" opacity="0.20" transform="rotate(-55 148 91)"/>
+      <ellipse cx="176" cy="61"  rx="15" ry="8"  fill="#2A6B6B" opacity="0.18" transform="rotate(-50 176 61)"/>
+      <ellipse cx="72"  cy="168" rx="14" ry="7"  fill="#80B894" opacity="0.18" transform="rotate(-20 72 168)"/>
+      <circle cx="202" cy="28" r="5" fill="#E07B62" opacity="0.35"/>
+      <circle cx="196" cy="21" r="3" fill="#EDA594" opacity="0.26"/>
+      <circle cx="208" cy="22" r="3" fill="#EDA594" opacity="0.24"/>
+    </svg>
+
     <div class="hero-container">
-      <!-- Left: text -->
+      <!-- Kiri: teks -->
       <div class="hero-text">
         <div class="hero-eyebrow reveal">
           Media Pembelajaran Bahasa Arab
         </div>
 
         <h1 class="reveal reveal-delay-1">
-          Membaca Teks Arab<br>
-          Itu <em>Mudah</em>
+          Menulis Bahasa Arab
+dengan Lebih<br><em>Mudah</em>
         </h1>
 
         <p class="reveal reveal-delay-2">
-          Belajar memahami teks Arab melalui kisah sejarah Islam,
-          dilengkapi terjemahan dan penjelasan kosakata penting.
+          Pelajari teks, pahami kosakata, lalu tulis jawabanmu dalam bahasa Arab secara bertahap
         </p>
 
         <div class="hero-buttons reveal reveal-delay-3">
           <a href="#bacaan" class="btn-hero-primary" id="btn-mulai">
             <i class="bi bi-book-fill"></i>
-            Mulai Membaca
+            Mulai Belajar
           </a>
           <a href="#tentang" class="btn-hero-secondary">
             <i class="bi bi-info-circle"></i>
@@ -65,10 +98,10 @@
           </a>
         </div>
 
-        <!-- Stats strip -->
+        <!-- Stats -->
         <div class="hero-stats reveal reveal-delay-4">
           <div class="hero-stat">
-            <strong>4+</strong>
+            <strong>12+</strong>
             <span>Teks Bacaan</span>
           </div>
           <div class="hero-stat">
@@ -82,7 +115,7 @@
         </div>
       </div>
 
-      <!-- Right: image -->
+      <!-- Kanan: gambar -->
       <div class="hero-image reveal reveal-delay-2">
         <img src="img/Hero1.png" alt="Ilustrasi belajar Arab">
       </div>
@@ -90,6 +123,7 @@
 
     <div class="scroll-indicator">↓</div>
   </section>
+
 
   <!-- =============================================
        TENTANG
@@ -143,12 +177,13 @@
       </div>
     </div>
 
-    <!-- Wave separator -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" style="margin-top:-2px;display:block;">
-      <path fill="#1A1014" fill-opacity="1"
-        d="M0,40L60,48C120,56,240,72,360,72C480,72,600,56,720,48C840,40,960,40,1080,48C1200,56,1320,64,1380,68L1440,72L1440,100L0,100Z" />
+    <!-- Wave separator menuju #bacaan (putih) -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" style="margin-top:-2px;display:block;">
+      <path fill="#FFFFFF" fill-opacity="1"
+        d="M0,40L60,45C120,50,240,62,360,64C480,66,600,58,720,50C840,42,960,42,1080,50C1200,58,1320,66,1380,68L1440,72L1440,80L0,80Z" />
     </svg>
   </section>
+
 
   <!-- =============================================
        BACAAN
@@ -168,7 +203,7 @@
 
         <div class="card reveal">
           <div class="card-img-wrap">
-            <img src="img/gambar 3.png" alt="Maqati'ah Quraisy">
+            <img src="img/boikot1.png" alt="Maqati'ah Quraisy">
             <div class="card-img-badge">مُقَاطَعَةُ قُرَيْشٍ لِبَنِي هَاشِمَ وَبَنِي الْمُطَلِّبِ</div>
           </div>
           <div class="card-content">
@@ -181,7 +216,7 @@
 
         <div class="card reveal reveal-delay-1">
           <div class="card-img-wrap">
-            <img src="img/gambar 4.png" alt="Bina'ul Masjid">
+            <img src="img/bina1.png" alt="Bina'ul Masjid">
             <div class="card-img-badge">بِنَاءُ المَسْجِدِ وَالمُؤَاخَاةِ بَيْنَ المُهَاجِرِينَ وَالأَنْصَارِ</div>
           </div>
           <div class="card-content">
@@ -194,7 +229,7 @@
 
         <div class="card reveal reveal-delay-2">
           <div class="card-img-wrap">
-            <img src="img/gambar 5.png" alt="Ghazwah Badr">
+            <img src="img/badr2.png" alt="Ghazwah Badr">
             <div class="card-img-badge">غَزْوَةُ بَدْرٍ الكُبْرَى</div>
           </div>
           <div class="card-content">
@@ -207,7 +242,7 @@
 
         <div class="card reveal reveal-delay-3">
           <div class="card-img-wrap">
-            <img src="img/gambar 9.png" alt="Bai'atan al-Aqabah">
+            <img src="img/baiat1.png" alt="Bai'atan al-Aqabah">
             <div class="card-img-badge">بَيْعَتَا العَقَبَةِ</div>
           </div>
           <div class="card-content">
@@ -230,6 +265,7 @@
 
     </div>
   </section>
+
 
   <!-- =============================================
        LATIHAN KITABAH
@@ -305,7 +341,7 @@
           <div class="kitabah-card" onclick="bukaMaharah(8)">
             <div class="img-wrap"><img src="img/maskot8.png" alt=""></div>
             <div class="text-wrap">
-              <h5>الدولة العباسية</h5>
+              <h5>الحروب الصليبية</h5>
               <span>Latihan 8</span>
             </div>
           </div>
@@ -313,7 +349,7 @@
           <div class="kitabah-card" onclick="bukaMaharah(9)">
             <div class="img-wrap"><img src="img/maskot9.png" alt=""></div>
             <div class="text-wrap">
-              <h5>الدولة العباسية</h5>
+              <h5>الدولة العثمانية</h5>
               <span>Latihan 9</span>
             </div>
           </div>
@@ -321,7 +357,7 @@
           <div class="kitabah-card" onclick="bukaMaharah(10)">
             <div class="img-wrap"><img src="img/maskot10.png" alt=""></div>
             <div class="text-wrap">
-              <h5>الدولة العباسية</h5>
+              <h5>غزوة أحد</h5>
               <span>Latihan 10</span>
             </div>
           </div>
@@ -329,7 +365,7 @@
           <div class="kitabah-card" onclick="bukaMaharah(11)">
             <div class="img-wrap"><img src="img/maskot11.png" alt=""></div>
             <div class="text-wrap">
-              <h5>الدولة العباسية</h5>
+              <h5>الوليد بن عبد الملك</h5>
               <span>Latihan 11</span>
             </div>
           </div>
@@ -337,7 +373,7 @@
           <div class="kitabah-card" onclick="bukaMaharah(12)">
             <div class="img-wrap"><img src="img/maskot12.png" alt=""></div>
             <div class="text-wrap">
-              <h5>الدولة العباسية</h5>
+              <h5>العهد البويهي والسلجوقي</h5>
               <span>Latihan 12</span>
             </div>
           </div>
@@ -346,6 +382,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- =============================================
        KONTAK
@@ -371,8 +408,8 @@
 
         <div class="mb-4">
           <label for="pesan" class="form-label">Pesan</label>
-          <textarea class="form-control" id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesanmu..."
-            required></textarea>
+          <textarea class="form-control" id="pesan" name="pesan" rows="4"
+            placeholder="Tuliskan pesanmu..." required></textarea>
         </div>
 
         <button type="submit" class="btn-kirim">
@@ -382,20 +419,43 @@
       </form>
     </div>
 
-    <!-- Wave into footer -->
+    <!-- Wave menuju footer -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" style="display:block;margin-top:60px;">
-      <path fill="#1A1014" fill-opacity="1"
+      <path fill="#1C2424" fill-opacity="1"
         d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,56C840,48,960,32,1080,26.7C1200,21,1320,27,1380,29.3L1440,32L1440,80L0,80Z" />
     </svg>
   </section>
 
+
   <!-- FOOTER -->
-  <footer>
-    <p>
-      Created with <i class="bi bi-heart-pulse-fill"></i> by
-      <a href="https://www.instagram.com/titikarab/" target="_blank" rel="noopener">Titik Arab</a>
-    </p>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="img/logo2um.png" alt="Logo UM" class="logo-um">
+        <div>
+          <p class="footer-text">
+            Media pembelajaran ini dikembangkan oleh mahasiswa<br>
+            Universitas Negeri Malang
+          </p>
+<div class="footer-credit">
+    <p><strong>Penyusun</strong><br>Nafada ...</p>
+
+    <p><strong>Dosen Pembimbing</strong><br>
+    Dr. ...<br>
+    Dr. ...</p>
+
+    <p><strong>Validator Ahli</strong><br>
+    Dr. ...<br>
+    Dr. ...</p>
+  </div>
+
+
+          <small>© 2026 Titik Arab</small>
+        </div>
+      </div>
+    </div>
   </footer>
+
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -403,7 +463,7 @@
   <script src="script/index.js"></script>
   <script src="script/onboarding.js"></script>
 
-  <!-- Scroll reveal -->
+  <!-- Scroll Reveal — WAJIB ADA agar konten tidak invisible -->
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -412,11 +472,19 @@
           observer.unobserve(e.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.10 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 
-</body>
+  <!-- Load navbar -->
+  <script>
+    fetch("pages/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
 
+</body>
 </html>

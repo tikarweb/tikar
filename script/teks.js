@@ -1,8 +1,14 @@
 /* =====================
    AMBIL ID DARI URL
 ===================== */
-const params     = new URLSearchParams(window.location.search);
-const id         = params.get("id");
+const params = new URLSearchParams(window.location.search);
+
+const teksId =
+  params.get("teksId") ||
+  params.get("id");
+
+const id = teksId;
+
 const groupAktif = "teks" + id;
 
 /* =====================
@@ -29,11 +35,36 @@ window.startOnboarding = function () {
 function bersihkanKata(teks) {
   if (typeof teks !== "string") return "";
   return teks
-    .normalize("NFKD")
-    .replace(/[.,،؛:!?()"'""\u200B]/g, "")
-    .replace(/ـ/g, "")
+    .normalize("NFKC")
+    .replace(/[\u064B-\u065F\u0670\u0640]/g, "")
+    .replace(/[.,،؛:!?()"'\u200B]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function normalisasiArab(teks) {
+  return bersihkanKata(teks)
+    .replace(/[^\p{L}\p{N}\s]/gu, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function cariKamus(kataBersih) {
+  if (kamus[kataBersih]) return kamus[kataBersih];
+
+  const target = normalisasiArab(kataBersih);
+
+  for (const key of Object.keys(kamus)) {
+    const keyNorm = normalisasiArab(key);
+    if (keyNorm === target) return kamus[key];
+  }
+
+  for (const key of Object.keys(kamus)) {
+    const keyNorm = normalisasiArab(key);
+    if (keyNorm.includes(target) || target.includes(keyNorm)) return kamus[key];
+  }
+
+  return [];
 }
 
 /* =====================
@@ -134,9 +165,11 @@ fetch("../json/teks.json")
       let i = 0;
 
       /* cari panjang frasa terpanjang otomatis */
-      const maxLen = Math.max(
-        ...window.semuaFrasa.map(f => f.split(" ").length)
-      );
+     const semuaFrasa = window.semuaFrasa || [];
+
+const maxLen = semuaFrasa.length
+  ? Math.max(...semuaFrasa.map(f => f.split(" ").length))
+  : 1;
 
       while (i < tokens.length) {
 
@@ -184,6 +217,8 @@ fetch("../json/teks.json")
     });
 
     container.innerHTML = html;
+    /* ✅ tandai bahwa teks ini sudah dibaca */
+sessionStorage.setItem("sudahBacaTeks", id);
 
     setTimeout(() => {
 
@@ -265,26 +300,25 @@ function tutupPopup() {
    TAMPILKAN POPUP
 ===================== */
 function tampilkanPopup(kata, kataBersih) {
-  const popup      = document.getElementById("popup");
-  const backdrop   = document.getElementById("popupBackdrop");
-  const elKata     = document.getElementById("kataArab");
-  const elArti     = document.getElementById("arti");
+  const popup = document.getElementById("popup");
+  const backdrop = document.getElementById("popupBackdrop");
+  const elKata = document.getElementById("kataArab");
+  const elArti = document.getElementById("arti");
   const elPenjelas = document.getElementById("penjelasan");
 
-  const semuaHasil = kamus[kataBersih] || [];
+  const semuaHasil = cariKamus(kataBersih);
 
   if (semuaHasil.length === 0) {
-    elKata.innerText     = kata;
-    elArti.innerText     = "Tidak ditemukan";
+    elKata.innerText = kata;
+    elArti.innerText = "Tidak ditemukan";
     elPenjelas.innerText = "—";
   } else {
     const hasil = semuaHasil.sort((a, b) => b.kataarab.length - a.kataarab.length)[0];
-    elKata.innerText     = hasil.kataarab;
-    elArti.innerText     = hasil.arti       || "—";
+    elKata.innerText = hasil.kataarab || kata;
+    elArti.innerText = hasil.arti || "—";
     elPenjelas.innerText = hasil.penjelasan || "—";
   }
 
-  /* Reset animasi konten kalau popup sudah aktif sebelumnya */
   const content = document.getElementById("popupContent");
   if (content && popup.classList.contains("active")) {
     content.style.animation = "none";

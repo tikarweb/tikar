@@ -399,12 +399,12 @@
     </section>
 
     <!-- ===== JAWABAN KAMU ===== -->
-    <section id="jawaban-section">
+    <!-- <section id="jawaban-section">
       <div class="section-heading">
         <h2><i class="bi bi-pencil-square me-2"></i>Jawaban Kamu</h2>
       </div>
       <div id="jawaban-container"></div>
-    </section>
+    </section> -->
 
     <!-- ===== DETAIL PER LEVEL ===== -->
     <section id="detail-hasil">
@@ -433,103 +433,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script/hasil.js"></script>
 
-  <!-- ===== SCRIPT: RENDER JAWABAN DARI SESSIONSTORAGE ===== -->
-  <script>
-    (function renderJawaban() {
-      const container = document.getElementById("jawaban-container");
-      if (!container) return;
-
-      let rawData;
-      try {
-        rawData = JSON.parse(sessionStorage.getItem("semuaJawaban") || "[]");
-      } catch (e) {
-        rawData = [];
-      }
-
-      if (!rawData || rawData.length === 0) {
-        container.innerHTML = `
-          <div class="jwb-empty">
-            <i class="bi bi-inbox"></i>
-            <span>Jawaban tidak tersedia. Mungkin halaman direfresh?</span>
-          </div>`;
-        return;
-      }
-
-      // Kelompokkan per level
-      const perLevel = {};
-      rawData.forEach(item => {
-        const lv = item.level || 1;
-        if (!perLevel[lv]) perLevel[lv] = [];
-        perLevel[lv].push(item);
-      });
-
-      const levelLabel = {
-        1: "Level 1 — Novice Low–Mid",
-        2: "Level 2 — Novice High–Intermediate Low",
-        3: "Level 3 — Intermediate Mid",
-        4: "Level 4 — Intermediate High"
-      };
-      const levelIcon  = { 1: "bi-1-circle", 2: "bi-2-circle", 3: "bi-3-circle", 4: "bi-4-circle" };
-      const colorClass = { 1: "jwb-l1", 2: "jwb-l2", 3: "jwb-l3", 4: "jwb-l4" };
-
-      let html = "";
-      Object.keys(perLevel).sort().forEach((lv, idx) => {
-        const items = perLevel[lv];
-        const lvInt = parseInt(lv);
-        const cls   = colorClass[lvInt] || "jwb-l1";
-
-        let soalHTML = "";
-        items.forEach((item, i) => {
-          const jawaban = (item.jawaban || "").trim();
-          const jawabanDisplay = jawaban
-            ? `<div class="jwb-jawaban-text">${jawaban}</div>`
-            : `<div class="jwb-jawaban-text kosong"><i class="bi bi-dash-circle me-1"></i>Tidak dijawab</div>`;
-
-          soalHTML += `
-            <div class="jawaban-item">
-              <div class="jawaban-item-top">
-                <div class="jwb-num">${i + 1}</div>
-                <div class="jwb-pertanyaan">${item.pertanyaan || ""}</div>
-              </div>
-              <div class="jwb-jawaban-box">
-                <div class="jwb-jawaban-label">
-                  <i class="bi bi-pencil-fill"></i> Jawaban kamu
-                </div>
-                ${jawabanDisplay}
-              </div>
-            </div>`;
-        });
-
-        // Semua level default terbuka (agar tidak ada yang terlewat saat print)
-        const isOpen = "open";
-
-        html += `
-          <div class="jawaban-level-card ${cls}">
-            <div class="jawaban-level-header ${isOpen}" onclick="toggleJawaban(this)">
-              <div class="jawaban-level-title">
-                <div class="jawaban-level-icon"><i class="bi ${levelIcon[lvInt] || 'bi-circle'}"></i></div>
-                ${levelLabel[lvInt] || "Level " + lv}
-                <span style="color:#6B4455;font-size:0.75rem;font-weight:500;">
-                  (${items.length} soal)
-                </span>
-              </div>
-              <i class="bi bi-chevron-down jwb-toggle-icon"></i>
-            </div>
-            <div class="jawaban-level-body ${isOpen}">
-              ${soalHTML}
-            </div>
-          </div>`;
-      });
-
-      container.innerHTML = html;
-    })();
-
-    function toggleJawaban(header) {
-      const body = header.nextElementSibling;
-      header.classList.toggle("open");
-      body.classList.toggle("open");
-    }
-  </script>
 
   <!-- ===== SCRIPT: CETAK HASIL ===== -->
   <script>

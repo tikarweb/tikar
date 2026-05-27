@@ -1,93 +1,285 @@
-/* RESET */
-* {
+/* ============================================================
+   GLOBAL.CSS — TIKAR / Titik Arab — REDESIGN 2026
+   Shared base styles, typography, utilities
+   Aesthetic: Academic Garden — Clean · Airy · Warm · Scholarly
+============================================================ */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/* ===== SHARED DESIGN TOKENS (diwarisi semua halaman) ===== */
+:root {
+  /* ── PRIMARY: Deep Scholarly Teal ── */
+  --teal:         #2A6B6B;
+  --teal-dark:    #1D5050;
+  --teal-deep:    #113838;
+  --teal-mid:     #468E8E;
+  --teal-light:   #78BBBB;
+  --teal-pale:    #C4E4E4;
+  --teal-wash:    #EAF5F5;
+  --teal-glow:    rgba(42, 107, 107, 0.14);
+
+  /* ── ACCENT: Warm Coral ── */
+  --coral:        #E07B62;
+  --coral-dark:   #BE5E49;
+  --coral-light:  #EDA594;
+  --coral-pale:   #FCEAE6;
+  --coral-glow:   rgba(224, 123, 98, 0.18);
+
+  /* ── BOTANICAL SAGE ── */
+  --sage:         #4C8C6C;
+  --sage-light:   #80B894;
+  --sage-pale:    #E8F4EE;
+
+  /* ── BACKGROUNDS ── */
+  --bg:           #F8F5F0;
+  --bg-pure:      #FFFFFF;
+  --bg-warm:      #F2EDE6;
+  --bg-subtle:    #EDE8E2;
+
+  /* ── TEXT ── */
+  --text:         #1C2626;
+  --text-mid:     #3D5252;
+  --text-muted:   #6B8A8A;
+  --text-light:   #96B2B2;
+
+  /* ── BORDERS ── */
+  --border:       #DFD8D0;
+  --border-soft:  #EDE8E2;
+  --border-teal:  #C4E4E4;
+
+  /* ── SHADOWS ── */
+  --shadow-xs:    0 1px 4px rgba(28, 38, 38, 0.05);
+  --shadow-sm:    0 2px 14px rgba(28, 38, 38, 0.07);
+  --shadow-md:    0 8px 32px rgba(28, 38, 38, 0.10);
+  --shadow-lg:    0 20px 64px rgba(28, 38, 38, 0.13);
+  --shadow-teal:  0 8px 30px rgba(42, 107, 107, 0.22);
+  --shadow-coral: 0 8px 30px rgba(224, 123, 98, 0.28);
+
+  /* ── RADII ── */
+  --r-xs:  6px;
+  --r-sm:  12px;
+  --r-md:  20px;
+  --r-lg:  28px;
+  --r-xl:  999px;
+
+  /* ── NAVBAR HEIGHT ── */
+  --navbar-h: 64px;
+}
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
+html { overflow-x: hidden; scroll-behavior: smooth; }
 
 body {
-  font-family: 'Karla', sans-serif;
-  background-color: #a7a1b4;
-  background-image: radial-gradient(#e6d3bf 1px, transparent 1px);
-  background-size: 25px 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* ===== CONTAINER ===== */
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 24px;
 }
 
-/* NAVBAR */
+/* ===== LINKS ===== */
+a { color: var(--teal); transition: color 0.2s; }
+a:hover { color: var(--teal-dark); }
+
+/* ===== NAVBAR ===== */
 .logo img { height: 50px; }
-.navbar .nav-link { color: white; transition: 0.3s; }
-.navbar .nav-link:hover { color: #eb8178; }
-.navbar .nav-link.active { color: #6e3833; font-weight: 600; }
+.navbar .nav-link { color: var(--text); transition: 0.2s; font-weight: 600; }
+.navbar .nav-link:hover  { color: var(--teal); }
+.navbar .nav-link.active { color: var(--teal); font-weight: 700; }
 
-/* TYPO */
-h1, h2, h3, .navbar-brand { font-family: 'Cairo Play', sans-serif; }
-
-/* SECTION */
+/* ===== SECTION SPACING ===== */
 section { padding-top: 5rem; }
 
-/* FORM */
-input[type="radio"] { transform: scale(1.2); margin-right: 8px; }
+/* ===== FORM CONTROLS ===== */
+input[type="radio"] { transform: scale(1.2); margin-right: 8px; accent-color: var(--teal); }
 label { display: block; margin-bottom: 8px; }
 
-/* BUTTON GLOBAL */
+/* ===== BUTTON GLOBAL ===== */
 .btn-home {
-  display: inline-block; margin-top: 30px;
-  padding: 8px 16px; background: #2c83a0;
-  color: white; text-decoration: none;
-  border-radius: 6px; font-size: 14px;
-}
-.btn-home:hover { background: #25687a; }
-
-/* FOOTER GLOBAL — hanya untuk halaman yang tidak punya .site-footer
-   Halaman teks/maharah pakai .site-footer sendiri di teks.css */
-footer:not(.site-footer) {
-  background-color: #2c83a0;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: var(--teal);
   color: white;
-  text-align: center;
-  padding: 15px;
+  text-decoration: none;
+  border-radius: var(--r-xl);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.22s ease;
+  box-shadow: var(--shadow-sm);
+}
+.btn-home:hover {
+  background: var(--teal-dark);
+  transform: translateY(-2px);
+  color: white;
 }
 
-/* ARABIC */
+/* ===== FOOTER GLOBAL ===== */
+/* Untuk halaman yang tidak punya .site-footer */
+footer:not(.site-footer):not(.akses-footer) {
+  background: var(--text);
+  color: rgba(255,255,255,0.55);
+  text-align: center;
+  padding: 18px;
+  font-size: 0.88rem;
+}
+
+footer:not(.site-footer):not(.akses-footer) a {
+  color: var(--teal-light);
+  font-weight: 700;
+}
+
+/* ===== ARABIC TEXT ===== */
 .arabicText {
-  font-family: 'Amiri', serif;
+  font-family: "Amiri", serif;
   direction: rtl;
   text-align: justify;
   font-size: 24px;
-  line-height: 2;
+  line-height: 2.1;
+  color: var(--text);
 }
-.word { cursor: pointer; transition: 0.2s; }
-.word:hover { background: #e6d3bf; border-radius: 4px; }
 
-/* DRIVER.JS */
+.word {
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+.word:hover {
+  background: var(--teal-wash);
+  color: var(--teal);
+}
+
+.word.active-word {
+  background: var(--teal);
+  color: white;
+  border-radius: 4px;
+}
+
+/* ===== DRIVER.JS OVERRIDE ===== */
 .driver-popover {
-  background: #fffdfb; border-radius: 16px;
-  padding: 20px 18px 16px; border: 1px solid #eaded7;
-  box-shadow: 0 10px 25px rgba(110,56,51,0.08);
-  max-width: 270px; position: relative;
+  background: var(--bg-pure);
+  border-radius: var(--r-md) !important;
+  border: 1.5px solid var(--border-teal) !important;
+  border-top: 4px solid var(--teal) !important;
+  box-shadow: var(--shadow-lg) !important;
+  padding: 0 !important;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
-.driver-popover::before {
-  content: ""; position: absolute; top: 0; left: 0;
-  height: 4px; width: 100%; background: #6e3833;
-  border-top-left-radius: 16px; border-top-right-radius: 16px;
+
+.driver-popover-title {
+  font-family: "Nunito", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: var(--text) !important;
+  padding: 16px 20px 4px !important;
+  margin: 0 !important;
 }
-.driver-popover-title { font-size: 15.5px; font-weight: 600; color: #6e3833; margin-bottom: 6px; }
-.driver-popover-description { font-size: 13.5px; color: #7a6f6b; line-height: 1.5; }
-.driver-popover-close-btn { font-size: 17px; color: #b7a9a3; top: 10px; right: 12px; }
-.driver-popover-close-btn:hover { color: #6e3833; }
-.driver-popover-footer { margin-top: 14px; display: flex; justify-content: space-between; align-items: center; background: #25687a; }
-.driver-popover-progress-text { font-size: 12px; color: #b7a9a3; }
+
+.driver-popover-description {
+  font-size: 0.88rem !important;
+  color: var(--text-muted) !important;
+  padding: 4px 20px 16px !important;
+  line-height: 1.68 !important;
+  margin: 0 !important;
+}
+
+.driver-popover-close-btn {
+  color: var(--text-light) !important;
+  top: 10px !important; right: 12px !important;
+}
+
+.driver-popover-close-btn:hover { color: var(--teal) !important; }
+
+.driver-popover-footer {
+  background: var(--bg) !important;
+  border-top: 1px solid var(--border-soft) !important;
+  padding: 12px 20px !important;
+}
+
+.driver-popover-progress-text {
+  font-size: 0.75rem !important;
+  color: var(--text-muted) !important;
+}
+
 .driver-popover-navigation-btns { display: flex; gap: 8px; }
-.driver-prev-btn { background: #f3ebe7; border: none; color: #6e3833; border-radius: 999px; padding: 6px 12px; font-size: 12.5px; }
-.driver-prev-btn:hover { background: #eaded7; }
-.driver-next-btn { background: #eb8178; border: none; color: #ffffff; border-radius: 999px; padding: 6px 14px; font-size: 12.5px; }
-.driver-next-btn:hover { background: #d96f66; }
-.driver-popover-arrow { border-width: 7px; }
+
+.driver-prev-btn {
+  background: var(--bg-warm) !important;
+  border: 1.5px solid var(--border) !important;
+  color: var(--text-mid) !important;
+  border-radius: var(--r-xl) !important;
+  padding: 6px 14px !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+}
+
+.driver-prev-btn:hover {
+  background: var(--teal-wash) !important;
+  border-color: var(--teal-pale) !important;
+  color: var(--teal) !important;
+}
+
+.driver-next-btn, .driver-done-btn {
+  background: var(--teal) !important;
+  border: none !important;
+  color: white !important;
+  border-radius: var(--r-xl) !important;
+  padding: 6px 16px !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.driver-next-btn:hover, .driver-done-btn:hover {
+  background: var(--teal-dark) !important;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-teal   { color: var(--teal); }
+.text-coral  { color: var(--coral); }
+.text-muted-custom { color: var(--text-muted); }
+
+.bg-teal-wash { background: var(--teal-wash); }
+.bg-warm      { background: var(--bg-warm); }
+
+.rounded-pill-custom { border-radius: var(--r-xl); }
+
+/* ===== SCROLLBAR (global, subtle) ===== */
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--teal-pale);
+  border-radius: var(--r-xl);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--teal-mid); }
+
+/* ===== SELECTION ===== */
+::selection {
+  background: var(--teal-pale);
+  color: var(--teal-deep);
+}

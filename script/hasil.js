@@ -246,8 +246,19 @@ function renderHasilGrouped(grouped) {
           <div class="feedback-item">
             <div class="feedback-num">${i + 1}</div>
             <div class="feedback-content">
-              <span class="feedback-note">${item.feedback || "Sedang diproses..."}</span>
-            </div>
+  <div class="user-answer">
+    <div class="answer-label">Jawaban Kamu</div>
+    <div class="answer-text">
+      ${item.jawaban || "Tidak dijawab"}
+    </div>
+  </div>
+
+  <span class="feedback-note">
+    ${item.feedback || "Sedang diproses..."}
+  </span>
+</div>
+
+
             <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0;">
               <span class="score-number ${sCls}" style="font-size:1rem;">${sDisp}</span>
               <div class="feedback-status ${isOk ? "correct" : "wrong"}">

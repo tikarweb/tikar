@@ -4,7 +4,13 @@
 let dataSoal      = {};
 let dataSoalAktif = {};
 let level         = 1;
-let teksAktif     = new URLSearchParams(window.location.search).get("teks") || "1";
+
+const params = new URLSearchParams(window.location.search);
+
+let teksAktif =
+  params.get("teksId") ||
+  params.get("teks") ||
+  "1";
 
 let semuaJawaban  = [];
 let currentNama   = null;
@@ -14,6 +20,7 @@ let modeTombol    = "submit"; // "submit" | "next" | "finish"
 
 // ✅ Isi teks bacaan — dikirim ke AI agar feedback mengacu teks
 let teksKonten = "";
+
 
 const URL_API = "https://script.google.com/macros/s/AKfycbzE2yS5EXZ2lAvZwtvAI64LHXdQc3FJBQAYztcoJRMzvwDFwGIlBpG3wT33IV6qIXWt/exec";
 
@@ -431,10 +438,18 @@ function submit() {
 // SUBMIT AKHIR
 // =======================
 async function submitAI_AKHIR() {
+
   setHTML("hasil", "⏳ Sedang mengirim, tunggu ya...");
 
   try {
     const userId = getUserId();
+    if (!teksKonten || teksKonten.trim() === "") {
+
+  throw new Error(
+    "Teks bacaan gagal dimuat. Silakan ulangi dari halaman bacaan."
+  );
+
+}
 
     if (semuaJawaban.length === 0) {
       throw new Error("Tidak ada jawaban untuk dikirim.");
@@ -541,9 +556,23 @@ function getTotalLevel() {
 // INIT
 // =======================
 document.addEventListener("DOMContentLoaded", () => {
+
+  const sudahBaca = sessionStorage.getItem("sudahBacaTeks");
+
+  if (String(sudahBaca) !== String(teksAktif)) {
+
+    alert(
+      "Sebaiknya baca teks terlebih dahulu sebelum mengerjakan latihan."
+    );
+
+  }
+
   getEl("btn-aksi").onclick = handleTombol;
+
   mulaiApersepsi();
+
   loadData();
+
 });
 
 function handleTombol() {
